@@ -1,0 +1,114 @@
+{
+  "change": "M02-I01",
+  "contract": "M00-2 / CONTRACTS 1.1",
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "state": "实例查询与规则执行签名已统一补齐，生产规则未实现",
+  "files": [
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs",
+      "bytes": 8032,
+      "sha256": "1c7c3e91aba9e6b2dd0419ed3bbad0274efef55e8fa6832fb7552f601a4a3951"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs.meta",
+      "bytes": 59,
+      "sha256": "e6c6c861a71e4e7c1396455433418e0c71833ce05cb530572e26bc8793158e8c"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\RuleContracts.cs",
+      "bytes": 4872,
+      "sha256": "a1ede69c14092c685d3e077e542d9ea757638099e35cbcaa56dd6e167f2af762"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\RuleContracts.cs.meta",
+      "bytes": 59,
+      "sha256": "f5989363985fed35b01bb3b694418a1237245f91a01f21b50d3e289f1e878bc2"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs",
+      "bytes": 4431,
+      "sha256": "db24757dbb421a73928919d677460793fd5e42bc0b73c054d42e939723d1edc3"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs.meta",
+      "bytes": 61,
+      "sha256": "6c2d803891fdad7fac4de0361c66000e878855b1d08f5da4e52620cc4abd11da"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "bytes": 24123,
+      "sha256": "ed460244057833fe13df7b262a3379de69f44eb5d56babdb2d8e10b4bf4fb762"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs.meta",
+      "bytes": 61,
+      "sha256": "d67a4ea429c7aebd148602b01d23f08ef45dfc53bd29cbc2a0685397c7d12146"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs",
+      "bytes": 16485,
+      "sha256": "e356f8e0adb06769b7076450d41b8c4f92ae771a3ecbf1876aacad5e9f37865f"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs.meta",
+      "bytes": 61,
+      "sha256": "8ae805e51c01bfc00a32d718d85404a9e7387eba4cfa3d0b98622015cb746567"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\RuleInstanceContractTests.cs",
+      "bytes": 9138,
+      "sha256": "4ba71f363550fc1e78ee272940403cf6268952ec32255a7462e3bf4cb7f3ad21"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\RuleInstanceContractTests.cs.meta",
+      "bytes": 59,
+      "sha256": "4f760e241175856c3b690e6842699d927db5b745f72f7bb3c0fd44b9335d30ca"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\specs\\CONTRACTS.md",
+      "bytes": 17739,
+      "sha256": "81dca905e96cb95e1511cdd2731ad326e83583585e16cc4b8c848b98dcd2b797"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\specs\\M03-材料规则与燃烧.md",
+      "bytes": 13893,
+      "sha256": "8d3dc3852f6e4e0d22f06d1eaa68e28ccb3ebc5df59da0c6cda4ae54faed7976"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\OpenOita 初步实现方案 草案.md",
+      "bytes": 41768,
+      "sha256": "b6e9a9f69114a588cae16fc583dbde48d50e04b6359e9effed0cc678d33f62ed"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M00-公共类型索引.md",
+      "bytes": 9548,
+      "sha256": "a94512c09435a83ebc1a54582ce95616da0a8b873c42b83ee6ce35f74d7a22e2"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-公共接口差异与集成清单.md",
+      "bytes": 6571,
+      "sha256": "51399e737a9d2d28bc296e29f4e4c8e54a65ab04c73f12efbf742ed7445d5379"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-执行结果与交接.md",
+      "bytes": 13476,
+      "sha256": "9b1c7925edc64573aa41557a7611f4dbc46fe645fb605a966da28befae8da4c2"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M00-M02-I01-接口补齐与验证.md",
+      "bytes": 5632,
+      "sha256": "899be0af4b274b85d3e8f49e7c32ac0b02e6a38faa3017ad1afd11de8db8b9e6"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-i01-editmode-result.json",
+      "bytes": 61201,
+      "sha256": "2e18c00e50d14403014a030ff6bfd05d682cfce5f87db1b3180886db9efda601"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-i01-playmode-result.json",
+      "bytes": 1974,
+      "sha256": "a4ce4953f6776ebd4a4738ee6ce39e801504a04c25de2fb0f129f5c14f1d127f"
+    }
+  ]
+}

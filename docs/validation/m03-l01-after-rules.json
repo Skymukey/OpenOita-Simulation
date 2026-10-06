@@ -1,0 +1,378 @@
+{
+  "success": true,
+  "message": "Test job status retrieved.",
+  "error": null,
+  "data": {
+    "job_id": "1bf16798ecd5463a8af39476dc748e9c",
+    "status": "succeeded",
+    "mode": "EditMode",
+    "started_unix_ms": 1791212323022,
+    "finished_unix_ms": 1791212610639,
+    "last_update_unix_ms": 1791212610639,
+    "progress": {
+      "completed": 37,
+      "total": 37,
+      "current_test_full_name": null,
+      "current_test_started_unix_ms": null,
+      "last_finished_test_full_name": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+      "last_finished_unix_ms": 1791212610344,
+      "stuck_suspected": false,
+      "editor_is_focused": false,
+      "run_in_background": false,
+      "focus_nudge_attempts": null,
+      "focus_nudge_limit": null,
+      "focus_nudge_status": null,
+      "blocked_reason": null,
+      "failures_so_far": [],
+      "failures_capped": false
+    },
+    "error": null,
+    "result": {
+      "mode": "EditMode",
+      "summary": {
+        "total": 37,
+        "passed": 37,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 283.1739321,
+        "resultState": "Passed"
+      },
+      "results": [
+        {
+          "name": "M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(1,1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(1,1)",
+          "state": "Passed",
+          "durationSeconds": 0.0530434,
+          "message": null,
+          "stackTrace": null,
+          "output": "首次达标：Tick=47,水量=16,搬运=2,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=b9e25fb307dacd31,意图哈希=c960c09b10844ca4；自地形/初态变化起47Tick。\r\nTick=128,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=46d7e1115df99a9a,意图哈希=f90d6d490a471a78\r\nF1 k=1 seed=1，初始Tick=0，已执行=175，首次几何Tick=47，夹具墙钟=0.036s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=175,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=b9e25fb307dacd31,意图哈希=0638d3eb50644dd3\r\n"
+        },
+        {
+          "name": "M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(1,2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(1,2)",
+          "state": "Passed",
+          "durationSeconds": 0.0432567,
+          "message": null,
+          "stackTrace": null,
+          "output": "首次达标：Tick=47,水量=16,搬运=2,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=b9e25fb307dacd31,意图哈希=c960c09b10844ca4；自地形/初态变化起47Tick。\r\nTick=128,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=46d7e1115df99a9a,意图哈希=f90d6d490a471a78\r\nF1 k=1 seed=2，初始Tick=0，已执行=175，首次几何Tick=47，夹具墙钟=0.035s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=175,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=b85f2f3d3941e99c,全状态哈希=b9e25fb307dacd31,意图哈希=0638d3eb50644dd3\r\n"
+        },
+        {
+          "name": "M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(8,1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(8,1)",
+          "state": "Passed",
+          "durationSeconds": 11.461433,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=0fb71d0da0694061,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=b20870cc4fb1cf67,意图哈希=5835c4442d64f216\r\nTick=384,水量=1024,搬运=0,列深差=9,孔洞=0,占据哈希=14c4d5b810e00ca8,全状态哈希=e24634c200df6a88,意图哈希=2bd39fb56c6c4539\r\n首次达标：Tick=485,水量=1024,搬运=157,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=3a7b63834266cc74；自地形/初态变化起485Tick。\r\nTick=512,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=4bb2f8b5be8e1bc5,意图哈希=9bc534756686620a\r\nF1 k=8 seed=1，初始Tick=0，已执行=613，首次几何Tick=485，夹具墙钟=11.376s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=613,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=5cd665e71893f5d3\r\n"
+        },
+        {
+          "name": "M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(8,2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_01_F1_AllColumnsLevelWithinDeadlineAndStopFor128Ticks(8,2)",
+          "state": "Passed",
+          "durationSeconds": 11.044815,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=0fb71d0da0694061,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=b20870cc4fb1cf67,意图哈希=5835c4442d64f216\r\nTick=384,水量=1024,搬运=0,列深差=9,孔洞=0,占据哈希=14c4d5b810e00ca8,全状态哈希=e24634c200df6a88,意图哈希=2bd39fb56c6c4539\r\n首次达标：Tick=485,水量=1024,搬运=157,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=3a7b63834266cc74；自地形/初态变化起485Tick。\r\nTick=512,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=4bb2f8b5be8e1bc5,意图哈希=9bc534756686620a\r\nF1 k=8 seed=2，初始Tick=0，已执行=613，首次几何Tick=485，夹具墙钟=11.039s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=613,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=5cd665e71893f5d3\r\n"
+        },
+        {
+          "name": "M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(1,1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(1,1)",
+          "state": "Passed",
+          "durationSeconds": 0.1066409,
+          "message": null,
+          "stackTrace": null,
+          "output": "首次达标：Tick=59,水量=16,搬运=2,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=e58fdc434af50f34,意图哈希=908b1742a006af31；自地形/初态变化起59Tick。\r\nTick=128,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=03040f65ee647217,意图哈希=25a7ae003c7cbe44\r\nF2 k=1 seed=1，初始Tick=0，已执行=187，首次几何Tick=59，夹具墙钟=0.100s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=187,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=e58fdc434af50f34,意图哈希=c32c7d2698edc367\r\n"
+        },
+        {
+          "name": "M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(1,2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(1,2)",
+          "state": "Passed",
+          "durationSeconds": 0.035714,
+          "message": null,
+          "stackTrace": null,
+          "output": "首次达标：Tick=59,水量=16,搬运=2,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=e58fdc434af50f34,意图哈希=908b1742a006af31；自地形/初态变化起59Tick。\r\nTick=128,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=03040f65ee647217,意图哈希=25a7ae003c7cbe44\r\nF2 k=1 seed=2，初始Tick=0，已执行=187，首次几何Tick=59，夹具墙钟=0.029s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=187,水量=16,搬运=0,列深差=1,孔洞=0,占据哈希=c2c9a6e5cc5c8969,全状态哈希=e58fdc434af50f34,意图哈希=c32c7d2698edc367\r\n"
+        },
+        {
+          "name": "M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(8,1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(8,1)",
+          "state": "Passed",
+          "durationSeconds": 16.2802483,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=602df1e430ba1f4a,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=20,孔洞=407,占据哈希=ce890fd154e49455,全状态哈希=b7dda6770acbd666,意图哈希=5771f6cc67a4de1e\r\nTick=384,水量=1024,搬运=0,列深差=14,孔洞=274,占据哈希=e11ab45ce7a6a04f,全状态哈希=592770ebf1404718,意图哈希=1a637dfdc36279e0\r\nTick=512,水量=1024,搬运=0,列深差=8,孔洞=96,占据哈希=f5fd2c32494b2b97,全状态哈希=97b89ab0d5979a6d,意图哈希=1b75c856cc0748ca\r\nTick=640,水量=1024,搬运=0,列深差=9,孔洞=30,占据哈希=64e4fbfc05d70aa3,全状态哈希=3875df95b64506fa,意图哈希=a52749c463492c70\r\n首次达标：Tick=705,水量=1024,搬运=3,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=8c4a3d184962964f；自地形/初态变化起705Tick。\r\nTick=768,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=ec5256f73748b361,意图哈希=fdbb56e72efd6301\r\nF2 k=8 seed=1，初始Tick=0，已执行=833，首次几何Tick=705，夹具墙钟=16.266s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=833,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=f941174d3c902239\r\n"
+        },
+        {
+          "name": "M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(8,2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_02_F2_PlatformDrainsToExactLowerCellsAndStopsFor128Ticks(8,2)",
+          "state": "Passed",
+          "durationSeconds": 16.3391892,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=602df1e430ba1f4a,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=20,孔洞=407,占据哈希=ce890fd154e49455,全状态哈希=b7dda6770acbd666,意图哈希=5771f6cc67a4de1e\r\nTick=384,水量=1024,搬运=0,列深差=14,孔洞=274,占据哈希=e11ab45ce7a6a04f,全状态哈希=592770ebf1404718,意图哈希=1a637dfdc36279e0\r\nTick=512,水量=1024,搬运=0,列深差=8,孔洞=96,占据哈希=f5fd2c32494b2b97,全状态哈希=97b89ab0d5979a6d,意图哈希=1b75c856cc0748ca\r\nTick=640,水量=1024,搬运=0,列深差=9,孔洞=30,占据哈希=64e4fbfc05d70aa3,全状态哈希=3875df95b64506fa,意图哈希=a52749c463492c70\r\n首次达标：Tick=705,水量=1024,搬运=3,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=8c4a3d184962964f；自地形/初态变化起705Tick。\r\nTick=768,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=ec5256f73748b361,意图哈希=fdbb56e72efd6301\r\nF2 k=8 seed=2，初始Tick=0，已执行=833，首次几何Tick=705，夹具墙钟=16.330s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=833,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=f941174d3c902239\r\n"
+        },
+        {
+          "name": "M03_L01_03_F3_120CellChannelCrosses128AndFallsWithin512Ticks(1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_03_F3_120CellChannelCrosses128AndFallsWithin512Ticks(1)",
+          "state": "Passed",
+          "durationSeconds": 3.8781864,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=8a82027a52779cfa,全状态哈希=c2832eed1fb48aff,意图哈希=8bc04027a1de4151\r\nTick=256,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=dfd4b42b6f5d6f29,全状态哈希=e2ef583d70650f38,意图哈希=2f28d697cda06473\r\n首次达标：Tick=287,水量=1,搬运=1,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=3752a5355aae4030；自地形/初态变化起287Tick。\r\nTick=384,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=b5b4a679e730ddeb,意图哈希=d4b0e2827f9577ce\r\nF3 k=8 seed=1，初始Tick=0，已执行=415，首次几何Tick=287，夹具墙钟=3.824s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=415,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=77d402569258a25c\r\n"
+        },
+        {
+          "name": "M03_L01_03_F3_120CellChannelCrosses128AndFallsWithin512Ticks(2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_03_F3_120CellChannelCrosses128AndFallsWithin512Ticks(2)",
+          "state": "Passed",
+          "durationSeconds": 3.5528113,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=8a82027a52779cfa,全状态哈希=c2832eed1fb48aff,意图哈希=8bc04027a1de4151\r\nTick=256,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=dfd4b42b6f5d6f29,全状态哈希=e2ef583d70650f38,意图哈希=2f28d697cda06473\r\n首次达标：Tick=287,水量=1,搬运=1,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=3752a5355aae4030；自地形/初态变化起287Tick。\r\nTick=384,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=b5b4a679e730ddeb,意图哈希=d4b0e2827f9577ce\r\nF3 k=8 seed=2，初始Tick=0，已执行=415，首次几何Tick=287，夹具墙钟=3.547s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=415,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=77d402569258a25c\r\n"
+        },
+        {
+          "name": "M03_L01_04_05_F4_WallIsImpermeableThenGeometryRemovalRestartsLeveling(1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_04_05_F4_WallIsImpermeableThenGeometryRemovalRestartsLeveling(1)",
+          "state": "Passed",
+          "durationSeconds": 14.2068481,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=1ec1a75585fff16b,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=a37eca946a277e6d,意图哈希=5835c4442d64f216\r\n首次达标：Tick=331,水量=1024,搬运=70,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=9b82e827a236323b,意图哈希=d9d6732842a5aae9；自地形/初态变化起331Tick。\r\nTick=384,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=2ad63a00f97763ac,意图哈希=f28e88dede31621c\r\nF4 k=8 seed=1，初始Tick=0，已执行=459，首次几何Tick=331，夹具墙钟=9.256s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=459,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=9b82e827a236323b,意图哈希=43da5af98570338b\r\nTick=587,水量=1024,搬运=826,列深差=7,孔洞=0,占据哈希=283c073e0488fb76,全状态哈希=82dc200fcf22b785,意图哈希=df2212a4a28bd398\r\n首次达标：Tick=645,水量=1024,搬运=463,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=cf3cb83ca71b89e9；自地形/初态变化起186Tick。\r\nTick=715,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=d78dc8f1e572ac5c\r\nF4 k=8 seed=1，初始Tick=459，已执行=314，首次几何Tick=645，夹具墙钟=4.943s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=773,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=d78dc8f1e572ac5c\r\n本用例只移除独立夹具的完整内墙；正式一条区域Remove命令及事务提交由M02集成测试验证。\r\n"
+        },
+        {
+          "name": "M03_L01_04_05_F4_WallIsImpermeableThenGeometryRemovalRestartsLeveling(2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_04_05_F4_WallIsImpermeableThenGeometryRemovalRestartsLeveling(2)",
+          "state": "Passed",
+          "durationSeconds": 14.170717,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=1ec1a75585fff16b,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=a37eca946a277e6d,意图哈希=5835c4442d64f216\r\n首次达标：Tick=331,水量=1024,搬运=70,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=9b82e827a236323b,意图哈希=d9d6732842a5aae9；自地形/初态变化起331Tick。\r\nTick=384,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=2ad63a00f97763ac,意图哈希=f28e88dede31621c\r\nF4 k=8 seed=2，初始Tick=0，已执行=459，首次几何Tick=331，夹具墙钟=8.839s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=459,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=563a78fe3e01014d,全状态哈希=9b82e827a236323b,意图哈希=43da5af98570338b\r\nTick=587,水量=1024,搬运=826,列深差=7,孔洞=0,占据哈希=283c073e0488fb76,全状态哈希=82dc200fcf22b785,意图哈希=df2212a4a28bd398\r\n首次达标：Tick=645,水量=1024,搬运=463,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=cf3cb83ca71b89e9；自地形/初态变化起186Tick。\r\nTick=715,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=d78dc8f1e572ac5c\r\nF4 k=8 seed=2，初始Tick=459，已执行=314，首次几何Tick=645，夹具墙钟=5.325s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=773,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=c645444ec35348a0,全状态哈希=eb0265c75437fec3,意图哈希=d78dc8f1e572ac5c\r\n本用例只移除独立夹具的完整内墙；正式一条区域Remove命令及事务提交由M02集成测试验证。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F1\",1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F1\",1)",
+          "state": "Passed",
+          "durationSeconds": 34.9081131,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=0fb71d0da0694061,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=b20870cc4fb1cf67,意图哈希=5835c4442d64f216\r\nTick=384,水量=1024,搬运=0,列深差=9,孔洞=0,占据哈希=14c4d5b810e00ca8,全状态哈希=e24634c200df6a88,意图哈希=2bd39fb56c6c4539\r\n首次达标：Tick=485,水量=1024,搬运=157,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=3a7b63834266cc74；自地形/初态变化起485Tick。\r\nTick=512,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=4bb2f8b5be8e1bc5,意图哈希=9bc534756686620a\r\nF1 k=8 seed=1，初始Tick=0，已执行=613，首次几何Tick=485，夹具墙钟=23.782s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=613,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=5cd665e71893f5d3\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F1\",2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F1\",2)",
+          "state": "Passed",
+          "durationSeconds": 32.4082477,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=0fb71d0da0694061,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=24,孔洞=0,占据哈希=82821f2790270ef2,全状态哈希=b20870cc4fb1cf67,意图哈希=5835c4442d64f216\r\nTick=384,水量=1024,搬运=0,列深差=9,孔洞=0,占据哈希=14c4d5b810e00ca8,全状态哈希=e24634c200df6a88,意图哈希=2bd39fb56c6c4539\r\n首次达标：Tick=485,水量=1024,搬运=157,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=3a7b63834266cc74；自地形/初态变化起485Tick。\r\nTick=512,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=4bb2f8b5be8e1bc5,意图哈希=9bc534756686620a\r\nF1 k=8 seed=2，初始Tick=0，已执行=613，首次几何Tick=485，夹具墙钟=21.144s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=613,水量=1024,搬运=0,列深差=1,孔洞=0,占据哈希=db209a8e05820cc9,全状态哈希=8ca1a927c09b8c1c,意图哈希=5cd665e71893f5d3\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F2\",1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F2\",1)",
+          "state": "Passed",
+          "durationSeconds": 50.502632,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=602df1e430ba1f4a,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=20,孔洞=407,占据哈希=ce890fd154e49455,全状态哈希=b7dda6770acbd666,意图哈希=5771f6cc67a4de1e\r\nTick=384,水量=1024,搬运=0,列深差=14,孔洞=274,占据哈希=e11ab45ce7a6a04f,全状态哈希=592770ebf1404718,意图哈希=1a637dfdc36279e0\r\nTick=512,水量=1024,搬运=0,列深差=8,孔洞=96,占据哈希=f5fd2c32494b2b97,全状态哈希=97b89ab0d5979a6d,意图哈希=1b75c856cc0748ca\r\nTick=640,水量=1024,搬运=0,列深差=9,孔洞=30,占据哈希=64e4fbfc05d70aa3,全状态哈希=3875df95b64506fa,意图哈希=a52749c463492c70\r\n首次达标：Tick=705,水量=1024,搬运=3,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=8c4a3d184962964f；自地形/初态变化起705Tick。\r\nTick=768,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=ec5256f73748b361,意图哈希=fdbb56e72efd6301\r\nF2 k=8 seed=1，初始Tick=0，已执行=833，首次几何Tick=705，夹具墙钟=34.089s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=833,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=f941174d3c902239\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F2\",2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F2\",2)",
+          "state": "Passed",
+          "durationSeconds": 50.249253,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1024,搬运=0,列深差=32,孔洞=1024,占据哈希=acddf04ee0e9ba05,全状态哈希=602df1e430ba1f4a,意图哈希=a00396b03dbc4573\r\nTick=256,水量=1024,搬运=0,列深差=20,孔洞=407,占据哈希=ce890fd154e49455,全状态哈希=b7dda6770acbd666,意图哈希=5771f6cc67a4de1e\r\nTick=384,水量=1024,搬运=0,列深差=14,孔洞=274,占据哈希=e11ab45ce7a6a04f,全状态哈希=592770ebf1404718,意图哈希=1a637dfdc36279e0\r\nTick=512,水量=1024,搬运=0,列深差=8,孔洞=96,占据哈希=f5fd2c32494b2b97,全状态哈希=97b89ab0d5979a6d,意图哈希=1b75c856cc0748ca\r\nTick=640,水量=1024,搬运=0,列深差=9,孔洞=30,占据哈希=64e4fbfc05d70aa3,全状态哈希=3875df95b64506fa,意图哈希=a52749c463492c70\r\n首次达标：Tick=705,水量=1024,搬运=3,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=8c4a3d184962964f；自地形/初态变化起705Tick。\r\nTick=768,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=ec5256f73748b361,意图哈希=fdbb56e72efd6301\r\nF2 k=8 seed=2，初始Tick=0，已执行=833，首次几何Tick=705，夹具墙钟=34.435s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=833,水量=1024,搬运=0,列深差=8,孔洞=0,占据哈希=2da5e17322cddc58,全状态哈希=e8a8175d2525f259,意图哈希=f941174d3c902239\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F3\",1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F3\",1)",
+          "state": "Passed",
+          "durationSeconds": 12.4384419,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=8a82027a52779cfa,全状态哈希=c2832eed1fb48aff,意图哈希=8bc04027a1de4151\r\nTick=256,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=dfd4b42b6f5d6f29,全状态哈希=e2ef583d70650f38,意图哈希=2f28d697cda06473\r\n首次达标：Tick=287,水量=1,搬运=1,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=3752a5355aae4030；自地形/初态变化起287Tick。\r\nTick=384,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=b5b4a679e730ddeb,意图哈希=d4b0e2827f9577ce\r\nF3 k=8 seed=1，初始Tick=0，已执行=415，首次几何Tick=287，夹具墙钟=8.577s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=415,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=77d402569258a25c\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F3\",2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_06_ReversedInsertionChunksAndReconstructedReplayMatchEveryTick(\"F3\",2)",
+          "state": "Passed",
+          "durationSeconds": 10.0438214,
+          "message": null,
+          "stackTrace": null,
+          "output": "Tick=128,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=8a82027a52779cfa,全状态哈希=c2832eed1fb48aff,意图哈希=8bc04027a1de4151\r\nTick=256,水量=1,搬运=0,列深差=1,孔洞=1,占据哈希=dfd4b42b6f5d6f29,全状态哈希=e2ef583d70650f38,意图哈希=2f28d697cda06473\r\n首次达标：Tick=287,水量=1,搬运=1,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=3752a5355aae4030；自地形/初态变化起287Tick。\r\nTick=384,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=b5b4a679e730ddeb,意图哈希=d4b0e2827f9577ce\r\nF3 k=8 seed=2，初始Tick=0，已执行=415，首次几何Tick=287，夹具墙钟=6.503s；纯规则结果不覆盖正式Step性能。\r\n末步：Tick=415,水量=1,搬运=0,列深差=1,孔洞=0,占据哈希=2c8c92d7d92fb650,全状态哈希=16d046ad0afd0879,意图哈希=77d402569258a25c\r\n本用例验证纯规则重建重放；正式世界Reset代次/辅助状态生命周期另由M02联验。\r\n"
+        },
+        {
+          "name": "M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,6,3)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,6,3)",
+          "state": "Passed",
+          "durationSeconds": 0.0410775,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例注入占据适配夹具；旋转体的真实格几何仍由M06集成验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,4,3)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,4,3)",
+          "state": "Passed",
+          "durationSeconds": 0.0045563,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例注入占据适配夹具；旋转体的真实格几何仍由M06集成验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,3,4)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_AtomicChainRespectsSolidOccupancyAtHeadInteriorAndTail(5,3,4)",
+          "state": "Passed",
+          "durationSeconds": 0.0043046,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例注入占据适配夹具；旋转体的真实格几何仍由M06集成验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_HorizontalCompetitionIsUniqueAndWetStateDoesNotLeakToLoser",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_HorizontalCompetitionIsUniqueAndWetStateDoesNotLeakToLoser",
+          "state": "Passed",
+          "durationSeconds": 0.0113551,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_07_HorizontalMovementPreservesAllStateInstanceAndWetAssociation(5)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_HorizontalMovementPreservesAllStateInstanceAndWetAssociation(5)",
+          "state": "Passed",
+          "durationSeconds": 0.0090807,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_07_HorizontalMovementPreservesAllStateInstanceAndWetAssociation(127)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_HorizontalMovementPreservesAllStateInstanceAndWetAssociation(127)",
+          "state": "Passed",
+          "durationSeconds": 0.0062586,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_07_InsufficientHorizontalIntentCapacityReturnsEmptyAndLeavesStateUntouched",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InsufficientHorizontalIntentCapacityReturnsEmptyAndLeavesStateUntouched",
+          "state": "Passed",
+          "durationSeconds": 0.0269423,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"Cycle\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"Cycle\")",
+          "state": "Passed",
+          "durationSeconds": 0.0175813,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"NoNetDescent\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"NoNetDescent\")",
+          "state": "Passed",
+          "durationSeconds": 0.0072188,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"BlockedHead\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"BlockedHead\")",
+          "state": "Passed",
+          "durationSeconds": 0.005928,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"OccupiedTerminal\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"OccupiedTerminal\")",
+          "state": "Passed",
+          "durationSeconds": 0.0045043,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"DifferentMaterial\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"DifferentMaterial\")",
+          "state": "Passed",
+          "durationSeconds": 0.004531,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"UnreadySource\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"UnreadySource\")",
+          "state": "Passed",
+          "durationSeconds": 0.0043615,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"LongStep\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"LongStep\")",
+          "state": "Passed",
+          "durationSeconds": 0.0043809,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"DiagonalSegment\")",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_07_InvalidAtomicChainsCannotPassIndependentPreflight(\"DiagonalSegment\")",
+          "state": "Passed",
+          "durationSeconds": 0.004887,
+          "message": null,
+          "stackTrace": null,
+          "output": "本用例只证明独立验收夹具拒绝非法链；正式事务预检由M02用例验证。\r\n"
+        },
+        {
+          "name": "M03_L01_EquivalentHorizontalPlansUseSeedThenKeepAdvancing(1,-1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_EquivalentHorizontalPlansUseSeedThenKeepAdvancing(1,-1)",
+          "state": "Passed",
+          "durationSeconds": 0.0580474,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_EquivalentHorizontalPlansUseSeedThenKeepAdvancing(2,1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_EquivalentHorizontalPlansUseSeedThenKeepAdvancing(2,1)",
+          "state": "Passed",
+          "durationSeconds": 0.0097722,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(1)",
+          "state": "Passed",
+          "durationSeconds": 0.1466798,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+          "state": "Passed",
+          "durationSeconds": 0.1128636,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        }
+      ]
+    }
+  },
+  "hint": null
+}

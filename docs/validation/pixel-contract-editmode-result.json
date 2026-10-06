@@ -1,0 +1,45 @@
+{
+  "job_id": "76bf7c034cd348f8ab9d9cde88ca1bce",
+  "status": "succeeded",
+  "mode": "EditMode",
+  "started_unix_ms": 1791209787051,
+  "finished_unix_ms": 1791209861252,
+  "last_update_unix_ms": 1791209861252,
+  "progress": {
+    "completed": 422,
+    "total": 422,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)",
+    "last_finished_unix_ms": 1791209860822,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": false,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [],
+    "failures_capped": false
+  },
+  "error": null,
+  "evidenceNote": "汇总及跳过原因来自本次任务首次成功轮询的原始响应；后续轮询返回result=null，未重跑或据此伪造完整逐项明细。",
+  "result": {
+    "mode": "EditMode",
+    "summary": {
+      "total": 422,
+      "passed": 421,
+      "failed": 0,
+      "skipped": 1,
+      "durationSeconds": 69.2691201,
+      "resultState": "Skipped:Ignored"
+    },
+    "results": [
+      {
+        "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_WarmedRuleAllocationRequiresWorkingPositiveControl",
+        "state": "Skipped:Ignored",
+        "message": "未测：当前 Editor .NET 分配计数器正对照=0字节；同步 GC.Alloc 正对照=500字节；未获得可靠的逐调用分配证据。需在 Player/Profiler 按 M09 复测。"
+      }
+    ]
+  }
+}

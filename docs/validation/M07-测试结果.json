@@ -1,0 +1,395 @@
+{
+  "日期": "2026-10-06",
+  "Unity": "6000.3.11f1",
+  "公共合同": "1.9",
+  "执行": "原工程Editor，正式IWorld及真实独立PhysicsScene2D；未使用预览替代",
+  "系统": "Windows 11 10.0.26200",
+  "内存MiB": 16091,
+  "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "图形API": "Direct3D 12 level12.2",
+  "图形驱动": "32.0.15.8097",
+  "PlayMode全量": {
+    "total": 64,
+    "passed": 64,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 3.9292021,
+    "resultState": "Passed"
+  },
+  "M07正式功能用例": [
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+      "结果": "Passed",
+      "秒": 0.1343289,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+      "结果": "Passed",
+      "秒": 0.0381719,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_03_08_SameIdReplaceResetsFixedMarkAndChangesDescribeNewInstanceOwnership",
+      "结果": "Passed",
+      "秒": 0.0142812,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+      "结果": "Passed",
+      "秒": 0.0132938,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+      "结果": "Passed",
+      "秒": 0.0174555,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+      "结果": "Passed",
+      "秒": 0.0173852,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+      "结果": "Passed",
+      "秒": 0.0338895,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_06_MicroOverlapPointPriorityZeroSegmentAndEqualDistanceSort",
+      "结果": "Passed",
+      "秒": 0.0091437,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+      "结果": "Passed",
+      "秒": 0.0133135,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+      "结果": "Passed",
+      "秒": 0.0112099,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+      "结果": "Passed",
+      "秒": 0.0097042,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+      "结果": "Passed",
+      "秒": 0.0091917,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_01_08_SparseIdOriginCrossChunkAndIndependentTexels",
+      "结果": "Passed",
+      "秒": 0.0612857,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_02_TwoStepsFlushOnlyFinalVersionAndTailClears",
+      "结果": "Passed",
+      "秒": 0.2188282,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(True)",
+      "结果": "Passed",
+      "秒": 0.0876754,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(False)",
+      "结果": "Passed",
+      "秒": 0.0157631,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_04_ShortFuelSpreadBurnoutAndChangesHaveReasons",
+      "结果": "Passed",
+      "秒": 0.0196163,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_ActualFlamePixelsClearWithCommittedRemove",
+      "结果": "Passed",
+      "秒": 0.1578393,
+      "输出": "128×128正式GPU输出，8倍单格，火焰位于材料格上方；成功Remove后材料和火焰实际像素均清空。\r\n"
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_BurningBodySplitRetiresOldFlameAssociation",
+      "结果": "Passed",
+      "秒": 0.0194267,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_RemoveReplaceIgniteResetAndWetCleanup",
+      "结果": "Passed",
+      "秒": 0.0232696,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_RotatingFirstWaterContactUsesSameBurnDamageAndFlameVersion",
+      "结果": "Passed",
+      "秒": 0.015513,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_07_InitializationFailureAndTwentyLifecycleRoundsReleaseResources",
+      "结果": "Passed",
+      "秒": 0.3570276,
+      "输出": "20轮正式Create/Step/Reset/Dispose资源稳定：纹理0、网格0、显示对象0、材质0、根对象0。\r\n"
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_ActualUnsolvableDisplacementKeepsLastDisplay",
+      "结果": "Passed",
+      "秒": 0.0162689,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_CommandCapacityRejectsOnlyOneCommandThenCanDisplayNextTick",
+      "结果": "Passed",
+      "秒": 0.0143944,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterDisplayTilePrepared)",
+      "结果": "Passed",
+      "秒": 0.0147849,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterPhysicsSubstep)",
+      "结果": "Passed",
+      "秒": 0.0143354,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterStructurePrepared)",
+      "结果": "Passed",
+      "秒": 0.0134388,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_ResetFailureKeepsOldDisplayAndInvalidatesOldTokens",
+      "结果": "Passed",
+      "秒": 0.0148051,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_07_09_DefaultHostCreatesReadyWorldAndFlushesFrame",
+      "结果": "Passed",
+      "秒": 0.0920226,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_08_FuelTexelsAndLifetimeExpiredChangeAreIndependent",
+      "结果": "Passed",
+      "秒": 0.0154315,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_09_ActualGpuOutputOneAndThreeTimesCoverage",
+      "结果": "Passed",
+      "秒": 0.0927471,
+      "输出": "正式IWorld，768×768原始GPU输出，倍率1，8×8材料覆盖8×8像素，逻辑世界覆盖256×256；版本1/0。\r\n正式IWorld，768×768原始GPU输出，倍率3，8×8材料覆盖24×24像素，逻辑世界覆盖768×768；版本1/0。\r\n"
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_10_Config129x65AndViewScaleNeverMutatesWorld",
+      "结果": "Passed",
+      "秒": 0.0148144,
+      "输出": ""
+    },
+    {
+      "名称": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_11_RotatingMovingRingPreservesEightTexelsAndHole",
+      "结果": "Passed",
+      "秒": 0.0147987,
+      "输出": ""
+    }
+  ],
+  "资源回收": {
+    "轮数": 20,
+    "纹理": 0,
+    "网格": 0,
+    "显示对象": 0,
+    "材质": 0,
+    "显示根": 0
+  },
+  "未测": [
+    "Windows Player/IL2CPP",
+    "M08完整编辑联验",
+    "P2/P3/P4和GC=0",
+    "CPU/原生/GPU峰值",
+    "1920x1080渲染帧耗时"
+  ],
+  "EditMode全量": {
+    "total": 502,
+    "passed": 501,
+    "failed": 0,
+    "skipped": 1,
+    "durationSeconds": 391.7419267,
+    "resultState": "Skipped:Ignored"
+  },
+  "EditMode最后释放复跑": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 0.1489977,
+    "resultState": "Passed"
+  },
+  "测试边界": "EditMode全量后仅补充查询缓冲Dispose并复跑受影响3项；去重覆盖502项，501通过/1既有GC忽略。PlayMode最终单次全量64/64。",
+  "源码基线": "e2faa16c5c630209650ca4ecbfc06d80ad6bc8f1及保留的未提交工作树；本轮未提交",
+  "源码SHA256": {
+    "Assets/Scripts/OpenOitaWorld/Commands/CommandQueue.cs": "740ab3199f7436110ea05fb31aa310eafa20682ebacf33052447df77809ba4f7",
+    "Assets/Scripts/OpenOitaWorld/Commands/MaterialCommandPlanner.cs": "b153f34e36259ff33160ad52d27e61b8f9a6c8ba0858d97681e3523c8b37aa89",
+    "Assets/Scripts/OpenOitaWorld/Core/CellState.cs": "4de8fccf18d6a341c460f3b2987ebe3eb437b3348062962a12ae90d85083352f",
+    "Assets/Scripts/OpenOitaWorld/Core/ChunkCoord.cs": "d0a0a7f27bdee43a3010237db74a1b4870d7885e46b3c6584af4f98a0b58d4a1",
+    "Assets/Scripts/OpenOitaWorld/Core/GravitySim.cs": "c3feb57556cec65f8dfa8829e8cf1cbab8c02aadf58a82e6b82961ab2d59b1a1",
+    "Assets/Scripts/OpenOitaWorld/Core/MaterialDefinition.cs": "a993113fde40eca2488d12bdad6f67413461ed56579cf3e294093575b583ce0b",
+    "Assets/Scripts/OpenOitaWorld/Core/MaterialRegistry.cs": "64d3c3578bce5833d467ee94d3f0aae1d41ca38d5f2dee4726ea70a7673fba3d",
+    "Assets/Scripts/OpenOitaWorld/Core/WorldConstants.cs": "492a6a443c9d384d39c3d202335a3339dcb9890ba696cafcf313f252fd2c24a6",
+    "Assets/Scripts/OpenOitaWorld/Data/ConfigurationFileStore.cs": "72657f5d35aa82eeb99e58b1ad2bd898c057ec90c2e08891bfaf95d5c17076e0",
+    "Assets/Scripts/OpenOitaWorld/Data/ConfigurationSerializer.cs": "28c7304398ae61e286d77083d5899f352fd87cc191963e018efce83547dc0a43",
+    "Assets/Scripts/OpenOitaWorld/Data/MaterialJsonLoader.cs": "6c6121d780a0e24eb5b89fd8517ecd0806b411df8c65347fd7fbab2659891cfa",
+    "Assets/Scripts/OpenOitaWorld/Data/MaterialRuntimeTable.cs": "810a83ea5f09afa4cae7aac4a68e30429b46f9cfa19d08c1a28081b422f24814",
+    "Assets/Scripts/OpenOitaWorld/Data/RuleRegistry.cs": "05b293974751c853743bdd0ced9a45d82664b8aa68d1f72db15824a8b4711be3",
+    "Assets/Scripts/OpenOitaWorld/Data/StrictJson.cs": "4039e91fcaa12a05fcb44b6ef81283d9522f135ab91b504e25f3233899621f64",
+    "Assets/Scripts/OpenOitaWorld/Data/TestMaterialDto.cs": "b737842abe15a1b5a9cbe43553fd357fc632f47acceeac873212732b34e0d170",
+    "Assets/Scripts/OpenOitaWorld/Data/WorldSourceLoader.cs": "0ff41588bb45802624f5cee9cf462c692c3653c4cc75fdcc9ebd84817d8ba36f",
+    "Assets/Scripts/OpenOitaWorld/Host/FixedStepDriver.cs": "b89b86899d5c3b888a88875236ad2a8178d57f68ece8d923c2b51b5057b9082c",
+    "Assets/Scripts/OpenOitaWorld/Host/WorldHost.cs": "301d70607cb2e8f3a53e140b6e4302943333de0e3f366fa72d7e0e66264b251c",
+    "Assets/Scripts/OpenOitaWorld/PhysicsAdapter/PhysicsSubstepPlanner.cs": "bf06b6f186f532f90cd73f3946b1d2a86862a8ed6d75dd19d85c7c163377ccce",
+    "Assets/Scripts/OpenOitaWorld/PhysicsAdapter/WorldPhysicsAdapter.cs": "ba59cc5cdef33927cc74d9f3e9e61f2292eb7686d651faf457b64b4e816222a5",
+    "Assets/Scripts/OpenOitaWorld/Preview/M05PreviewController.cs": "303bba4274449635c75b20b1e80f12c60074a57f6d8e6e13ead119a388ba7a93",
+    "Assets/Scripts/OpenOitaWorld/Preview/ModulePreviewSession.cs": "20a6395b415b6c369612faa2869006a30656ad9af73065492750c4da347d5b93",
+    "Assets/Scripts/OpenOitaWorld/Preview/PixelPreviewTextures.cs": "b4f966e22201061a91327744066a404e4f9e094fb7088c859de69ffc2daf698f",
+    "Assets/Scripts/OpenOitaWorld/Preview/PixelPreviewViewport.cs": "06136e7692bade8644720d6a8518daa8f3e63b92c9723060ae43ab5bd37d69c1",
+    "Assets/Scripts/OpenOitaWorld/Queries/CellSelection.cs": "cbe4ffee8d2f7041b121d7e296df218d3246ffa53594e43c47f48cd51371e5d4",
+    "Assets/Scripts/OpenOitaWorld/Queries/QueryService.cs": "b9204db69913f7b7490b70d90c0d32d23c5faa31ca8084077e112a36bb84e3cf",
+    "Assets/Scripts/OpenOitaWorld/Render/ChunkDisplay.cs": "71de4d542e07cb4e11a8d26275fb882698a7ea30a0e9b92289b8ea1bfeb1d042",
+    "Assets/Scripts/OpenOitaWorld/Render/ChunkGpuResources.cs": "004e7bec6eab307f816ff41bb7cce718e8bb9746bebc0c83593b46fc788442b2",
+    "Assets/Scripts/OpenOitaWorld/Render/CommittedWorldRenderer.cs": "e20991d1c51cdda05c6a03573f0465cb392c5b4d2b5c437d5bc8751ff132ff9a",
+    "Assets/Scripts/OpenOitaWorld/Render/MaterialAtlasBuilder.cs": "4f46468c724f38b20bdb371ea0f0738d6fb3b99524ac7eef27794f11b9dd5836",
+    "Assets/Scripts/OpenOitaWorld/Render/PixelWorldViewport.cs": "0cc9bc9a35d9c4cd3826e2f43f0d9052af2d210fd4e8e8c086f1cc785b6b3146",
+    "Assets/Scripts/OpenOitaWorld/Render/WorldDisplayDriver.cs": "3f738a7904607323ef70a0f86aa873b25114fbee67fc1a750e3f30f7e7e5cbd8",
+    "Assets/Scripts/OpenOitaWorld/Render/WorldRender.cs": "dcb0ea886e0726f966583cc481f4adb58ea7ec90a1c95d1f8e6497fcc1a1d3ab",
+    "Assets/Scripts/OpenOitaWorld/Rules/BurnRule.cs": "c6b0ba971d04b6a1d9e6489f1d29829eecf87299bb28e3f7c2de58d4eba81ca5",
+    "Assets/Scripts/OpenOitaWorld/Rules/GasDriftRule.cs": "8b7d67abc1bce327286333c5cff5f4839aca0fbf2447f9e80d5deee5bc334e7d",
+    "Assets/Scripts/OpenOitaWorld/Rules/LiquidFlowRule.cs": "2ae2c88aeaf78a063be4e448992e9889d4b51c7fe1d03449d267d9dc605d8e73",
+    "Assets/Scripts/OpenOitaWorld/Rules/LiquidSpreadPlanner.cs": "1b612af6e85e83af6dcce9a76bf3dec4c62bbc7ea50d4526f89451cec4dfa86a",
+    "Assets/Scripts/OpenOitaWorld/Rules/MovementCandidateResolver.cs": "80d945e1a796c08bd8c727e4f95efc42a5e7fa5658dc190a277f134bb61d0d83",
+    "Assets/Scripts/OpenOitaWorld/Rules/RuleBatchContext.cs": "01d9d0d53d8a85c047125e6f519b5b52d407079342922a16abbf0fa28413eb5b",
+    "Assets/Scripts/OpenOitaWorld/Rules/RuleExecutionTable.cs": "2b7c0dd44220717e3cfb0fb3a3f1bdaa0dd1233ec4a024aab2a273e83b2bb52b",
+    "Assets/Scripts/OpenOitaWorld/Rules/RuleIntent.cs": "565ec8c3a4bdfb8cd35e160669e9c19fe26454c37165f3c79b8a920a43cab248",
+    "Assets/Scripts/OpenOitaWorld/Rules/WetContactPolicy.cs": "642b7d9231c555ca099371713644786e71cc930c1c6170d65abf0197fd1699f5",
+    "Assets/Scripts/OpenOitaWorld/Simulation/ChunkAllocationState.cs": "6b7291d744974aa794b01b8e17fb7f0c55c75c2f90c421ad501042fa103dd9c0",
+    "Assets/Scripts/OpenOitaWorld/Simulation/ChunkStore.cs": "517b7fabbde19cb4fd5fa186c63e4303b91aadf0dd9e7f09e80a27776887961e",
+    "Assets/Scripts/OpenOitaWorld/Simulation/CommittedWorldView.cs": "1e0eff992781fe1848f217f2fb56a652634c5a628273cf7e9db052fe5696ab70",
+    "Assets/Scripts/OpenOitaWorld/Simulation/SimulationWorld.cs": "fc49a3c12b45678ea57b30cf9866262230e0153a2dd38fbd7175eb95c19358c4",
+    "Assets/Scripts/OpenOitaWorld/Simulation/TickChangeCounter.cs": "69d69e0aa66acb794761fb28a472aae597c42d525779381a41e5c7c2fbd1cf22",
+    "Assets/Scripts/OpenOitaWorld/Simulation/TickChangeSet.cs": "0ffc5a644c836a674d6ea969ae90aa97afe03ac285c1fda2ca7e87d3e198ad6e",
+    "Assets/Scripts/OpenOitaWorld/Simulation/TickInstanceMap.cs": "8331fe96336112e64d087adb3e3673c643a52f284576e8d2dd4af6eea077ee83",
+    "Assets/Scripts/OpenOitaWorld/Simulation/TransactionCoordinator.cs": "a36d14038032cb8a440add6e969818c7ee01cc7a317d16dc306f1749ebeb653a",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorld.cs": "533ea2dcdeccc79542d967cf4276bcf82bca038be6350a32200367f6eb0d29d4",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorldOwnership.cs": "2c7484291bf3cf63b6efe9371b48a5fc4c791207370d13b6f190def557e1e843",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorldPhysics.cs": "e3371b26052990c40208b4fcfb9de6387299ed230430db80053259ec85adae0f",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorldChunk.cs": "8b8bf9aa0a416def4d23e202c257caa5c3789c17b289b6ae4f8e3f3acbe49f57",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorldGenerator.cs": "9f7ea95d5fe8c993d0e5ac9cdfa2ae1378895ff32397c9adb80c81f8fd1917b4",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorldRuntime.cs": "c2bb4b474d99d0d678e21b991ce7ef38684527aa1b83cb67f57b2f2fd3540a0c",
+    "Assets/Scripts/OpenOitaWorld/Simulation/WorldSimulation.cs": "ffe24bc75e746397d7c04cf05eb6be1484cad1ebfaaa839ca825337b7d70b91c",
+    "Assets/Scripts/OpenOitaWorld/Spatial/ExactCellGeometry.cs": "fd6c1e7fab5edef7819495c2856971dc37306eb619b04d7a5836d266c5c77a7b",
+    "Assets/Scripts/OpenOitaWorld/Spatial/FluidDisplacementPlanner.cs": "9589b4722c841840233ab6e7feeed981b3139d1f65793fc5af36d662692725da",
+    "Assets/Scripts/OpenOitaWorld/Spatial/MaterialContactResolver.cs": "acfddaa97d8d0f76d4556cc9489c1fcc487db2eb64a2df9f40b88604f7e56cfd",
+    "Assets/Scripts/OpenOitaWorld/Spatial/PhysicsGeometryValidator.cs": "d152f9be6805caa0f4a5ebaf8f6301fd5a48ddeee4b86d1ff4c177b1a73bfd51",
+    "Assets/Scripts/OpenOitaWorld/Spatial/WorldOccupancyIndex.cs": "6845eb3891fbd8aae88c46177cfcf06d5bd7ee2db83f39ee375a9da478037d46",
+    "Assets/Scripts/OpenOitaWorld/Structure/BodyExtractionPlan.cs": "49bafebe23e7e53810f4354ce17ffe8eed49a3eaa2279812697925c52e5f477a",
+    "Assets/Scripts/OpenOitaWorld/Structure/BodyExtractionPlanner.cs": "68a6a50bf6fece71a166f88462ae530634e16fbcff6e5d49626d177b6190e724",
+    "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs": "d8e4d7447a62ba7023839dc086a1bae523f333a3cbb5a4fad9c6d272e7b7e61d",
+    "Assets/Scripts/OpenOitaWorld/Structure/FixedCellPolicy.cs": "b7b0899fa389d3fafcbbeb704361c0f73f0da37788852c4078320aea62b88123",
+    "Assets/Scripts/OpenOitaWorld/Structure/MassPropertiesCalculator.cs": "0dc7d821725f8b6cf210ad7816c71507d90aef2ebae4391b160ce0f8a6669b0b",
+    "Assets/Scripts/OpenOitaWorld/Structure/MaterialMutationPreparer.cs": "c8274934d0ec9c48ac83ab4c7159a3196080a5b7c6625e68df736180424479a3",
+    "Assets/Scripts/OpenOitaWorld/Structure/RectangleGeometryBuilder.cs": "c5cf8cb13e82da108aab16737422a1c0209ba430c99f4963b90bd2f5f6c605b9",
+    "Assets/Scripts/OpenOitaWorld/Simulation/Bodies/MaterialBody.cs": "45484346bdaa679d8cbe9e4670fb36d5604f9f25e6e8db11d02ee3da7a5c2ed2",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/AssemblyInfo.cs": "c6e4c64c26d96ec8b86dfca107e88705b21077f114a16605feb8f57b352a2792",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/CellSnapshot.cs": "cf132966530e98eadd02c545d69858d9e74498084ca06c5b656e27db7df362d9",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/ContractDefaults.cs": "a661005dce3a6807d61b775024512e145d4fd332620ea18e4ad7c9c5ac63eea1",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/IWorld.cs": "b465faed4cfc59477ec5dd8810c8cf631729a712c90e5e1f48a3695132ec7f33",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/RuleContracts.cs": "a1ede69c14092c685d3e077e542d9ea757638099e35cbcaa56dd6e167f2af762",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/SpatialContracts.cs": "76226919b8c2ecfde057814ea2277c804c3bf85e35624154328e139e906cc1dc",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs": "9b83a332cfbdece248274ae09f0008a3b91f04224122b970dac1c95435e84c3e",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldIdentity.cs": "e3bd181703f802ea6e815893eb32694e191ba3aeb07bf6824ab9320482d88fad",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldResult.cs": "430265d2beaca9e3f23ebd05e1b510a5922773c55c863ae8e566be56c34b450f",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldSources.cs": "49fc1ee4ff3146db0a627a7b4a31e5461f43b13efd81e6d1a87e69bff5ee7ff7",
+    "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldViews.cs": "700eb64a69d0202b5c49b95616a7c2d4cb90331ad391f7a20f1521f62faa38c0",
+    "Assets/Shaders/ChunkDisplay.shader": "326a125a3b5a556f554d79cdae291152d9853e425b7517627ff203a916efed7a",
+    "Assets/Shaders/CommittedFlame.shader": "a8d9347db92a668bab5b70518948116bcf399d5769b6a3e727463e1c15a15a8f",
+    "Assets/Shaders/WorldChunkColor.compute": "ce5cafc347ec530dc967d0f9c2c093817111317b9a8dd5d460c4c65cd3bc1f8d",
+    "Assets/Tests/OpenOita/EditMode/AssemblyBoundaryTests.cs": "eb2d7f70393130a47c2c1d97adf549bfc700cf5ca0c681a6a5813e8e28af8d26",
+    "Assets/Tests/OpenOita/EditMode/BaselineSourcesTests.cs": "7b12d342a99d9f9276a5c8eaf6a3ae2270dbbc38f018bea872d7d3c1c0449f17",
+    "Assets/Tests/OpenOita/EditMode/ContractDefaultsTests.cs": "21c5eda6ab113d8da8168dd497f9290b02b7c5cbbb221189d55cb501f3cb48c8",
+    "Assets/Tests/OpenOita/EditMode/FixtureCatalogTests.cs": "e35f3cd5230db5f784b8ef98bcd8377a59f8fe2f13ed62a142d567f56535e36f",
+    "Assets/Tests/OpenOita/EditMode/PixelGranularityTests.cs": "63441924eec6dce94dc7b58dcc86c14e07d21b1dd70410decf60d2278f664764",
+    "Assets/Tests/OpenOita/EditMode/RuleInstanceContractTests.cs": "4ba71f363550fc1e78ee272940403cf6268952ec32255a7462e3bf4cb7f3ad21",
+    "Assets/Tests/OpenOita/EditMode/StructureContractTests.cs": "f0d32041bcfd4c191d0b2acf8e52ab2dae728468d8d74ac0eb3d659e76a5ed3c",
+    "Assets/Tests/OpenOita/Fixtures/BaselineSources.cs": "4cc8869845f3e79f95d0aa1f2496b4d31cb1908887978b13b212aa979be00f63",
+    "Assets/Tests/OpenOita/Fixtures/ContractConsumer.cs": "f7077eb9ec4da86352cbc0e76f228d9d3ace6dee73faab69141d5970f049513c",
+    "Assets/Tests/OpenOita/Fixtures/FixtureCatalog.cs": "bbe7471f2b6bdeb5953acb100b5f35f34987c7a435cb6e070eb9cfe7307e5cd8",
+    "Assets/Tests/OpenOita/Fixtures/FixtureExporter.cs": "a9d93f18bd80f06567a92541a898f767fc345991c190926d97b4685374aac6c1",
+    "Assets/Tests/OpenOita/Fixtures/IntegrationContractAssertions.cs": "647a1f863ccea59c5b54a076b2e35d67ab9c1fbc573844c74cb835117229e06c",
+    "Assets/Tests/OpenOita/Fixtures/M06Sources.cs": "ecb2d17ecea6f2c77c55eaf42f58009d81afb2919636a2c92481817a52697b43",
+    "Assets/Tests/OpenOita/Fixtures/PixelGranularityFixture.cs": "abb2d4c417a2bc3e7ac51e8d036a7d17921f10c478c14645c7696d0db44eca42",
+    "Assets/Tests/OpenOita/Fixtures/ScenarioFixture.cs": "d5d4c43d672f0609e707b9b80500a615d4c38c7f6d459ef9f95a839fe9097661",
+    "Assets/Tests/OpenOita/PlayMode/ContractConsumerTests.cs": "1e4616da43dea8298497bfc6d815ca7120065741cb3a8a5fbeb5f00fcec8d280",
+    "Assets/Tests/OpenOita/PlayMode/PixelPreviewPlayModeTests.cs": "de40fb6ef7cbce57943c5ad1dbff5cc42ffaa1d62afda000bb70b2c11842eef7",
+    "Assets/Tests/OpenOita/PlayMode/M02/StateLifetimeTests.cs": "44fb2acdf02ed9fddd9cac320857d89454244fb4aab381bb1a5383352fdf73f4",
+    "Assets/Tests/OpenOita/PlayMode/M07A/M07CommandQueryTests.cs": "a4ed97058815667a43fc05b6f598a2b032061d2ab940b8f726a7bef0f142a12a",
+    "Assets/Tests/OpenOita/PlayMode/M07B/M07DisplayAcceptanceTests.cs": "07361239bfb2064e1852e716b65ea13492303aabd7b817034c783156618a0fe5",
+    "Assets/Tests/OpenOita/PlayMode/Physics/M06PhysicsAcceptanceTests.cs": "83e587f6642558242f599bf836041d017d18bb4e9f6c9368e4330854559b8f2b",
+    "Assets/Tests/OpenOita/EditMode/Bodies/BodyCandidateStateCoreTests.cs": "442895b05214db7dd928f654d8d7efac55c12786ca5e4a00993a9f4bca6a9b66",
+    "Assets/Tests/OpenOita/EditMode/Bodies/BodyExtractionPlannerTests.cs": "e3f24cb776328b0039573a895da066488a268130e549cb4a689ff0b7c9898393",
+    "Assets/Tests/OpenOita/EditMode/Bodies/BodyFixture.cs": "4c75fea18099e14e8d2123403341955f9a1210f572136bbdbb230c456f7cedba",
+    "Assets/Tests/OpenOita/EditMode/Bodies/BodyIdReservationTests.cs": "c0e1ecffb2d5b8a60a1dcf0757c04bad548e84750fed3f1a5da01951806d11e7",
+    "Assets/Tests/OpenOita/EditMode/Bodies/M05StateTransactionAcceptanceTests.cs": "3fb4a06263b9a8417a5ee3b619a19edc0450800535f2b507182261abf666a28e",
+    "Assets/Tests/OpenOita/EditMode/Bodies/MassPropertiesCalculatorTests.cs": "c63b37a97470564ddf5c811d768471e7829241d9cd9e7eb5d32ddca4f7452987",
+    "Assets/Tests/OpenOita/EditMode/Bodies/MaterialOwnershipTests.cs": "166142bf9ed67832314993d67b44144a644d37d3e88d80ef079661d7c4c6309d",
+    "Assets/Tests/OpenOita/EditMode/M01/ConfigurationFileStoreTests.cs": "6f4e76cfaf29588c50daa02b7b27818a94461eaa7cec1c284643a6f9941586bc",
+    "Assets/Tests/OpenOita/EditMode/M01/PixelConfigurationTests.cs": "eef574084d3f6bed5fdacedd7ac7bc9399b90c293e7e662f5f262336ceb98e32",
+    "Assets/Tests/OpenOita/EditMode/M01/WorldSourceLoaderTests.cs": "957d5b091529c8229c50c540926ded361e1bd4c7755bf2e6c50ef664e4432621",
+    "Assets/Tests/OpenOita/EditMode/M02/HostDriverTests.cs": "914496ff6854c9fa7bafd058bebbdcf413cfd85c8201f955c05106d6dc419787",
+    "Assets/Tests/OpenOita/EditMode/M02/LiquidChainTransactionTests.cs": "80c5ac174963403a63aa989968d18c87ded3a22552b27ca0a0242140f27a27e9",
+    "Assets/Tests/OpenOita/EditMode/M02/LiquidLevelingIntegrationTests.cs": "4583da692e0bacf9d85c84981cd8c4c5fa66baf8faddcffc61ff78a2a92a8750",
+    "Assets/Tests/OpenOita/EditMode/M02/StateCoreTests.cs": "dd2a38e70da0dfbefb457c5c6d897398f85da03628ac9364d6cc7453b0a093d8",
+    "Assets/Tests/OpenOita/EditMode/M02/StructurePreparationTests.cs": "3b68165715264791bdce722501bd58ed5850615cef9f133225a1965af8fcee00",
+    "Assets/Tests/OpenOita/EditMode/M02/TransactionCoordinatorTests.cs": "9c2ed0c449f0e68b9b91d71c7f5e8444c7883effffeb38455360f45316205f40",
+    "Assets/Tests/OpenOita/EditMode/M07A/M07QueueAndQueryCoreTests.cs": "b2711ac6abc33c80e07b85bf82863c23b141ff140dfc0066180f51e85323ad29",
+    "Assets/Tests/OpenOita/EditMode/M07B/M07DisplayPixelTests.cs": "74560c1612c2ca6916bc3668f8ea120f7f009a2fe0bcb21b31d7af23b40c19e0",
+    "Assets/Tests/OpenOita/EditMode/Physics/PhysicsSubstepPlannerTests.cs": "7db91f915a434d73cb2dc29c204a462114cadc36f27fa55ae967c95648e84dcb",
+    "Assets/Tests/OpenOita/EditMode/Preview/LiquidPreviewRegressionTests.cs": "bf357b42efec1357f33aabc39b276875ecb42b7ffe01e8905a0c31043754ca2b",
+    "Assets/Tests/OpenOita/EditMode/Preview/ModulePreviewSessionTests.cs": "1a2137cacaa99a6b88e2e343c1f8d2c3a506c39df47ed7d7a2d89c5bffb85a23",
+    "Assets/Tests/OpenOita/EditMode/Preview/PixelPreviewTextureTests.cs": "ba4ae1d63357b943e280cc43af7d9cf9df797b0c41551e3043b3d921aac422fb",
+    "Assets/Tests/OpenOita/EditMode/Preview/PixelPreviewViewportTests.cs": "db60b5c581d6c9deb04029babc420898eaf119418f1b393d29eebbd3193f296d",
+    "Assets/Tests/OpenOita/EditMode/Rules/BurnRuleTests.cs": "d0854ce42fd8b6c5e1664aafd0caf644dbffd5d98b2248762082f6efde8be0a4",
+    "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingFixture.cs": "c64a51423b643f06de763f8b86162be5326b8a3b31e8ec7425b2e8a631c7ca60",
+    "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingTests.cs": "bf5465c088e29b7885489cc98140a3b325557c91a397c6e232e10038074f9d2f",
+    "Assets/Tests/OpenOita/EditMode/Rules/MovementRuleTests.cs": "18cd9b23fbc492f147adc6d15677c8e55eb48e3c062c8a1bc9826f32ead21deb",
+    "Assets/Tests/OpenOita/EditMode/Rules/RuleFailureTests.cs": "fe15e042cf59db50c9b7eec24ff63ba9627f851d1c269c4fed3d4255f4da7e87",
+    "Assets/Tests/OpenOita/EditMode/Rules/RuleFixture.cs": "5543f519d5579efda4f486308008a3e6baa11d1fccb89da316e2c6b5c3ac1739",
+    "Assets/Tests/OpenOita/EditMode/Spatial/ExactCellGeometryTests.cs": "97f711e63c66c94bbee07d4cb37f01c5aedfffbcbba8d273d42aed92890be4dc",
+    "Assets/Tests/OpenOita/EditMode/Spatial/SpatialLeaseAndDisplacementTests.cs": "3ece952d73d87a0f72055bd3ee608950f0e5193ec01ef5872d132c5d138b3824",
+    "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs": "1b0021c01792cf0b7ac39aefc89fa218323e882df10aa3a267a90629506cdae1",
+    "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityFixture.cs": "be115b3a328b4241cca79662815fff1e358777bac7c7048ef660299d8d3c3abc",
+    "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityStateCoreTests.cs": "5b871f2a47a667a4d76de7d9e6f6bf7cd6f7562c940fe58059aa473b43bea915",
+    "Assets/Tests/OpenOita/EditMode/Structure/Geometry/RectangleGeometryBuilderTests.cs": "2cc9d9a6ae31a978030acc93d3952c9347aa55f8f9adfbf2704d800ae48156ec"
+  },
+  "说明": "原始测试XML/JSON均保留，源码哈希记录最终交付工作树；原测试源最后仅增加batchmode GPU忽略门禁。"
+}

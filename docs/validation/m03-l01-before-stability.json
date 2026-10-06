@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "message": "Test job status retrieved.",
+  "error": null,
+  "data": {
+    "job_id": "8d56059b346942809a5c1fd1e0b732ff",
+    "status": "failed",
+    "mode": "EditMode",
+    "started_unix_ms": 1791210924373,
+    "finished_unix_ms": 1791210929900,
+    "last_update_unix_ms": 1791210929900,
+    "progress": {
+      "completed": 2,
+      "total": 2,
+      "current_test_full_name": null,
+      "current_test_started_unix_ms": null,
+      "last_finished_test_full_name": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+      "last_finished_unix_ms": 1791210929703,
+      "stuck_suspected": false,
+      "editor_is_focused": false,
+      "run_in_background": false,
+      "focus_nudge_attempts": null,
+      "focus_nudge_limit": null,
+      "focus_nudge_status": null,
+      "blocked_reason": null,
+      "failures_so_far": [
+        {
+          "full_name": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(1)",
+          "message": "  Tick=1，水平空格不能作为降低水位依据。\r\n  Expected: 0\r\n  But was:  1\r\n"
+        },
+        {
+          "full_name": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+          "message": "  Tick=1，水平空格不能作为降低水位依据。\r\n  Expected: 0\r\n  But was:  1\r\n"
+        }
+      ],
+      "failures_capped": false
+    },
+    "error": null,
+    "result": {
+      "mode": "EditMode",
+      "summary": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "durationSeconds": 0.8531294,
+        "resultState": "Failed(Child)"
+      },
+      "results": [
+        {
+          "name": "M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(1)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(1)",
+          "state": "Failed",
+          "durationSeconds": 0.0528404,
+          "message": "  Tick=1，水平空格不能作为降低水位依据。\r\n  Expected: 0\r\n  But was:  1\r\n",
+          "stackTrace": "at OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates (System.UInt32 seed) [0x0006b] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\LiquidLevelingTests.cs:186\r\n",
+          "output": ""
+        },
+        {
+          "name": "M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+          "fullName": "OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates(2)",
+          "state": "Failed",
+          "durationSeconds": 0.0069964,
+          "message": "  Tick=1，水平空格不能作为降低水位依据。\r\n  Expected: 0\r\n  But was:  1\r\n",
+          "stackTrace": "at OpenOita.Tests.EditMode.Rules.LiquidLevelingTests.M03_L01_StableSingleWaterOnClosedFlatFloorNeverOscillates (System.UInt32 seed) [0x0006b] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\LiquidLevelingTests.cs:186\r\n",
+          "output": ""
+        }
+      ]
+    }
+  },
+  "hint": null
+}

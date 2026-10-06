@@ -1,0 +1,31 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Code executed successfully.\",\"data\":{\"result\":{\"unityVersion\":\"6000.3.11f1\",\"platform\":\"WindowsEditor\",\"processor\":\"Intel(R) Core(TM) i7-14700HX\",\"processorCount\":28,\"memoryMiB\":16091,\"operatingSystem\":\"Windows 11  (10.0.26200)\",\"gpu\":\"NVIDIA GeForce RTX 4060 Laptop GPU\",\"graphicsApi\":\"Direct3D12\",\"managedRuntime\":\"4.0.30319.42000\",\"isPlaying\":false,\"editorIdle\":0,\"editorInteraction\":1,\"throttleSettingsCaptured\":false},\"compiler\":\"codedom\"}}"
+    }
+  ],
+  "structuredContent": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": {
+        "unityVersion": "6000.3.11f1",
+        "platform": "WindowsEditor",
+        "processor": "Intel(R) Core(TM) i7-14700HX",
+        "processorCount": 28,
+        "memoryMiB": 16091,
+        "operatingSystem": "Windows 11  (10.0.26200)",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "graphicsApi": "Direct3D12",
+        "managedRuntime": "4.0.30319.42000",
+        "isPlaying": false,
+        "editorIdle": 0,
+        "editorInteraction": 1,
+        "throttleSettingsCaptured": false
+      },
+      "compiler": "codedom"
+    }
+  },
+  "isError": false
+}

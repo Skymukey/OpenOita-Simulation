@@ -1,0 +1,78 @@
+{
+  "日期": "2026-10-06",
+  "Unity": "6000.3.11f1",
+  "工程": "D:/work/Project/OpenOita",
+  "执行方式": "同源码隔离副本，batchmode/nographics，非预览",
+  "公共合同": "1.8",
+  "EditMode全量初跑": {
+    "证据": "M06/editmode-full-before-fix.xml",
+    "通过": 493,
+    "失败": 1,
+    "忽略": 1,
+    "总数": 495
+  },
+  "EditMode最终相关复跑": {
+    "证据": "M06/editmode-regression-final.xml",
+    "通过": 189,
+    "失败": 0,
+    "总数": 189
+  },
+  "EditMode去重覆盖": {
+    "通过": 494,
+    "失败": 0,
+    "忽略": 1,
+    "总数": 495,
+    "说明": "全量与受影响范围复跑合并，不是另一次全量单次结果"
+  },
+  "PlayMode最终全量": {
+    "证据": "M06/playmode-final.xml",
+    "通过": 30,
+    "忽略": 1,
+    "失败": 0,
+    "总数": 31,
+    "M06新增通过": 28
+  },
+  "资源基线": {
+    "生命周期轮数": 20,
+    "场景数": 1,
+    "M06物理对象": 0
+  },
+  "未测项": [
+    "默认M07B显示与显示候选",
+    "完整ChangeSet",
+    "Game View像素读回",
+    "Windows Player/IL2CPP",
+    "P2/P3/P4性能",
+    "GC与资源峰值"
+  ],
+  "执行源码SHA256": [
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\Spatial\\ExactCellGeometry.cs",
+      "SHA256": "90817E2D0A75915362948F91DC20A4872689A81437B77DE1369E73DAF20C4036"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\Spatial\\FluidDisplacementPlanner.cs",
+      "SHA256": "9589B4722C841840233AB6E7FEEED981B3139D1F65793FC5AF36D662692725DA"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\Spatial\\MaterialContactResolver.cs",
+      "SHA256": "ACFDDAA97D8D0F76D4556CC9489C1FCC487DB2EB64A2DF9F40B88604F7E56CFD"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\Spatial\\PhysicsGeometryValidator.cs",
+      "SHA256": "D152F9BE6805CAA0F4A5EBAF8F6301FD5A48DDEEE4B86D1FF4C177B1A73BFD51"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\Spatial\\WorldOccupancyIndex.cs",
+      "SHA256": "6845EB3891FBD8AAE88C46177CFCF06D5BD7EE2DB83F39EE375A9DA478037D46"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\PhysicsAdapter\\PhysicsSubstepPlanner.cs",
+      "SHA256": "BF06B6F186F532F90CD73F3946B1D2A86862A8ED6D75DD19D85C7C163377CCCE"
+    },
+    {
+      "文件": "Assets\\Scripts\\OpenOitaWorld\\PhysicsAdapter\\WorldPhysicsAdapter.cs",
+      "SHA256": "BA59CC5CDEF33927CC74D9F3E9E61F2292EB7686D651FAF457B64B4E816222A5"
+    }
+  ]
+}

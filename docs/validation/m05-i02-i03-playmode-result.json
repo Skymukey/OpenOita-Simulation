@@ -1,0 +1,61 @@
+{
+  "记录日期": "2026-10-05（北京时间）",
+  "Unity版本": "6000.3.11f1",
+  "合同版本": "CONTRACTS 1.4 / M00-5",
+  "范围": "M05-I02/I03材料状态核心；不代表完整物理/查询/显示集成",
+  "job_id": "385b38ed588749f7ac09832ff8639cb7",
+  "status": "succeeded",
+  "mode": "PlayMode",
+  "started_unix_ms": 1791199806526,
+  "finished_unix_ms": 1791199812268,
+  "last_update_unix_ms": 1791199812268,
+  "progress": {
+    "completed": 2,
+    "total": 2,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.PlayMode.M02.StateLifetimeTests.M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+    "last_finished_unix_ms": 1791199812246,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": false,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "PlayMode",
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 0.2805993,
+      "resultState": "Passed"
+    },
+    "results": [
+      {
+        "name": "M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+        "fullName": "OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+        "state": "Passed",
+        "durationSeconds": 0.0059034,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+        "fullName": "OpenOita.Tests.PlayMode.M02.StateLifetimeTests.M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+        "state": "Passed",
+        "durationSeconds": 0.2536257,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "materialSetId": "openoita-core-v1",
+  "materials": [
+    {
+      "id": 101,
+      "name": "水",
+      "kind": "liquid",
+      "color": "#3C8DFF",
+      "massPerCell": 1,
+      "tags": [
+        "liquid_flow",
+        "extinguishes_fire"
+      ],
+      "ruleParameters": {
+        "liquid_flow": {
+          "moveIntervalTicks": 2
+        }
+      }
+    },
+    {
+      "id": 102,
+      "name": "混凝土",
+      "kind": "solid",
+      "color": "#8B8F94",
+      "massPerCell": 2.4,
+      "tags": [
+        "structure"
+      ],
+      "ruleParameters": {
+        "structure": {
+          "connectionGroup": "building"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "name": "蒸汽",
+      "kind": "gas",
+      "color": "#CDDCE8",
+      "massPerCell": 0.01,
+      "tags": [
+        "gas_drift"
+      ],
+      "ruleParameters": {
+        "gas_drift": {
+          "moveIntervalTicks": 3,
+          "lifetimeTicks": 200
+        }
+      }
+    },
+    {
+      "id": 104,
+      "name": "木头",
+      "kind": "solid",
+      "color": "#A66A3F",
+      "massPerCell": 0.6,
+      "tags": [
+        "structure",
+        "burnable"
+      ],
+      "ruleParameters": {
+        "structure": {
+          "connectionGroup": "building"
+        },
+        "burnable": {
+          "fuelTicks": 250,
+          "spreadIntervalTicks": 10
+        }
+      }
+    }
+  ]
+}

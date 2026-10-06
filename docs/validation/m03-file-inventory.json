@@ -1,0 +1,170 @@
+{
+  "module": "M03",
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "state": "纯规则功能已实现，真实世界/动态联合集成与性能待验",
+  "originalTrackedFilesUnchanged": true,
+  "note": "清单不包含自身；测试产生的编辑器配置副作用已恢复；全部新增Unity资产及目录meta已包含",
+  "files": [
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules.meta",
+      "bytes": 172,
+      "sha256": "6a9f492c2bcb9ae0d0e67314a0a2769b34713c7b2450a7a9b4fa318f0c4e203f"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\BurnRule.cs",
+      "bytes": 4541,
+      "sha256": "c6b0ba971d04b6a1d9e6489f1d29829eecf87299bb28e3f7c2de58d4eba81ca5"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\BurnRule.cs.meta",
+      "bytes": 59,
+      "sha256": "323a9506b7515bdcfdc0cd554813378602f4a6b0c6a7529c27405fd42d52f702"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\GasDriftRule.cs",
+      "bytes": 1500,
+      "sha256": "8b7d67abc1bce327286333c5cff5f4839aca0fbf2447f9e80d5deee5bc334e7d"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\GasDriftRule.cs.meta",
+      "bytes": 59,
+      "sha256": "5ea34a712134eb8c9082e265c929d734421a5f09bdaf9d192cd4260b552990e5"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\LiquidFlowRule.cs",
+      "bytes": 1506,
+      "sha256": "c3616f54fe4e5ee072d4ad0726d8060f1acd6f4a1a95d6f789da001b6f8ad305"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\LiquidFlowRule.cs.meta",
+      "bytes": 59,
+      "sha256": "84fcd1eb6fee06fb8b4b7fed039b04c6c4e21c5e6bdfa0c1ca6abb9f3f58e012"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\MovementCandidateResolver.cs",
+      "bytes": 11610,
+      "sha256": "fa33b9ba261813cdece8283eb078e98f7c469729f31a653a02de8c139f7efc45"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\MovementCandidateResolver.cs.meta",
+      "bytes": 59,
+      "sha256": "aa81d445aac0b235945b0ce9f046347cf1238850d1dbaaa8ccc8df1f59a77048"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleBatchContext.cs",
+      "bytes": 11058,
+      "sha256": "fd0d7bcd0cb0d94dd8dd21fbd3977f85f435c70aa1dfa21912e5667cd3db2e56"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleBatchContext.cs.meta",
+      "bytes": 59,
+      "sha256": "c80affabb348dc9ee5dd57d09abf826b13fb368ea09e5257c2887609a993ccfd"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleExecutionTable.cs",
+      "bytes": 4268,
+      "sha256": "431fdd050dfad7be1064dfd85a959e8df36a1e146cc62aa92e3ca2b988041019"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleExecutionTable.cs.meta",
+      "bytes": 59,
+      "sha256": "1335ab1a69f6e3adc57837a282c26d3a3edad08bd0454f48adf39d88158af6f7"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleIntent.cs",
+      "bytes": 1305,
+      "sha256": "565ec8c3a4bdfb8cd35e160669e9c19fe26454c37165f3c79b8a920a43cab248"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleIntent.cs.meta",
+      "bytes": 59,
+      "sha256": "f9332de1a26a3cab8cf2c8bd59a10380749e70dde07b5545e7c8a5ba3e45a637"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\WetContactPolicy.cs",
+      "bytes": 4311,
+      "sha256": "642b7d9231c555ca099371713644786e71cc930c1c6170d65abf0197fd1699f5"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\WetContactPolicy.cs.meta",
+      "bytes": 59,
+      "sha256": "1ecaed9c4829398ed15399fde87ade9c39a7d93e9edaf7231f233f4160c17a1c"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules.meta",
+      "bytes": 172,
+      "sha256": "10f9aa8cfeaa1b3c8e682a24379e296af5c2ced82779f30e95385d5a6044febe"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\BurnRuleTests.cs",
+      "bytes": 11404,
+      "sha256": "d0854ce42fd8b6c5e1664aafd0caf644dbffd5d98b2248762082f6efde8be0a4"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\BurnRuleTests.cs.meta",
+      "bytes": 59,
+      "sha256": "d74ec96be85645aca89a0d0f9f7e849fd1d7fd4c560311dbd905c525dc33865d"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\MovementRuleTests.cs",
+      "bytes": 10178,
+      "sha256": "f1acf62e40b629456b679ead449edebc7db98b65dcb52de2450ccd4840243ba0"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\MovementRuleTests.cs.meta",
+      "bytes": 59,
+      "sha256": "f2b6241f46b460d370e10234d64c65ed5279a309a26bdedeb1a0e7dec69323cc"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFailureTests.cs",
+      "bytes": 14793,
+      "sha256": "fe15e042cf59db50c9b7eec24ff63ba9627f851d1c269c4fed3d4255f4da7e87"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFailureTests.cs.meta",
+      "bytes": 59,
+      "sha256": "73548f278a80ff67ea32578bfdf50375254ae57a4922c068a76c56298baad7d8"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFixture.cs",
+      "bytes": 9584,
+      "sha256": "8c963cf948a114d526f9ac96da0d8adc3631e4bbdd00e0d6f565c87aa9c37e84"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFixture.cs.meta",
+      "bytes": 59,
+      "sha256": "103fe590d436306bf0950c3ddac55707194977d59d422d71844d045abfbc99a3"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\specs\\M03-材料规则与燃烧.md",
+      "bytes": 14123,
+      "sha256": "d4ee4ffb74826e8ea4d1195bd4777e664c26bcdf163f8d106e2db695e93fecf6"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M03-公共接口差异与集成清单.md",
+      "bytes": 7875,
+      "sha256": "e67c5efbada21d4ca229d8bc9a893ca513d85a5eb676e2b24b75c8ca09f185a7"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M03-执行结果与交接.md",
+      "bytes": 11333,
+      "sha256": "da1a29a5b928e1bd3025484202e82a3aa63685a29638601f8e71f6565c0074ee"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m03-editmode-result.json",
+      "bytes": 81806,
+      "sha256": "37db994aa34a69f50c1f74f458a2601860144f37bbaa50d5208ed0b3931efa37"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m03-environment.json",
+      "bytes": 1620,
+      "sha256": "aeb82d3b6a6db3192b7594501e0e7be61d09f0df0c3c6581287b6b34dca91901"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m03-playmode-result.json",
+      "bytes": 2149,
+      "sha256": "3e1f56fe9c1b9ce447378841909bcb6feec5301a8f269db7a7eb00e5cf2e4ae8"
+    }
+  ]
+}

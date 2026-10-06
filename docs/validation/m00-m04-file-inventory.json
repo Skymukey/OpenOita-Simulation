@@ -1,0 +1,345 @@
+{
+  "模块": "M00：M04公共合同补齐",
+  "合同": "M00-3 / CONTRACTS 1.2",
+  "本聊天交付文件": [
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs",
+      "bytes": 12721,
+      "hash": "C4384D2E4338E327CFC1934A7CB4CD907E2AF7244C753262C7878E9E4D0EB93C",
+      "modified": "2026-10-05T17:15:33.7892248+08:00"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/StructureContractTests.cs",
+      "bytes": 10307,
+      "hash": "F0D32041BCFD4C191D0B2ACF8E52AB2DAE728468D8D74AC0EB3D659E76A5ED3C",
+      "modified": "2026-10-05T17:17:58.1372299+08:00"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/StructureContractTests.cs.meta",
+      "bytes": 59,
+      "hash": "A10810930678D479DB4735A5697AE66C8648C645216F64CFB530AD63D3B8B75F",
+      "modified": "2026-10-05T17:15:40.9877143+08:00"
+    },
+    {
+      "path": "docs/specs/CONTRACTS.md",
+      "bytes": 21057,
+      "hash": "1CD8A3EEA5EBB6F564828374C0B68029160C511C5550FCCAB8A0966A31D84DE7",
+      "modified": "2026-10-05T17:19:32.8888039+08:00"
+    },
+    {
+      "path": "docs/validation/M00-公共类型索引.md",
+      "bytes": 9829,
+      "hash": "F80E8C94CDCE5BBA36F082CF73B08F693ADFCCE66E2FFF361626F8B62DF2FA3A",
+      "modified": "2026-10-05T17:19:34.3584530+08:00"
+    },
+    {
+      "path": "docs/validation/M00-M04-接口补齐与验证.md",
+      "bytes": 8197,
+      "hash": "751ECA4DBF0883AE75E79895D5B86B26FC98B3BD1AA5E500BFED107790D95CCE",
+      "modified": "2026-10-05T17:25:37.3195022+08:00"
+    },
+    {
+      "path": "docs/validation/m00-m04-editmode-result.json",
+      "bytes": 109206,
+      "hash": "677FD6880CFA34A46919B4160654E6A0DFDB8A4911A78361BA1FFCB57C7497BD",
+      "modified": "2026-10-05T17:20:33.4130145+08:00"
+    },
+    {
+      "path": "docs/validation/m00-m04-environment.json",
+      "bytes": 958,
+      "hash": "B3D2BF797055B8A88C22F5638FE56DB1FD642CFC6DAE91009EA2E8E4BA01C96E",
+      "modified": "2026-10-05T17:23:46.6590657+08:00"
+    }
+  ],
+  "验证时共享依赖快照": [
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\TransactionCoordinatorTests.cs.meta",
+      "hash": "ECBDE0B30C12FA3FC6813AD723A81683EBA245E058397C7D969E455BC0D94A4D"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\TransactionCoordinatorTests.cs",
+      "hash": "1D91761D69212E23F39FC86A1F406184231324892C9F455C01C9015A9C43578D"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StructurePreparationTests.cs.meta",
+      "hash": "6219BE3D8B5E8C2F83081A8247B0FB89AC20604CDF5303CA8F0380818DE29DAA"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StructurePreparationTests.cs",
+      "hash": "3B68165715264791BDCE722501BD58ED5850615CEF9F133225A1965AF8FCEE00"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StateCoreTests.cs.meta",
+      "hash": "8AE805E51C01BFC00A32D718D85404A9E7387EBA4CFA3D0B98622015CB746567"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StateCoreTests.cs",
+      "hash": "E356F8E0ADB06769B7076450D41B8C4F92AE771A3ECBF1876AACAD5E9F37865F"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\HostDriverTests.cs.meta",
+      "hash": "2021AF8B1BC348EBC04367FCB0E83E93AC836B1727388358D6733F2B3F2C43F3"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\HostDriverTests.cs",
+      "hash": "914496FF6854C9FA7BAFD058BEBBDCF413CFD85C8201F955C05106D6DC419787"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Host\\WorldHost.cs.meta",
+      "hash": "DF8AE7A077BE1995149A7AD32DF092FA1583B0380CD9FFE78222C68D32A0C2AB"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Host\\WorldHost.cs",
+      "hash": "62CAF7C6AAE0B8E40790418BAF2165FA9CFAEF4D641DC94C2C52CC74728805C1"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Host\\FixedStepDriver.cs.meta",
+      "hash": "A068406BB6D9CD0D19777E93D8F006E600F87A365D0B79EE7E1D9F1CEF19A4B8"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Host\\FixedStepDriver.cs",
+      "hash": "B89B86899D5C3B888A88875236AD2A8178D57F68ECE8D923C2B51B5057B9082C"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity.meta",
+      "hash": "A166D0E59996E08E108F975687A082D463476EAB3957B6F062835E35AC41F4DD"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityStateCoreTests.cs.meta",
+      "hash": "D1DEC2DE0B5219DD85B47F97C1BB2AF80F2E1108710E042EECB965F86002067C"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityStateCoreTests.cs",
+      "hash": "294AB3946F1EBBDF0527409A29617967337BD71027BD15C8DCBBF9C3CAAE650C"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityFixture.cs.meta",
+      "hash": "CCECD00B20A129CE8C7D87172D9C5DFE8CE1E56C653C846C476BD65DA1D63A4C"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityFixture.cs",
+      "hash": "BE115B3A328B4241CCA79662815FFF1E358777BAC7C7048EF660299D8D3C3ABC"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityAnalyzerTests.cs.meta",
+      "hash": "791CA2D4C65589E7D2E44B4DFC9384E9322501A89E9FFD908866AC9AC9EC155D"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "hash": "B5F14067032F54939CD20D9E9193FCB9CDB9328BB6A2923968F8EED9E06B5718"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\WorldSourceLoader.cs.meta",
+      "hash": "6EF2B02EB037D4CA4DFB473AA036BE4E1E483D2EBF3F91A8A09215C709877F6E"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\WorldSourceLoader.cs",
+      "hash": "0FF41588BB45802624F5CEE9CF462C692C3653C4CC75FDCC9EBD84817D8BA36F"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\TestMaterialDto.cs.meta",
+      "hash": "C5A5C178C30A1E43130C4BBB72B8E4D9529102EC7EBD30C1CA59506ED16A23B3"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\TestMaterialDto.cs",
+      "hash": "B737842ABE15A1B5A9CBE43553FD357FC632F47ACCEEAC873212732B34E0D170"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\StrictJson.cs.meta",
+      "hash": "91A00C383AAD563A32277785F02C1283DCC7239FA2A5EE301AE6CBDC4F9527A2"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\StrictJson.cs",
+      "hash": "4039E91FCAA12A05FCB44B6EF81283D9522F135AB91B504E25F3233899621F64"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\RuleRegistry.cs.meta",
+      "hash": "D65D0C01B54128C65D2B76931A79890422ED2E14B986E8304904BDB4949CBF0D"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\RuleRegistry.cs",
+      "hash": "05B293974751C853743BDD0CED9A45D82664B8AA68D1F72DB15824A8B4711BE3"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\MaterialRuntimeTable.cs.meta",
+      "hash": "E6BBACC9A94B4CB55EE70FC86D9FACC9623D4ADACBFFE552A59D76CBC19B62B2"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\MaterialRuntimeTable.cs",
+      "hash": "810A83EA5F09AFA4CAE7AAC4A68E30429B46F9CFA19D08C1A28081B422F24814"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\MaterialJsonLoader.cs.meta",
+      "hash": "D69C86BCBFC71DA2979AB1A2F3FF4841D780E6158F1DA4203238ECD83F0FF49E"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\MaterialJsonLoader.cs",
+      "hash": "6C6121D780A0E24EB5B89FD8517ECD0806B411DF8C65347FD7FBAB2659891CFA"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\ConfigurationSerializer.cs.meta",
+      "hash": "1D68A105200F0E8EFCF07F14F13053309AF567A2AD7A99CF142D59E2DE132675"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\ConfigurationSerializer.cs",
+      "hash": "28C7304398AE61E286D77083D5899F352FD87CC191963E018EFCE83547DC0A43"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\ConfigurationFileStore.cs.meta",
+      "hash": "426428D32B80E0CF06B925004210F73ACD41A8EDA6E05EC670E218BD86715448"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data\\ConfigurationFileStore.cs",
+      "hash": "72657F5D35AA82EEB99E58B1AD2BD898C057EC90C2E08891BFAF95D5C17076E0"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Structure\\FixedCellPolicy.cs.meta",
+      "hash": "37A711ADD80CDCB9127B0046E3614A7C1FC96EECB67473632680CBF15E006C50"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Structure\\FixedCellPolicy.cs",
+      "hash": "B7B0899FA389D3FAFCBBEB704361C0F73F0DA37788852C4078320AEA62B88123"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Structure\\ConnectivityAnalyzer.cs.meta",
+      "hash": "9351445696DF648CD6648A237B483EAD3EE78628E111BA7BE91270EF2A90E3EE"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Structure\\ConnectivityAnalyzer.cs",
+      "hash": "B68C5026C099A21041B54ED3915255F2D91DE62E3DD41B69104038B43957CA4E"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\ChunkStore.cs.meta",
+      "hash": "6828FE3FD0A8D29210385201CD7CF3EFB8C300D2845134F8F274D69C670AA955"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\ChunkStore.cs",
+      "hash": "517B7FABBDE19CB4FD5FA186C63E4303B91AADF0DD9E7F09E80A27776887961E"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\ChunkAllocationState.cs.meta",
+      "hash": "6BB45246064E44E38C000277C5B4FE5EB6EE4AD32504C3AE3B6E048DB77AE488"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\ChunkAllocationState.cs",
+      "hash": "6B7291D744974AA794B01B8E17FB7F0C55C75C2F90C421AD501042FA103DD9C0"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TickChangeCounter.cs",
+      "hash": "F2F4EFD843A153F2855D3DB29633FD658A8692AE0DF30DBE3879DAF61BC4C050"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\CommittedWorldView.cs.meta",
+      "hash": "88CC1B993B706AF8E024CBB9BAA50C2A48BB4A4B55AC8C11E6D00E35125932D4"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\CommittedWorldView.cs",
+      "hash": "F6BF9A84A43EC91C99F8DB40BB8C5C589D64CC16505E12EE118978CC133C2502"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TickChangeCounter.cs.meta",
+      "hash": "F31A80F2F47835B070EEE1EBEAEB21A96A9314E694AB1097B1B1C81684CBA677"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TickInstanceMap.cs",
+      "hash": "DB24757DBB421A73928919D677460793FD5E42BC0B73C054D42E939723D1EDC3"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldSimulation.cs.meta",
+      "hash": "DFC4BEFDF41208CBDED0248FFE0012F1DD4875F86A02C2179A243E92DE7A6DAC"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldSimulation.cs",
+      "hash": "E4331C3A33349919A39E03ED221CA7C971CB7754BDDB77D9A06C05F680EC3736"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldGenerator.cs.meta",
+      "hash": "E84DD4CB4A02EF7823BFF212386980E421291DA58BFD50A52EDF936CE0A89547"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldGenerator.cs",
+      "hash": "9F7EA95D5FE8C993D0E5AC9CDFA2AE1378895FF32397C9ADB80C81F8FD1917B4"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldChunk.cs.meta",
+      "hash": "C9BC6E8C0B2E532D52AE0762AFC29AB8283E1930337B2E44028DDBE1C18364D2"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldChunk.cs",
+      "hash": "8B8BF9AA0A416DEF4D23E202C257CAA5C3789C17B289B6AE4F8E3F3ACBE49F57"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorkingWorld.cs.meta",
+      "hash": "D67A4EA429C7AEBD148602B01D23F08EF45DFC53BD29CBC2A0685397C7D12146"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\WorkingWorld.cs",
+      "hash": "66A05E0D82BA28C488DD95CDB797E30F027B8931CBA503CE679068CD04B79A63"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TransactionCoordinator.cs.meta",
+      "hash": "8768554E19583E5076BAB2E631A352BCFAC40A5BF1D9C1B91D3CB0B2D0BD3E81"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TransactionCoordinator.cs",
+      "hash": "A36D14038032CB8A440ADD6E969818C7EE01CC7A317D16DC306F1749EBEB653A"
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation\\TickInstanceMap.cs.meta",
+      "hash": "6C2D803891FDAD7FAC4DE0361C66000E878855B1D08F5DA4E52620CC4ABD11DA"
+    },
+    {
+      "path": "Packages/manifest.json",
+      "hash": "EEB7802748663DDFCA9A0AD72CDE4852AB12CE3B175D9EAF4D8C0CA17962454B"
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "hash": "14FC010B720BA84E58F1DA080F1662652412EC1F3219F23FE26DE82717C6AF68"
+    },
+    {
+      "path": "ProjectSettings/EditorSettings.asset",
+      "hash": "0B5C614BA2B24AB6BD1853F450EF8CC44B84C2D084493F8B5BBA0C9F3213F680"
+    }
+  ],
+  "同期其他模块已有文件变化": [
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/M02\\TransactionCoordinatorTests.cs",
+      "起始SHA256": "ADC105F84BCA9DD2086987C1230C9834979A6C3FF201A88E881286FE12894A36",
+      "验证时SHA256": "1D91761D69212E23F39FC86A1F406184231324892C9F455C01C9015A9C43578D"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "起始SHA256": "AED084C4B623659BD469686BEC44DFB552C635C6C29F6A1569A6E5791D0B8E48",
+      "验证时SHA256": "B5F14067032F54939CD20D9E9193FCB9CDB9328BB6A2923968F8EED9E06B5718"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Structure\\ConnectivityAnalyzer.cs",
+      "起始SHA256": "5AA4789646ED3ADC908651AD06FCFE315A6256EDF206EB03A577608148BD216D",
+      "验证时SHA256": "B68C5026C099A21041B54ED3915255F2D91DE62E3DD41B69104038B43957CA4E"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Simulation\\WorldSimulation.cs",
+      "起始SHA256": "B416D3FF4F888BC160E56395647E5E2284B5898E220E1E0C1B3F7773810568E5",
+      "验证时SHA256": "E4331C3A33349919A39E03ED221CA7C971CB7754BDDB77D9A06C05F680EC3736"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Simulation\\WorkingWorld.cs",
+      "起始SHA256": "ED460244057833FE13DF7B262A3379DE69F44EB5D56BABDB2D8E10B4BF4FB762",
+      "验证时SHA256": "66A05E0D82BA28C488DD95CDB797E30F027B8931CBA503CE679068CD04B79A63"
+    }
+  ],
+  "同期其他模块新增文件": [
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StructurePreparationTests.cs.meta",
+      "hash": "6219BE3D8B5E8C2F83081A8247B0FB89AC20604CDF5303CA8F0380818DE29DAA"
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02\\StructurePreparationTests.cs",
+      "hash": "3B68165715264791BDCE722501BD58ED5850615CEF9F133225A1965AF8FCEE00"
+    }
+  ],
+  "范围说明": "Structure、Simulation、Host及模块专属测试的同期变化未由本聊天编辑；沿用新公共签名，不覆盖既有工作。",
+  "元数据验证": "827bfd9021123034d929257f6959b5d9；全Assets命中1个meta；由Unity自动生成",
+  "测试证据": "m00-m04-editmode-result.json；job 87b39be2cf3246f09be819b8a7a60901；273通过/0失败/1跳过",
+  "回归后检查": "共享依赖与本聊天合同/测试源码SHA256保持验证版本；用户确认M02接口由另一聊天补齐。"
+}

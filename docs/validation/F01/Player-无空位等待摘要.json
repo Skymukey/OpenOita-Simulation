@@ -1,0 +1,451 @@
+{
+  "执行方式": "Windows64 Mono非Development / 后台D3D11 / 默认禁转 / 10格控制夹具",
+  "状态记录": [
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 0,
+      "active": 10,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 11000,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 11250,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 11500,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 11750,
+      "active": 9,
+      "suspendedWater": 1,
+      "suspendedSteam": 0,
+      "total": 10
+    }
+  ],
+  "配置SHA256": {
+    "materials.json": "b48b53f295c9f3418f6179d52b29b44374f249c065d5c644015e09d54f12c341",
+    "scene.json": "df2a2285387d096ccf674149f41db32dce70f5597d0dc83523e1e9f0c770b2bb",
+    "world_config.json": "fcbfec0e5642148a2f7dfc904b2bfcf682a5f3d849525ad725799a56c308a3d2"
+  },
+  "原始日志": "Player-无空位等待.log",
+  "本轮构建": "Builds/F01Validation/OpenOita.exe",
+  "构建任务": "build-d85e188535",
+  "构建耗时秒": 59.1094661,
+  "构建错误": 0,
+  "构建警告": 1,
+  "警告说明": "Unity服务符号上传连接失败；构建及本轮运行通过。",
+  "完成边界": "功能等待及数量守恒；未测P1–P4、可靠GC、CPU峰值、IL2CPP与全部Player功能出口。",
+  "构建目录配置": "测试后已恢复当前正式175格三文件。"
+}

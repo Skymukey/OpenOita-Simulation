@@ -1,0 +1,207 @@
+{
+  "模块": "M04回补",
+  "合同": "M00-3/CONTRACTS1.2/主方案0.9",
+  "记录时间": "2026-10-05T17:44:56.745329+08:00",
+  "受保护文件": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs",
+      "前后SHA256相同": true,
+      "SHA256": "c4384d2e4338e327cfc1934a7cb4cd907e2af7244c753262c7878e9e4d0eb93c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "前后SHA256相同": true,
+      "SHA256": "66a05e0d82ba28c488dd95cdb797e30f027b8931cba503ce679068cd04b79a63"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs",
+      "前后SHA256相同": true,
+      "SHA256": "e4331c3a33349919a39e03ed221ca7c971cb7754bddb77d9a06c05f680ec3736"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs",
+      "前后SHA256相同": true,
+      "SHA256": "62caf7c6aae0b8e40790418baf2165fa9cfaef4d641dc94c2c52cc74728805c1"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Packages\\manifest.json",
+      "前后SHA256相同": true,
+      "SHA256": "eeb7802748663ddfca9a0ad72cde4852ab12ce3b175d9eaf4d8c0ca17962454b"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Packages\\packages-lock.json",
+      "前后SHA256相同": true,
+      "SHA256": "14fc010b720ba84e58f1da080f1662652412ec1f3219f23fe26de82717c6af68"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\ProjectSettings\\EditorSettings.asset",
+      "前后SHA256相同": true,
+      "SHA256": "0b5c614ba2b24ab6bd1853f450ef8cc44b84c2d084493f8b5bba0c9f3213f680"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs",
+      "前后SHA256相同": true,
+      "SHA256": "3b68165715264791bdce722501bd58ed5850615cef9f133225a1965af8fcee00"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\StructureContractTests.cs",
+      "前后SHA256相同": true,
+      "SHA256": "f0d32041bcfd4c191d0b2acf8e52ab2dae728468d8d74ac0eb3d659e76a5ed3c"
+    }
+  ],
+  "元数据结果": "源码meta齐全且GUID全Assets唯一，没有新增或更换资产GUID",
+  "配置": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\materials.json",
+      "SHA256": "b48b53f295c9f3418f6179d52b29b44374f249c065d5c644015e09d54f12c341"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\world_config.json",
+      "SHA256": "83af7e6dcab3991d7a5353710b27c0088e9426dc09462baee65550f9d55f69ac"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\scene.json",
+      "SHA256": "aa74fe09b4982e867de80924559fc18d9efac066e9576213dd45c7ddee9ce091"
+    }
+  ],
+  "文件": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs",
+      "字节": 13875,
+      "SHA256": "d8e4d7447a62ba7023839dc086a1bae523f333a3cbb5a4fad9c6d272e7b7e61d"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs.meta",
+      "字节": 59,
+      "SHA256": "9351445696df648cd6648a237b483ead3ee78628e111ba7be91270ef2a90e3ee"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/FixedCellPolicy.cs",
+      "字节": 721,
+      "SHA256": "b7b0899fa389d3fafcbbeb704361c0f73f0da37788852c4078320aea62b88123"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/FixedCellPolicy.cs.meta",
+      "字节": 59,
+      "SHA256": "37a711add80cdcb9127b0046e3614a7c1fc96eecb67473632680cbf15e006c50"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure.meta",
+      "字节": 172,
+      "SHA256": "83c2f325f144363bf18927e0eee5064653ab513284468408d26ae5557c70b188"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs",
+      "字节": 26166,
+      "SHA256": "1b0021c01792cf0b7ac39aefc89fa218323e882df10aa3a267a90629506cdae1"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs.meta",
+      "字节": 59,
+      "SHA256": "791ca2d4c65589e7d2e44b4dfc9384e9322501a89e9ffd908866ac9ac9ec155d"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityFixture.cs",
+      "字节": 3254,
+      "SHA256": "be115b3a328b4241cca79662815fff1e358777bac7c7048ef660299d8d3c3abc"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityFixture.cs.meta",
+      "字节": 59,
+      "SHA256": "ccecd00b20a129ce8c7d87172d9c5dfe8ce1e56c653c846c476bd65da1d63a4c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityStateCoreTests.cs",
+      "字节": 11737,
+      "SHA256": "5b871f2a47a667a4d76de7d9e6f6bf7cd6f7562c940fe58059aa473b43bea915"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityStateCoreTests.cs.meta",
+      "字节": 59,
+      "SHA256": "d1dec2de0b5219dd85b47f97c1bb2af80f2e1108710e042eecb965f86002067c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity.meta",
+      "字节": 172,
+      "SHA256": "a166d0e59996e08e108f975687a082d463476eab3957b6f062835e35ac41f4dd"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure.meta",
+      "字节": 172,
+      "SHA256": "90a191e78c1bfa41825ac19e7b73b4ceda7d91378f217ab2ddfed0b375db0d21"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M04-结构连通与固定.md",
+      "相对路径": "docs/specs/M04-结构连通与固定.md",
+      "字节": 12940,
+      "SHA256": "a231ae8dffe8ac443617be1bf8cc1941f7526998db579e00c298d5bff1893506"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-backfill-baseline.json",
+      "相对路径": "docs/validation/m04-backfill-baseline.json",
+      "字节": 2239,
+      "SHA256": "cdc18618b56662cf13c86d372a7cb9726d2b1b4411cb380a6b67a342f67e5c0b"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-backfill-editmode-result.json",
+      "相对路径": "docs/validation/m04-backfill-editmode-result.json",
+      "字节": 102250,
+      "SHA256": "11352f7fad34bad7144f5a80e15bb8a7cd02e06b7e8e8f34a8ef6a800511a6a4"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-backfill-editmode-results.xml",
+      "相对路径": "docs/validation/m04-backfill-editmode-results.xml",
+      "字节": 238089,
+      "SHA256": "56d6097c3da5f5088f252361f653a36e6701d885319b313e93df923cb2cd701e"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-backfill-environment.json",
+      "相对路径": "docs/validation/m04-backfill-environment.json",
+      "字节": 689,
+      "SHA256": "6e774671cb7e7480293d27a001e173a8b01faf4e7780637e34ab197db83ae776"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-backfill-test-job.json",
+      "相对路径": "docs/validation/m04-backfill-test-job.json",
+      "字节": 1028,
+      "SHA256": "a29762d56f1799ae1e10c56d08408ea3142783690469fe9e5f4dc48a2f67128a"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-公共接口差异与集成清单.md",
+      "相对路径": "docs/validation/M04-公共接口差异与集成清单.md",
+      "字节": 9155,
+      "SHA256": "859270a3dbcc26d95b4402e61fd4619e71da1f16050cfcfc5635b65c3cee252e"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-回补结果与交接.md",
+      "相对路径": "docs/validation/M04-回补结果与交接.md",
+      "字节": 9028,
+      "SHA256": "9096a6810013fd0ddafaa57e460259760026d285e584811856a75f8ceb624e85"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-执行结果与交接.md",
+      "相对路径": "docs/validation/M04-执行结果与交接.md",
+      "字节": 12603,
+      "SHA256": "2cdc150ece1a81d68a402fe345e8663541586a0344d29bf1bbc547de1f846c94"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\record_m04_backfill_evidence.py",
+      "相对路径": "docs/validation/record_m04_backfill_evidence.py",
+      "字节": 5166,
+      "SHA256": "dea121b66181417053e1a34240f80d0702ee504db7eacad14a187084c2c19bb8"
+    }
+  ]
+}

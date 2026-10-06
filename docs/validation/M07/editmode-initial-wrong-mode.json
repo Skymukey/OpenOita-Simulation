@@ -1,0 +1,170 @@
+{
+  "job_id": "25e65c790dee410b8f32a4862c170242",
+  "status": "failed",
+  "mode": "EditMode",
+  "started_unix_ms": 1791269096804,
+  "finished_unix_ms": 1791269103624,
+  "last_update_unix_ms": 1791269103624,
+  "progress": {
+    "completed": 10,
+    "total": 10,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+    "last_finished_unix_ms": 1791269103395,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": false,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      },
+      {
+        "full_name": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n"
+      }
+    ],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "EditMode",
+    "summary": {
+      "total": 10,
+      "passed": 0,
+      "failed": 10,
+      "skipped": 0,
+      "durationSeconds": 1.1035446,
+      "resultState": "Failed(Child)"
+    },
+    "results": [
+      {
+        "name": "M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+        "state": "Failed",
+        "durationSeconds": 0.139844,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires () [0x00006] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:27\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+        "state": "Failed",
+        "durationSeconds": 0.0170379,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_02_QueueAndCache4096TokenIdentityAndOverflow () [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:44\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+        "state": "Failed",
+        "durationSeconds": 0.0163895,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark () [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:63\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+        "state": "Failed",
+        "durationSeconds": 0.0289769,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase () [0x00047] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:73\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+        "state": "Failed",
+        "durationSeconds": 0.1058584,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection () [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:89\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+        "state": "Failed",
+        "durationSeconds": 0.0175111,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_06_BoundariesSortingBufferAndNoChunkAllocation () [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:98\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+        "state": "Failed",
+        "durationSeconds": 0.0193898,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory (System.Boolean commandFailure) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:115\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+        "state": "Failed",
+        "durationSeconds": 0.0148496,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory (System.Boolean commandFailure) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:115\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+        "state": "Failed",
+        "durationSeconds": 0.0160516,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState () [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:128\r\n",
+        "output": ""
+      },
+      {
+        "name": "M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+        "fullName": "OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+        "state": "Failed",
+        "durationSeconds": 0.0193833,
+        "message": "  Faulted: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:21\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.Create (OpenOita.Contracts.InitialCell[] cells) [0x00046] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:18\r\nat OpenOita.Tests.EditMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry () [0x00006] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M07A\\M07CommandQueryTests.cs:139\r\n",
+        "output": ""
+      }
+    ]
+  }
+}

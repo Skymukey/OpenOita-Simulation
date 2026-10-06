@@ -1,0 +1,40 @@
+{
+  "module": "M03",
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "unityInstance": "OpenOita@9d1fd0f10939c3a7",
+  "unityVersion": "6000.3.11f1",
+  "platform": "WindowsEditor",
+  "cpu": "Intel(R) Core(TM) i7-14700HX",
+  "ramMiB": 16091,
+  "os": "Windows 11 (10.0.26200)",
+  "enterPlayModeOptionsBeforeAndAfter": "None",
+  "enterPlayModeOptionsEnabledBeforeAndAfter": false,
+  "persistedEditorSettings": {
+    "enterPlayModeOptionsEnabledOriginal": 1,
+    "enterPlayModeOptionsOriginal": 0,
+    "testRunnerChangedOptionsTo": 1,
+    "restoredOptionsTo": 0,
+    "note": "独立核对落盘配置并恢复本轮副作用；内存API探针不能代替文件核对"
+  },
+  "cellSnapshotMarshalBytes": 32,
+  "mutationIntentMarshalBytes": 136,
+  "ruleTableConstructorProbe": {
+    "cellCapacity": 65536,
+    "contactCapacity": 65536,
+    "method": "GC.Collect 后读取 Profiler.GetMonoUsedSizeLong，构造执行表后再次读取并 KeepAlive",
+    "monoUsedBefore": 858525696,
+    "monoUsedAfter": 1000140800,
+    "constructionRetainedDelta": 141615104,
+    "reservedCpuBytes": 218107904,
+    "limitation": "仅一次 Editor 构造保留内存差；不是完整模拟 CPU 峰值、分配率或 Player 证据"
+  },
+  "allocationPositiveControl": {
+    "explicitArrayBytes": 8192,
+    "dotnetCounterDelta": 0,
+    "synchronousProfilerGcAllocBytes": 200,
+    "result": "未测：测量未通过正对照，不能据此宣称规则或 Step GC Alloc=0"
+  },
+  "playerAndIl2Cpp": "未测：本轮使用已连接 Editor，没有构建 Player",
+  "fullStepPerformance": "未测：完整 World/物理/显示尚未接线"
+}

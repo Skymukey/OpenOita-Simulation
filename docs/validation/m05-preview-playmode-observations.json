@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "environment": "Unity 6000.3.11f1 / WindowsEditor Play Mode",
+  "scene": "Assets/Scenes/M05Preview.unity",
+  "observations": [
+    { "scenario": "水与蒸汽", "drive": "真实Update自动播放", "tick": 514, "cells": 68, "bodies": 0, "error": null },
+    { "scenario": "十字拆分", "drive": "BreakConnection后StepOnce", "tick": 2, "cells": 24, "bodies": 4, "error": null },
+    { "scenario": "燃烧断桥", "drive": "Editor Play Mode中调用270次StepOnce", "tick": 270, "cells": 39, "bodies": 1, "error": null }
+  ],
+  "consoleErrorsAndWarnings": 0,
+  "screenshots": [
+    "Logs/Preview/m05-preview-initial.png",
+    "Logs/Preview/m05-preview-flow.png",
+    "Logs/Preview/m05-preview-split.png",
+    "Logs/Preview/m05-preview-burn.png"
+  ],
+  "deliveryState": { "playing": true, "previewPaused": true, "scenario": 0, "tick": 0 },
+  "limitations": "仅模块预览；无真实物理、跨归属接触、正式命令查询或Windows Player构建验收。"
+}

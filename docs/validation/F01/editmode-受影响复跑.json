@@ -1,0 +1,291 @@
+{
+  "job_id": "dbd727f121264f049c9ebc2bf6846d97",
+  "status": "succeeded",
+  "mode": "EditMode",
+  "started_unix_ms": 1791285974319,
+  "finished_unix_ms": 1791285981911,
+  "last_update_unix_ms": 1791285981911,
+  "progress": {
+    "completed": 28,
+    "total": 28,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_08_CommittedSnapshotCopiesHiddenStateAndCountsThenExpiresItsLease",
+    "last_finished_unix_ms": 1791285981678,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": true,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "EditMode",
+    "summary": {
+      "total": 28,
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 1.4574486,
+      "resultState": "Passed"
+    },
+    "results": [
+      {
+        "name": "M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+        "state": "Passed",
+        "durationSeconds": 0.0467893,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+        "state": "Passed",
+        "durationSeconds": 0.0005103,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+        "state": "Passed",
+        "durationSeconds": 0.0025582,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+        "state": "Passed",
+        "durationSeconds": 0.0124189,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+        "state": "Passed",
+        "durationSeconds": 0.0112328,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+        "state": "Passed",
+        "durationSeconds": 0.0035095,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+        "state": "Passed",
+        "durationSeconds": 0.0014996,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+        "state": "Passed",
+        "durationSeconds": 0.0015167,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+        "state": "Passed",
+        "durationSeconds": 0.0021686,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+        "state": "Passed",
+        "durationSeconds": 0.0011219,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+        "state": "Passed",
+        "durationSeconds": 0.0121705,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+        "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+        "state": "Passed",
+        "durationSeconds": 0.0014169,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe",
+        "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe",
+        "state": "Passed",
+        "durationSeconds": 0.0075294,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive",
+        "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive",
+        "state": "Passed",
+        "durationSeconds": 0.0057536,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_08_HostRejectsUnsupportedTransformBeforeFactory",
+        "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_HostRejectsUnsupportedTransformBeforeFactory",
+        "state": "Passed",
+        "durationSeconds": 0.0022017,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry",
+        "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry",
+        "state": "Passed",
+        "durationSeconds": 0.0017377,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_01_ExactSharedEdgeAndPureTouchDoNotCaptureFluid",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_01_ExactSharedEdgeAndPureTouchDoNotCaptureFluid",
+        "state": "Passed",
+        "durationSeconds": 0.1325455,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_02_NewSuspensionWaitsOneTickThenRestoresOriginWithSameInstance",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_02_NewSuspensionWaitsOneTickThenRestoresOriginWithSameInstance",
+        "state": "Passed",
+        "durationSeconds": 0.0687443,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_03_EqualDistanceTargetsUseYThenXAndFinalDynamicOccupation",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_03_EqualDistanceTargetsUseYThenXAndFinalDynamicOccupation",
+        "state": "Passed",
+        "durationSeconds": 0.0154348,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_03_MultipleRecordsCanShareAnchorAndRestoreOnlyAvailablePart",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_03_MultipleRecordsCanShareAnchorAndRestoreOnlyAvailablePart",
+        "state": "Passed",
+        "durationSeconds": 0.0210809,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_04_CannotCrossWallsThenRecoversWhenFourNeighborPassageOpens",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_04_CannotCrossWallsThenRecoversWhenFourNeighborPassageOpens",
+        "state": "Passed",
+        "durationSeconds": 0.0159524,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_04_RadiusLimitsPathAndDoesNotOverwriteActiveFluids",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_04_RadiusLimitsPathAndDoesNotOverwriteActiveFluids",
+        "state": "Passed",
+        "durationSeconds": 0.0147091,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_04_StaticOriginBlocksSearchEvenWhenNearbySpaceExists",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_04_StaticOriginBlocksSearchEvenWhenNearbySpaceExists",
+        "state": "Passed",
+        "durationSeconds": 0.0131323,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_04_WorldCornerSearchNeverLeavesBoundsOrMovesDiagonally",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_04_WorldCornerSearchNeverLeavesBoundsOrMovesDiagonally",
+        "state": "Passed",
+        "durationSeconds": 0.0134996,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_05_HiddenSteamLifetimeTicksOnceAndMoveCountdownPauses(1)",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_05_HiddenSteamLifetimeTicksOnceAndMoveCountdownPauses(1)",
+        "state": "Passed",
+        "durationSeconds": 0.0257538,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_05_HiddenSteamLifetimeTicksOnceAndMoveCountdownPauses(2)",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_05_HiddenSteamLifetimeTicksOnceAndMoveCountdownPauses(2)",
+        "state": "Passed",
+        "durationSeconds": 0.0130159,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_07_RestorationBudgetFailureDoesNotAdoptPartialTargetsOrLoseRecords",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_07_RestorationBudgetFailureDoesNotAdoptPartialTargetsOrLoseRecords",
+        "state": "Passed",
+        "durationSeconds": 0.0143895,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_CommittedSnapshotCopiesHiddenStateAndCountsThenExpiresItsLease",
+        "fullName": "OpenOita.Tests.EditMode.Spatial.FluidSuspensionTests.F01_08_CommittedSnapshotCopiesHiddenStateAndCountsThenExpiresItsLease",
+        "state": "Passed",
+        "durationSeconds": 0.0157678,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      }
+    ]
+  }
+}

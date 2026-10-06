@@ -1,0 +1,7 @@
+{
+    "name": "OpenOita.Tests.PlayMode",
+    "rootNamespace": "OpenOita.Tests",
+    "references": ["OpenOita.Runtime", "OpenOita.Tests.Fixtures", "OpenOita.Editor"],
+    "optionalUnityReferences": ["TestAssemblies"],
+    "autoReferenced": false
+}

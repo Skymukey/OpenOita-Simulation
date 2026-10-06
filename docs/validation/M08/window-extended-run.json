@@ -1,0 +1,9 @@
+{
+  "extraTicks": 163,
+  "committedTick": 263,
+  "lifecycle": "Faulted",
+  "code": "Occupied",
+  "stage": "Physics",
+  "target": "fluidDisplacementRadius",
+  "message": "至少一个水汽源无完整可达空目标，整批排开失败。"
+}

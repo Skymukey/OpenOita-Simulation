@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "message": "Test job status retrieved.",
+  "error": null,
+  "data": {
+    "job_id": "0a257e82108047ea864786d510d1624b",
+    "status": "succeeded",
+    "mode": "PlayMode",
+    "started_unix_ms": 1791212967224,
+    "finished_unix_ms": 1791212973517,
+    "last_update_unix_ms": 1791212973517,
+    "progress": {
+      "completed": 3,
+      "total": 3,
+      "current_test_full_name": null,
+      "current_test_started_unix_ms": null,
+      "last_finished_test_full_name": "OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests.MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+      "last_finished_unix_ms": 1791212973505,
+      "stuck_suspected": false,
+      "editor_is_focused": false,
+      "run_in_background": false,
+      "focus_nudge_attempts": null,
+      "focus_nudge_limit": null,
+      "focus_nudge_status": null,
+      "blocked_reason": null,
+      "failures_so_far": [],
+      "failures_capped": false
+    },
+    "error": null,
+    "result": {
+      "mode": "PlayMode",
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 0.9214721,
+        "resultState": "Passed"
+      },
+      "results": [
+        {
+          "name": "M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+          "fullName": "OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+          "state": "Passed",
+          "durationSeconds": 0.0055739,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+          "fullName": "OpenOita.Tests.PlayMode.M02.StateLifetimeTests.M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+          "state": "Passed",
+          "durationSeconds": 0.2457181,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+          "fullName": "OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests.MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+          "state": "Passed",
+          "durationSeconds": 0.6545748,
+          "message": null,
+          "stackTrace": null,
+          "output": "实际输出1366×768，倍率1，32×32水像素覆盖32×32输出像素，材料数4864，Tick0。\r\n实际输出1366×768，倍率3，32×32水像素覆盖96×96输出像素，材料数4864，Tick0。\r\n"
+        }
+      ]
+    }
+  },
+  "hint": null
+}

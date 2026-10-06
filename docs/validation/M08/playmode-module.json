@@ -1,0 +1,102 @@
+{
+  "job_id": "a73b9453d5f14c67b2d8ae66ad593525",
+  "status": "succeeded",
+  "mode": "PlayMode",
+  "started_unix_ms": 1791273871636,
+  "finished_unix_ms": 1791273879589,
+  "last_update_unix_ms": 1791273879589,
+  "progress": {
+    "completed": 7,
+    "total": 7,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_09_Custom129x65SizeSurvivesTrialAndFileRoundTrip",
+    "last_finished_unix_ms": 1791273879575,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": false,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "PlayMode",
+    "summary": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 3.062415,
+      "resultState": "Passed"
+    },
+    "results": [
+      {
+        "name": "M08_03_HostRejectsRotationAndScaleWithoutWorld",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_03_HostRejectsRotationAndScaleWithoutWorld",
+        "state": "Passed",
+        "durationSeconds": 0.0253124,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_06_OneHundredFormalTicksSaveExitAndResetDoNotPolluteInitialData",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_06_OneHundredFormalTicksSaveExitAndResetDoNotPolluteInitialData",
+        "state": "Passed",
+        "durationSeconds": 2.3289424,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_07_FourArmsUseFormalCommandStructurePhysicsAndQuery",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_07_FourArmsUseFormalCommandStructurePhysicsAndQuery",
+        "state": "Passed",
+        "durationSeconds": 0.0650428,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_07_SingleUnfixedPixelExtractsAndActuallyMoves",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_07_SingleUnfixedPixelExtractsAndActuallyMoves",
+        "state": "Passed",
+        "durationSeconds": 0.0223964,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_08_TwentyTrialCyclesReleaseWorldDisplayCameraAndPhysics",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_08_TwentyTrialCyclesReleaseWorldDisplayCameraAndPhysics",
+        "state": "Passed",
+        "durationSeconds": 0.398589,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_09_ActualEditorPreviewAndFormalTrialGpuPixels",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_09_ActualEditorPreviewAndFormalTrialGpuPixels",
+        "state": "Passed",
+        "durationSeconds": 0.1352874,
+        "message": null,
+        "stackTrace": null,
+        "output": "编辑初态 原始输出768×768，1倍，64状态覆盖8×8实际像素。\r\n编辑初态 原始输出768×768，3倍，64状态覆盖24×24实际像素。\r\n正式试玩 原始输出768×768，1倍，64状态覆盖8×8实际像素。\r\n正式试玩 原始输出768×768，3倍，64状态覆盖24×24实际像素。\r\n"
+      },
+      {
+        "name": "M08_09_Custom129x65SizeSurvivesTrialAndFileRoundTrip",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_09_Custom129x65SizeSurvivesTrialAndFileRoundTrip",
+        "state": "Passed",
+        "durationSeconds": 0.051634,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      }
+    ]
+  }
+}

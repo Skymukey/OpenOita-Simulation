@@ -1,0 +1,10 @@
+{
+    "name": "OpenOita.Tests.EditMode",
+    "rootNamespace": "OpenOita.Tests",
+    "references": ["OpenOita.Runtime", "OpenOita.Tests.Fixtures", "OpenOita.Editor"],
+    "overrideReferences": true,
+    "precompiledReferences": ["Newtonsoft.Json.dll", "nunit.framework.dll"],
+    "includePlatforms": ["Editor"],
+    "optionalUnityReferences": ["TestAssemblies"],
+    "autoReferenced": false
+}

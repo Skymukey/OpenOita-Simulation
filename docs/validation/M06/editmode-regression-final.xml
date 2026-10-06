@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="189" result="Passed" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.5334043">
+  <test-suite type="TestSuite" id="1000" name="OpenOita" fullname="OpenOita" runstate="Runnable" testcasecount="495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.533404" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1602" name="OpenOita.Tests.EditMode.dll" fullname="D:/work/Project/OpenOita/Logs/M06/TestProject/Library/ScriptAssemblies/OpenOita.Tests.EditMode.dll" runstate="Runnable" testcasecount="495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.517855" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="172928" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1603" name="OpenOita" fullname="OpenOita" runstate="Runnable" testcasecount="495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.509552" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1604" name="Tests" fullname="OpenOita.Tests" runstate="Runnable" testcasecount="495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.502143" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1605" name="EditMode" fullname="OpenOita.Tests.EditMode" runstate="Runnable" testcasecount="495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:32Z" duration="1.493607" total="189" passed="189" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestSuite" id="1615" name="Bodies" fullname="OpenOita.Tests.EditMode.Bodies" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:31Z" duration="1.057308" total="96" passed="96" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1478" name="BodyCandidateStateCoreTests" fullname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests" classname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.159435" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1481" name="InitialRealAllFreeComponentsComputeAtTickZeroWithoutCountingInitializationWrites" fullname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests.InitialRealAllFreeComponentsComputeAtTickZeroWithoutCountingInitializationWrites" methodname="InitialRealAllFreeComponentsComputeAtTickZeroWithoutCountingInitializationWrites" classname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests" runstate="Runnable" seed="201781995" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.089785" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1479" name="M05_T3_01_RealM02CandidateFeedsM04AndM05BeforeAnyGridApply" fullname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests.M05_T3_01_RealM02CandidateFeedsM04AndM05BeforeAnyGridApply" methodname="M05_T3_01_RealM02CandidateFeedsM04AndM05BeforeAnyGridApply" classname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests" runstate="Runnable" seed="1231696191" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.029124" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[真实M02候选→M04→M05计算通过，未Apply；正式提取提交、体目录、物理未测。计数探针未代替M02整Tick服务。
+]]></output>
+                </test-case>
+                <test-case id="1480" name="M05_T4_02_RealRemoveCandidateCapacityRejectLeavesOriginalNineCellsAndConstraint" fullname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests.M05_T4_02_RealRemoveCandidateCapacityRejectLeavesOriginalNineCellsAndConstraint" methodname="M05_T4_02_RealRemoveCandidateCapacityRejectLeavesOriginalNineCellsAndConstraint" classname="OpenOita.Tests.EditMode.Bodies.BodyCandidateStateCoreTests" runstate="Runnable" seed="1335139927" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.022416" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1482" name="BodyExtractionPlannerTests" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:31Z" duration="0.360000" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1514" name="CrossThreadDoesNotReadOrMutateWorld" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.CrossThreadDoesNotReadOrMutateWorld" methodname="CrossThreadDoesNotReadOrMutateWorld" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="755319344" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.080034" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1503" name="D02_SourceAndTargetBothCountAndDoNotResetEarlierTransactions" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.D02_SourceAndTargetBothCountAndDoNotResetEarlierTransactions" methodname="D02_SourceAndTargetBothCountAndDoNotResetEarlierTransactions" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="343264968" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.004771" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1502" name="D02_TickCounterDeduplicatesPriorWritesAndFullTransferPreflightDoesNotRecord" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.D02_TickCounterDeduplicatesPriorWritesAndFullTransferPreflightDoesNotRecord" methodname="D02_TickCounterDeduplicatesPriorWritesAndFullTransferPreflightDoesNotRecord" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="679558056" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.003691" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1497" name="D03_ExistingUnifiedSequenceDoesNotReuseIdsAfterPreparationFailure" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.D03_ExistingUnifiedSequenceDoesNotReuseIdsAfterPreparationFailure" methodname="D03_ExistingUnifiedSequenceDoesNotReuseIdsAfterPreparationFailure" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="928887709" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.006351" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1495" name="D03_MixedGridAndBodyOrderIsIndependentOfEnumeration" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.D03_MixedGridAndBodyOrderIsIndependentOfEnumeration" methodname="D03_MixedGridAndBodyOrderIsIndependentOfEnumeration" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1770985725" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.010166" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1501" name="D07_StaticShapesUseOnlyGlobalLimitAndDoNotCountFourBoundaries" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.D07_StaticShapesUseOnlyGlobalLimitAndDoNotCountFourBoundaries" methodname="D07_StaticShapesUseOnlyGlobalLimitAndDoNotCountFourBoundaries" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="591484531" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.004292" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1506" name="DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.010437" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1504" name="DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody(101)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody(101)" methodname="DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="2015196839" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.003760" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1505" name="DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody(103)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody(103)" methodname="DynamicNonStructureReplaceIsRejectedBeforeProducingAnyBody" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1513096613" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.003723" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1494" name="EmptyBodyIsRetiredWithoutFakeComponentOrGeometry" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.EmptyBodyIsRetiredWithoutFakeComponentOrGeometry" methodname="EmptyBodyIsRetiredWithoutFakeComponentOrGeometry" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="579008992" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.005030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1513" name="ExpiredLeaseAndWrongGenerationFailWithSpecificCodes" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.ExpiredLeaseAndWrongGenerationFailWithSpecificCodes" methodname="ExpiredLeaseAndWrongGenerationFailWithSpecificCodes" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="707318866" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.005178" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1512" name="GeometryVersionOverflowIsRejectedAtomically" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.GeometryVersionOverflowIsRejectedAtomically" methodname="GeometryVersionOverflowIsRejectedAtomically" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1246486307" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.005265" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1511" name="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.InvalidReservedIdIsRejectedWithoutAllocatorSideEffects" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.045565" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1508" name="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(0)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(0)" methodname="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1112228897" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.004840" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1509" name="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(7)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(7)" methodname="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1521176224" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.007475" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1510" name="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(6)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.InvalidReservedIdIsRejectedWithoutAllocatorSideEffects(6)" methodname="InvalidReservedIdIsRejectedWithoutAllocatorSideEffects" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="2010320963" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.029063" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1485" name="M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.012931" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1483" name="M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell(10)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell(10)" methodname="M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1577211949" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.006702" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1484" name="M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell(126)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell(126)" methodname="M05_T3_01_RemoveBridgeKeepsFixedGridAndExtractsEverySingleCell" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="2032095043" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.003415" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1486" name="M05_T4_01_AllFourArmsBecomeTwoCellBodiesInOriginalMinimumOrder" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T4_01_AllFourArmsBecomeTwoCellBodiesInOriginalMinimumOrder" methodname="M05_T4_01_AllFourArmsBecomeTwoCellBodiesInOriginalMinimumOrder" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="43385592" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.006611" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1487" name="M05_T4_02_AllFourResultsAreRejectedWhenCapacityIsThree" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T4_02_AllFourResultsAreRejectedWhenCapacityIsThree" methodname="M05_T4_02_AllFourResultsAreRejectedWhenCapacityIsThree" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="203905495" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:30Z" duration="0.003487" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1488" name="M05_T5_01_RotatedStripSplitPreservesCentersAndVelocityField" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T5_01_RotatedStripSplitPreservesCentersAndVelocityField" methodname="M05_T5_01_RotatedStripSplitPreservesCentersAndVelocityField" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="176875215" result="Passed" start-time="2026-10-05 17:27:30Z" end-time="2026-10-05 17:27:31Z" duration="0.005677" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1491" name="M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.010748" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1489" name="M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass(0)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass(0)" methodname="M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1446529568" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004371" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1490" name="M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass(2)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass(2)" methodname="M05_T5_02_RemoveEitherEndRetainsIdOriginAndRecomputesMass" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1485367375" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003514" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1492" name="M05_T5_02_ReplaceWithDifferentMassRetainsPoseAndAppliesSameVelocityField" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T5_02_ReplaceWithDifferentMassRetainsPoseAndAppliesSameVelocityField" methodname="M05_T5_02_ReplaceWithDifferentMassRetainsPoseAndAppliesSameVelocityField" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1441822020" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003918" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1496" name="M05_T7_01_FailureAfterAllBodiesDoesNotChangeCandidateAndRetryHasNoResidualPlan" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T7_01_FailureAfterAllBodiesDoesNotChangeCandidateAndRetryHasNoResidualPlan" methodname="M05_T7_01_FailureAfterAllBodiesDoesNotChangeCandidateAndRetryHasNoResidualPlan" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1630349342" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005130" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1500" name="M05_T7_02_RealRingGeometryRejectsShapeLimits" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T7_02_RealRingGeometryRejectsShapeLimits" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.009619" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1498" name="M05_T7_02_RealRingGeometryRejectsShapeLimits(1,4096)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T7_02_RealRingGeometryRejectsShapeLimits(1,4096)" methodname="M05_T7_02_RealRingGeometryRejectsShapeLimits" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1430242353" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003774" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1499" name="M05_T7_02_RealRingGeometryRejectsShapeLimits(256,3)" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T7_02_RealRingGeometryRejectsShapeLimits(256,3)" methodname="M05_T7_02_RealRingGeometryRejectsShapeLimits" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1467672661" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003086" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1515" name="M05_T7_03_TwentyCandidateFailureAndDisposeRoundsReleaseOwnedStorage" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T7_03_TwentyCandidateFailureAndDisposeRoundsReleaseOwnedStorage" methodname="M05_T7_03_TwentyCandidateFailureAndDisposeRoundsReleaseOwnedStorage" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="1340529542" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.082131" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[20轮M05局部候选失败/成功/重复释放通过；完整Create/Reset/Dispose与真实资源峰值未测。
+]]></output>
+                </test-case>
+                <test-case id="1493" name="M05_T9_01_BurningSurvivorsKeepAllStateAndInstanceHandles" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.M05_T9_01_BurningSurvivorsKeepAllStateAndInstanceHandles" methodname="M05_T9_01_BurningSurvivorsKeepAllStateAndInstanceHandles" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="501698996" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005301" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1507" name="MissingInstancesAndIncompletePlanAreRejected" fullname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests.MissingInstancesAndIncompletePlanAreRejected" methodname="MissingInstancesAndIncompletePlanAreRejected" classname="OpenOita.Tests.EditMode.Bodies.BodyExtractionPlannerTests" runstate="Runnable" seed="36102664" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006530" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1516" name="BodyIdReservationTests" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.143555" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1540" name="AllNewIdsFollowOriginalOwnerThenMinimumYX" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.AllNewIdsFollowOriginalOwnerThenMinimumYX" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.018122" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1538" name="AllNewIdsFollowOriginalOwnerThenMinimumYX(False)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.AllNewIdsFollowOriginalOwnerThenMinimumYX(False)" methodname="AllNewIdsFollowOriginalOwnerThenMinimumYX" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1504937151" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.009533" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1539" name="AllNewIdsFollowOriginalOwnerThenMinimumYX(True)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.AllNewIdsFollowOriginalOwnerThenMinimumYX(True)" methodname="AllNewIdsFollowOriginalOwnerThenMinimumYX" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="868892199" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006153" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1517" name="BatchStartsAtOneAndOnlyWritesRequestedPrefix" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.BatchStartsAtOneAndOnlyWritesRequestedPrefix" methodname="BatchStartsAtOneAndOnlyWritesRequestedPrefix" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1112578505" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003441" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1536" name="BodySevenSplitsToEightAndNineOrRetainsSeven" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.BodySevenSplitsToEightAndNineOrRetainsSeven" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.015602" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1534" name="BodySevenSplitsToEightAndNineOrRetainsSeven(True)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.BodySevenSplitsToEightAndNineOrRetainsSeven(True)" methodname="BodySevenSplitsToEightAndNineOrRetainsSeven" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1026009684" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006952" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1535" name="BodySevenSplitsToEightAndNineOrRetainsSeven(False)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.BodySevenSplitsToEightAndNineOrRetainsSeven(False)" methodname="BodySevenSplitsToEightAndNineOrRetainsSeven" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1345241742" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005971" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1527" name="CandidateAbortAndTickPublishDoNotResetGenerationSequence" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.CandidateAbortAndTickPublishDoNotResetGenerationSequence" methodname="CandidateAbortAndTickPublishDoNotResetGenerationSequence" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="140759114" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003606" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1531" name="ClosedWorldCannotReserveEvenZeroCount" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ClosedWorldCannotReserveEvenZeroCount" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008446" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1529" name="ClosedWorldCannotReserveEvenZeroCount(False,Faulted)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ClosedWorldCannotReserveEvenZeroCount(False,Faulted)" methodname="ClosedWorldCannotReserveEvenZeroCount" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1257823794" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003301" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1530" name="ClosedWorldCannotReserveEvenZeroCount(True,Disposed)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ClosedWorldCannotReserveEvenZeroCount(True,Disposed)" methodname="ClosedWorldCannotReserveEvenZeroCount" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="682359555" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002605" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1537" name="EmptyBodyRetirementDoesNotRecycleIdForNewGridBody" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.EmptyBodyRetirementDoesNotRecycleIdForNewGridBody" methodname="EmptyBodyRetirementDoesNotRecycleIdForNewGridBody" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1612292034" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008368" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1526" name="ExhaustedBatchDoesNotPartiallyReserveAndNeverWrapsToZero" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ExhaustedBatchDoesNotPartiallyReserveAndNeverWrapsToZero" methodname="ExhaustedBatchDoesNotPartiallyReserveAndNeverWrapsToZero" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1103924697" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003302" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1533" name="ExistingMaterialPrepareContractReceivesM02ReservationCallback" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ExistingMaterialPrepareContractReceivesM02ReservationCallback" methodname="ExistingMaterialPrepareContractReceivesM02ReservationCallback" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1034589042" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003938" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1541" name="FinalBodyFailureCapacityRejectionAndPlanDisposeNeverReturnReservedIds" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.FinalBodyFailureCapacityRejectionAndPlanDisposeNeverReturnReservedIds" methodname="FinalBodyFailureCapacityRejectionAndPlanDisposeNeverReturnReservedIds" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="999979711" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.014093" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1522" name="InvalidBatchLeavesBufferAndSequenceUnchanged" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.InvalidBatchLeavesBufferAndSequenceUnchanged" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.037501" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1518" name="InvalidBatchLeavesBufferAndSequenceUnchanged(-1,2,InvalidArgument)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.InvalidBatchLeavesBufferAndSequenceUnchanged(-1,2,InvalidArgument)" methodname="InvalidBatchLeavesBufferAndSequenceUnchanged" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1602683419" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.023151" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1519" name="InvalidBatchLeavesBufferAndSequenceUnchanged(3,2,BufferTooSmall)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.InvalidBatchLeavesBufferAndSequenceUnchanged(3,2,BufferTooSmall)" methodname="InvalidBatchLeavesBufferAndSequenceUnchanged" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="679103544" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002918" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1520" name="InvalidBatchLeavesBufferAndSequenceUnchanged(1,0,BufferTooSmall)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.InvalidBatchLeavesBufferAndSequenceUnchanged(1,0,BufferTooSmall)" methodname="InvalidBatchLeavesBufferAndSequenceUnchanged" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="935722491" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003277" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1521" name="InvalidBatchLeavesBufferAndSequenceUnchanged(int.MaxValue,2,BufferTooSmall)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.InvalidBatchLeavesBufferAndSequenceUnchanged(int.MaxValue,2,BufferTooSmall)" methodname="InvalidBatchLeavesBufferAndSequenceUnchanged" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="451640046" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003036" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1528" name="RecreatedGenerationOwnsNewSequenceAndOldCallbackCannotReserve" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.RecreatedGenerationOwnsNewSequenceAndOldCallbackCannotReserve" methodname="RecreatedGenerationOwnsNewSequenceAndOldCallbackCannotReserve" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="140269827" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003164" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1532" name="WrongThreadCannotConsumeOrWriteReservation" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.WrongThreadCannotConsumeOrWriteReservation" methodname="WrongThreadCannotConsumeOrWriteReservation" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1908481611" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003684" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1525" name="ZeroCountIsSuccessfulNoOp" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ZeroCountIsSuccessfulNoOp" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008454" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1523" name="ZeroCountIsSuccessfulNoOp(0)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ZeroCountIsSuccessfulNoOp(0)" methodname="ZeroCountIsSuccessfulNoOp" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1398022213" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003033" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1524" name="ZeroCountIsSuccessfulNoOp(2)" fullname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests.ZeroCountIsSuccessfulNoOp(2)" methodname="ZeroCountIsSuccessfulNoOp" classname="OpenOita.Tests.EditMode.Bodies.BodyIdReservationTests" runstate="Runnable" seed="1209959123" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002841" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="1542" name="M05StateTransactionAcceptanceTests" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.097907" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1545" name="M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.028519" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1543" name="M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion(10)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion(10)" methodname="M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="446966669" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.018258" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1544" name="M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion(126)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion(126)" methodname="M05_T3_01_RealBridgeRemovalTransfersSingleCellAndPublishesOneVersion" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="329348325" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003626" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1548" name="M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.012534" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1546" name="M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody(3)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody(3)" methodname="M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="230100105" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004922" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1547" name="M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody(64)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody(64)" methodname="M05_T4_01_T4_02_RealFourArmTransactionRejectsWholeOrPublishesEveryBody" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="593675884" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004976" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1552" name="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.018891" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1549" name="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;Middle&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;Middle&quot;)" methodname="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="1140077622" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008049" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[操作=Middle；最大格中心误差=2.384185791015625E-07；最大速度分量误差=8.9406967163085938E-08；真实材料状态提交，未推进物理。
+]]></output>
+                  </test-case>
+                  <test-case id="1550" name="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;End&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;End&quot;)" methodname="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="668367113" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003224" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[操作=End；最大格中心误差=0；最大速度分量误差=8.1956386566162109E-08；真实材料状态提交，未推进物理。
+]]></output>
+                  </test-case>
+                  <test-case id="1551" name="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;Replace&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField(&quot;Replace&quot;)" methodname="M05_T5_01_T5_02_RotatedRealStorageKeepsGeometryAndVelocityField" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="1496537190" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003531" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[操作=Replace；最大格中心误差=0；最大速度分量误差=7.4505805969238281E-08；真实材料状态提交，未推进物理。
+]]></output>
+                  </test-case>
+                </test-suite>
+                <test-case id="1553" name="M05_T5_03_RingAdoptionAndCommittedStoragePreserveEmptyHole" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T5_03_RingAdoptionAndCommittedStoragePreserveEmptyHole" methodname="M05_T5_03_RingAdoptionAndCommittedStoragePreserveEmptyHole" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="332435763" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003822" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1560" name="M05_T7_01_DownstreamPhysicsPreparationProbeRejectsBeforeAnyMaterialApply" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T7_01_DownstreamPhysicsPreparationProbeRejectsBeforeAnyMaterialApply" methodname="M05_T7_01_DownstreamPhysicsPreparationProbeRejectsBeforeAnyMaterialApply" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="301141525" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004370" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1559" name="M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.014101" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1557" name="M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch(Commands)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch(Commands)" methodname="M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="1647848766" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004580" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1558" name="M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch(Burning)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch(Burning)" methodname="M05_T7_02_CenterRemovalShapeOverflowRejectsCommandOrFreezesRealBurnBatch" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="882033574" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006981" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1556" name="M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.011553" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1554" name="M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership(False)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership(False)" methodname="M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="44217228" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005659" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[真实BurnRule燃尽桥→M02候选→M04→M05→状态提交；动态=False；幸存余量2，传播倒计时1，实例保持。碰撞/火焰未测。
+]]></output>
+                  </test-case>
+                  <test-case id="1555" name="M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership(True)" fullname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests.M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership(True)" methodname="M05_T9_01_RealBurnedOutBridgePreservesSurvivorStateThroughOwnership" classname="OpenOita.Tests.EditMode.Bodies.M05StateTransactionAcceptanceTests" runstate="Runnable" seed="1648090713" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003249" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[真实BurnRule燃尽桥→M02候选→M04→M05→状态提交；动态=True；幸存余量2，传播倒计时1，实例保持。碰撞/火焰未测。
+]]></output>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="1561" name="MassPropertiesCalculatorTests" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.042377" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1572" name="InvalidCellSizeIsRejected" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.InvalidCellSizeIsRejected" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.016482" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1568" name="InvalidCellSizeIsRejected(0.0f)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.InvalidCellSizeIsRejected(0.0f)" methodname="InvalidCellSizeIsRejected" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="1498058339" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003197" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1569" name="InvalidCellSizeIsRejected(-1.0f)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.InvalidCellSizeIsRejected(-1.0f)" methodname="InvalidCellSizeIsRejected" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="216600836" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002638" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1570" name="InvalidCellSizeIsRejected(float.NaN)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.InvalidCellSizeIsRejected(float.NaN)" methodname="InvalidCellSizeIsRejected" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="2082318997" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002635" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1571" name="InvalidCellSizeIsRejected(float.PositiveInfinity)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.InvalidCellSizeIsRejected(float.PositiveInfinity)" methodname="InvalidCellSizeIsRejected" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="710932792" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002797" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1563" name="M05_T9_01_PartialFuelDoesNotReduceMassOrOccupiedShape" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.M05_T9_01_PartialFuelDoesNotReduceMassOrOccupiedShape" methodname="M05_T9_01_PartialFuelDoesNotReduceMassOrOccupiedShape" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="1080262892" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003163" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1573" name="NumericOverflowIsRejectedWithoutNonFiniteOutputs" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.NumericOverflowIsRejectedWithoutNonFiniteOutputs" methodname="NumericOverflowIsRejectedWithoutNonFiniteOutputs" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="1917238117" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003280" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1562" name="SingleCellAndMixedMassesMatchIndependentFormula" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.SingleCellAndMixedMassesMatchIndependentFormula" methodname="SingleCellAndMixedMassesMatchIndependentFormula" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="1323221846" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003184" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1567" name="UnsupportedOrUnknownMaterialReturnsZeroOutputs" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.UnsupportedOrUnknownMaterialReturnsZeroOutputs" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.012021" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1564" name="UnsupportedOrUnknownMaterialReturnsZeroOutputs(101)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.UnsupportedOrUnknownMaterialReturnsZeroOutputs(101)" methodname="UnsupportedOrUnknownMaterialReturnsZeroOutputs" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="897726639" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002951" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1565" name="UnsupportedOrUnknownMaterialReturnsZeroOutputs(103)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.UnsupportedOrUnknownMaterialReturnsZeroOutputs(103)" methodname="UnsupportedOrUnknownMaterialReturnsZeroOutputs" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="1082415393" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002634" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1566" name="UnsupportedOrUnknownMaterialReturnsZeroOutputs(999)" fullname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests.UnsupportedOrUnknownMaterialReturnsZeroOutputs(999)" methodname="UnsupportedOrUnknownMaterialReturnsZeroOutputs" classname="OpenOita.Tests.EditMode.Bodies.MassPropertiesCalculatorTests" runstate="Runnable" seed="453248654" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002647" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="1574" name="MaterialOwnershipTests" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.250903" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1587" name="ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.013636" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1585" name="ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether(True)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether(True)" methodname="ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1112918344" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.007054" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1586" name="ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether(False)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether(False)" methodname="ActualBodySevenEditSplitsOrRetainsWithAllStorageAndInstancesTogether" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1147699767" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003943" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1590" name="AllParticipantsPreflightBeforeApplyAndAbortReleasesOnlyCandidateBodies" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.AllParticipantsPreflightBeforeApplyAndAbortReleasesOnlyCandidateBodies" methodname="AllParticipantsPreflightBeforeApplyAndAbortReleasesOnlyCandidateBodies" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1125125315" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005246" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1584" name="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.048558" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1580" name="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Abort&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Abort&quot;)" methodname="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="668541697" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005758" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1581" name="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Apply&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Apply&quot;)" methodname="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1454295452" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.028942" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1582" name="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Fault&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Fault&quot;)" methodname="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="466473805" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004177" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1583" name="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Dispose&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary(&quot;Dispose&quot;)" methodname="CandidateLeaseIsReadOnlyAndExpiresAtEveryBoundary" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1730073096" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004317" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1589" name="CompletedOwnershipCannotBePreparedOrAnalyzedAgainAndPublishesIndependentCopy" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.CompletedOwnershipCannotBePreparedOrAnalyzedAgainAndPublishesIndependentCopy" methodname="CompletedOwnershipCannotBePreparedOrAnalyzedAgainAndPublishesIndependentCopy" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1629479060" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004290" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1588" name="EmptyBodyRetiresAndNewGridBodyDoesNotReuseId" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.EmptyBodyRetiresAndNewGridBodyDoesNotReuseId" methodname="EmptyBodyRetiresAndNewGridBodyDoesNotReuseId" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="986408045" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004724" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1595" name="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.019159" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1591" name="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Instance&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Instance&quot;)" methodname="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1417483443" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004248" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1592" name="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Coverage&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Coverage&quot;)" methodname="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1984701816" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003292" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1593" name="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Mapping&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Mapping&quot;)" methodname="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="196508076" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003328" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1594" name="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Retirement&quot;)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState(&quot;Retirement&quot;)" methodname="InvalidOwnershipPlanRejectsWithoutChangingEditedOrWorkingState" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="267308728" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003436" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1596" name="JointTransferBudgetRejectsBeforeAnyWriteAndConsumesReservedIds" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.JointTransferBudgetRejectsBeforeAnyWriteAndConsumesReservedIds" methodname="JointTransferBudgetRejectsBeforeAnyWriteAndConsumesReservedIds" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="104286285" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004097" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1599" name="MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.010668" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1597" name="MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView(Commands,False)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView(Commands,False)" methodname="MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="317825037" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004196" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1598" name="MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView(Burning,True)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView(Burning,True)" methodname="MaterialPrepareFailureRejectsCommandOrFreezesRuleWithOldPublishedView" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="525502854" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003634" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1578" name="MoveCandidateAndOwnershipKeepOriginalWetInstance" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MoveCandidateAndOwnershipKeepOriginalWetInstance" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.011246" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1576" name="MoveCandidateAndOwnershipKeepOriginalWetInstance(101)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MoveCandidateAndOwnershipKeepOriginalWetInstance(101)" methodname="MoveCandidateAndOwnershipKeepOriginalWetInstance" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="780397032" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004989" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1577" name="MoveCandidateAndOwnershipKeepOriginalWetInstance(104)" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.MoveCandidateAndOwnershipKeepOriginalWetInstance(104)" methodname="MoveCandidateAndOwnershipKeepOriginalWetInstance" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1341734020" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003589" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1600" name="PrematureStorageDisposeFailsPreflightAndWorldDisposeOwnsAdoptedStorage" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.PrematureStorageDisposeFailsPreflightAndWorldDisposeOwnsAdoptedStorage" methodname="PrematureStorageDisposeFailsPreflightAndWorldDisposeOwnsAdoptedStorage" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1145378801" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.007165" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1579" name="SameIdReplaceUsesNewDryInstanceRevokesFixedAndDeduplicatesWholeTick" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.SameIdReplaceUsesNewDryInstanceRevokesFixedAndDeduplicatesWholeTick" methodname="SameIdReplaceUsesNewDryInstanceRevokesFixedAndDeduplicatesWholeTick" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="903063059" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.023807" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1575" name="SpawnUsesCandidateInstanceAndAtomicTransferCountsBothOwners" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.SpawnUsesCandidateInstanceAndAtomicTransferCountsBothOwners" methodname="SpawnUsesCandidateInstanceAndAtomicTransferCountsBothOwners" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="468025017" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004416" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1601" name="TwentyInitialOwnershipPublishAndDisposeRoundsReleaseAdoptedStorage" fullname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests.TwentyInitialOwnershipPublishAndDisposeRoundsReleaseAdoptedStorage" methodname="TwentyInitialOwnershipPublishAndDisposeRoundsReleaseAdoptedStorage" classname="OpenOita.Tests.EditMode.Bodies.MaterialOwnershipTests" runstate="Runnable" seed="1309722577" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.082771" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[20轮真实M02/M05存储采用、Tick0发布及释放通过；未运行完整IWorld/物理/GPU生命周期。
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1613" name="M02" fullname="OpenOita.Tests.EditMode.M02" runstate="Runnable" testcasecount="70" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:32Z" duration="0.331558" total="70" passed="70" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1292" name="HostDriverTests" fullname="OpenOita.Tests.EditMode.M02.HostDriverTests" classname="OpenOita.Tests.EditMode.M02.HostDriverTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.009866" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1295" name="M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe" fullname="OpenOita.Tests.EditMode.M02.HostDriverTests.M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe" methodname="M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe" classname="OpenOita.Tests.EditMode.M02.HostDriverTests" runstate="Runnable" seed="1421222826" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002489" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1293" name="M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive" fullname="OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive" methodname="M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive" classname="OpenOita.Tests.EditMode.M02.HostDriverTests" runstate="Runnable" seed="456502935" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.001026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1296" name="M02_08_HostRejectsUnsupportedTransformBeforeFactory" fullname="OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_HostRejectsUnsupportedTransformBeforeFactory" methodname="M02_08_HostRejectsUnsupportedTransformBeforeFactory" classname="OpenOita.Tests.EditMode.M02.HostDriverTests" runstate="Runnable" seed="1465369493" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000984" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1294" name="M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry" fullname="OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry" methodname="M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry" classname="OpenOita.Tests.EditMode.M02.HostDriverTests" runstate="Runnable" seed="444755153" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000584" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1297" name="LiquidChainTransactionTests" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.061780" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties>
+                  <property name="Category" value="LiquidLevelingIntegration" />
+                </properties>
+                <test-case id="1312" name="L01_07_AtomicChainBudgetFailureDoesNotAdoptAnyInternalNode" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_AtomicChainBudgetFailureDoesNotAdoptAnyInternalNode" methodname="L01_07_AtomicChainBudgetFailureDoesNotAdoptAnyInternalNode" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1697180736" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005949" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1300" name="L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.010405" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1298" name="L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior(False)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior(False)" methodname="L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="46582268" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004749" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1299" name="L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior(True)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior(True)" methodname="L01_07_AtomicChainPreservesEveryIdentityWetMarkerAndCountsSameByteInterior" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="778830433" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003296" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1311" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.043300" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1301" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Cycle&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Cycle&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="641050668" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004182" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1302" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Horizontal&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Horizontal&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="217770481" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003035" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1303" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Upward&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Upward&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1329979059" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002940" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1304" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Diagonal&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;Diagonal&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1914513054" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003200" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1305" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;LongStep&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;LongStep&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="827572948" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002996" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1306" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;UnreleasedTarget&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;UnreleasedTarget&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="71806353" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002986" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1307" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DifferentMaterial&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DifferentMaterial&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1141212640" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003147" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1308" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;WrongStage&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;WrongStage&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="642014972" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002889" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1309" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DuplicateSource&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DuplicateSource&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1954716544" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002976" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1310" name="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DuplicateTarget&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests.L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges(&quot;DuplicateTarget&quot;)" methodname="L01_07_InvalidAtomicChainIsRejectedBeforeStateOrInstanceChanges" classname="OpenOita.Tests.EditMode.M02.LiquidChainTransactionTests" runstate="Runnable" seed="1918417535" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003027" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="1313" name="LiquidLevelingIntegrationTests" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.038649" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties>
+                  <property name="Category" value="LiquidLevelingIntegration" />
+                </properties>
+                <test-case id="1315" name="L01_07_HorizontalCompetitionPreservesFullLegalStatesAndDoesNotMixWetMarkers" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_HorizontalCompetitionPreservesFullLegalStatesAndDoesNotMixWetMarkers" methodname="L01_07_HorizontalCompetitionPreservesFullLegalStatesAndDoesNotMixWetMarkers" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="431266426" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.007730" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1320" name="L01_07_LaterStageFaultAfterWaterApplyKeepsLastPublishedWaterSnapshot" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_LaterStageFaultAfterWaterApplyKeepsLastPublishedWaterSnapshot" methodname="L01_07_LaterStageFaultAfterWaterApplyKeepsLastPublishedWaterSnapshot" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="834687311" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006563" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1314" name="L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary" methodname="L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="817545999" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.005684" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1319" name="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.014347" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1316" name="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;IntentBuffer&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;IntentBuffer&quot;)" methodname="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="1228717942" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004556" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1317" name="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;ChangedPositions&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;ChangedPositions&quot;)" methodname="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="1147377446" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002899" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1318" name="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;BeforeApply&quot;)" fullname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(&quot;BeforeApply&quot;)" methodname="L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick" classname="OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests" runstate="Runnable" seed="2048708876" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003214" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="1321" name="StateCoreTests" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.130304" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1331" name="BatchedMovesKeepCrossChunkStateWetInstancesAndCommittedSnapshot" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.BatchedMovesKeepCrossChunkStateWetInstancesAndCommittedSnapshot" methodname="BatchedMovesKeepCrossChunkStateWetInstancesAndCommittedSnapshot" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="54858015" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004768" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1332" name="BatchedMovesRejectConflictingTargetsBeforeChangingAnyState" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.BatchedMovesRejectConflictingTargetsBeforeChangingAnyState" methodname="BatchedMovesRejectConflictingTargetsBeforeChangingAnyState" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="34692530" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003536" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1323" name="M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate" methodname="M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1833933973" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003101" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1322" name="M02_01_MissingReadsNeverAllocateAndTailWritesAreBounded" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_01_MissingReadsNeverAllocateAndTailWritesAreBounded" methodname="M02_01_MissingReadsNeverAllocateAndTailWritesAreBounded" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1370215591" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006620" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1329" name="M02_02_CellStateSizeAndRoundTripPreserveEveryField" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_CellStateSizeAndRoundTripPreserveEveryField" methodname="M02_02_CellStateSizeAndRoundTripPreserveEveryField" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="30837087" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008166" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1330" name="M02_02_CrossChunkMoveKeepsFuelWetInstanceAndFixedBinding" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_CrossChunkMoveKeepsFuelWetInstanceAndFixedBinding" methodname="M02_02_CrossChunkMoveKeepsFuelWetInstanceAndFixedBinding" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1988950419" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.021169" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1328" name="M02_02_InitialFieldsReplaceAndRemove" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.016686" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1324" name="M02_02_InitialFieldsReplaceAndRemove(101,uint.MinValue,uint.MinValue,uint.MinValue)" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(101,uint.MinValue,uint.MinValue,uint.MinValue)" methodname="M02_02_InitialFieldsReplaceAndRemove" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1963947539" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003402" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1325" name="M02_02_InitialFieldsReplaceAndRemove(102,uint.MinValue,uint.MinValue,uint.MinValue)" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(102,uint.MinValue,uint.MinValue,uint.MinValue)" methodname="M02_02_InitialFieldsReplaceAndRemove" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="863138059" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002933" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1326" name="M02_02_InitialFieldsReplaceAndRemove(103,uint.MinValue,uint.MinValue,200)" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(103,uint.MinValue,uint.MinValue,200)" methodname="M02_02_InitialFieldsReplaceAndRemove" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="360060534" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002780" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1327" name="M02_02_InitialFieldsReplaceAndRemove(104,250,10,uint.MinValue)" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(104,250,10,uint.MinValue)" methodname="M02_02_InitialFieldsReplaceAndRemove" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="349155374" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002714" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1341" name="M02_02_InstanceMapTracksOwnershipAndRejectsOldTick" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InstanceMapTracksOwnershipAndRejectsOldTick" methodname="M02_02_InstanceMapTracksOwnershipAndRejectsOldTick" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1896868351" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002899" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1333" name="M02_02_SameIdReplaceCreatesNewInstanceAndClearsFixedAndBurning" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_SameIdReplaceCreatesNewInstanceAndClearsFixedAndBurning" methodname="M02_02_SameIdReplaceCreatesNewInstanceAndClearsFixedAndBurning" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1712070426" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003132" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1336" name="M02_03_MaterialBudgetRejectsWholeBatch" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_MaterialBudgetRejectsWholeBatch" methodname="M02_03_MaterialBudgetRejectsWholeBatch" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="770846276" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002786" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1335" name="M02_03_StateOnlyChangesCountAndIdenticalWriteDoesNot" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_StateOnlyChangesCountAndIdenticalWriteDoesNot" methodname="M02_03_StateOnlyChangesCountAndIdenticalWriteDoesNot" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="392362217" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003594" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1334" name="M02_03_WholeTickDeduplicationAndExternalOverflowAreAtomic" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_WholeTickDeduplicationAndExternalOverflowAreAtomic" methodname="M02_03_WholeTickDeduplicationAndExternalOverflowAreAtomic" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1616754788" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003412" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1339" name="M02_04_ProductionCreateNeverReportsPartialReady" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_04_ProductionCreateNeverReportsPartialReady" methodname="M02_04_ProductionCreateNeverReportsPartialReady" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1458040319" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.014998" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1338" name="M02_05_IllegalStateStaleKeyWrongThreadAndBusyPreparationAreRejected" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_05_IllegalStateStaleKeyWrongThreadAndBusyPreparationAreRejected" methodname="M02_05_IllegalStateStaleKeyWrongThreadAndBusyPreparationAreRejected" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1247319880" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003983" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1337" name="M02_05_PrepareAbortSnapshotPublishAndFaultVisibility" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_05_PrepareAbortSnapshotPublishAndFaultVisibility" methodname="M02_05_PrepareAbortSnapshotPublishAndFaultVisibility" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="485658312" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003402" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1340" name="M02_07_TwentyStateRebuildsRestoreInitialAndReleaseLeases" fullname="OpenOita.Tests.EditMode.M02.StateCoreTests.M02_07_TwentyStateRebuildsRestoreInitialAndReleaseLeases" methodname="M02_07_TwentyStateRebuildsRestoreInitialAndReleaseLeases" classname="OpenOita.Tests.EditMode.M02.StateCoreTests" runstate="Runnable" seed="1619255364" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.009374" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1342" name="StructurePreparationTests" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.068262" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1355" name="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.017324" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1351" name="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,False)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,False)" methodname="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="454921870" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004177" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1352" name="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,False)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,False)" methodname="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="1824003664" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002702" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1353" name="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,True)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,True)" methodname="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="1026515904" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003107" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1354" name="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,True)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,True)" methodname="M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="1946844975" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003011" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1343" name="M04_I01_I02_PublicPlanCopiesAndNormalizesRetirementsAndExplicitDisposition" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I01_I02_PublicPlanCopiesAndNormalizesRetirementsAndExplicitDisposition" methodname="M04_I01_I02_PublicPlanCopiesAndNormalizesRetirementsAndExplicitDisposition" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="2054660799" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.001957" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1359" name="M04_I03_CandidateLeaseClosesWithItsOwner" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.014162" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1356" name="M04_I03_CandidateLeaseClosesWithItsOwner(&quot;abort&quot;,NotReady)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(&quot;abort&quot;,NotReady)" methodname="M04_I03_CandidateLeaseClosesWithItsOwner" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="1109918397" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003368" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1357" name="M04_I03_CandidateLeaseClosesWithItsOwner(&quot;dispose&quot;,Disposed)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(&quot;dispose&quot;,Disposed)" methodname="M04_I03_CandidateLeaseClosesWithItsOwner" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="518275717" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002835" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1358" name="M04_I03_CandidateLeaseClosesWithItsOwner(&quot;fault&quot;,Faulted)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(&quot;fault&quot;,Faulted)" methodname="M04_I03_CandidateLeaseClosesWithItsOwner" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="2091174695" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002954" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1360" name="M04_I03_CandidateRejectsWrongThreadAndTransactionContext" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateRejectsWrongThreadAndTransactionContext" methodname="M04_I03_CandidateRejectsWrongThreadAndTransactionContext" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="895090693" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003624" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1345" name="M04_I03_InitialAndRemoveArePlannedBeforeMaterialApply" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_InitialAndRemoveArePlannedBeforeMaterialApply" methodname="M04_I03_InitialAndRemoveArePlannedBeforeMaterialApply" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="215113383" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.004654" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1349" name="M04_I03_RealBurnedOutBatchPlansCandidateAndPreservesSurvivingFuel" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_RealBurnedOutBatchPlansCandidateAndPreservesSurvivingFuel" methodname="M04_I03_RealBurnedOutBatchPlansCandidateAndPreservesSurvivingFuel" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="593805680" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003747" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1348" name="M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.008703" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1346" name="M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(False)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(False)" methodname="M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="191547539" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003244" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1347" name="M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(True)" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(True)" methodname="M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="231604475" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.002843" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1344" name="M04_I03_WriteStateRetainsFixedAndCandidateKeyValidation" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_WriteStateRetainsFixedAndCandidateKeyValidation" methodname="M04_I03_WriteStateRetainsFixedAndCandidateKeyValidation" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="188652854" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003321" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1350" name="M04_T4_02_FullFourArmPlanIsRejectedAtomicallyAtBodyLimitThree" fullname="OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_T4_02_FullFourArmPlanIsRejectedAtomicallyAtBodyLimitThree" methodname="M04_T4_02_FullFourArmPlanIsRejectedAtomicallyAtBodyLimitThree" classname="OpenOita.Tests.EditMode.M02.StructurePreparationTests" runstate="Runnable" seed="1776274994" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003515" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1361" name="TransactionCoordinatorTests" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:32Z" duration="0.021253" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1376" name="M02_03_AutomaticBatchBudgetFailureRequiresFaultEvenBeforeApply" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_AutomaticBatchBudgetFailureRequiresFaultEvenBeforeApply" methodname="M02_03_AutomaticBatchBudgetFailureRequiresFaultEvenBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1089063274" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.001262" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1374" name="M02_03_GlobalBudgetsAreCheckedBeforeApply" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.006761" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1368" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;materials&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;materials&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1386244741" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000471" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1369" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;bodies&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;bodies&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1330930724" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000083" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1370" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;shapes&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;shapes&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1594793211" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000076" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1371" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;changes&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;changes&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1243307940" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000067" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1372" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;cpu&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;cpu&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1444369047" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000068" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1373" name="M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;negative&quot;)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(&quot;negative&quot;)" methodname="M02_03_GlobalBudgetsAreCheckedBeforeApply" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="803543209" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000073" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1375" name="M02_03_PreparationCpuBytesAreCombinedAndOwnershipIsUnique" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_PreparationCpuBytesAreCombinedAndOwnershipIsUnique" methodname="M02_03_PreparationCpuBytesAreCombinedAndOwnershipIsUnique" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="334146922" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000384" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1362" name="M02_05_AllPreflightBeforeAnyApplyAndCommitWaitsForPublish" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_AllPreflightBeforeAnyApplyAndCommitWaitsForPublish" methodname="M02_05_AllPreflightBeforeAnyApplyAndCommitWaitsForPublish" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="315450537" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000650" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1367" name="M02_05_ApplyFailureRequiresWorldFaultAndCleanupContinuesAfterException" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_ApplyFailureRequiresWorldFaultAndCleanupContinuesAfterException" methodname="M02_05_ApplyFailureRequiresWorldFaultAndCleanupContinuesAfterException" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="799762788" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000684" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1365" name="M02_05_InjectFailureRecordsAtomicBoundary" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_InjectFailureRecordsAtomicBoundary" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.003159" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1363" name="M02_05_InjectFailureRecordsAtomicBoundary(BeforeApply,False)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_InjectFailureRecordsAtomicBoundary(BeforeApply,False)" methodname="M02_05_InjectFailureRecordsAtomicBoundary" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1904217154" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000456" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1364" name="M02_05_InjectFailureRecordsAtomicBoundary(DuringApply,True)" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_InjectFailureRecordsAtomicBoundary(DuringApply,True)" methodname="M02_05_InjectFailureRecordsAtomicBoundary" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1325541859" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:31Z" duration="0.000098" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1366" name="M02_05_SecondPreflightFailureNeverAppliesFirst" fullname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_SecondPreflightFailureNeverAppliesFirst" methodname="M02_05_SecondPreflightFailureNeverAppliesFirst" classname="OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests" runstate="Runnable" seed="1552244517" result="Passed" start-time="2026-10-05 17:27:31Z" end-time="2026-10-05 17:27:32Z" duration="0.000281" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1612" name="Physics" fullname="OpenOita.Tests.EditMode.Physics" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.007808" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1285" name="PhysicsSubstepPlannerTests" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.007521" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1291" name="M06_T5_03_GravityPredictedSpeedFailsAndGeometryMismatchIsRejected" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T5_03_GravityPredictedSpeedFailsAndGeometryMismatchIsRejected" methodname="M06_T5_03_GravityPredictedSpeedFailsAndGeometryMismatchIsRejected" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" seed="214203029" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.001099" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1290" name="M06_T8_01_D08UsesComRadiusAndCompleteTick" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T8_01_D08UsesComRadiusAndCompleteTick" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.004754" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1286" name="M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,0.0f,0.0f,0.07f,1)" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,0.0f,0.0f,0.07f,1)" methodname="M06_T8_01_D08UsesComRadiusAndCompleteTick" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" seed="740461258" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000453" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1287" name="M06_T8_01_D08UsesComRadiusAndCompleteTick(4.0f,0.0f,0.0f,0.07f,2)" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T8_01_D08UsesComRadiusAndCompleteTick(4.0f,0.0f,0.0f,0.07f,2)" methodname="M06_T8_01_D08UsesComRadiusAndCompleteTick" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" seed="381510104" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000057" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1288" name="M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,2.0f,0.0f,2.0f,2)" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,2.0f,0.0f,2.0f,2)" methodname="M06_T8_01_D08UsesComRadiusAndCompleteTick" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" seed="685628904" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000056" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1289" name="M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,0.0f,-9.81f,0.07f,1)" fullname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests.M06_T8_01_D08UsesComRadiusAndCompleteTick(0.0f,0.0f,-9.81f,0.07f,1)" methodname="M06_T8_01_D08UsesComRadiusAndCompleteTick" classname="OpenOita.Tests.EditMode.Physics.PhysicsSubstepPlannerTests" runstate="Runnable" seed="1161487" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000056" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1609" name="Spatial" fullname="OpenOita.Tests.EditMode.Spatial" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.039704" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1136" name="ExactCellGeometryTests" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.010947" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1144" name="M06_T5_02_RotatedSquareRejectsAabbCornerAndReturnsFirstSegmentIntersection" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T5_02_RotatedSquareRejectsAabbCornerAndReturnsFirstSegmentIntersection" methodname="M06_T5_02_RotatedSquareRejectsAabbCornerAndReturnsFirstSegmentIntersection" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1702211327" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000862" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1143" name="M06_T7_03_AnyPositiveOverlapIsStricterThanPhysicsTolerance" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T7_03_AnyPositiveOverlapIsStricterThanPhysicsTolerance" methodname="M06_T7_03_AnyPositiveOverlapIsStricterThanPhysicsTolerance" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="471514237" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000588" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1140" name="M06_T9_01_EdgeContactUsesExactEpsilon" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_EdgeContactUsesExactEpsilon" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.004331" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1137" name="M06_T9_01_EdgeContactUsesExactEpsilon(0.5f,True)" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_EdgeContactUsesExactEpsilon(0.5f,True)" methodname="M06_T9_01_EdgeContactUsesExactEpsilon" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1649351439" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000854" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1138" name="M06_T9_01_EdgeContactUsesExactEpsilon(1.0f,True)" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_EdgeContactUsesExactEpsilon(1.0f,True)" methodname="M06_T9_01_EdgeContactUsesExactEpsilon" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1313545571" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000086" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1139" name="M06_T9_01_EdgeContactUsesExactEpsilon(1.5f,False)" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_EdgeContactUsesExactEpsilon(1.5f,False)" methodname="M06_T9_01_EdgeContactUsesExactEpsilon" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1529930167" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000070" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1142" name="M06_T9_01_SameOwnerUsesFourNeighboursOnly" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_SameOwnerUsesFourNeighboursOnly" methodname="M06_T9_01_SameOwnerUsesFourNeighboursOnly" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1044411191" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000332" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1141" name="M06_T9_01_VertexVertexExcludedAndRotatedVertexEdgeIncluded" fullname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests.M06_T9_01_VertexVertexExcludedAndRotatedVertexEdgeIncluded" methodname="M06_T9_01_VertexVertexExcludedAndRotatedVertexEdgeIncluded" classname="OpenOita.Tests.EditMode.Spatial.ExactCellGeometryTests" runstate="Runnable" seed="1361131665" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000292" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1145" name="SpatialLeaseAndDisplacementTests" fullname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests" classname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.028339" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1146" name="M06_Lease_RevisionAndTickEndInvalidateCurrentStageProvider" fullname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests.M06_Lease_RevisionAndTickEndInvalidateCurrentStageProvider" methodname="M06_Lease_RevisionAndTickEndInvalidateCurrentStageProvider" classname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests" runstate="Runnable" seed="594488806" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.011632" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1147" name="M06_T6_01_EquidistantTargetsAreChosenByYThenXAndInstancesSurvive" fullname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests.M06_T6_01_EquidistantTargetsAreChosenByYThenXAndInstancesSurvive" methodname="M06_T6_01_EquidistantTargetsAreChosenByYThenXAndInstancesSurvive" classname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests" runstate="Runnable" seed="238763089" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.007815" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1148" name="M06_T6_01_StartingSolidsBlockPathsAndVacatedSourcesAreNeverTargets" fullname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests.M06_T6_01_StartingSolidsBlockPathsAndVacatedSourcesAreNeverTargets" methodname="M06_T6_01_StartingSolidsBlockPathsAndVacatedSourcesAreNeverTargets" classname="OpenOita.Tests.EditMode.Spatial.SpatialLeaseAndDisplacementTests" runstate="Runnable" seed="1370702980" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.005075" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1066" name="StructureContractTests" fullname="OpenOita.Tests.EditMode.StructureContractTests" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.029059" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1067" name="M00_02_M04_I01_EmptyRetirementIsOwnedSortedUniqueAndHasNoComponent" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I01_EmptyRetirementIsOwnedSortedUniqueAndHasNoComponent" methodname="M00_02_M04_I01_EmptyRetirementIsOwnedSortedUniqueAndHasNoComponent" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1698490546" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000960" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="M00_02_M04_I01_I02_RealAnalyzerProvidesAllFourDispositionsAndEmptyRetirement" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I01_I02_RealAnalyzerProvidesAllFourDispositionsAndEmptyRetirement" methodname="M00_02_M04_I01_I02_RealAnalyzerProvidesAllFourDispositionsAndEmptyRetirement" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1989627833" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.008860" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="M00_02_M04_I02_InvalidComponentClassificationOrEmptyMembersIsRejected" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I02_InvalidComponentClassificationOrEmptyMembersIsRejected" methodname="M00_02_M04_I02_InvalidComponentClassificationOrEmptyMembersIsRejected" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1937087215" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000645" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1068" name="M00_02_M04_I02_PlanCopiesCollectionsAndKeepsOriginalCoordinates" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I02_PlanCopiesCollectionsAndKeepsOriginalCoordinates" methodname="M00_02_M04_I02_PlanCopiesCollectionsAndKeepsOriginalCoordinates" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1543007876" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000888" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="M00_02_M04_I03_PreparedCandidateUsesExistingReadOnlyWorldContract" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I03_PreparedCandidateUsesExistingReadOnlyWorldContract" methodname="M00_02_M04_I03_PreparedCandidateUsesExistingReadOnlyWorldContract" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="719120080" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000258" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="M00_05_M04_I01_I02_RetirementAndSplitClassificationMustAgree" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I01_I02_RetirementAndSplitClassificationMustAgree" methodname="M00_05_M04_I01_I02_RetirementAndSplitClassificationMustAgree" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1815104052" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.000638" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1075" name="M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.009586" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1073" name="M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(False)" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(False)" methodname="M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="59783025" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.003811" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1074" name="M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)" fullname="OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)" methodname="M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation" classname="OpenOita.Tests.EditMode.StructureContractTests" runstate="Runnable" seed="1464413634" result="Passed" start-time="2026-10-05 17:27:32Z" end-time="2026-10-05 17:27:32Z" duration="0.003181" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Users/LYH/AppData/LocalLow/DefaultCompany/OpenOita\TestResults.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

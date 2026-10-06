@@ -1,0 +1,19 @@
+{
+  "日期": "2026-10-06",
+  "Unity": "6000.3.11f1",
+  "执行方式": "可渲染Editor / Unity Test Framework / MCP",
+  "job_id": "0d36f0f6a26b4a0e889581db7f795ae1",
+  "started_unix_ms": 1791285049542,
+  "finished_unix_ms": 1791285828186,
+  "summary": {
+    "total": 544,
+    "passed": 543,
+    "failed": 0,
+    "skipped": 1,
+    "durationSeconds": 773.2630429,
+    "resultState": "Skipped:Ignored"
+  },
+  "忽略项": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_WarmedRuleAllocationRequiresWorkingPositiveControl",
+  "忽略原因": "Editor .NET分配计数正对照0字节，同步GC.Alloc正对照200字节，未获可靠逐调用分配证据，仍需Player/Profiler复测。",
+  "说明": "摘要转录自get_test_job最终返回；长液体用例期间MCP连接超时重连，最终作业正常结束。之后补充ChangeSet替换后暂存的映射过滤和Host只读数量展示，受影响检查另行复跑，不将未测GC标为通过。"
+}

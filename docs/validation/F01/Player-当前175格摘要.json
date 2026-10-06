@@ -1,0 +1,449 @@
+{
+  "执行方式": "Windows64 Mono非Development / 后台D3D11图形模式",
+  "状态记录": [
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 0,
+      "active": 175,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 175
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 250,
+      "active": 169,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 169
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 503,
+      "active": 127,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 127
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 1753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 2753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 3753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 4753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 5753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 6753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 7753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 8753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 9753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10003,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10253,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10503,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    },
+    {
+      "lifecycle": "Ready",
+      "generation": 1,
+      "tick": 10753,
+      "active": 125,
+      "suspendedWater": 0,
+      "suspendedSteam": 0,
+      "total": 125
+    }
+  ],
+  "水量记录": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30
+  ],
+  "原始日志": "Player-当前175格.log",
+  "说明": "当前正式配置、默认禁转；不能代替允许旋转历史复现场景和全部Player验收。"
+}

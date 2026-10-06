@@ -1,0 +1,30 @@
+{
+  "模块": "M00补齐M04接口",
+  "合同": "M00-3 / CONTRACTS 1.2",
+  "实际机器": {
+    "ComputerName": "LAPTOP-VBDP3PAP",
+    "OS": "Microsoft Windows NT 10.0.26200.0",
+    "CoreCount": 28,
+    "NewTestGuid": "827bfd9021123034d929257f6959b5d9",
+    "GuidMatchCount": 1,
+    "EditorSettings": [
+      "m_EnterPlayModeOptionsEnabled: 1",
+      "m_EnterPlayModeOptions: 0"
+    ],
+    "Time": "2026-10-05T17:21:20.7309015+08:00"
+  },
+  "Unity版本": "6000.3.11f1",
+  "运行平台": "WindowsEditor",
+  "目标平台": "StandaloneWindows64",
+  "测试job": "87b39be2cf3246f09be819b8a7a60901",
+  "测试汇总": {
+    "total": 274,
+    "passed": 273,
+    "failed": 0,
+    "skipped": 1,
+    "durationSeconds": 9.6390323,
+    "resultState": "Skipped:Ignored"
+  },
+  "编辑器设置与依赖": "本轮未进入PlayMode；EditorSettings及Packages起止SHA256相同",
+  "Player与PlayMode": "本轮未运行；未执行构建及场景物理显示链路"
+}

@@ -1,0 +1,925 @@
+{
+  "job_id": "2b124e92723c4b909ba6562caa164b36",
+  "status": "failed",
+  "mode": "PlayMode",
+  "started_unix_ms": 1791285996143,
+  "finished_unix_ms": 1791286034438,
+  "last_update_unix_ms": 1791286034438,
+  "progress": {
+    "completed": 97,
+    "total": 97,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests.MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+    "last_finished_unix_ms": 1791286034402,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": true,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [
+      {
+        "full_name": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidCapture)",
+        "message": "System.InvalidOperationException : 显示候选未由M02采用。"
+      },
+      {
+        "full_name": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidRestoration)",
+        "message": "System.InvalidOperationException : 显示候选未由M02采用。"
+      },
+      {
+        "full_name": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_ReplacedFluidCaptureDoesNotTreatRecordIdAsBodyMapping",
+        "message": "  UnsupportedOperation / Commands / replace: 动态体仅允许结构固体替换。\r\n  Expected: True\r\n  But was:  False\r\n"
+      }
+    ],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "PlayMode",
+    "summary": {
+      "total": 97,
+      "passed": 94,
+      "failed": 3,
+      "skipped": 0,
+      "durationSeconds": 32.5891567,
+      "resultState": "Failed(Child)"
+    },
+    "results": [
+      {
+        "name": "M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+        "fullName": "OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+        "state": "Passed",
+        "durationSeconds": 0.0103081,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+        "fullName": "OpenOita.Tests.PlayMode.M02.StateLifetimeTests.M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode",
+        "state": "Passed",
+        "durationSeconds": 0.4153371,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_01_EnqueueAndRetryNeverExecuteAndResultLeaseExpires",
+        "state": "Passed",
+        "durationSeconds": 0.1287172,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_02_QueueAndCache4096TokenIdentityAndOverflow",
+        "state": "Passed",
+        "durationSeconds": 0.0385637,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_03_08_SameIdReplaceResetsFixedMarkAndChangesDescribeNewInstanceOwnership",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_03_08_SameIdReplaceResetsFixedMarkAndChangesDescribeNewInstanceOwnership",
+        "state": "Passed",
+        "durationSeconds": 0.0141671,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_03_CrossChunkSpawnAtomicAndSameIdReplaceRemovesFixedMark",
+        "state": "Passed",
+        "durationSeconds": 0.0125965,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_04_RotatedRingUsesRealFacesAndRegionMatchesErase",
+        "state": "Passed",
+        "durationSeconds": 0.0173137,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_05_DynamicFluidReplaceRejectsWholeMixedSelection",
+        "state": "Passed",
+        "durationSeconds": 0.0159314,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_06_BoundariesSortingBufferAndNoChunkAllocation",
+        "state": "Passed",
+        "durationSeconds": 0.0377549,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_06_MicroOverlapPointPriorityZeroSegmentAndEqualDistanceSort",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_06_MicroOverlapPointPriorityZeroSegmentAndEqualDistanceSort",
+        "state": "Passed",
+        "durationSeconds": 0.0096668,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(False)",
+        "state": "Passed",
+        "durationSeconds": 0.0159959,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_07_FailureInvalidatesAllCurrentTokensButPreservesHistory(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0100441,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_08_IgniteNoOpAndSameMaterialReplacementCreatesFreshState",
+        "state": "Passed",
+        "durationSeconds": 0.0100434,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+        "fullName": "OpenOita.Tests.PlayMode.M07A.M07CommandQueryTests.M07A_09_PublicLifecycleNotificationAllowsReadAndEnqueueButRejectsReentry",
+        "state": "Passed",
+        "durationSeconds": 0.0091148,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_01_08_SparseIdOriginCrossChunkAndIndependentTexels",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_01_08_SparseIdOriginCrossChunkAndIndependentTexels",
+        "state": "Passed",
+        "durationSeconds": 0.0456352,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_02_TwoStepsFlushOnlyFinalVersionAndTailClears",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_02_TwoStepsFlushOnlyFinalVersionAndTailClears",
+        "state": "Passed",
+        "durationSeconds": 0.0543093,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(True)",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0175225,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(False)",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_03_SplitAndRetainDisplaysMatchCommittedQueries(False)",
+        "state": "Passed",
+        "durationSeconds": 0.0136441,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_04_ShortFuelSpreadBurnoutAndChangesHaveReasons",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_04_ShortFuelSpreadBurnoutAndChangesHaveReasons",
+        "state": "Passed",
+        "durationSeconds": 0.0209596,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_05_ActualFlamePixelsClearWithCommittedRemove",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_ActualFlamePixelsClearWithCommittedRemove",
+        "state": "Passed",
+        "durationSeconds": 0.0497075,
+        "message": null,
+        "stackTrace": null,
+        "output": "128×128正式GPU输出，8倍单格，火焰位于材料格上方；成功Remove后材料和火焰实际像素均清空。\r\n"
+      },
+      {
+        "name": "M07B_05_BurningBodySplitRetiresOldFlameAssociation",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_BurningBodySplitRetiresOldFlameAssociation",
+        "state": "Passed",
+        "durationSeconds": 0.0145739,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_05_RemoveReplaceIgniteResetAndWetCleanup",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_RemoveReplaceIgniteResetAndWetCleanup",
+        "state": "Passed",
+        "durationSeconds": 0.031775,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_05_RotatingFirstWaterContactUsesSameBurnDamageAndFlameVersion",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_05_RotatingFirstWaterContactUsesSameBurnDamageAndFlameVersion",
+        "state": "Passed",
+        "durationSeconds": 0.0388298,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_07_InitializationFailureAndTwentyLifecycleRoundsReleaseResources",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_07_InitializationFailureAndTwentyLifecycleRoundsReleaseResources",
+        "state": "Passed",
+        "durationSeconds": 0.4248384,
+        "message": null,
+        "stackTrace": null,
+        "output": "20轮正式Create/Step/Reset/Dispose资源稳定：纹理0、网格0、显示对象0、材质0、根对象0。\r\n"
+      },
+      {
+        "name": "M07B_06_CommandCapacityRejectsOnlyOneCommandThenCanDisplayNextTick",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_CommandCapacityRejectsOnlyOneCommandThenCanDisplayNextTick",
+        "state": "Passed",
+        "durationSeconds": 0.0152059,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterDisplayTilePrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterDisplayTilePrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0194505,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterPhysicsSubstep)",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterPhysicsSubstep)",
+        "state": "Passed",
+        "durationSeconds": 0.0165026,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterStructurePrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_FailedTickDoesNotAdoptPublishOrUpload(AfterStructurePrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0135642,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_NoImmediateTargetPublishesHiddenFluidDisplay",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_NoImmediateTargetPublishesHiddenFluidDisplay",
+        "state": "Passed",
+        "durationSeconds": 0.0185313,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_06_ResetFailureKeepsOldDisplayAndInvalidatesOldTokens",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_06_ResetFailureKeepsOldDisplayAndInvalidatesOldTokens",
+        "state": "Passed",
+        "durationSeconds": 0.0431377,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_07_09_DefaultHostCreatesReadyWorldAndFlushesFrame",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_07_09_DefaultHostCreatesReadyWorldAndFlushesFrame",
+        "state": "Passed",
+        "durationSeconds": 0.153292,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_08_FuelTexelsAndLifetimeExpiredChangeAreIndependent",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_08_FuelTexelsAndLifetimeExpiredChangeAreIndependent",
+        "state": "Passed",
+        "durationSeconds": 0.0143371,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_09_ActualGpuOutputOneAndThreeTimesCoverage",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_09_ActualGpuOutputOneAndThreeTimesCoverage",
+        "state": "Passed",
+        "durationSeconds": 0.0850221,
+        "message": null,
+        "stackTrace": null,
+        "output": "正式IWorld，768×768原始GPU输出，倍率1，8×8材料覆盖8×8像素，逻辑世界覆盖256×256；版本1/0。\r\n正式IWorld，768×768原始GPU输出，倍率3，8×8材料覆盖24×24像素，逻辑世界覆盖768×768；版本1/0。\r\n"
+      },
+      {
+        "name": "M07B_10_Config129x65AndViewScaleNeverMutatesWorld",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_10_Config129x65AndViewScaleNeverMutatesWorld",
+        "state": "Passed",
+        "durationSeconds": 0.0130023,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M07B_11_RotatingMovingRingPreservesEightTexelsAndHole",
+        "fullName": "OpenOita.Tests.PlayMode.M07B.M07DisplayAcceptanceTests.M07B_11_RotatingMovingRingPreservesEightTexelsAndHole",
+        "state": "Passed",
+        "durationSeconds": 0.0152128,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_09_TrialWithHiddenWaterExitAndResetKeepEditableInitialData",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.F01_09_TrialWithHiddenWaterExitAndResetKeepEditableInitialData",
+        "state": "Passed",
+        "durationSeconds": 0.0604273,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_03_HostRejectsRotationAndScaleWithoutWorld",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_03_HostRejectsRotationAndScaleWithoutWorld",
+        "state": "Passed",
+        "durationSeconds": 0.0067412,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_06_OneHundredFormalTicksSaveExitAndResetDoNotPolluteInitialData",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_06_OneHundredFormalTicksSaveExitAndResetDoNotPolluteInitialData",
+        "state": "Passed",
+        "durationSeconds": 2.2313785,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_07_FourArmsUseFormalCommandStructurePhysicsAndQuery",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_07_FourArmsUseFormalCommandStructurePhysicsAndQuery",
+        "state": "Passed",
+        "durationSeconds": 0.0389342,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_07_SingleUnfixedPixelExtractsAndActuallyMoves",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_07_SingleUnfixedPixelExtractsAndActuallyMoves",
+        "state": "Passed",
+        "durationSeconds": 0.0265641,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_08_TwentyTrialCyclesReleaseWorldDisplayCameraAndPhysics",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_08_TwentyTrialCyclesReleaseWorldDisplayCameraAndPhysics",
+        "state": "Passed",
+        "durationSeconds": 0.6935706,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_09_ActualEditorPreviewAndFormalTrialGpuPixels",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_09_ActualEditorPreviewAndFormalTrialGpuPixels",
+        "state": "Passed",
+        "durationSeconds": 0.1736459,
+        "message": null,
+        "stackTrace": null,
+        "output": "编辑初态 原始输出768×768，1倍，64状态覆盖8×8实际像素。\r\n编辑初态 原始输出768×768，3倍，64状态覆盖24×24实际像素。\r\n正式试玩 原始输出768×768，1倍，64状态覆盖8×8实际像素。\r\n正式试玩 原始输出768×768，3倍，64状态覆盖24×24实际像素。\r\n"
+      },
+      {
+        "name": "M08_09_Custom129x65SizeSurvivesTrialAndFileRoundTrip",
+        "fullName": "OpenOita.Tests.PlayMode.M08.SceneEditorIntegrationTests.M08_09_Custom129x65SizeSurvivesTrialAndFileRoundTrip",
+        "state": "Passed",
+        "durationSeconds": 0.0550893,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_01_02_06_08_RealCaptureWaitRestorePreservesInstanceAndChangeReasons",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_01_02_06_08_RealCaptureWaitRestorePreservesInstanceAndChangeReasons",
+        "state": "Passed",
+        "durationSeconds": 0.0476181,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_05_DefaultHiddenSteamExpiresAfterTwoHundredFullSteps",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_05_DefaultHiddenSteamExpiresAfterTwoHundredFullSteps",
+        "state": "Passed",
+        "durationSeconds": 0.2161974,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_06_RestoredWaterExtinguishesFirstContactWithoutUndoingFuel",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_06_RestoredWaterExtinguishesFirstContactWithoutUndoingFuel",
+        "state": "Passed",
+        "durationSeconds": 0.0194129,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidCapture)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidCapture)",
+        "state": "Failed:Error",
+        "durationSeconds": 0.0220143,
+        "message": "System.InvalidOperationException : 显示候选未由M02采用。",
+        "stackTrace": "  at OpenOita.Render.CommittedWorldRenderer.OnCommitted (OpenOita.Contracts.ICommittedRenderView view, OpenOita.Contracts.ChangeSet& changes) [0x00021] in D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\CommittedWorldRenderer.cs:119 \r\n  at OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken (OpenOita.Contracts.FailurePoint point) [0x0004b] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\Physics\\FluidSuspensionAcceptanceTests.cs:144 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <41d29b352f6a475ab1bf7c6628b82790>:0 ",
+        "output": ""
+      },
+      {
+        "name": "F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidRestoration)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken(BeforeFluidRestoration)",
+        "state": "Failed:Error",
+        "durationSeconds": 0.0481403,
+        "message": "System.InvalidOperationException : 显示候选未由M02采用。",
+        "stackTrace": "  at OpenOita.Render.CommittedWorldRenderer.OnCommitted (OpenOita.Contracts.ICommittedRenderView view, OpenOita.Contracts.ChangeSet& changes) [0x00021] in D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\CommittedWorldRenderer.cs:119 \r\n  at OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_RealResourceFailureKeepsLastVersionAndFaultsCurrentToken (OpenOita.Contracts.FailurePoint point) [0x0004b] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\Physics\\FluidSuspensionAcceptanceTests.cs:144 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <41d29b352f6a475ab1bf7c6628b82790>:0 ",
+        "output": ""
+      },
+      {
+        "name": "F01_07_SpawnCapacityIncludesHiddenWaterAndWorldStaysReadyAfterRejection",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_07_SpawnCapacityIncludesHiddenWaterAndWorldStaysReadyAfterRejection",
+        "state": "Passed",
+        "durationSeconds": 0.0184197,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_ActualGpuPixelsHideAndRestoreAtOneAndThreeTimes",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_ActualGpuPixelsHideAndRestoreAtOneAndThreeTimes",
+        "state": "Passed",
+        "durationSeconds": 0.0724324,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Remove)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Remove)",
+        "state": "Passed",
+        "durationSeconds": 0.0177776,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Replace)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Replace)",
+        "state": "Passed",
+        "durationSeconds": 0.0167295,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Ignite)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_CommandsDoNotSelectHiddenRecordsAtUnoccupiedAnchor(Ignite)",
+        "state": "Passed",
+        "durationSeconds": 0.015908,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_08_ReplacedFluidCaptureDoesNotTreatRecordIdAsBodyMapping",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_ReplacedFluidCaptureDoesNotTreatRecordIdAsBodyMapping",
+        "state": "Failed",
+        "durationSeconds": 0.0178635,
+        "message": "  UnsupportedOperation / Commands / replace: 动态体仅允许结构固体替换。\r\n  Expected: True\r\n  But was:  False\r\n",
+        "stackTrace": "at OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.Success (OpenOita.Contracts.WorldResult result) [0x00000] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\Physics\\FluidSuspensionAcceptanceTests.cs:19\r\nat OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_ReplacedFluidCaptureDoesNotTreatRecordIdAsBodyMapping () [0x000a1] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\Physics\\FluidSuspensionAcceptanceTests.cs:111\r\n",
+        "output": ""
+      },
+      {
+        "name": "F01_08_SpawnAtAnchorIsNotOverwrittenByRestoration",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_08_SpawnAtAnchorIsNotOverwrittenByRestoration",
+        "state": "Passed",
+        "durationSeconds": 0.0428995,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_09_TwentyHiddenWorldResetDisposeRoundsClearRecordsAndPhysics",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_09_TwentyHiddenWorldResetDisposeRoundsClearRecordsAndPhysics",
+        "state": "Passed",
+        "durationSeconds": 0.3259651,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_10_NoEmptyTargetWaitsTenThousandTicksWithoutLosingWater",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_10_NoEmptyTargetWaitsTenThousandTicksWithoutLosingWater",
+        "state": "Passed",
+        "durationSeconds": 10.5303448,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "F01_10_Original175CellScenePassesTick264AndConservesWater(False)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_10_Original175CellScenePassesTick264AndConservesWater(False)",
+        "state": "Passed",
+        "durationSeconds": 7.4035468,
+        "message": null,
+        "stackTrace": null,
+        "output": "175格初态，禁转=False，Tick320 Ready，水总量=30，最大暂存水=10。\r\n"
+      },
+      {
+        "name": "F01_10_Original175CellScenePassesTick264AndConservesWater(True)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.FluidSuspensionAcceptanceTests.F01_10_Original175CellScenePassesTick264AndConservesWater(True)",
+        "state": "Passed",
+        "durationSeconds": 6.4234524,
+        "message": null,
+        "stackTrace": null,
+        "output": "175格初态，禁转=True，Tick320 Ready，水总量=30，最大暂存水=0。\r\n"
+      },
+      {
+        "name": "M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(True)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0193612,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(False)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(False)",
+        "state": "Passed",
+        "durationSeconds": 0.0119735,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_02_FixedFloorAndCornerUseRealMaterialRectangles",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_FixedFloorAndCornerUseRealMaterialRectangles",
+        "state": "Passed",
+        "durationSeconds": 0.124089,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(0)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(0)",
+        "state": "Passed",
+        "durationSeconds": 0.0139256,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(1)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(1)",
+        "state": "Passed",
+        "durationSeconds": 0.0121508,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(2)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(2)",
+        "state": "Passed",
+        "durationSeconds": 0.0126699,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(3)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(3)",
+        "state": "Passed",
+        "durationSeconds": 0.0468872,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(6.0f,8)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(6.0f,8)",
+        "state": "Passed",
+        "durationSeconds": 0.0159033,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(4.0f,1)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(4.0f,1)",
+        "state": "Passed",
+        "durationSeconds": 0.0147527,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T6_01_RealSubstepSuspendsWaterAndSteamAtomicallyAndConservesState",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T6_01_RealSubstepSuspendsWaterAndSteamAtomicallyAndConservesState",
+        "state": "Passed",
+        "durationSeconds": 0.0184653,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_01_NoImmediateTargetSuspendsBothSourcesAndPublishes",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_01_NoImmediateTargetSuspendsBothSourcesAndPublishes",
+        "state": "Passed",
+        "durationSeconds": 0.0165341,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_02_CumulativeTickBudgetRejectsWholeDisplacementAndFaultsTokens",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_02_CumulativeTickBudgetRejectsWholeDisplacementAndFaultsTokens",
+        "state": "Passed",
+        "durationSeconds": 0.0189214,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_02_TemporaryCpuCapacityRejectsDisplacementBeforeAdoption",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_02_TemporaryCpuCapacityRejectsDisplacementBeforeAdoption",
+        "state": "Passed",
+        "durationSeconds": 0.0435361,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_03_FormalSpawnRejectsMicroOverlapButAllowsHole",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_03_FormalSpawnRejectsMicroOverlapButAllowsHole",
+        "state": "Passed",
+        "durationSeconds": 0.0182746,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_03_WorldEdgeSpawnRejectsAnyRepresentablePositiveOverlap",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_03_WorldEdgeSpawnRejectsAnyRepresentablePositiveOverlap",
+        "state": "Passed",
+        "durationSeconds": 0.0122378,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_04_InitializationFailureCleansPreparedResources(AfterRectanglesPrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterRectanglesPrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0122063,
+        "message": null,
+        "stackTrace": null,
+        "output": "AfterRectanglesPrepared, retainedPendingDestroy=4\r\n"
+      },
+      {
+        "name": "M06_T7_04_InitializationFailureCleansPreparedResources(AfterMassPrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterMassPrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0108597,
+        "message": null,
+        "stackTrace": null,
+        "output": "AfterMassPrepared, retainedPendingDestroy=4\r\n"
+      },
+      {
+        "name": "M06_T7_04_InitializationFailureCleansPreparedResources(AfterBodyPrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterBodyPrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0130515,
+        "message": null,
+        "stackTrace": null,
+        "output": "AfterBodyPrepared, retainedPendingDestroy=4\r\n"
+      },
+      {
+        "name": "M06_T7_04_InitializationFailureCleansPreparedResources(AfterPhysicsPrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterPhysicsPrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.0130693,
+        "message": null,
+        "stackTrace": null,
+        "output": "AfterPhysicsPrepared, retainedPendingDestroy=6\r\n"
+      },
+      {
+        "name": "M06_T7_04_InitializationFailureCleansPreparedResources(AfterSpatialPrepared)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterSpatialPrepared)",
+        "state": "Passed",
+        "durationSeconds": 0.011865,
+        "message": null,
+        "stackTrace": null,
+        "output": "AfterSpatialPrepared, retainedPendingDestroy=6\r\n"
+      },
+      {
+        "name": "M06_T7_04_SecondBodyFailureReleasesAlreadyPreparedMaterialBodies",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_SecondBodyFailureReleasesAlreadyPreparedMaterialBodies",
+        "state": "Passed",
+        "durationSeconds": 0.0128663,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T7_04_TwentyFormalCreateResetDisposeRoundsReleaseScenesAndObjects",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_TwentyFormalCreateResetDisposeRoundsReleaseScenesAndObjects",
+        "state": "Passed",
+        "durationSeconds": 0.2457919,
+        "message": null,
+        "stackTrace": null,
+        "output": "20轮稳定基线：scenes=1, physicsObjects=0\r\n"
+      },
+      {
+        "name": "M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(1)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(1)",
+        "state": "Passed",
+        "durationSeconds": 0.0168456,
+        "message": null,
+        "stackTrace": null,
+        "output": "N=1, mass=1, vy=-1.962, y=1.78418, error=-0.019619954872131418\r\nN=1, mass=10, vy=-1.962, y=1.78418, error=-0.019619954872131418\r\n"
+      },
+      {
+        "name": "M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(2)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(2)",
+        "state": "Passed",
+        "durationSeconds": 0.0152882,
+        "message": null,
+        "stackTrace": null,
+        "output": "N=2, mass=1, vy=-1.96199954, y=1.79399014, error=-0.0098098648071289762\r\nN=2, mass=10, vy=-1.96199954, y=1.79399014, error=-0.0098098648071289762\r\n"
+      },
+      {
+        "name": "M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(4)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(4)",
+        "state": "Passed",
+        "durationSeconds": 0.0435052,
+        "message": null,
+        "stackTrace": null,
+        "output": "N=4, mass=1, vy=-1.9619993, y=1.798895, error=-0.0049049985885620817\r\nN=4, mass=10, vy=-1.9619993, y=1.798895, error=-0.0049049985885620817\r\n"
+      },
+      {
+        "name": "M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(8)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(8)",
+        "state": "Passed",
+        "durationSeconds": 0.0225356,
+        "message": null,
+        "stackTrace": null,
+        "output": "N=8, mass=1, vy=-1.96200144, y=1.80134726, error=-0.0024527442932129606\r\nN=8, mass=10, vy=-1.96200144, y=1.80134726, error=-0.0024527442932129606\r\n"
+      },
+      {
+        "name": "M06_T8_01_ZeroGravityAndAutomaticSubstepSelection",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_ZeroGravityAndAutomaticSubstepSelection",
+        "state": "Passed",
+        "durationSeconds": 0.0168689,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M06_T9_02_FirstRotatingWaterContactExtinguishesAfterFuelConsumption",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T9_02_FirstRotatingWaterContactExtinguishesAfterFuelConsumption",
+        "state": "Passed",
+        "durationSeconds": 0.0168955,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "BurnoutOrRemovalSplitsIntoLockedMovingChildren(True)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.BurnoutOrRemovalSplitsIntoLockedMovingChildren(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0161046,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "BurnoutOrRemovalSplitsIntoLockedMovingChildren(False)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.BurnoutOrRemovalSplitsIntoLockedMovingChildren(False)",
+        "state": "Passed",
+        "durationSeconds": 0.0144283,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "DefaultHostDisablesRotation",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.DefaultHostDisablesRotation",
+        "state": "Passed",
+        "durationSeconds": 0.0157463,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "EditorTrialUsesSelectedModeAndPreservesItOnReset(True)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.EditorTrialUsesSelectedModeAndPreservesItOnReset(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0173299,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "EditorTrialUsesSelectedModeAndPreservesItOnReset(False)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.EditorTrialUsesSelectedModeAndPreservesItOnReset(False)",
+        "state": "Passed",
+        "durationSeconds": 0.0463594,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "FallingBeamHitsOffCenterSupportWithoutTurningOrPassingThrough",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.FallingBeamHitsOffCenterSupportWithoutTurningOrPassingThrough",
+        "state": "Passed",
+        "durationSeconds": 0.0442602,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "OffCenterForceMovesBodyAndOnlyUnlockedWorldRotates(True)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.OffCenterForceMovesBodyAndOnlyUnlockedWorldRotates(True)",
+        "state": "Passed",
+        "durationSeconds": 0.0155186,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "OffCenterForceMovesBodyAndOnlyUnlockedWorldRotates(False)",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.OffCenterForceMovesBodyAndOnlyUnlockedWorldRotates(False)",
+        "state": "Passed",
+        "durationSeconds": 0.015866,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "RetainedBodyAndResetRestoreRotationConstraint",
+        "fullName": "OpenOita.Tests.PlayMode.Physics.RotationConstraintTests.RetainedBodyAndResetRestoreRotationConstraint",
+        "state": "Passed",
+        "durationSeconds": 0.0199966,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+        "fullName": "OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests.MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams",
+        "state": "Passed",
+        "durationSeconds": 1.0122507,
+        "message": null,
+        "stackTrace": null,
+        "output": "实际输出1366×768，倍率1，32×32水像素覆盖32×32输出像素，材料数4864，Tick0。\r\n实际输出1366×768，倍率3，32×32水像素覆盖96×96输出像素，材料数4864，Tick0。\r\n"
+      }
+    ]
+  }
+}

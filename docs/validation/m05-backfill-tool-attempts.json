@@ -1,0 +1,181 @@
+{
+  "说明": "测试桥接启动与断连记录；未包含实际测试结果时不作为通过证据。",
+  "首次启动": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Test job started.\",\"error\":null,\"data\":{\"job_id\":\"16209ce8d85b43fdbd3b3c062e045cc2\",\"status\":\"running\",\"mode\":\"EditMode\",\"include_details\":false,\"include_failed_tests\":true},\"hint\":null}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": true,
+        "message": "Test job started.",
+        "error": null,
+        "data": {
+          "job_id": "16209ce8d85b43fdbd3b3c062e045cc2",
+          "status": "running",
+          "mode": "EditMode",
+          "include_details": false,
+          "include_failed_tests": true
+        },
+        "hint": null
+      }
+    },
+    "isError": false
+  },
+  "首次结果": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"16209ce8d85b43fdbd3b3c062e045cc2\",\"status\":\"failed\",\"mode\":\"EditMode\",\"started_unix_ms\":1791200895989,\"finished_unix_ms\":1791201199816,\"last_update_unix_ms\":1791201199816,\"progress\":{\"completed\":0,\"total\":null,\"current_test_full_name\":null,\"current_test_started_unix_ms\":null,\"last_finished_test_full_name\":null,\"last_finished_unix_ms\":null,\"stuck_suspected\":false,\"editor_is_focused\":false,\"run_in_background\":false,\"focus_nudge_attempts\":null,\"focus_nudge_limit\":null,\"focus_nudge_status\":null,\"blocked_reason\":null,\"failures_so_far\":[],\"failures_capped\":false},\"error\":\"Test job failed to initialize (tests did not start within timeout)\",\"result\":null},\"hint\":null}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": true,
+        "message": "Test job status retrieved.",
+        "error": null,
+        "data": {
+          "job_id": "16209ce8d85b43fdbd3b3c062e045cc2",
+          "status": "failed",
+          "mode": "EditMode",
+          "started_unix_ms": 1791200895989,
+          "finished_unix_ms": 1791201199816,
+          "last_update_unix_ms": 1791201199816,
+          "progress": {
+            "completed": 0,
+            "total": null,
+            "current_test_full_name": null,
+            "current_test_started_unix_ms": null,
+            "last_finished_test_full_name": null,
+            "last_finished_unix_ms": null,
+            "stuck_suspected": false,
+            "editor_is_focused": false,
+            "run_in_background": false,
+            "focus_nudge_attempts": null,
+            "focus_nudge_limit": null,
+            "focus_nudge_status": null,
+            "blocked_reason": null,
+            "failures_so_far": [],
+            "failures_capped": false
+          },
+          "error": "Test job failed to initialize (tests did not start within timeout)",
+          "result": null
+        },
+        "hint": null
+      }
+    },
+    "isError": false
+  },
+  "筛选启动": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Test job started.\",\"error\":null,\"data\":{\"job_id\":\"7135a6482a4644618eea69e1f8d92726\",\"status\":\"running\",\"mode\":\"EditMode\",\"include_details\":true,\"include_failed_tests\":true},\"hint\":null}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": true,
+        "message": "Test job started.",
+        "error": null,
+        "data": {
+          "job_id": "7135a6482a4644618eea69e1f8d92726",
+          "status": "running",
+          "mode": "EditMode",
+          "include_details": true,
+          "include_failed_tests": true
+        },
+        "hint": null
+      }
+    },
+    "isError": false
+  },
+  "筛选轮查询": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"7135a6482a4644618eea69e1f8d92726\",\"status\":\"running\",\"mode\":\"EditMode\",\"started_unix_ms\":1791201244042,\"finished_unix_ms\":null,\"last_update_unix_ms\":1791201244042,\"progress\":{\"completed\":0,\"total\":null,\"current_test_full_name\":null,\"current_test_started_unix_ms\":null,\"last_finished_test_full_name\":null,\"last_finished_unix_ms\":null,\"stuck_suspected\":true,\"editor_is_focused\":false,\"run_in_background\":false,\"focus_nudge_attempts\":3,\"focus_nudge_limit\":3,\"focus_nudge_status\":\"attempt_limit_reached\",\"blocked_reason\":null,\"failures_so_far\":[],\"failures_capped\":false},\"error\":null,\"result\":null},\"hint\":null}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": true,
+        "message": "Test job status retrieved.",
+        "error": null,
+        "data": {
+          "job_id": "7135a6482a4644618eea69e1f8d92726",
+          "status": "running",
+          "mode": "EditMode",
+          "started_unix_ms": 1791201244042,
+          "finished_unix_ms": null,
+          "last_update_unix_ms": 1791201244042,
+          "progress": {
+            "completed": 0,
+            "total": null,
+            "current_test_full_name": null,
+            "current_test_started_unix_ms": null,
+            "last_finished_test_full_name": null,
+            "last_finished_unix_ms": null,
+            "stuck_suspected": true,
+            "editor_is_focused": false,
+            "run_in_background": false,
+            "focus_nudge_attempts": 3,
+            "focus_nudge_limit": 3,
+            "focus_nudge_status": "attempt_limit_reached",
+            "blocked_reason": null,
+            "failures_so_far": [],
+            "failures_capped": false
+          },
+          "error": null,
+          "result": null
+        },
+        "hint": null
+      }
+    },
+    "isError": false
+  },
+  "完整程序集启动": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Test job started.\",\"error\":null,\"data\":{\"job_id\":\"0c4234ba598e49e7b5bf6335ad1b8982\",\"status\":\"running\",\"mode\":\"EditMode\",\"include_details\":true,\"include_failed_tests\":true},\"hint\":null}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": true,
+        "message": "Test job started.",
+        "error": null,
+        "data": {
+          "job_id": "0c4234ba598e49e7b5bf6335ad1b8982",
+          "status": "running",
+          "mode": "EditMode",
+          "include_details": true,
+          "include_failed_tests": true
+        },
+        "hint": null
+      }
+    },
+    "isError": false
+  },
+  "完整程序集查询": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":false,\"message\":null,\"error\":\"Unity plugin session f71594e1-1710-4dee-a28a-5db3326cee54 disconnected while awaiting command_result\",\"data\":null,\"hint\":\"retry\"}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "success": false,
+        "message": null,
+        "error": "Unity plugin session f71594e1-1710-4dee-a28a-5db3326cee54 disconnected while awaiting command_result",
+        "data": null,
+        "hint": "retry"
+      }
+    },
+    "isError": false
+  }
+}

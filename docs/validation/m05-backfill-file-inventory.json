@@ -1,0 +1,1375 @@
+{
+  "模块": "M05",
+  "记录时间UTC": "2026-10-05T12:14:14.748577+00:00",
+  "开工保护文件数": 256,
+  "保持相同文件数": 255,
+  "受保护文件": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\AssemblyBoundaryTests.cs",
+      "SHA256": "eb2d7f70393130a47c2c1d97adf549bfc700cf5ca0c681a6a5813e8e28af8d26",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\BaselineSourcesTests.cs",
+      "SHA256": "7b12d342a99d9f9276a5c8eaf6a3ae2270dbbc38f018bea872d7d3c1c0449f17",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\ContractDefaultsTests.cs",
+      "SHA256": "21c5eda6ab113d8da8168dd497f9290b02b7c5cbbb221189d55cb501f3cb48c8",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\FixtureCatalogTests.cs",
+      "SHA256": "e35f3cd5230db5f784b8ef98bcd8377a59f8fe2f13ed62a142d567f56535e36f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\RuleInstanceContractTests.cs",
+      "SHA256": "4ba71f363550fc1e78ee272940403cf6268952ec32255a7462e3bf4cb7f3ad21",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\StructureContractTests.cs",
+      "SHA256": "f0d32041bcfd4c191d0b2acf8e52ab2dae728468d8d74ac0eb3d659e76a5ed3c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\BaselineSources.cs",
+      "SHA256": "4cc8869845f3e79f95d0aa1f2496b4d31cb1908887978b13b212aa979be00f63",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\ContractConsumer.cs",
+      "SHA256": "f7077eb9ec4da86352cbc0e76f228d9d3ace6dee73faab69141d5970f049513c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\FixtureCatalog.cs",
+      "SHA256": "bbe7471f2b6bdeb5953acb100b5f35f34987c7a435cb6e070eb9cfe7307e5cd8",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\FixtureExporter.cs",
+      "SHA256": "a9d93f18bd80f06567a92541a898f767fc345991c190926d97b4685374aac6c1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\IntegrationContractAssertions.cs",
+      "SHA256": "647a1f863ccea59c5b54a076b2e35d67ab9c1fbc573844c74cb835117229e06c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\ScenarioFixture.cs",
+      "SHA256": "d5d4c43d672f0609e707b9b80500a615d4c38c7f6d459ef9f95a839fe9097661",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\ContractConsumerTests.cs",
+      "SHA256": "1e4616da43dea8298497bfc6d815ca7120065741cb3a8a5fbeb5f00fcec8d280",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02\\StateLifetimeTests.cs",
+      "SHA256": "44fb2acdf02ed9fddd9cac320857d89454244fb4aab381bb1a5383352fdf73f4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyCandidateStateCoreTests.cs",
+      "SHA256": "442895b05214db7dd928f654d8d7efac55c12786ca5e4a00993a9f4bca6a9b66",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyExtractionPlannerTests.cs",
+      "SHA256": "17919d157937ec53fb82f4896c01a98a8e67047dece0a94ddadbf777f0b32695",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyFixture.cs",
+      "SHA256": "4c75fea18099e14e8d2123403341955f9a1210f572136bbdbb230c456f7cedba",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyIdReservationTests.cs",
+      "SHA256": "c0e1ecffb2d5b8a60a1dcf0757c04bad548e84750fed3f1a5da01951806d11e7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\MassPropertiesCalculatorTests.cs",
+      "SHA256": "c63b37a97470564ddf5c811d768471e7829241d9cd9e7eb5d32ddca4f7452987",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\MaterialOwnershipTests.cs",
+      "SHA256": "166142bf9ed67832314993d67b44144a644d37d3e88d80ef079661d7c4c6309d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\ConfigurationFileStoreTests.cs",
+      "SHA256": "6f4e76cfaf29588c50daa02b7b27818a94461eaa7cec1c284643a6f9941586bc",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\WorldSourceLoaderTests.cs",
+      "SHA256": "957d5b091529c8229c50c540926ded361e1bd4c7755bf2e6c50ef664e4432621",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\HostDriverTests.cs",
+      "SHA256": "914496ff6854c9fa7bafd058bebbdcf413cfd85c8201f955c05106d6dc419787",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs",
+      "SHA256": "e356f8e0adb06769b7076450d41b8c4f92ae771a3ecbf1876aacad5e9f37865f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs",
+      "SHA256": "3b68165715264791bdce722501bd58ed5850615cef9f133225a1965af8fcee00",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs",
+      "SHA256": "9c2ed0c449f0e68b9b91d71c7f5e8444c7883effffeb38455360f45316205f40",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\BurnRuleTests.cs",
+      "SHA256": "d0854ce42fd8b6c5e1664aafd0caf644dbffd5d98b2248762082f6efde8be0a4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\MovementRuleTests.cs",
+      "SHA256": "f1acf62e40b629456b679ead449edebc7db98b65dcb52de2450ccd4840243ba0",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFailureTests.cs",
+      "SHA256": "fe15e042cf59db50c9b7eec24ff63ba9627f851d1c269c4fed3d4255f4da7e87",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFixture.cs",
+      "SHA256": "8c963cf948a114d526f9ac96da0d8adc3631e4bbdd00e0d6f565c87aa9c37e84",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "SHA256": "1b0021c01792cf0b7ac39aefc89fa218323e882df10aa3a267a90629506cdae1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs",
+      "SHA256": "be115b3a328b4241cca79662815fff1e358777bac7c7048ef660299d8d3c3abc",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs",
+      "SHA256": "5b871f2a47a667a4d76de7d9e6f6bf7cd6f7562c940fe58059aa473b43bea915",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Geometry\\RectangleGeometryBuilderTests.cs",
+      "SHA256": "2cc9d9a6ae31a978030acc93d3952c9347aa55f8f9adfbf2704d800ae48156ec",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\CellState.cs",
+      "SHA256": "4de8fccf18d6a341c460f3b2987ebe3eb437b3348062962a12ae90d85083352f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\ChunkCoord.cs",
+      "SHA256": "d0a0a7f27bdee43a3010237db74a1b4870d7885e46b3c6584af4f98a0b58d4a1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\GravitySim.cs",
+      "SHA256": "c3feb57556cec65f8dfa8829e8cf1cbab8c02aadf58a82e6b82961ab2d59b1a1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\MaterialDefinition.cs",
+      "SHA256": "a993113fde40eca2488d12bdad6f67413461ed56579cf3e294093575b583ce0b",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\MaterialRegistry.cs",
+      "SHA256": "64d3c3578bce5833d467ee94d3f0aae1d41ca38d5f2dee4726ea70a7673fba3d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\WorldConstants.cs",
+      "SHA256": "492a6a443c9d384d39c3d202335a3339dcb9890ba696cafcf313f252fd2c24a6",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationFileStore.cs",
+      "SHA256": "72657f5d35aa82eeb99e58b1ad2bd898c057ec90c2e08891bfaf95d5c17076e0",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationSerializer.cs",
+      "SHA256": "28c7304398ae61e286d77083d5899f352fd87cc191963e018efce83547dc0a43",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialJsonLoader.cs",
+      "SHA256": "6c6121d780a0e24eb5b89fd8517ecd0806b411df8c65347fd7fbab2659891cfa",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialRuntimeTable.cs",
+      "SHA256": "810a83ea5f09afa4cae7aac4a68e30429b46f9cfa19d08c1a28081b422f24814",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\RuleRegistry.cs",
+      "SHA256": "05b293974751c853743bdd0ced9a45d82664b8aa68d1f72db15824a8b4711be3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\StrictJson.cs",
+      "SHA256": "4039e91fcaa12a05fcb44b6ef81283d9522f135ab91b504e25f3233899621f64",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\TestMaterialDto.cs",
+      "SHA256": "b737842abe15a1b5a9cbe43553fd357fc632f47acceeac873212732b34e0d170",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\WorldSourceLoader.cs",
+      "SHA256": "0ff41588bb45802624f5cee9cf462c692c3653c4cc75fdcc9ebd84817d8ba36f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\FixedStepDriver.cs",
+      "SHA256": "b89b86899d5c3b888a88875236ad2a8178d57f68ece8d923c2b51b5057b9082c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs",
+      "SHA256": "62caf7c6aae0b8e40790418baf2165fa9cfaef4d641dc94c2c52cc74728805c1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\ChunkDisplay.cs",
+      "SHA256": "71de4d542e07cb4e11a8d26275fb882698a7ea30a0e9b92289b8ea1bfeb1d042",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\ChunkGpuResources.cs",
+      "SHA256": "004e7bec6eab307f816ff41bb7cce718e8bb9746bebc0c83593b46fc788442b2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\MaterialAtlasBuilder.cs",
+      "SHA256": "4f46468c724f38b20bdb371ea0f0738d6fb3b99524ac7eef27794f11b9dd5836",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\WorldRender.cs",
+      "SHA256": "dcb0ea886e0726f966583cc481f4adb58ea7ec90a1c95d1f8e6497fcc1a1d3ab",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\BurnRule.cs",
+      "SHA256": "c6b0ba971d04b6a1d9e6489f1d29829eecf87299bb28e3f7c2de58d4eba81ca5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\GasDriftRule.cs",
+      "SHA256": "8b7d67abc1bce327286333c5cff5f4839aca0fbf2447f9e80d5deee5bc334e7d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\LiquidFlowRule.cs",
+      "SHA256": "c3616f54fe4e5ee072d4ad0726d8060f1acd6f4a1a95d6f789da001b6f8ad305",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\MovementCandidateResolver.cs",
+      "SHA256": "fa33b9ba261813cdece8283eb078e98f7c469729f31a653a02de8c139f7efc45",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleBatchContext.cs",
+      "SHA256": "fd0d7bcd0cb0d94dd8dd21fbd3977f85f435c70aa1dfa21912e5667cd3db2e56",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleExecutionTable.cs",
+      "SHA256": "431fdd050dfad7be1064dfd85a959e8df36a1e146cc62aa92e3ca2b988041019",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleIntent.cs",
+      "SHA256": "565ec8c3a4bdfb8cd35e160669e9c19fe26454c37165f3c79b8a920a43cab248",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\WetContactPolicy.cs",
+      "SHA256": "642b7d9231c555ca099371713644786e71cc930c1c6170d65abf0197fd1699f5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkAllocationState.cs",
+      "SHA256": "6b7291d744974aa794b01b8e17fb7f0c55c75c2f90c421ad501042fa103dd9c0",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkStore.cs",
+      "SHA256": "517b7fabbde19cb4fd5fa186c63e4303b91aadf0dd9e7f09e80a27776887961e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\CommittedWorldView.cs",
+      "SHA256": "1e0eff992781fe1848f217f2fb56a652634c5a628273cf7e9db052fe5696ab70",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickChangeCounter.cs",
+      "SHA256": "4516c71ee535b7995b3f6dbebd48d2affda7d9e40f324ad6d167724897383483",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs",
+      "SHA256": "db24757dbb421a73928919d677460793fd5e42bc0b73c054d42e939723d1edc3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TransactionCoordinator.cs",
+      "SHA256": "a36d14038032cb8a440add6e969818c7ee01cc7a317d16dc306f1749ebeb653a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "SHA256": "569c33a11b7e05e1259fbfa0652a0562d2eed4e45179ab8b187e0bb520c594fe",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorldOwnership.cs",
+      "SHA256": "72d59d1696d99457df51ed17634874b15b19e22365b5075559f2c65132c8f5fa",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldChunk.cs",
+      "SHA256": "8b8bf9aa0a416def4d23e202c257caa5c3789c17b289b6ae4f8e3f3acbe49f57",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldGenerator.cs",
+      "SHA256": "9f7ea95d5fe8c993d0e5ac9cdfa2ae1378895ff32397c9adb80c81f8fd1917b4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs",
+      "SHA256": "e4331c3a33349919a39e03ed221ca7c971cb7754bddb77d9a06c05f680ec3736",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\BodyExtractionPlan.cs",
+      "SHA256": "49bafebe23e7e53810f4354ce17ffe8eed49a3eaa2279812697925c52e5f477a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\BodyExtractionPlanner.cs",
+      "SHA256": "fa3759c3b43b61eda5f22cf91dc48e09efd459e96ca9faa7d19652da9d2a8929",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs",
+      "SHA256": "d8e4d7447a62ba7023839dc086a1bae523f333a3cbb5a4fad9c6d272e7b7e61d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs",
+      "SHA256": "b7b0899fa389d3fafcbbeb704361c0f73f0da37788852c4078320aea62b88123",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\MassPropertiesCalculator.cs",
+      "SHA256": "0dc7d821725f8b6cf210ad7816c71507d90aef2ebae4391b160ce0f8a6669b0b",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\MaterialMutationPreparer.cs",
+      "SHA256": "c8274934d0ec9c48ac83ab4c7159a3196080a5b7c6625e68df736180424479a3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\RectangleGeometryBuilder.cs",
+      "SHA256": "c5cf8cb13e82da108aab16737422a1c0209ba430c99f4963b90bd2f5f6c605b9",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\Bodies\\MaterialBody.cs",
+      "SHA256": "71f3eaf7cc6d2bc32d9ee3a180d145f22a5988caa100e063f3eaa249ee4e751c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\AssemblyInfo.cs",
+      "SHA256": "c6e4c64c26d96ec8b86dfca107e88705b21077f114a16605feb8f57b352a2792",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\CellSnapshot.cs",
+      "SHA256": "cf132966530e98eadd02c545d69858d9e74498084ca06c5b656e27db7df362d9",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\ContractDefaults.cs",
+      "SHA256": "a661005dce3a6807d61b775024512e145d4fd332620ea18e4ad7c9c5ac63eea1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\IWorld.cs",
+      "SHA256": "b465faed4cfc59477ec5dd8810c8cf631729a712c90e5e1f48a3695132ec7f33",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\RuleContracts.cs",
+      "SHA256": "a1ede69c14092c685d3e077e542d9ea757638099e35cbcaa56dd6e167f2af762",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\SpatialContracts.cs",
+      "SHA256": "b8844db5a796975ec30e6866633b21a0ef1f6e34884a7b9e755b175fe3140aa8",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs",
+      "SHA256": "a983bb5ba86e01192930fa6cd111ccc5ac1d5c3229222c073dd60828d88ce56c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldIdentity.cs",
+      "SHA256": "e3bd181703f802ea6e815893eb32694e191ba3aeb07bf6824ab9320482d88fad",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldResult.cs",
+      "SHA256": "430265d2beaca9e3f23ebd05e1b510a5922773c55c863ae8e566be56c34b450f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldSources.cs",
+      "SHA256": "49fc1ee4ff3146db0a627a7b4a31e5461f43b13efd81e6d1a87e69bff5ee7ff7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldViews.cs",
+      "SHA256": "1ffa0cca6f906fb9d3aa8cd07f5240dbf848e12bb1b64e8405f314cb46358bce",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\OpenOita.Tests.EditMode.asmdef",
+      "SHA256": "db9879ab244f7af11d6f825634039aa65c42030b7a64ec5aca97c14b405b8c31",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\OpenOita.Tests.Fixtures.asmdef",
+      "SHA256": "60ed6e9baffdef260fbc5127167e9d1eab2b702f167e232ca957829879420db9",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\OpenOita.Tests.PlayMode.asmdef",
+      "SHA256": "e312a5b1f491b2e691974e618d67770bbadd634c7a18347943659f55c1e5749e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\OpenOita.Runtime.asmdef",
+      "SHA256": "dfd23da598bfded17cf1db815f44aeefc697a52c7ce70fbab2054586fe49bd62",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Data.meta",
+      "SHA256": "fe2c0c101d851ee6acdc70e1333fa31144dd7db06cd171759fc294d3b1583e9d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\DefaultVolumeProfile.asset.meta",
+      "SHA256": "037700fc76ee8e15bf57a6608bf0229b50b9ba78a1095a943fe0add01a6bf5c5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\InputSystem_Actions.inputactions.meta",
+      "SHA256": "e2df3de96691137dc24b37bd9009e7be17040f3e5cd6d5401b2cd9d8ae2c9c1d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scenes.meta",
+      "SHA256": "a80a7b316e7d7ce80c8a01ecb374702a04e91228a0729629c894c70250baea5d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts.meta",
+      "SHA256": "62234ee4d2329eee688090ab4694932b326e71e514d992cb16099aba90f5066a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings.meta",
+      "SHA256": "0b5ba35daae66cbfcfa17bf61091aeab7f3bed07681f8db7bed3fb72d178c2d4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Shaders.meta",
+      "SHA256": "86002b4a62db84b3f289348630269a804b04d9b3aa88e017e2fb2534e8c75637",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets.meta",
+      "SHA256": "44ec84b9f48d8f9a2982773162c37e13af40683413cc24d0470185685a843660",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests.meta",
+      "SHA256": "20dd9f3a7b54f503b66d10306882ec780ef2d481decad6150aef14e21155872e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\UniversalRenderPipelineGlobalSettings.asset.meta",
+      "SHA256": "746a38b93f8f49b644ff6893456cf24db401e5c342aaae3864e91560d37c5422",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Data\\Materials.meta",
+      "SHA256": "42af467135bf401defbfd23a90115074bf609289d2aab7b4fa34c6e1861dc5bd",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scenes\\SampleScene.unity.meta",
+      "SHA256": "204f446bc13539151c15af875550a7fa6f791662e967572a1b4b06fd0005dad1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld.meta",
+      "SHA256": "261a7abba6b8db51f0d9db2677167074244e883423c15bc9b527b77b5a2ef74a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings\\Lit2DSceneTemplate.scenetemplate.meta",
+      "SHA256": "d4cc0f73332c3228945aa64f9c5019f1c1950d77703728c5e9674a0367c5e4d1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings\\Renderer2D.asset.meta",
+      "SHA256": "9689252004910cfad653e8a8d09b8c96befb560e1fb583033630db0f5bb76420",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings\\Scenes.meta",
+      "SHA256": "705b24f629af6836450c9fd2085f781fe11d8633bcaa0c7b3197058b93a766e5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings\\UniversalRP.asset.meta",
+      "SHA256": "8b7653265c1a9a054461264fc7b03bdbafc030149949fce5bf9e85924fb565a5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Shaders\\ChunkDisplay.shader.meta",
+      "SHA256": "10c3395271766fca48f4ef14fff9bd7cb458d6edb46a433f00339864d1a5c439",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Shaders\\WorldChunkColor.compute.meta",
+      "SHA256": "37c19d223457ea6cf207c9a258540bb32f7f4799a8f0570983af99ac45049306",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita.meta",
+      "SHA256": "b343ca04a3dbfde539c646f572a45e55c6678ae329660e005b1feddebad0e67d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita.meta",
+      "SHA256": "6d39d7832ef249cbab749ace50884a77cd1446ad79ed3dba6f07c2340f55211b",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode.meta",
+      "SHA256": "cbb4e4f4844d16ec8b205ed088a0cd943fa23e026d5216867ffe2b149612b8d9",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures.meta",
+      "SHA256": "bfb41215ef9947ae3880308dd03b00b9359d05ff6bceb2b87f02af79e51bde51",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode.meta",
+      "SHA256": "6414b22bd47c97464f745c4ed9e8aabd64423cb8790d31e4f226e089fb794c7a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\AssemblyBoundaryTests.cs.meta",
+      "SHA256": "2971af59cefdff0101abdaec61c829f32bb5b0876afbfba87bab619d6181bd75",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\BaselineSourcesTests.cs.meta",
+      "SHA256": "14d0bed7a9eab14f0f565e6908babc4376bd3ca63bc761217b68f91262a8704e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies.meta",
+      "SHA256": "c2dc22b0d270f40f618e11264535d95e48511ea6550dc03f4f4de4a3895f4a19",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\ContractDefaultsTests.cs.meta",
+      "SHA256": "023da02b3412269d57964d577edf171615c4efeacae30379ab1765bc1d43ce7e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\FixtureCatalogTests.cs.meta",
+      "SHA256": "435134e0d8b00a3b2380af88148fb7fc09e87142eb4df7c1f58baf3c37eb115d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01.meta",
+      "SHA256": "2bed1ae74b8d2953338930a90e2c119b82b50c0de8ccf56dd13c0d9147cc6c8e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02.meta",
+      "SHA256": "26290f39fbf1afe1578e4d3617532ad95dea23146423838776eef4f806c57874",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\OpenOita.Tests.EditMode.asmdef.meta",
+      "SHA256": "f9567d95095eed75f87e68c1fd42dcf4584d09aac7bf5c3bc779e25d61614009",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\RuleInstanceContractTests.cs.meta",
+      "SHA256": "4f760e241175856c3b690e6842699d927db5b745f72f7bb3c0fd44b9335d30ca",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules.meta",
+      "SHA256": "10f9aa8cfeaa1b3c8e682a24379e296af5c2ced82779f30e95385d5a6044febe",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure.meta",
+      "SHA256": "90a191e78c1bfa41825ac19e7b73b4ceda7d91378f217ab2ddfed0b375db0d21",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\StructureContractTests.cs.meta",
+      "SHA256": "a10810930678d479db4735a5697ae66c8648c645216f64cfb530ad63d3b8b75f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\BaselineSources.cs.meta",
+      "SHA256": "cd71980d2b26ae22cc4ebeffd1d2c8eef53200586f18e8af9540835289d05df2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\ContractConsumer.cs.meta",
+      "SHA256": "e1a0123f5ee1fb49cffc283b9cdd2fd800e4876a048116a8643523c6a1f14c47",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\FixtureCatalog.cs.meta",
+      "SHA256": "eac729268708df669cf0e3a71c21b98537f28106295730a21ecf24276af7e5ec",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\FixtureExporter.cs.meta",
+      "SHA256": "9cd18f1c462f8ff6d646a6466becca1bf811d2b07dde45096b411d2f5fd2715a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\IntegrationContractAssertions.cs.meta",
+      "SHA256": "2451bcdf797a4f12d9391e95e2d3df39a6e8821f2aa94275800d012fbd800d91",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\OpenOita.Tests.Fixtures.asmdef.meta",
+      "SHA256": "c658bea6c16d4be83c7fff1499559c14229efc8954b762830332b45628718867",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\Fixtures\\ScenarioFixture.cs.meta",
+      "SHA256": "34a2ba331ae296e1fb4ed57fd7b51fabaad9554a32514316b26b9d79893143cb",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\ContractConsumerTests.cs.meta",
+      "SHA256": "9d1f5918152458aa86ebc8208dbd98d04be8954119dfa936332fc577566cffb4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02.meta",
+      "SHA256": "cae9f0866a25523afa332278a80b83d438e9da868f9f77a1424b298b5390c30d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\OpenOita.Tests.PlayMode.asmdef.meta",
+      "SHA256": "2a7241fcbb909fd7d3cece90b08d27362fada8086d82b34e8e97232f561cc3e7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02\\StateLifetimeTests.cs.meta",
+      "SHA256": "cafe886e8bca4f87cf1424b3a5fccbd8bced293a8c66c5ca742a2b4ab6db80ed",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyCandidateStateCoreTests.cs.meta",
+      "SHA256": "8dfa59f723bc2341c876701639554d5b590fdcef3388b0e79a26b19bd52fcf59",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyExtractionPlannerTests.cs.meta",
+      "SHA256": "4044f41e2b92cc6feaae6ab1cde576735a738ee0677a57d2e8db8e3b7a3c9b62",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyFixture.cs.meta",
+      "SHA256": "1c2fa22ee8f00833f2dc91fc99e5a3705ff20f2a23b04a040b188c55df4c9526",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\BodyIdReservationTests.cs.meta",
+      "SHA256": "90e01227a0237e3c024c280a21cc54bcea28ab4a313f14e598ec7b6792db28af",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\MassPropertiesCalculatorTests.cs.meta",
+      "SHA256": "8deb9221dd90c6de218f9488a1f5b3fa9443b3d4ac4c674251ec8a0acf853aeb",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\MaterialOwnershipTests.cs.meta",
+      "SHA256": "b77bec0848a05333a6b6bc275db8de09b8c7bbb7ee88e0e652056b4b686c858d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\ConfigurationFileStoreTests.cs.meta",
+      "SHA256": "0e0efd1fbd58d75c43b0e83ff451e0dd5ce76dd914938b89577bba8fc15b3814",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\WorldSourceLoaderTests.cs.meta",
+      "SHA256": "0bf70e5c07fb1b9948be3bf65933898926f6ab6b094bb0d34b9091333e8afa8e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\HostDriverTests.cs.meta",
+      "SHA256": "2021af8b1bc348ebc04367fcb0e83e93ac836b1727388358d6733f2b3f2c43f3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs.meta",
+      "SHA256": "8ae805e51c01bfc00a32d718d85404a9e7387eba4cfa3d0b98622015cb746567",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs.meta",
+      "SHA256": "6219be3d8b5e8c2f83081a8247b0fb89ac20604cdf5303ca8f0380818de29daa",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs.meta",
+      "SHA256": "ecbde0b30c12fa3fc6813ad723a81683eba245e058397c7d969e455bc0d94a4d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\BurnRuleTests.cs.meta",
+      "SHA256": "d74ec96be85645aca89a0d0f9f7e849fd1d7fd4c560311dbd905c525dc33865d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\MovementRuleTests.cs.meta",
+      "SHA256": "f2b6241f46b460d370e10234d64c65ed5279a309a26bdedeb1a0e7dec69323cc",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFailureTests.cs.meta",
+      "SHA256": "73548f278a80ff67ea32578bfdf50375254ae57a4922c068a76c56298baad7d8",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Rules\\RuleFixture.cs.meta",
+      "SHA256": "103fe590d436306bf0950c3ddac55707194977d59d422d71844d045abfbc99a3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity.meta",
+      "SHA256": "a166d0e59996e08e108f975687a082d463476eab3957b6f062835e35ac41f4dd",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Geometry.meta",
+      "SHA256": "fc3de680091e34354697d48dcd1721833cde73b0f811e22aacd68f380b417204",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs.meta",
+      "SHA256": "791ca2d4c65589e7d2e44b4dfc9384e9322501a89e9ffd908866ac9ac9ec155d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs.meta",
+      "SHA256": "ccecd00b20a129ce8c7d87172d9c5dfe8ce1e56c653c846c476bd65da1d63a4c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs.meta",
+      "SHA256": "d1dec2de0b5219dd85b47f97c1bb2af80f2e1108710e042eecb965f86002067c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Geometry\\RectangleGeometryBuilderTests.cs.meta",
+      "SHA256": "6a6f92d60ecb6cab7105d6ee6fe86ea69bcf4e54273bf843820db7098f35c5cf",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\materials.json.meta",
+      "SHA256": "ada1ac7d8f34da602fb78efc9fa39aec4a31c558288513ba425f2dd0eedf3c5d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\scene.json.meta",
+      "SHA256": "316c5115ac0b9a9b4237841d18bc7cd025ec7c5bc0a43adc527f8f0c347d5860",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\world_config.json.meta",
+      "SHA256": "e2cd40f0dea18b886607ccdb95db3ab0e811c15ce43447ffb38b21f95d2c480a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Settings\\Scenes\\URP2DSceneTemplate.unity.meta",
+      "SHA256": "e7391ff924b7defdf30e0b0b235f8113618481c93f567e0c699c8895a9534579",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core.meta",
+      "SHA256": "cd089a2b593604fb9cd3c962e6d6027b7183f669d41049baaef9fac2254d2d49",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data.meta",
+      "SHA256": "01fd7632e69be99c30ea437f7df3983dd7780328de0d5f5a43929cea994275c7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host.meta",
+      "SHA256": "4b9389c3868e4896f4e1c01d46dd222e2a6897cbc2813ef63b4807cf89f1db34",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\OpenOita.Runtime.asmdef.meta",
+      "SHA256": "e4a3ab04d5482458aae62792157af2f4bdb26d514606347c5dd9dbab3bf88405",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render.meta",
+      "SHA256": "e4823a01c8ad5edcc8ef6dbcbfc5aa3345caec5e728dec634997ce4dbd9ab8e0",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules.meta",
+      "SHA256": "6a9f492c2bcb9ae0d0e67314a0a2769b34713c7b2450a7a9b4fa318f0c4e203f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation.meta",
+      "SHA256": "0df55f727f072b8139c0f9b185102694f5414fef97aa37d76fcc5e6f9970b503",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure.meta",
+      "SHA256": "83c2f325f144363bf18927e0eee5064653ab513284468408d26ae5557c70b188",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\CellState.cs.meta",
+      "SHA256": "06955beb036013b631c4e7fe3ff4c4d0ef081ef321c81694c785b826d4179051",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\ChunkCoord.cs.meta",
+      "SHA256": "d810b0c4689f7a20bfd08e124725ed2c40b20bcf747205e25a3b5e98df3fbabd",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts.meta",
+      "SHA256": "ae6ff5d4fca5b74e18c9dc915cd3995c70aebb7f03f3e0e428a7060bf6021e7a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\GravitySim.cs.meta",
+      "SHA256": "12055eb560bbf9666368a8ad75e0e8562abea01f00db56bf65849f7ec55803cf",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\MaterialDefinition.cs.meta",
+      "SHA256": "c54222d6152a9443bbf6c5b04fa2cdd87d71ba1fb73dea87d02d35a7198ccbe9",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\MaterialRegistry.cs.meta",
+      "SHA256": "91e060a02b83ae46cb4fa871c2f231dc7514832d5e463fe97b5f90a010621843",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\WorldConstants.cs.meta",
+      "SHA256": "3de43faa5c87f1251e8897e4b30cce76b1ddbc706442196cb423a2267da9ee00",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationFileStore.cs.meta",
+      "SHA256": "426428d32b80e0cf06b925004210f73acd41a8eda6e05ec670e218bd86715448",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationSerializer.cs.meta",
+      "SHA256": "1d68a105200f0e8efcf07f14f13053309af567a2ad7a99cf142d59e2de132675",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialJsonLoader.cs.meta",
+      "SHA256": "d69c86bcbfc71da2979ab1a2f3ff4841d780e6158f1da4203238ecd83f0ff49e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialRuntimeTable.cs.meta",
+      "SHA256": "e6bbacc9a94b4cb55ee70fc86d9facc9623d4adacbffe552a59d76cbc19b62b2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\RuleRegistry.cs.meta",
+      "SHA256": "d65d0c01b54128c65d2b76931a79890422ed2e14b986e8304904bdb4949cbf0d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\StrictJson.cs.meta",
+      "SHA256": "91a00c383aad563a32277785f02c1283dcc7239fa2a5ee301ae6cbdc4f9527a2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\TestMaterialDto.cs.meta",
+      "SHA256": "c5a5c178c30a1e43130c4bbb72b8e4d9529102ec7ebd30c1ca59506ed16a23b3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\WorldSourceLoader.cs.meta",
+      "SHA256": "6ef2b02eb037d4ca4dfb473aa036be4e1e483d2ebf3f91a8a09215c709877f6e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\FixedStepDriver.cs.meta",
+      "SHA256": "a068406bb6d9cd0d19777e93d8f006e600f87a365d0b79ee7e1d9f1cef19a4b8",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs.meta",
+      "SHA256": "df8ae7a077be1995149a7ad32df092fa1583b0380cd9ffe78222c68d32a0c2ab",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\ChunkDisplay.cs.meta",
+      "SHA256": "40234fbf4085ede8040fb278d3d24b8ea77d692191fec16e36ab3ae5dbac1a6c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\ChunkGpuResources.cs.meta",
+      "SHA256": "df16399b9bb259f969e73e7392fe18b42f9f6192c07395ec2af727abfde24b71",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\MaterialAtlasBuilder.cs.meta",
+      "SHA256": "7c24644a6895ec0cc66520f6e82b6f6e5ffe58176170e001af5137aa315579bd",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Render\\WorldRender.cs.meta",
+      "SHA256": "52516fdfae8b9593a1b2901d53e97bb0b4073d72cabaa3533d40a6e6891863e4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\BurnRule.cs.meta",
+      "SHA256": "323a9506b7515bdcfdc0cd554813378602f4a6b0c6a7529c27405fd42d52f702",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\GasDriftRule.cs.meta",
+      "SHA256": "5ea34a712134eb8c9082e265c929d734421a5f09bdaf9d192cd4260b552990e5",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\LiquidFlowRule.cs.meta",
+      "SHA256": "84fcd1eb6fee06fb8b4b7fed039b04c6c4e21c5e6bdfa0c1ca6abb9f3f58e012",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\MovementCandidateResolver.cs.meta",
+      "SHA256": "aa81d445aac0b235945b0ce9f046347cf1238850d1dbaaa8ccc8df1f59a77048",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleBatchContext.cs.meta",
+      "SHA256": "c80affabb348dc9ee5dd57d09abf826b13fb368ea09e5257c2887609a993ccfd",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleExecutionTable.cs.meta",
+      "SHA256": "1335ab1a69f6e3adc57837a282c26d3a3edad08bd0454f48adf39d88158af6f7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\RuleIntent.cs.meta",
+      "SHA256": "f9332de1a26a3cab8cf2c8bd59a10380749e70dde07b5545e7c8a5ba3e45a637",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Rules\\WetContactPolicy.cs.meta",
+      "SHA256": "1ecaed9c4829398ed15399fde87ade9c39a7d93e9edaf7231f233f4160c17a1c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\Bodies.meta",
+      "SHA256": "da95be8ab0036e2c98b9fe9745d35f17b2c1d60e68e925353d0ad3599f123f6c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkAllocationState.cs.meta",
+      "SHA256": "6bb45246064e44e38c000277c5b4fe5eb6ee4ad32504c3ae3b6e048db77ae488",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkStore.cs.meta",
+      "SHA256": "6828fe3fd0a8d29210385201cd7cf3efb8c300d2845134f8f274d69c670aa955",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\CommittedWorldView.cs.meta",
+      "SHA256": "88cc1b993b706af8e024cbb9baa50c2a48bb4a4b55ac8c11e6d00e35125932d4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickChangeCounter.cs.meta",
+      "SHA256": "f31a80f2f47835b070eee1ebeaeb21a96a9314e694ab1097b1b1c81684cba677",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs.meta",
+      "SHA256": "6c2d803891fdad7fac4de0361c66000e878855b1d08f5da4e52620cc4abd11da",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TransactionCoordinator.cs.meta",
+      "SHA256": "8768554e19583e5076bab2e631a352bcfac40a5bf1d9c1b91d3cb0b2d0bd3e81",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs.meta",
+      "SHA256": "d67a4ea429c7aebd148602b01d23f08ef45dfc53bd29cbc2a0685397c7d12146",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorldOwnership.cs.meta",
+      "SHA256": "262264e0fa41974e87123fb255b587689e8dd5cffad597e093c242c4b5e6edf1",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldChunk.cs.meta",
+      "SHA256": "c9bc6e8c0b2e532d52ae0762afc29ab8283e1930337b2e44028ddbe1c18364d2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldGenerator.cs.meta",
+      "SHA256": "e84dd4cb4a02ef7823bff212386980e421291da58bfd50a52edf936ce0a89547",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs.meta",
+      "SHA256": "dfc4befdf41208cbded0248ffe0012f1dd4875f86a02c2179a243e92de7a6dac",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\BodyExtractionPlan.cs.meta",
+      "SHA256": "776521e7affa38694f5380b93f4de60f75f4df391ce5cefd2eb129072ecc9bc4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\BodyExtractionPlanner.cs.meta",
+      "SHA256": "c4cb9928cc41014ddeaf3978ef10760e17488e6ff4cf0b9f57b23a99ef515117",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs.meta",
+      "SHA256": "9351445696df648cd6648a237b483ead3ee78628e111ba7be91270ef2a90e3ee",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs.meta",
+      "SHA256": "37a711add80cdcb9127b0046e3614a7c1fc96eecb67473632680cbf15e006c50",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\MassPropertiesCalculator.cs.meta",
+      "SHA256": "273049be1f08b0be4b7d99ca08d75c16faaf387a402daedb0c8822affd3b8263",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\MaterialMutationPreparer.cs.meta",
+      "SHA256": "30684a97b07b5dc2b0a2425041d522bc4c05512cc4b3960c37c738febd5adedf",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\RectangleGeometryBuilder.cs.meta",
+      "SHA256": "bfa90db3b96a10a1186085eee65251b06590fac0a5611cd2e833a69adaa87e4c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\Bodies\\MaterialBody.cs.meta",
+      "SHA256": "93a2fa444eb88c41ac0ef892e6237719cbe78cc48b36e71b63ff37d8bd18f701",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\AssemblyInfo.cs.meta",
+      "SHA256": "6b7b21acda97bb5cd23a1fb8d396ac72ca9b4c66936d5ca1806280edaa08d1c7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\CellSnapshot.cs.meta",
+      "SHA256": "b5e2510486a83268ae65494d751c156b2abf891da5d40f9e3c1acc2dd1fcd82b",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\ContractDefaults.cs.meta",
+      "SHA256": "2f8c9142281e8452c8450552962d4202466be55afa09a5655cab298b1699c1e3",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\IWorld.cs.meta",
+      "SHA256": "f53064ac71dca929e3c7476fd46d235f671f5dbbfb9611f1b1c7cf3f5fe6ef03",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\RuleContracts.cs.meta",
+      "SHA256": "f5989363985fed35b01bb3b694418a1237245f91a01f21b50d3e289f1e878bc2",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\SpatialContracts.cs.meta",
+      "SHA256": "ff329e805cac65f1678f884156e49308fce1a0bec092d6d8afc6bf308dd6336a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs.meta",
+      "SHA256": "e6c6c861a71e4e7c1396455433418e0c71833ce05cb530572e26bc8793158e8c",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldIdentity.cs.meta",
+      "SHA256": "8fcf40065ffbd61b52049a5aa31e1819c845b4e52686f24c96dd5b6d2cc5100d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldResult.cs.meta",
+      "SHA256": "c504d9769f77d69e16c1a8fed7d42b993f58aaf81ba94a964ed800569a38784d",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldSources.cs.meta",
+      "SHA256": "d7c3b2133add06cf5f4da09802cfbbb8e7632a2eddcf195b70fd8a2fdb9f9253",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\WorldViews.cs.meta",
+      "SHA256": "f89c679fea374d6d2008b834a565181799b3813c09aa012b484f186c34cac525",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Data\\Materials\\sand.json.meta",
+      "SHA256": "1c13ab520608cc4656be2760e2ed893066166c2a5906baf925b021f5fbaedab4",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Data\\Materials\\stone.json.meta",
+      "SHA256": "5350a4749d89bf9a044bc7fb03a8e8d85fe2bf5de8df26c411a3dd86f345109f",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Data\\Materials\\world_config.json.meta",
+      "SHA256": "d319623525d660c63f630b7058e915b5146623530f5b6679f7cbda76ba65137a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\CONTRACTS.md",
+      "SHA256": "61dcb96a1927cbc1066dc752102ba02eed512430e942d7a621514ae21f650177",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M00-规格与开发基线.md",
+      "SHA256": "d0f61ebbca3b5cfc8d2bcfc7014f2c52e82639e87882be8fc7921a32357f35ed",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M01-配置与启动数据.md",
+      "SHA256": "5d48cc3903d7dd6dd8b2f78d990d48089e9f401951a960f1320eeba643bdf954",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M02-状态事务与生命周期.md",
+      "SHA256": "d2525637b6f5e3999343c5778f3f3a5511469e37de8060de11863b7166c29554",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M03-材料规则与燃烧.md",
+      "SHA256": "d4ee4ffb74826e8ea4d1195bd4777e664c26bcdf163f8d106e2db695e93fecf6",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M04-结构连通与固定.md",
+      "SHA256": "a231ae8dffe8ac443617be1bf8cc1941f7526998db579e00c298d5bff1893506",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M06-物理与跨归属交互.md",
+      "SHA256": "ff5edd06e9e427c7cc05f8f2c59dbad7aa68b4d961f6d368e6a5a9d2fa9a22ad",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M07A-命令与查询.md",
+      "SHA256": "7eb7dc80f3230b9b0704d7e8943d685a0689878a56ff5cb8040528d61df44a3e",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M07B-显示与火焰.md",
+      "SHA256": "584d5d10c057fe5ff4ffe654c120422d51b8396bbc873ddd8ae6c3f10cdeac5a",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M08-编辑器与保存.md",
+      "SHA256": "d7c96b144062c9f8b1436328e6c7acf7a9a01929911b1e2c5c6de66f0a715fdf",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M09-集成验收与交付.md",
+      "SHA256": "a1562ea099721393824bd80817c8523ad176de00987305a8c8503174fb3b90f7",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\README.md",
+      "SHA256": "2dd497a1b9e7607f3aa3627b8e24b7f312287e257b60765ee063b691704b7044",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Packages\\manifest.json",
+      "SHA256": "eeb7802748663ddfca9a0ad72cde4852ab12ce3b175d9eaf4d8c0ca17962454b",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Packages\\packages-lock.json",
+      "SHA256": "14fc010b720ba84e58f1da080f1662652412ec1f3219f23fe26de82717c6af68",
+      "前后相同": true
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\ProjectSettings\\EditorSettings.asset",
+      "SHA256": "0b5c614ba2b24ab6bd1853f450ef8cc44b84c2d084493f8b5bba0c9f3213f680",
+      "前后相同": true
+    }
+  ],
+  "新资产GUID唯一": true,
+  "新资产路径": [
+    "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\M05StateTransactionAcceptanceTests.cs",
+    "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\M05StateTransactionAcceptanceTests.cs.meta"
+  ],
+  "git_diff_check": {
+    "退出码": 0,
+    "输出": "",
+    "提示": "warning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Core/CellState.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Core/GravitySim.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Core/WorldConstants.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Host/WorldHost.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Simulation/ChunkStore.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Simulation/WorldChunk.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Simulation/WorldGenerator.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Assets/Scripts/OpenOitaWorld/Simulation/WorldSimulation.cs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Packages/manifest.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Packages/packages-lock.json', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  "文件": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\M05StateTransactionAcceptanceTests.cs",
+      "SHA256": "cb239a15a1711649fc3bb846e974d4b3c8aa7b67b7c25d75f313ebecb5a44300",
+      "字节": 25294
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Bodies\\M05StateTransactionAcceptanceTests.cs.meta",
+      "SHA256": "e037209dddaf2debd91d1af8ebce9a0e71e98bc699d2690afa3da841d1487b99",
+      "字节": 59
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M05-材料体与几何事务.md",
+      "SHA256": "08ea8fdcd4b7ac8a7bcdea0d81f28a32affaca904ed59587b9b86f455d6437b0",
+      "字节": 14901
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-console.json",
+      "SHA256": "434ab7005af0d8ebb695cdbd30ed5f3deedff6cb08efa16bfd091658a34f527b",
+      "字节": 274
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-editmode-first-result.json",
+      "SHA256": "a8f6edb15be0a2eae653f1a5934c2ab13fe54dc7016362e2935def19e01009b5",
+      "字节": 118507
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-editmode-first-results.xml",
+      "SHA256": "9bdfef0d14d5d2dbfd65439d4cfd34c016b142ae977d30c4bc850805f56a1d95",
+      "字节": 343366
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-editmode-result.json",
+      "SHA256": "200fca4bc9f48f6f49259680f56b5c3af12c414a071b80857c6aad5c560a00fc",
+      "字节": 117109
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-editmode-results.xml",
+      "SHA256": "737febb6bfea20fd8f4281ccc7ba99be360fa8714ceecfbd80ff08129f9d0250",
+      "字节": 341238
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-environment.json",
+      "SHA256": "ac36c0b4e588b8d0a3d3abaf55a8eef889e4aed0b92b2f52237059a5f1dcbea6",
+      "字节": 1296
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-start-baseline.json",
+      "SHA256": "870287595631a0a6c1a84f3d28f959f394f2dd51ee8b08516351470fad5a8c90",
+      "字节": 36583
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-test-job.json",
+      "SHA256": "a3dae9a49e9317e45d49346050f33c7fff189ac5731ffe48d67bf292b3ea3167",
+      "字节": 295527
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m05-backfill-tool-attempts.json",
+      "SHA256": "9b9be9aa0eabb81984eb97659627f91dae1e853932f47a3c2dea51c6f17f6850",
+      "字节": 7179
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M05-公共接口差异与集成清单.md",
+      "SHA256": "d3cd2de8cd82640aa7a4b8d071d1378c816e2b6fd30d32f796e968fdced546db",
+      "字节": 8721
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M05-回补结果与交接.md",
+      "SHA256": "cb4dcef23916a4dc913c483797fa8a53b6a9598deeecb1a16ef0967862aefb01",
+      "字节": 9685
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M05-执行结果与交接.md",
+      "SHA256": "124bbe99a4fb7ebdf8f8e1b18e811420bec40fa9a575f957bb4076de94377bd6",
+      "字节": 11488
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\record_m05_backfill_evidence.py",
+      "SHA256": "8ad51777c96e3cad9c8f658131f270ba1e3c60f1d4386eaef3b789322a0887a7",
+      "字节": 5859
+    }
+  ]
+}

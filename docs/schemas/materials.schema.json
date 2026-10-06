@@ -1,0 +1,376 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "materialSetId",
+    "materials"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "description": "材料格式版本，首版固定为 1。",
+      "const": 1,
+      "type": "integer"
+    },
+    "materialSetId": {
+      "description": "材料集合标识；场景必须引用相同标识。",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "materials": {
+      "description": "完整材料列表；ID 与名称分别唯一，跨条目唯一性由加载器额外校验。",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 65535,
+      "items": {
+        "$ref": "#/$defs/material"
+      }
+    }
+  },
+  "description": "首版材料文件。数值为可调技术初值；此 Schema 只验证结构与单条材料约束，不能代替跨文件语义校验。",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenOita 材料配置格式",
+  "$defs": {
+    "material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "color",
+        "massPerCell",
+        "tags",
+        "ruleParameters"
+      ],
+      "properties": {
+        "id": {
+          "description": "持久化材料 ID，0 保留为空格；同一材料文件内必须唯一。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "name": {
+          "description": "中文显示名称，不能全为空白；同一材料文件内必须唯一。",
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "kind": {
+          "description": "材料类别只做分类和校验，不自动启用行为。",
+          "type": "string",
+          "enum": [
+            "solid",
+            "liquid",
+            "gas"
+          ]
+        },
+        "color": {
+          "description": "不透明的六位十六进制 RGB 颜色。",
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "massPerCell": {
+          "description": "未燃尽单格的固定游戏质量；必须是有限正数。",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tags": {
+          "description": "启用的规则标签，禁止未知或重复标签。",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "structure",
+              "liquid_flow",
+              "gas_drift",
+              "burnable",
+              "extinguishes_fire"
+            ]
+          }
+        },
+        "ruleParameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [],
+          "properties": {
+            "structure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "connectionGroup"
+              ],
+              "properties": {
+                "connectionGroup": {
+                  "description": "结构连接组；同组且正交相邻的结构格可连接。",
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              }
+            },
+            "liquid_flow": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "moveIntervalTicks"
+              ],
+              "properties": {
+                "moveIntervalTicks": {
+                  "description": "尝试液体移动的间隔，单位为固定逻辑 Tick；同时约束原子液体链、重力移动与横向扩散，每实例每阶段最多移动一次；不是搜索半径或每次步长。开放水槽摊平与防往返要求见M03-L01，格式校验不代表行为验收通过。",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1000000
+                }
+              }
+            },
+            "gas_drift": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "moveIntervalTicks",
+                "lifetimeTicks"
+              ],
+              "properties": {
+                "moveIntervalTicks": {
+                  "description": "尝试气体移动的间隔，单位为固定逻辑 Tick。",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1000000
+                },
+                "lifetimeTicks": {
+                  "description": "每格气体的初始剩余寿命，单位为固定逻辑 Tick。",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1000000
+                }
+              }
+            },
+            "burnable": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "fuelTicks",
+                "spreadIntervalTicks"
+              ],
+              "properties": {
+                "fuelTicks": {
+                  "description": "可燃格在持续燃烧时的初始燃料量，单位为固定逻辑 Tick。",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1000000
+                },
+                "spreadIntervalTicks": {
+                  "description": "燃烧格尝试点燃正交邻格的间隔，单位为固定逻辑 Tick。",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1000000
+                }
+              }
+            }
+          },
+          "description": "参数块必须与材料标签一一对应；extinguishes_fire 没有参数块。"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "solid"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "structure"
+                },
+                "items": {
+                  "enum": [
+                    "structure",
+                    "burnable"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "liquid"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "liquid_flow"
+                },
+                "items": {
+                  "enum": [
+                    "liquid_flow",
+                    "extinguishes_fire"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "gas"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "gas_drift"
+                },
+                "items": {
+                  "enum": [
+                    "gas_drift"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "structure"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ruleParameters": {
+                "required": [
+                  "structure"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "ruleParameters": {
+                "not": {
+                  "required": [
+                    "structure"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "liquid_flow"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ruleParameters": {
+                "required": [
+                  "liquid_flow"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "ruleParameters": {
+                "not": {
+                  "required": [
+                    "liquid_flow"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "gas_drift"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ruleParameters": {
+                "required": [
+                  "gas_drift"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "ruleParameters": {
+                "not": {
+                  "required": [
+                    "gas_drift"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "tags": {
+                "contains": {
+                  "const": "burnable"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ruleParameters": {
+                "required": [
+                  "burnable"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "ruleParameters": {
+                "not": {
+                  "required": [
+                    "burnable"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "version": "M01-1",
+  "head": "e2faa16c5c630209650ca4ecbfc06d80ad6bc8f1",
+  "files": [
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/StrictJson.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\StrictJson.cs",
+      "sha256": "4039E91FCAA12A05FCB44B6EF81283D9522F135AB91B504E25F3233899621F64",
+      "bytes": 9331
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/StrictJson.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\StrictJson.cs.meta",
+      "sha256": "91A00C383AAD563A32277785F02C1283DCC7239FA2A5EE301AE6CBDC4F9527A2",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/WorldSourceLoader.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\WorldSourceLoader.cs",
+      "sha256": "0FF41588BB45802624F5CEE9CF462C692C3653C4CC75FDCC9EBD84817D8BA36F",
+      "bytes": 14168
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/WorldSourceLoader.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\WorldSourceLoader.cs.meta",
+      "sha256": "6EF2B02EB037D4CA4DFB473AA036BE4E1E483D2EBF3F91A8A09215C709877F6E",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/RuleRegistry.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\RuleRegistry.cs",
+      "sha256": "05B293974751C853743BDD0CED9A45D82664B8AA68D1F72DB15824A8B4711BE3",
+      "bytes": 4415
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/RuleRegistry.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\RuleRegistry.cs.meta",
+      "sha256": "D65D0C01B54128C65D2B76931A79890422ED2E14B986E8304904BDB4949CBF0D",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/MaterialRuntimeTable.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialRuntimeTable.cs",
+      "sha256": "810A83EA5F09AFA4CAE7AAC4A68E30429B46F9CFA19D08C1A28081B422F24814",
+      "bytes": 1560
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/MaterialRuntimeTable.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\MaterialRuntimeTable.cs.meta",
+      "sha256": "E6BBACC9A94B4CB55EE70FC86D9FACC9623D4ADACBFFE552A59D76CBC19B62B2",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/ConfigurationSerializer.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationSerializer.cs",
+      "sha256": "28C7304398AE61E286D77083D5899F352FD87CC191963E018EFCE83547DC0A43",
+      "bytes": 5813
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/ConfigurationSerializer.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationSerializer.cs.meta",
+      "sha256": "1D68A105200F0E8EFCF07F14F13053309AF567A2AD7A99CF142D59E2DE132675",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/ConfigurationFileStore.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationFileStore.cs",
+      "sha256": "72657F5D35AA82EEB99E58B1AD2BD898C057EC90C2E08891BFAF95D5C17076E0",
+      "bytes": 6952
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Data/ConfigurationFileStore.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Data\\ConfigurationFileStore.cs.meta",
+      "sha256": "426428D32B80E0CF06B925004210F73ACD41A8EDA6E05EC670E218BD86715448",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M01/WorldSourceLoaderTests.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\WorldSourceLoaderTests.cs",
+      "sha256": "957D5B091529C8229C50C540926DED361E1BD4C7755BF2E6C50EF664E4432621",
+      "bytes": 18506
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M01/WorldSourceLoaderTests.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\WorldSourceLoaderTests.cs.meta",
+      "sha256": "0BF70E5C07FB1B9948BE3BF65933898926F6AB6B094BB0D34B9091333E8AFA8E",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M01/ConfigurationFileStoreTests.cs",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\ConfigurationFileStoreTests.cs",
+      "sha256": "6F4E76CFAF29588C50DAA02B7B27818A94461EAA7CEC1C284643A6F9941586BC",
+      "bytes": 8072
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M01/ConfigurationFileStoreTests.cs.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01\\ConfigurationFileStoreTests.cs.meta",
+      "sha256": "0E0EFD1FBD58D75C43B0E83FF451E0DD5CE76DD914938B89577BBA8FC15B3814",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M01.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M01.meta",
+      "sha256": "2BED1AE74B8D2953338930A90E2C119B82B50C0DE8CCF56DD13C0D9147CC6C8E",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/StreamingAssets.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets.meta",
+      "sha256": "44EC84B9F48D8F9A2982773162C37E13AF40683413CC24D0470185685A843660",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita.meta",
+      "sha256": "B343CA04A3DBFDE539C646F572A45E55C6678AE329660E005B1FEDDEBAD0E67D",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/materials.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\materials.json",
+      "sha256": "B48B53F295C9F3418F6179D52B29B44374F249C065D5C644015E09D54F12C341",
+      "bytes": 1448
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/materials.json.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\materials.json.meta",
+      "sha256": "ADA1AC7D8F34DA602FB78EFC9FA39AEC4A31C558288513BA425F2DD0EEDF3C5D",
+      "bytes": 155
+    },
+    {
+      "path": "docs/examples/materials.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\examples\\materials.json",
+      "sha256": "B48B53F295C9F3418F6179D52B29B44374F249C065D5C644015E09D54F12C341",
+      "bytes": 1448
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/world_config.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\world_config.json",
+      "sha256": "83AF7E6DCAB3991D7A5353710B27C0088E9426DC09462BAEE65550F9D55F69AC",
+      "bytes": 465
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/world_config.json.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\world_config.json.meta",
+      "sha256": "E2CD40F0DEA18B886607CCDB95DB3AB0E811C15CE43447FFB38B21F95D2C480A",
+      "bytes": 155
+    },
+    {
+      "path": "docs/examples/world_config.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\examples\\world_config.json",
+      "sha256": "83AF7E6DCAB3991D7A5353710B27C0088E9426DC09462BAEE65550F9D55F69AC",
+      "bytes": 465
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/scene.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\scene.json",
+      "sha256": "AA74FE09B4982E867DE80924559FC18D9EFAC066E9576213DD45C7DDEE9CE091",
+      "bytes": 12770
+    },
+    {
+      "path": "Assets/StreamingAssets/OpenOita/scene.json.meta",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Assets\\StreamingAssets\\OpenOita\\scene.json.meta",
+      "sha256": "316C5115AC0B9A9B4237841D18BC7CD025EC7C5BC0A43ADC527F8F0C347D5860",
+      "bytes": 155
+    },
+    {
+      "path": "docs/examples/scene.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\examples\\scene.json",
+      "sha256": "AA74FE09B4982E867DE80924559FC18D9EFAC066E9576213DD45C7DDEE9CE091",
+      "bytes": 12770
+    },
+    {
+      "path": "Packages/manifest.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Packages\\manifest.json",
+      "sha256": "EEB7802748663DDFCA9A0AD72CDE4852AB12CE3B175D9EAF4D8C0CA17962454B",
+      "bytes": 2523
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\Packages\\packages-lock.json",
+      "sha256": "14FC010B720BA84E58F1DA080F1662652412EC1F3219F23FE26DE82717C6AF68",
+      "bytes": 16129
+    },
+    {
+      "path": "docs/specs/M01-配置与启动数据.md",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\specs\\M01-配置与启动数据.md",
+      "sha256": "5D48CC3903D7DD6DD8B2F78D990D48089E9F401951A960F1320EEBA643BDF954",
+      "bytes": 5926
+    },
+    {
+      "path": "docs/validation/M01-执行结果与交接.md",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\validation\\M01-执行结果与交接.md",
+      "sha256": "48F37AA452AD133140292FC8FC9910EF6D8E0DD076C95EEE2D8996A4988228DD",
+      "bytes": 12813
+    },
+    {
+      "path": "docs/validation/m01-editmode-result.json",
+      "absolutePath": "D:\\work\\Project\\OpenOita\\docs\\validation\\m01-editmode-result.json",
+      "sha256": "5F59A3D13B719CCC7AA0F3D0D809F6CF19BC3129DA543D1514EADC011AA84C68",
+      "bytes": 41293
+    }
+  ]
+}

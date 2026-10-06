@@ -1,0 +1,2509 @@
+{
+  "模块": "M04回补",
+  "合同": "M00-3/CONTRACTS1.2/主方案0.9",
+  "时区": "Asia/Shanghai",
+  "证据来源": "Unity Test Runner原始XML；JSON仅提取，不替代XML",
+  "XML_SHA256": "56d6097c3da5f5088f252361f653a36e6701d885319b313e93df923cb2cd701e",
+  "开始时间UTC": "2026-10-05 09:39:40Z",
+  "结束时间UTC": "2026-10-05 09:39:49Z",
+  "全项目": {
+    "result": "Skipped:Ignored",
+    "total": "276",
+    "passed": "275",
+    "failed": "0",
+    "skipped": "1",
+    "duration": "9.4287531"
+  },
+  "本模块": {
+    "总数": 40,
+    "通过": 40,
+    "失败": 0,
+    "未测": 0
+  },
+  "逐项": [
+    {
+      "fullName": "OpenOita.Tests.EditMode.AssemblyBoundaryTests.M00_02_OnlyOneAuthoritativeCellStateExistsAndOldHostGuidIsPreserved",
+      "name": "M00_02_OnlyOneAuthoritativeCellStateExistsAndOldHostGuidIsPreserved",
+      "state": "Passed",
+      "durationSeconds": 0.022645,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.AssemblyBoundaryTests.M00_02_PlayerAssemblyGraphDoesNotReferenceEditorOrTestAssemblies",
+      "name": "M00_02_PlayerAssemblyGraphDoesNotReferenceEditorOrTestAssemblies",
+      "state": "Passed",
+      "durationSeconds": 0.056215,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_BaselineHasFourMaterialsAnd175CellsWithValidReferences",
+      "name": "M00_01_BaselineHasFourMaterialsAnd175CellsWithValidReferences",
+      "state": "Passed",
+      "durationSeconds": 0.017904,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"MissingField\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"MissingField\")",
+      "state": "Passed",
+      "durationSeconds": 0.01652,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateId\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateId\")",
+      "state": "Passed",
+      "durationSeconds": 0.00785,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateName\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateName\")",
+      "state": "Passed",
+      "durationSeconds": 0.007244,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateJsonKey\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateJsonKey\")",
+      "state": "Passed",
+      "durationSeconds": 0.010391,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownRule\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownRule\")",
+      "state": "Passed",
+      "durationSeconds": 0.00434,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"WrongKind\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"WrongKind\")",
+      "state": "Passed",
+      "durationSeconds": 0.003409,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"InvalidParameter\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"InvalidParameter\")",
+      "state": "Passed",
+      "durationSeconds": 0.003263,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"WrongSet\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"WrongSet\")",
+      "state": "Passed",
+      "durationSeconds": 0.003304,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"OutOfBounds\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"OutOfBounds\")",
+      "state": "Passed",
+      "durationSeconds": 0.003672,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownField\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownField\")",
+      "state": "Passed",
+      "durationSeconds": 0.003565,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnsupportedVersion\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnsupportedVersion\")",
+      "state": "Passed",
+      "durationSeconds": 0.003272,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownMaterial\")",
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownMaterial\")",
+      "state": "Passed",
+      "durationSeconds": 0.003248,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_04_ShortBurningConfigurationOnlyChangesTwoWoodParameters",
+      "name": "M00_04_ShortBurningConfigurationOnlyChangesTwoWoodParameters",
+      "state": "Passed",
+      "durationSeconds": 0.003299,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+      "name": "M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+      "state": "Passed",
+      "durationSeconds": 0.005482,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+      "name": "M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+      "state": "Passed",
+      "durationSeconds": 0.000999,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+      "name": "M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+      "state": "Passed",
+      "durationSeconds": 0.004586,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+      "name": "M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+      "state": "Passed",
+      "durationSeconds": 0.00988,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+      "name": "M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+      "state": "Passed",
+      "durationSeconds": 0.003551,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+      "name": "M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+      "state": "Passed",
+      "durationSeconds": 0.001794,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+      "name": "M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+      "state": "Passed",
+      "durationSeconds": 0.000636,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+      "name": "M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+      "state": "Passed",
+      "durationSeconds": 0.000701,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+      "name": "M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+      "state": "Passed",
+      "durationSeconds": 0.000983,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+      "name": "M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+      "state": "Passed",
+      "durationSeconds": 0.000499,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+      "name": "M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+      "state": "Passed",
+      "durationSeconds": 0.005127,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+      "name": "M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+      "state": "Passed",
+      "durationSeconds": 0.000602,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_03_ConnectionsStraddle127And128AndCrossHasNineExactCells",
+      "name": "M00_03_ConnectionsStraddle127And128AndCrossHasNineExactCells",
+      "state": "Passed",
+      "durationSeconds": 0.009122,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_03_InitialDataOwnsCopyAndNormalizesGenerationOrder",
+      "name": "M00_03_InitialDataOwnsCopyAndNormalizesGenerationOrder",
+      "state": "Passed",
+      "durationSeconds": 0.002118,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_BurningSplitAndCollisionAndClosedDisplacementFixturesAreExplicit",
+      "name": "M00_04_BurningSplitAndCollisionAndClosedDisplacementFixturesAreExplicit",
+      "state": "Passed",
+      "durationSeconds": 0.014246,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_ContactPosesAndBurningCommandOrderAreReproducible",
+      "name": "M00_04_ContactPosesAndBurningCommandOrderAreReproducible",
+      "state": "Passed",
+      "durationSeconds": 0.011601,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_ExportIncludesAllScenarioFamiliesAndReplaysWithoutGlobalSettings",
+      "name": "M00_04_ExportIncludesAllScenarioFamiliesAndReplaysWithoutGlobalSettings",
+      "state": "Passed",
+      "durationSeconds": 0.166115,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_RotationCommandsSelectOnlyIntendedLocalCenter",
+      "name": "M00_04_RotationCommandsSelectOnlyIntendedLocalCenter",
+      "state": "Passed",
+      "durationSeconds": 0.001652,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P1Has16384OfEachMaterial",
+      "name": "M00_06_P1Has16384OfEachMaterial",
+      "state": "Passed",
+      "durationSeconds": 0.003679,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P2MatchesEveryRangeAndMarker",
+      "name": "M00_06_P2MatchesEveryRangeAndMarker",
+      "state": "Passed",
+      "durationSeconds": 0.004536,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P3Has64UnfixedBlocksAndExactVelocitySigns",
+      "name": "M00_06_P3Has64UnfixedBlocksAndExactVelocitySigns",
+      "state": "Passed",
+      "durationSeconds": 0.001574,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P4Queues64IndividualOddCellsInAscendingOrder",
+      "name": "M00_06_P4Queues64IndividualOddCellsInAscendingOrder",
+      "state": "Passed",
+      "durationSeconds": 0.000769,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_01_StreamingAssetsDeploymentMatchesBaseline",
+      "name": "M01_01_StreamingAssetsDeploymentMatchesBaseline",
+      "state": "Passed",
+      "durationSeconds": 0.043441,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_ExplicitDirectoryReadAndAtomicCreateReplaceUseSameLoader",
+      "name": "M01_05_ExplicitDirectoryReadAndAtomicCreateReplaceUseSameLoader",
+      "state": "Passed",
+      "durationSeconds": 0.087462,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_SerializationRejectsInvalidEditorInitialStateBeforeWriting",
+      "name": "M01_05_SerializationRejectsInvalidEditorInitialStateBeforeWriting",
+      "state": "Passed",
+      "durationSeconds": 0.025148,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(False)",
+      "name": "M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(False)",
+      "state": "Passed",
+      "durationSeconds": 0.009928,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(True)",
+      "name": "M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(True)",
+      "state": "Passed",
+      "durationSeconds": 0.005548,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_ThreeFileSerializationIsDeterministicAndPreservesInitialSemantics",
+      "name": "M01_05_ThreeFileSerializationIsDeterministicAndPreservesInitialSemantics",
+      "state": "Passed",
+      "durationSeconds": 0.028168,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_06_ReadFailureAndLowInputBudgetDoNotPublishPartialSources",
+      "name": "M01_06_ReadFailureAndLowInputBudgetDoNotPublishPartialSources",
+      "state": "Passed",
+      "durationSeconds": 0.007566,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_重复JSON键",
+      "name": "M01_02_拒绝_重复JSON键",
+      "state": "Passed",
+      "durationSeconds": 0.028402,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_嵌套重复键",
+      "name": "M01_02_拒绝_嵌套重复键",
+      "state": "Passed",
+      "durationSeconds": 0.023668,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_未知根字段",
+      "name": "M01_02_拒绝_未知根字段",
+      "state": "Passed",
+      "durationSeconds": 0.089309,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_字段大小写",
+      "name": "M01_02_拒绝_字段大小写",
+      "state": "Passed",
+      "durationSeconds": 0.065864,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_缺字段",
+      "name": "M01_02_拒绝_缺字段",
+      "state": "Passed",
+      "durationSeconds": 0.012548,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_字符串数字",
+      "name": "M01_02_拒绝_字符串数字",
+      "state": "Passed",
+      "durationSeconds": 0.012,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_NaN",
+      "name": "M01_02_拒绝_NaN",
+      "state": "Passed",
+      "durationSeconds": 0.009122,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_Infinity",
+      "name": "M01_02_拒绝_Infinity",
+      "state": "Passed",
+      "durationSeconds": 0.00913,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_负Infinity",
+      "name": "M01_02_拒绝_负Infinity",
+      "state": "Passed",
+      "durationSeconds": 0.009111,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_浮点溢出",
+      "name": "M01_02_拒绝_浮点溢出",
+      "state": "Passed",
+      "durationSeconds": 0.009405,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_整数溢出",
+      "name": "M01_02_拒绝_整数溢出",
+      "state": "Passed",
+      "durationSeconds": 0.016852,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_单引号",
+      "name": "M01_02_拒绝_单引号",
+      "state": "Passed",
+      "durationSeconds": 0.009233,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_注释",
+      "name": "M01_02_拒绝_注释",
+      "state": "Passed",
+      "durationSeconds": 0.008929,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_尾逗号",
+      "name": "M01_02_拒绝_尾逗号",
+      "state": "Passed",
+      "durationSeconds": 0.009045,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_尾随内容",
+      "name": "M01_02_拒绝_尾随内容",
+      "state": "Passed",
+      "durationSeconds": 0.009161,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_数组根",
+      "name": "M01_02_拒绝_数组根",
+      "state": "Passed",
+      "durationSeconds": 0.008979,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_前导零",
+      "name": "M01_02_拒绝_前导零",
+      "state": "Passed",
+      "durationSeconds": 0.009094,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_null字段",
+      "name": "M01_02_拒绝_null字段",
+      "state": "Passed",
+      "durationSeconds": 0.011944,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_版本",
+      "name": "M01_02_拒绝_版本",
+      "state": "Passed",
+      "durationSeconds": 0.0121,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复ID",
+      "name": "M01_03_拒绝_重复ID",
+      "state": "Passed",
+      "durationSeconds": 0.012304,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复name",
+      "name": "M01_03_拒绝_重复name",
+      "state": "Passed",
+      "durationSeconds": 0.011971,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_未知标签",
+      "name": "M01_03_拒绝_未知标签",
+      "state": "Passed",
+      "durationSeconds": 0.011913,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复标签",
+      "name": "M01_03_拒绝_重复标签",
+      "state": "Passed",
+      "durationSeconds": 0.011738,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_标签大小写",
+      "name": "M01_03_拒绝_标签大小写",
+      "state": "Passed",
+      "durationSeconds": 0.01239,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_kind错配",
+      "name": "M01_03_拒绝_kind错配",
+      "state": "Passed",
+      "durationSeconds": 0.012055,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_缺必需标签",
+      "name": "M01_03_拒绝_缺必需标签",
+      "state": "Passed",
+      "durationSeconds": 0.019955,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_非法kind",
+      "name": "M01_03_拒绝_非法kind",
+      "state": "Passed",
+      "durationSeconds": 0.079126,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_缺参数块",
+      "name": "M01_03_拒绝_缺参数块",
+      "state": "Passed",
+      "durationSeconds": 0.012286,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_多参数块",
+      "name": "M01_03_拒绝_多参数块",
+      "state": "Passed",
+      "durationSeconds": 0.01201,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_灭火参数块",
+      "name": "M01_03_拒绝_灭火参数块",
+      "state": "Passed",
+      "durationSeconds": 0.01207,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_未知参数",
+      "name": "M01_03_拒绝_未知参数",
+      "state": "Passed",
+      "durationSeconds": 0.012255,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_时间零",
+      "name": "M01_03_拒绝_时间零",
+      "state": "Passed",
+      "durationSeconds": 0.012843,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_时间上限",
+      "name": "M01_03_拒绝_时间上限",
+      "state": "Passed",
+      "durationSeconds": 0.012155,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_空名称",
+      "name": "M01_03_拒绝_空名称",
+      "state": "Passed",
+      "durationSeconds": 0.012094,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_空连接组",
+      "name": "M01_03_拒绝_空连接组",
+      "state": "Passed",
+      "durationSeconds": 0.011902,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_非法颜色",
+      "name": "M01_03_拒绝_非法颜色",
+      "state": "Passed",
+      "durationSeconds": 0.012,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_质量零",
+      "name": "M01_03_拒绝_质量零",
+      "state": "Passed",
+      "durationSeconds": 0.0119,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_质量负数",
+      "name": "M01_03_拒绝_质量负数",
+      "state": "Passed",
+      "durationSeconds": 0.012257,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_材料零",
+      "name": "M01_03_拒绝_材料零",
+      "state": "Passed",
+      "durationSeconds": 0.01199,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_材料上限",
+      "name": "M01_03_拒绝_材料上限",
+      "state": "Passed",
+      "durationSeconds": 0.011973,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_材料集",
+      "name": "M01_04_拒绝_材料集",
+      "state": "Passed",
+      "durationSeconds": 0.012009,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_未知材料",
+      "name": "M01_04_拒绝_未知材料",
+      "state": "Passed",
+      "durationSeconds": 0.012141,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_重复坐标",
+      "name": "M01_04_拒绝_重复坐标",
+      "state": "Passed",
+      "durationSeconds": 0.012267,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序格",
+      "name": "M01_04_拒绝_乱序格",
+      "state": "Passed",
+      "durationSeconds": 0.01406,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_越界x",
+      "name": "M01_04_拒绝_越界x",
+      "state": "Passed",
+      "durationSeconds": 0.01426,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_越界y",
+      "name": "M01_04_拒绝_越界y",
+      "state": "Passed",
+      "durationSeconds": 0.012267,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_固定水",
+      "name": "M01_04_拒绝_固定水",
+      "state": "Passed",
+      "durationSeconds": 0.051959,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_固定空格",
+      "name": "M01_04_拒绝_固定空格",
+      "state": "Passed",
+      "durationSeconds": 0.040307,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_初燃水",
+      "name": "M01_04_拒绝_初燃水",
+      "state": "Passed",
+      "durationSeconds": 0.012783,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_初燃空格",
+      "name": "M01_04_拒绝_初燃空格",
+      "state": "Passed",
+      "durationSeconds": 0.012742,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_重复固定",
+      "name": "M01_04_拒绝_重复固定",
+      "state": "Passed",
+      "durationSeconds": 0.01284,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序固定",
+      "name": "M01_04_拒绝_乱序固定",
+      "state": "Passed",
+      "durationSeconds": 0.012749,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序初燃",
+      "name": "M01_04_拒绝_乱序初燃",
+      "state": "Passed",
+      "durationSeconds": 0.014162,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_引用路径",
+      "name": "M01_04_拒绝_引用路径",
+      "state": "Passed",
+      "durationSeconds": 0.012178,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_世界引用",
+      "name": "M01_04_拒绝_世界引用",
+      "state": "Passed",
+      "durationSeconds": 0.012029,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_世界版本",
+      "name": "M01_04_拒绝_世界版本",
+      "state": "Passed",
+      "durationSeconds": 0.012035,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_场景版本",
+      "name": "M01_04_拒绝_场景版本",
+      "state": "Passed",
+      "durationSeconds": 0.012099,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_宽零",
+      "name": "M01_06_拒绝_宽零",
+      "state": "Passed",
+      "durationSeconds": 0.012014,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_宽上限",
+      "name": "M01_06_拒绝_宽上限",
+      "state": "Passed",
+      "durationSeconds": 0.011988,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_块长",
+      "name": "M01_06_拒绝_块长",
+      "state": "Passed",
+      "durationSeconds": 0.011953,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_cellSize零",
+      "name": "M01_06_拒绝_cellSize零",
+      "state": "Passed",
+      "durationSeconds": 0.011892,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_cellSize下溢",
+      "name": "M01_06_拒绝_cellSize下溢",
+      "state": "Passed",
+      "durationSeconds": 0.012238,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_step零",
+      "name": "M01_06_拒绝_step零",
+      "state": "Passed",
+      "durationSeconds": 0.012101,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_seed负数",
+      "name": "M01_06_拒绝_seed负数",
+      "state": "Passed",
+      "durationSeconds": 0.011893,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_seed溢出",
+      "name": "M01_06_拒绝_seed溢出",
+      "state": "Passed",
+      "durationSeconds": 0.011854,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_限制零",
+      "name": "M01_06_拒绝_限制零",
+      "state": "Passed",
+      "durationSeconds": 0.01175,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_半径上限",
+      "name": "M01_06_拒绝_半径上限",
+      "state": "Passed",
+      "durationSeconds": 0.022129,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_低格数",
+      "name": "M01_06_拒绝_低格数",
+      "state": "Passed",
+      "durationSeconds": 0.070772,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_极大预算",
+      "name": "M01_06_拒绝_极大预算",
+      "state": "Passed",
+      "durationSeconds": 0.012567,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_极大形状",
+      "name": "M01_06_拒绝_极大形状",
+      "state": "Passed",
+      "durationSeconds": 0.012688,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_世界长度溢出",
+      "name": "M01_06_拒绝_世界长度溢出",
+      "state": "Passed",
+      "durationSeconds": 0.01217,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_物理组合溢出",
+      "name": "M01_06_拒绝_物理组合溢出",
+      "state": "Passed",
+      "durationSeconds": 0.011897,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_01_BaselineAndTagPermutationHaveStableRuntimeSemantics",
+      "name": "M01_01_BaselineAndTagPermutationHaveStableRuntimeSemantics",
+      "state": "Passed",
+      "durationSeconds": 0.009921,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_01_NumericParsingAndSerializationAreIndependentOfOperatingSystemCulture",
+      "name": "M01_01_NumericParsingAndSerializationAreIndependentOfOperatingSystemCulture",
+      "state": "Passed",
+      "durationSeconds": 0.015057,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"MissingField\",\"materials.json\",\"materials[0].name\",InvalidConfig)",
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"MissingField\",\"materials.json\",\"materials[0].name\",InvalidConfig)",
+      "state": "Passed",
+      "durationSeconds": 0.005986,
+      "output": "materials.json | materials[0].name | InvalidConfig | 缺少必需字段。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownRule\",\"materials.json\",\"materials[0].tags[2]\",UnknownRule)",
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownRule\",\"materials.json\",\"materials[0].tags[2]\",UnknownRule)",
+      "state": "Passed",
+      "durationSeconds": 0.005194,
+      "output": "materials.json | materials[0].tags[2] | UnknownRule | 未知规则标签。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnsupportedVersion\",\"world_config.json\",\"schemaVersion\",UnsupportedVersion)",
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnsupportedVersion\",\"world_config.json\",\"schemaVersion\",UnsupportedVersion)",
+      "state": "Passed",
+      "durationSeconds": 0.005196,
+      "output": "world_config.json | schemaVersion | UnsupportedVersion | 仅支持 schemaVersion=1。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownMaterial\",\"scene.json\",\"cells[0].materialId\",UnknownMaterial)",
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownMaterial\",\"scene.json\",\"cells[0].materialId\",UnknownMaterial)",
+      "state": "Passed",
+      "durationSeconds": 0.005266,
+      "output": "scene.json | cells[0].materialId | UnknownMaterial | 未定义材料 ID。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"OutOfBounds\",\"scene.json\",\"cells[0].x\",OutOfBounds)",
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"OutOfBounds\",\"scene.json\",\"cells[0].x\",OutOfBounds)",
+      "state": "Passed",
+      "durationSeconds": 0.005203,
+      "output": "scene.json | cells[0].x | OutOfBounds | 坐标超过实际 width。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_NullTextStillCarriesCanonicalDiagnosticFileName",
+      "name": "M01_02_NullTextStillCarriesCanonicalDiagnosticFileName",
+      "state": "Passed",
+      "durationSeconds": 0.000419,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_NamesUseOrdinalCaseSensitiveUniquenessAndMaximumIdIsValid",
+      "name": "M01_03_NamesUseOrdinalCaseSensitiveUniquenessAndMaximumIdIsValid",
+      "state": "Passed",
+      "durationSeconds": 0.005204,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_LoadedInitialStateIsImmutableAcrossTwentyIndependentLoads",
+      "name": "M01_04_LoadedInitialStateIsImmutableAcrossTwentyIndependentLoads",
+      "state": "Passed",
+      "durationSeconds": 0.072839,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_ExtremeDimensionsStaySparseAndLowMemoryFailsBeforePublication",
+      "name": "M01_06_ExtremeDimensionsStaySparseAndLowMemoryFailsBeforePublication",
+      "state": "Passed",
+      "durationSeconds": 0.009052,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe",
+      "name": "M02_07_HostOwnsOneWorldResetAndRepeatCloseAreSafe",
+      "state": "Passed",
+      "durationSeconds": 0.00652,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive",
+      "name": "M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive",
+      "state": "Passed",
+      "durationSeconds": 0.003277,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_HostRejectsUnsupportedTransformBeforeFactory",
+      "name": "M02_08_HostRejectsUnsupportedTransformBeforeFactory",
+      "state": "Passed",
+      "durationSeconds": 0.001946,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.HostDriverTests.M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry",
+      "name": "M02_08_RejectNonfiniteFramesStopOnFaultAndPreventReentry",
+      "state": "Passed",
+      "durationSeconds": 0.001169,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate",
+      "name": "M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate",
+      "state": "Passed",
+      "durationSeconds": 0.01948,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_01_MissingReadsNeverAllocateAndTailWritesAreBounded",
+      "name": "M02_01_MissingReadsNeverAllocateAndTailWritesAreBounded",
+      "state": "Passed",
+      "durationSeconds": 0.016967,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_CellStateSizeAndRoundTripPreserveEveryField",
+      "name": "M02_02_CellStateSizeAndRoundTripPreserveEveryField",
+      "state": "Passed",
+      "durationSeconds": 0.010874,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_CrossChunkMoveKeepsFuelWetInstanceAndFixedBinding",
+      "name": "M02_02_CrossChunkMoveKeepsFuelWetInstanceAndFixedBinding",
+      "state": "Passed",
+      "durationSeconds": 0.069919,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(101,uint.MinValue,uint.MinValue,uint.MinValue)",
+      "name": "M02_02_InitialFieldsReplaceAndRemove(101,uint.MinValue,uint.MinValue,uint.MinValue)",
+      "state": "Passed",
+      "durationSeconds": 0.007985,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(102,uint.MinValue,uint.MinValue,uint.MinValue)",
+      "name": "M02_02_InitialFieldsReplaceAndRemove(102,uint.MinValue,uint.MinValue,uint.MinValue)",
+      "state": "Passed",
+      "durationSeconds": 0.004924,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(103,uint.MinValue,uint.MinValue,200)",
+      "name": "M02_02_InitialFieldsReplaceAndRemove(103,uint.MinValue,uint.MinValue,200)",
+      "state": "Passed",
+      "durationSeconds": 0.004899,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InitialFieldsReplaceAndRemove(104,250,10,uint.MinValue)",
+      "name": "M02_02_InitialFieldsReplaceAndRemove(104,250,10,uint.MinValue)",
+      "state": "Passed",
+      "durationSeconds": 0.004774,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_InstanceMapTracksOwnershipAndRejectsOldTick",
+      "name": "M02_02_InstanceMapTracksOwnershipAndRejectsOldTick",
+      "state": "Passed",
+      "durationSeconds": 0.004992,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_02_SameIdReplaceCreatesNewInstanceAndClearsFixedAndBurning",
+      "name": "M02_02_SameIdReplaceCreatesNewInstanceAndClearsFixedAndBurning",
+      "state": "Passed",
+      "durationSeconds": 0.005487,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_MaterialBudgetRejectsWholeBatch",
+      "name": "M02_03_MaterialBudgetRejectsWholeBatch",
+      "state": "Passed",
+      "durationSeconds": 0.005361,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_StateOnlyChangesCountAndIdenticalWriteDoesNot",
+      "name": "M02_03_StateOnlyChangesCountAndIdenticalWriteDoesNot",
+      "state": "Passed",
+      "durationSeconds": 0.017575,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_03_WholeTickDeduplicationAndExternalOverflowAreAtomic",
+      "name": "M02_03_WholeTickDeduplicationAndExternalOverflowAreAtomic",
+      "state": "Passed",
+      "durationSeconds": 0.016445,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_04_ProductionCreateNeverReportsPartialReady",
+      "name": "M02_04_ProductionCreateNeverReportsPartialReady",
+      "state": "Passed",
+      "durationSeconds": 0.069233,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_05_IllegalStateStaleKeyWrongThreadAndBusyPreparationAreRejected",
+      "name": "M02_05_IllegalStateStaleKeyWrongThreadAndBusyPreparationAreRejected",
+      "state": "Passed",
+      "durationSeconds": 0.008892,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_05_PrepareAbortSnapshotPublishAndFaultVisibility",
+      "name": "M02_05_PrepareAbortSnapshotPublishAndFaultVisibility",
+      "state": "Passed",
+      "durationSeconds": 0.006474,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StateCoreTests.M02_07_TwentyStateRebuildsRestoreInitialAndReleaseLeases",
+      "name": "M02_07_TwentyStateRebuildsRestoreInitialAndReleaseLeases",
+      "state": "Passed",
+      "durationSeconds": 0.015303,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,False)",
+      "name": "M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,False)",
+      "state": "Passed",
+      "durationSeconds": 0.031516,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,False)",
+      "name": "M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,False)",
+      "state": "Passed",
+      "durationSeconds": 0.011242,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,True)",
+      "name": "M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Commands,True)",
+      "state": "Passed",
+      "durationSeconds": 0.007135,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,True)",
+      "name": "M02_05_StructureFailureAbortsCommandOrFaultsRuleBeforeApply(Burning,True)",
+      "state": "Passed",
+      "durationSeconds": 0.006008,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I01_I02_PublicPlanCopiesAndNormalizesRetirementsAndExplicitDisposition",
+      "name": "M04_I01_I02_PublicPlanCopiesAndNormalizesRetirementsAndExplicitDisposition",
+      "state": "Passed",
+      "durationSeconds": 0.004682,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(\"abort\",NotReady)",
+      "name": "M04_I03_CandidateLeaseClosesWithItsOwner(\"abort\",NotReady)",
+      "state": "Passed",
+      "durationSeconds": 0.00988,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(\"dispose\",Disposed)",
+      "name": "M04_I03_CandidateLeaseClosesWithItsOwner(\"dispose\",Disposed)",
+      "state": "Passed",
+      "durationSeconds": 0.007824,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateLeaseClosesWithItsOwner(\"fault\",Faulted)",
+      "name": "M04_I03_CandidateLeaseClosesWithItsOwner(\"fault\",Faulted)",
+      "state": "Passed",
+      "durationSeconds": 0.010801,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_CandidateRejectsWrongThreadAndTransactionContext",
+      "name": "M04_I03_CandidateRejectsWrongThreadAndTransactionContext",
+      "state": "Passed",
+      "durationSeconds": 0.015991,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_InitialAndRemoveArePlannedBeforeMaterialApply",
+      "name": "M04_I03_InitialAndRemoveArePlannedBeforeMaterialApply",
+      "state": "Passed",
+      "durationSeconds": 0.015515,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_RealBurnedOutBatchPlansCandidateAndPreservesSurvivingFuel",
+      "name": "M04_I03_RealBurnedOutBatchPlansCandidateAndPreservesSurvivingFuel",
+      "state": "Passed",
+      "durationSeconds": 0.010946,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(False)",
+      "name": "M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(False)",
+      "state": "Passed",
+      "durationSeconds": 0.012483,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(True)",
+      "name": "M04_I03_SameIdReplaceAndSpawnClearCandidateFixedWithoutChangingOldInstance(True)",
+      "state": "Passed",
+      "durationSeconds": 0.01172,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_I03_WriteStateRetainsFixedAndCandidateKeyValidation",
+      "name": "M04_I03_WriteStateRetainsFixedAndCandidateKeyValidation",
+      "state": "Passed",
+      "durationSeconds": 0.01238,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.StructurePreparationTests.M04_T4_02_FullFourArmPlanIsRejectedAtomicallyAtBodyLimitThree",
+      "name": "M04_T4_02_FullFourArmPlanIsRejectedAtomicallyAtBodyLimitThree",
+      "state": "Passed",
+      "durationSeconds": 0.010006,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_AutomaticBatchBudgetFailureRequiresFaultEvenBeforeApply",
+      "name": "M02_03_AutomaticBatchBudgetFailureRequiresFaultEvenBeforeApply",
+      "state": "Passed",
+      "durationSeconds": 0.0024,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"materials\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"materials\")",
+      "state": "Passed",
+      "durationSeconds": 0.001124,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"bodies\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"bodies\")",
+      "state": "Passed",
+      "durationSeconds": 8.3e-05,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"shapes\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"shapes\")",
+      "state": "Passed",
+      "durationSeconds": 7.2e-05,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"changes\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"changes\")",
+      "state": "Passed",
+      "durationSeconds": 7.3e-05,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"cpu\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"cpu\")",
+      "state": "Passed",
+      "durationSeconds": 7.5e-05,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_GlobalBudgetsAreCheckedBeforeApply(\"negative\")",
+      "name": "M02_03_GlobalBudgetsAreCheckedBeforeApply(\"negative\")",
+      "state": "Passed",
+      "durationSeconds": 7.5e-05,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_03_PreparationCpuBytesAreCombinedAndOwnershipIsUnique",
+      "name": "M02_03_PreparationCpuBytesAreCombinedAndOwnershipIsUnique",
+      "state": "Passed",
+      "durationSeconds": 0.000727,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_AllPreflightBeforeAnyApplyAndCommitWaitsForPublish",
+      "name": "M02_05_AllPreflightBeforeAnyApplyAndCommitWaitsForPublish",
+      "state": "Passed",
+      "durationSeconds": 0.001405,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_ApplyFailureRequiresWorldFaultAndCleanupContinuesAfterException",
+      "name": "M02_05_ApplyFailureRequiresWorldFaultAndCleanupContinuesAfterException",
+      "state": "Passed",
+      "durationSeconds": 0.001161,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_InjectFailureRecordsAtomicBoundary(BeforeApply,False)",
+      "name": "M02_05_InjectFailureRecordsAtomicBoundary(BeforeApply,False)",
+      "state": "Passed",
+      "durationSeconds": 0.001225,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_InjectFailureRecordsAtomicBoundary(DuringApply,True)",
+      "name": "M02_05_InjectFailureRecordsAtomicBoundary(DuringApply,True)",
+      "state": "Passed",
+      "durationSeconds": 0.000111,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.M02.TransactionCoordinatorTests.M02_05_SecondPreflightFailureNeverAppliesFirst",
+      "name": "M02_05_SecondPreflightFailureNeverAppliesFirst",
+      "state": "Passed",
+      "durationSeconds": 0.000372,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.RuleInstanceContractTests.M00_02_M02_I01_RuleConsumerUsesOnlySharedSignaturesAndPreservesInstance",
+      "name": "M00_02_M02_I01_RuleConsumerUsesOnlySharedSignaturesAndPreservesInstance",
+      "state": "Passed",
+      "durationSeconds": 0.008893,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.RuleInstanceContractTests.M02_I01_LookupFollowsOwnershipTransferRemoveAndReplacement",
+      "name": "M02_I01_LookupFollowsOwnershipTransferRemoveAndReplacement",
+      "state": "Passed",
+      "durationSeconds": 0.000987,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.RuleInstanceContractTests.M02_I01_LookupIsReadOnlyAndMissingOrStaleKeysReturnDefault",
+      "name": "M02_I01_LookupIsReadOnlyAndMissingOrStaleKeysReturnDefault",
+      "state": "Passed",
+      "durationSeconds": 0.00256,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.RuleInstanceContractTests.M02_I01_PreparedCandidateDoesNotLeakAndSameTickMapStaysStable",
+      "name": "M02_I01_PreparedCandidateDoesNotLeakAndSameTickMapStaysStable",
+      "state": "Passed",
+      "durationSeconds": 0.006671,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_01_BurnedOutSourceCannotPropagateOrBeRevived",
+      "name": "M03_T9_01_BurnedOutSourceCannotPropagateOrBeRevived",
+      "state": "Passed",
+      "durationSeconds": 0.022752,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_01_OnlyFourNeighboursIgniteOnceWithoutRecursiveScan",
+      "name": "M03_T9_01_OnlyFourNeighboursIgniteOnceWithoutRecursiveScan",
+      "state": "Passed",
+      "durationSeconds": 0.010812,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_01_ShortFuelPropagationAndBurnoutFollowExactTicks",
+      "name": "M03_T9_01_ShortFuelPropagationAndBurnoutFollowExactTicks",
+      "state": "Passed",
+      "durationSeconds": 0.016185,
+      "output": "Tick1: A余量=4, B余量=5, B燃烧=False\nTick2: A余量=3, B余量=5, B燃烧=True\nTick3: A余量=2, B余量=4, B燃烧=True\nTick4: A余量=1, B余量=3, B燃烧=True\nTick5: A余量=0, B余量=2, B燃烧=True\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_02_PreFlowWetHandleSurvivesWaterLeavingContact",
+      "name": "M03_T9_02_PreFlowWetHandleSurvivesWaterLeavingContact",
+      "state": "Passed",
+      "durationSeconds": 0.004846,
+      "output": "Tick1: 水=(10,8)，A熄灭，余量=5，湿句柄保留\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_03_ExtinguishKeepsPartialFuelAndReigniteStartsNextTick",
+      "name": "M03_T9_03_ExtinguishKeepsPartialFuelAndReigniteStartsNextTick",
+      "state": "Passed",
+      "durationSeconds": 0.003803,
+      "output": "Tick1/2: A余量4/3；Tick3熄灭仍3；Tick4重新点燃仍3；Tick5余量2\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_04_ExtinguishingUsesCapabilityInsteadOfIdOrKind",
+      "name": "M03_T9_04_ExtinguishingUsesCapabilityInsteadOfIdOrKind",
+      "state": "Passed",
+      "durationSeconds": 0.006816,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_04_WetTargetRejectsExternalIgniteAndMultiplePropagation",
+      "name": "M03_T9_04_WetTargetRejectsExternalIgniteAndMultiplePropagation",
+      "state": "Passed",
+      "durationSeconds": 0.003648,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PhysicsWetExtinguishesWithoutRefundingConsumedFuel",
+      "name": "M03_T9_05_PhysicsWetExtinguishesWithoutRefundingConsumedFuel",
+      "state": "Passed",
+      "durationSeconds": 0.004907,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PreclassifiedCrossOwnerContactFixture(EdgeEdge,0.0f,True)",
+      "name": "M03_T9_05_PreclassifiedCrossOwnerContactFixture(EdgeEdge,0.0f,True)",
+      "state": "Passed",
+      "durationSeconds": 0.007555,
+      "output": "预分类接触夹具: EdgeEdge, d=0, 熄灭=True；未执行 M06 实际 OBB/旋转求解\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PreclassifiedCrossOwnerContactFixture(VertexEdge,0.0f,True)",
+      "name": "M03_T9_05_PreclassifiedCrossOwnerContactFixture(VertexEdge,0.0f,True)",
+      "state": "Passed",
+      "durationSeconds": 0.003335,
+      "output": "预分类接触夹具: VertexEdge, d=0, 熄灭=True；未执行 M06 实际 OBB/旋转求解\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PreclassifiedCrossOwnerContactFixture(VertexVertex,0.0f,False)",
+      "name": "M03_T9_05_PreclassifiedCrossOwnerContactFixture(VertexVertex,0.0f,False)",
+      "state": "Passed",
+      "durationSeconds": 0.003098,
+      "output": "预分类接触夹具: VertexVertex, d=0, 熄灭=False；未执行 M06 实际 OBB/旋转求解\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PreclassifiedCrossOwnerContactFixture(EdgeEdge,0.001f,False)",
+      "name": "M03_T9_05_PreclassifiedCrossOwnerContactFixture(EdgeEdge,0.001f,False)",
+      "state": "Passed",
+      "durationSeconds": 0.003187,
+      "output": "预分类接触夹具: EdgeEdge, d=0.001, 熄灭=False；未执行 M06 实际 OBB/旋转求解\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_05_PreclassifiedCrossOwnerContactFixture(PositiveAreaOverlap,0.0f,True)",
+      "name": "M03_T9_05_PreclassifiedCrossOwnerContactFixture(PositiveAreaOverlap,0.0f,True)",
+      "state": "Passed",
+      "durationSeconds": 0.0041,
+      "output": "预分类接触夹具: PositiveAreaOverlap, d=0, 熄灭=True；未执行 M06 实际 OBB/旋转求解\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_06_IdentityTransferPreservesWetAndPartialFuelInMemoryFixture",
+      "name": "M03_T9_06_IdentityTransferPreservesWetAndPartialFuelInMemoryFixture",
+      "state": "Passed",
+      "durationSeconds": 0.006345,
+      "output": "仅手动身份迁移夹具；真实 M05 提取/再次拆分未运行\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.BurnRuleTests.M03_T9_06_RuleOnlyMaterialAccountingConservesMovesAndCountsRemovalReasons",
+      "name": "M03_T9_06_RuleOnlyMaterialAccountingConservesMovesAndCountsRemovalReasons",
+      "state": "Passed",
+      "durationSeconds": 0.009534,
+      "output": "规则夹具账目: 水1→1；蒸汽1=现存0+自然消散1；木1=现存0+燃尽1\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_01_WaterMovesOnTicks1And3WithCompleteState",
+      "name": "M03_T6_01_WaterMovesOnTicks1And3WithCompleteState",
+      "state": "Passed",
+      "durationSeconds": 0.00455,
+      "output": "Tick1: 水=(5,4), MoveCountdown=2\nTick2: 水=(5,4), MoveCountdown=1\nTick3: 水=(5,3), MoveCountdown=2\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_02_NewSteamExpiresWithoutExtraTickAndNoUnsignedUnderflow",
+      "name": "M03_T6_02_NewSteamExpiresWithoutExtraTickAndNoUnsignedUnderflow",
+      "state": "Passed",
+      "durationSeconds": 0.003622,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_02_SteamExpiresOnTick200WhenOpenOrEnclosed(False)",
+      "name": "M03_T6_02_SteamExpiresOnTick200WhenOpenOrEnclosed(False)",
+      "state": "Passed",
+      "durationSeconds": 0.011183,
+      "output": "Tick1: 蒸汽=(5,6), Lifetime=199\nTick2: 蒸汽=(5,6), Lifetime=198\nTick3: 蒸汽=(5,6), Lifetime=197\nTick4: 蒸汽=(5,7), Lifetime=196\nTick199: 蒸汽=(5,72), Lifetime=1\nTick200: 自然消散=1，燃尽=0\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_02_SteamExpiresOnTick200WhenOpenOrEnclosed(True)",
+      "name": "M03_T6_02_SteamExpiresOnTick200WhenOpenOrEnclosed(True)",
+      "state": "Passed",
+      "durationSeconds": 0.010709,
+      "output": "Tick1: 蒸汽=(5,5), Lifetime=199\nTick2: 蒸汽=(5,5), Lifetime=198\nTick3: 蒸汽=(5,5), Lifetime=197\nTick4: 蒸汽=(5,5), Lifetime=196\nTick199: 蒸汽=(5,5), Lifetime=1\nTick200: 自然消散=1，燃尽=0\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_03_InputAndTagOrderDoNotChangeGeneratedPlan",
+      "name": "M03_T6_03_InputAndTagOrderDoNotChangeGeneratedPlan",
+      "state": "Passed",
+      "durationSeconds": 0.009834,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(False,4)",
+      "name": "M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(False,4)",
+      "state": "Passed",
+      "durationSeconds": 0.008249,
+      "output": "首选斜向: (4,5)胜出→(5,4)；败者(6,5)次选斜向→(7,4)\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(True,4)",
+      "name": "M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(True,4)",
+      "state": "Passed",
+      "durationSeconds": 0.007165,
+      "output": "首选斜向: (4,5)胜出→(5,4)；败者(6,5)次选斜向→(7,4)\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(False,126)",
+      "name": "M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(False,126)",
+      "state": "Passed",
+      "durationSeconds": 0.006806,
+      "output": "首选斜向: (126,5)胜出→(127,4)；败者(128,5)次选斜向→(129,4)\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(True,126)",
+      "name": "M03_T6_03_T6_05_CompetitionSortsByTargetThenSourceAndLoserUsesFallback(True,126)",
+      "state": "Passed",
+      "durationSeconds": 0.00663,
+      "output": "首选斜向: (126,5)胜出→(127,4)；败者(128,5)次选斜向→(129,4)\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_04_BoundaryAndDynamicSolidOccupancyBlockCandidates",
+      "name": "M03_T6_04_BoundaryAndDynamicSolidOccupancyBlockCandidates",
+      "state": "Passed",
+      "durationSeconds": 0.043995,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_04_DiagonalCannotCrossBlockedSide",
+      "name": "M03_T6_04_DiagonalCannotCrossBlockedSide",
+      "state": "Passed",
+      "durationSeconds": 0.06349,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_04_NoSamePhaseVacancyOrWaterSteamSwap",
+      "name": "M03_T6_04_NoSamePhaseVacancyOrWaterSteamSwap",
+      "state": "Passed",
+      "durationSeconds": 0.009382,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_04_SteamReadsAlreadyAppliedWaterPhase",
+      "name": "M03_T6_04_SteamReadsAlreadyAppliedWaterPhase",
+      "state": "Passed",
+      "durationSeconds": 0.003731,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_05_FullStateMovesAcrossChunkBoundary(5)",
+      "name": "M03_T6_05_FullStateMovesAcrossChunkBoundary(5)",
+      "state": "Passed",
+      "durationSeconds": 0.003948,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_05_FullStateMovesAcrossChunkBoundary(127)",
+      "name": "M03_T6_05_FullStateMovesAcrossChunkBoundary(127)",
+      "state": "Passed",
+      "durationSeconds": 0.003063,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_06_OverflowSafeParityAtMaximumTickAndSeed",
+      "name": "M03_T6_06_OverflowSafeParityAtMaximumTickAndSeed",
+      "state": "Passed",
+      "durationSeconds": 0.000159,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_06_ParityAppliesToWaterSteamAndHorizontal(1,-1)",
+      "name": "M03_T6_06_ParityAppliesToWaterSteamAndHorizontal(1,-1)",
+      "state": "Passed",
+      "durationSeconds": 0.024235,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.MovementRuleTests.M03_T6_06_ParityAppliesToWaterSteamAndHorizontal(2,1)",
+      "name": "M03_T6_06_ParityAppliesToWaterSteamAndHorizontal(2,1)",
+      "state": "Passed",
+      "durationSeconds": 0.017766,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_ExecutionTableUsesOneRegistryAndNoPerCellCapabilityExecutor",
+      "name": "M03_A_ExecutionTableUsesOneRegistryAndNoPerCellCapabilityExecutor",
+      "state": "Passed",
+      "durationSeconds": 0.00333,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_KindWithoutExplicitRulesDoesNotExecuteImplicitBehaviour",
+      "name": "M03_A_KindWithoutExplicitRulesDoesNotExecuteImplicitBehaviour",
+      "state": "Passed",
+      "durationSeconds": 0.008146,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_RulesNeverMutateSnapshotOrInstanceMap",
+      "name": "M03_A_RulesNeverMutateSnapshotOrInstanceMap",
+      "state": "Passed",
+      "durationSeconds": 0.008695,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_A_WarmedRuleAllocationRequiresWorkingPositiveControl",
+      "name": "M03_A_WarmedRuleAllocationRequiresWorkingPositiveControl",
+      "state": "Skipped",
+      "durationSeconds": 0.012152,
+      "output": "",
+      "message": "未测：当前 Editor .NET 分配计数器正对照=0字节；同步 GC.Alloc 正对照=100字节；未获得可靠的逐调用分配证据。需在 Player/Profiler 按 M09 复测。",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_ContactBufferFailureClearsWetHandlesAndBurnIntents",
+      "name": "M03_T7_01_ContactBufferFailureClearsWetHandlesAndBurnIntents",
+      "state": "Passed",
+      "durationSeconds": 0.00425,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(LiquidFlow)",
+      "name": "M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(LiquidFlow)",
+      "state": "Passed",
+      "durationSeconds": 0.00642,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(GasDrift)",
+      "name": "M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(GasDrift)",
+      "state": "Passed",
+      "durationSeconds": 0.004181,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(Burnable)",
+      "name": "M03_T7_01_IntentCapacityFailureExposesNoPartialBatch(Burnable)",
+      "state": "Passed",
+      "durationSeconds": 0.003525,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_MissingOrClosedInstancesFailWithCellDiagnostic(False)",
+      "name": "M03_T7_01_MissingOrClosedInstancesFailWithCellDiagnostic(False)",
+      "state": "Passed",
+      "durationSeconds": 0.00389,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_MissingOrClosedInstancesFailWithCellDiagnostic(True)",
+      "name": "M03_T7_01_MissingOrClosedInstancesFailWithCellDiagnostic(True)",
+      "state": "Passed",
+      "durationSeconds": 0.003116,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_OccupancyFailureAndStaleVersionCannotBecomeEmptyTargets",
+      "name": "M03_T7_01_OccupancyFailureAndStaleVersionCannotBecomeEmptyTargets",
+      "state": "Passed",
+      "durationSeconds": 0.003595,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_RuleFailureDoesNotWriteM02StateAndManualFaultRetainsOldView",
+      "name": "M03_T7_01_RuleFailureDoesNotWriteM02StateAndManualFaultRetainsOldView",
+      "state": "Passed",
+      "durationSeconds": 0.005937,
+      "output": "真实 M02 状态核心+手动 Fault 探针；未执行正式 Step/显示链路\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_ScanAndResolvedOutputCapacitiesRejectWholeBatch",
+      "name": "M03_T7_01_ScanAndResolvedOutputCapacitiesRejectWholeBatch",
+      "state": "Passed",
+      "durationSeconds": 0.003554,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Rules.RuleFailureTests.M03_T7_01_WrongTickGenerationAndStageRejectBeforeEmission",
+      "name": "M03_T7_01_WrongTickGenerationAndStageRejectBeforeEmission",
+      "state": "Passed",
+      "durationSeconds": 0.003631,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_01_MixedFixedChainThenRemoveBridge",
+      "name": "M04_T3_01_MixedFixedChainThenRemoveBridge",
+      "state": "Passed",
+      "durationSeconds": 0.037584,
+      "output": "Grid/0:building:RetainFixedGrid:固定[10,10;]\nGrid/0:building:ExtractFreeGrid:自由[12,10;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"building\",True)",
+      "name": "M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"building\",True)",
+      "state": "Passed",
+      "durationSeconds": 0.016872,
+      "output": "Grid/0:building:RetainFixedGrid:固定[0,0;1,0;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"Building\",False)",
+      "name": "M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"Building\",False)",
+      "state": "Passed",
+      "durationSeconds": 0.009753,
+      "output": "Grid/0:building:RetainFixedGrid:固定[0,0;]\nGrid/0:Building:ExtractFreeGrid:自由[1,0;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"other\",False)",
+      "name": "M04_T3_02_ConnectionGroupsUseOrdinalCaseSensitiveComparison(\"other\",False)",
+      "state": "Passed",
+      "durationSeconds": 0.009484,
+      "output": "Grid/0:building:RetainFixedGrid:固定[0,0;]\nGrid/0:other:ExtractFreeGrid:自由[1,0;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_02_DiagonalAndFluidCellsDoNotConnect",
+      "name": "M04_T3_02_DiagonalAndFluidCellsDoNotConnect",
+      "state": "Passed",
+      "durationSeconds": 0.005285,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_03_CrossChunkAndNonMultipleTail",
+      "name": "M04_T3_03_CrossChunkAndNonMultipleTail",
+      "state": "Passed",
+      "durationSeconds": 0.008836,
+      "output": "Grid/0:building:RetainFixedGrid:固定[126,10;]\nGrid/0:building:ExtractFreeGrid:自由[128,10;]\nGrid/0:building:ExtractFreeGrid:自由[128,129;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_04_LastValidFixedInstanceControlsWholeComponent",
+      "name": "M04_T3_04_LastValidFixedInstanceControlsWholeComponent",
+      "state": "Passed",
+      "durationSeconds": 0.005538,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T3_06_SingleCellAndRingRetainEveryMemberAndHole",
+      "name": "M04_T3_06_SingleCellAndRingRetainEveryMemberAndHole",
+      "state": "Passed",
+      "durationSeconds": 0.009109,
+      "output": "全部主网格自由分量需M05分配新非零ID。\nGrid/0:building:ExtractFreeGrid:自由[1,1;]\nGrid/0:building:ExtractFreeGrid:自由[20,20;21,20;22,20;20,21;22,21;20,22;21,22;22,22;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T4_01_T4_02_T4_03_AllFourArmsRemainInStableOriginalOrderAtBodyLimitThree",
+      "name": "M04_T4_01_T4_02_T4_03_AllFourArmsRemainInStableOriginalOrderAtBodyLimitThree",
+      "state": "Passed",
+      "durationSeconds": 0.015344,
+      "output": "仅完整四分量计划通过；容量3事务拒绝和ID预留未测。\nGrid/0:building:ExtractFreeGrid:自由[4,2;4,3;]\nGrid/0:building:ExtractFreeGrid:自由[2,4;3,4;]\nGrid/0:building:ExtractFreeGrid:自由[5,4;6,4;]\nGrid/0:building:ExtractFreeGrid:自由[4,5;4,6;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_01_AllDispositionKindsAndRetirementsRemainStableAcrossBodyTransitions",
+      "name": "M04_T5_01_AllDispositionKindsAndRetirementsRemainStableAcrossBodyTransitions",
+      "state": "Passed",
+      "durationSeconds": 0.024504,
+      "output": "乱序初态：\nGrid/0:building:RetainFixedGrid:固定[4,4;]\nGrid/0:building:ExtractFreeGrid:自由[20,20;]\nBody/3:building:RetainBody:自由[-10,-4;-9,-4;]\nBody/9:building:CreateChildBody:自由[10,-5;]\nBody/9:building:CreateChildBody:自由[12,-5;]\n撤销[9,18446744073709551615]\n\n连接后：\nGrid/0:building:RetainFixedGrid:固定[4,4;]\nGrid/0:building:ExtractFreeGrid:自由[20,20;]\nBody/3:building:RetainBody:自由[-10,-4;-9,-4;]\nBody/9:building:RetainBody:自由[10,-5;11,-5;12,-5;]\n撤销[18446744073709551615]\n\n删空后：\nGrid/0:building:RetainFixedGrid:固定[4,4;]\nGrid/0:building:ExtractFreeGrid:自由[20,20;]\nBody/3:building:RetainBody:自由[-10,-4;-9,-4;]\n撤销[9,18446744073709551615]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_01_ChangingDynamicConnectionGroupSplitsWithoutRemovingCells",
+      "name": "M04_T5_01_ChangingDynamicConnectionGroupSplitsWithoutRemovingCells",
+      "state": "Passed",
+      "durationSeconds": 0.014748,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_01_DynamicMiddleAndEndEditsPreserveOriginalOwnerReferences(True,2)",
+      "name": "M04_T5_01_DynamicMiddleAndEndEditsPreserveOriginalOwnerReferences(True,2)",
+      "state": "Passed",
+      "durationSeconds": 0.005783,
+      "output": "M05应撤销17并新建全部子体。\nBody/17:building:CreateChildBody:自由[10,-5;]\nBody/17:building:CreateChildBody:自由[12,-5;]\n撤销[17]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_01_DynamicMiddleAndEndEditsPreserveOriginalOwnerReferences(False,1)",
+      "name": "M04_T5_01_DynamicMiddleAndEndEditsPreserveOriginalOwnerReferences(False,1)",
+      "state": "Passed",
+      "durationSeconds": 0.004871,
+      "output": "M05应保留17并更新几何。\nBody/17:building:RetainBody:自由[10,-5;11,-5;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_01_EmptyBodyHasRetirementWithoutFakeComponent",
+      "name": "M04_T5_01_EmptyBodyHasRetirementWithoutFakeComponent",
+      "state": "Passed",
+      "durationSeconds": 0.005358,
+      "output": "撤销[17]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T5_02_NoCrossOwnerWeldingOrDynamicRefixing",
+      "name": "M04_T5_02_NoCrossOwnerWeldingOrDynamicRefixing",
+      "state": "Passed",
+      "durationSeconds": 0.006201,
+      "output": "Grid/0:building:RetainFixedGrid:固定[0,0;1,0;]\nBody/2:building:RetainBody:自由[0,0;]\nBody/18446744073709551615:building:RetainBody:自由[1,0;]\n撤销[]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_BodyDirectoryCapacityFailureIsAtomic",
+      "name": "M04_T7_01_BodyDirectoryCapacityFailureIsAtomic",
+      "state": "Passed",
+      "durationSeconds": 0.004906,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_CapacityFailureHasNoPartialPlanAndWorkspaceCanBeReused",
+      "name": "M04_T7_01_CapacityFailureHasNoPartialPlanAndWorkspaceCanBeReused",
+      "state": "Passed",
+      "durationSeconds": 0.005029,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_ChangedRemovedKeysAreValidButOldGenerationAndOutOfBoundsAreRejected",
+      "name": "M04_T7_01_ChangedRemovedKeysAreValidButOldGenerationAndOutOfBoundsAreRejected",
+      "state": "Passed",
+      "durationSeconds": 0.005132,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_ExtremeLocalCoordinatesNeverWrapIntoNeighbours",
+      "name": "M04_T7_01_ExtremeLocalCoordinatesNeverWrapIntoNeighbours",
+      "state": "Passed",
+      "durationSeconds": 0.005334,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_FailedBodyAnalysisDoesNotLeakRetirementsIntoNextPlan",
+      "name": "M04_T7_01_FailedBodyAnalysisDoesNotLeakRetirementsIntoNextPlan",
+      "state": "Passed",
+      "durationSeconds": 0.005648,
+      "output": "成功拆分→无效体内流体整拒→成功重试→空目录；无残留撤销ID。\nBody/7:building:CreateChildBody:自由[0,0;]\nBody/7:building:CreateChildBody:自由[2,0;]\n撤销[7]\n\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_Full65536CellComponentUsesIterativeSearch",
+      "name": "M04_T7_01_Full65536CellComponentUsesIterativeSearch",
+      "state": "Passed",
+      "durationSeconds": 2.754823,
+      "output": "65536格完整固定分量；显式队列搜索成功。此项不是Step性能验收。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"duplicate\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"duplicate\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.005943,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"stale\",StaleGeneration)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"stale\",StaleGeneration)",
+      "state": "Passed",
+      "durationSeconds": 0.004854,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"empty\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"empty\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.004769,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"unknown\",UnknownMaterial)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"unknown\",UnknownMaterial)",
+      "state": "Passed",
+      "durationSeconds": 0.00473,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"negativeGrid\",OutOfBounds)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"negativeGrid\",OutOfBounds)",
+      "state": "Passed",
+      "durationSeconds": 0.004718,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"missingBody\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"missingBody\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.004735,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"duplicateBody\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"duplicateBody\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.004747,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"zeroBody\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"zeroBody\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.004705,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"fixedBody\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"fixedBody\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.00485,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"fixedFluid\",InvalidArgument)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"fixedFluid\",InvalidArgument)",
+      "state": "Passed",
+      "durationSeconds": 0.004783,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"bodyFluid\",UnsupportedOperation)",
+      "name": "M04_T7_01_InvalidReferencesAndFixedBindingsFailWholeAnalysis(\"bodyFluid\",UnsupportedOperation)",
+      "state": "Passed",
+      "durationSeconds": 0.004743,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_PublicPlanCopiesWorkspaceAndRejectsOffThreadCalls",
+      "name": "M04_T7_01_PublicPlanCopiesWorkspaceAndRejectsOffThreadCalls",
+      "state": "Passed",
+      "durationSeconds": 0.009777,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_RandomLayoutsMatchIndependentFloodFillAcrossInsertionOrders",
+      "name": "M04_T7_01_RandomLayoutsMatchIndependentFloodFillAcrossInsertionOrders",
+      "state": "Passed",
+      "durationSeconds": 0.393382,
+      "output": "40个固定种子、80次候选枚举，与独立集合洪泛结果完全一致。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityAnalyzerTests.M04_T7_01_ReadFailureAndClosedLeaseReturnNoPlan",
+      "name": "M04_T7_01_ReadFailureAndClosedLeaseReturnNoPlan",
+      "state": "Passed",
+      "durationSeconds": 0.012602,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityStateCoreTests.M04_T3_01_T3_03_RealInitialStateAndRemoveProduceCrossChunkPlanWithoutPublishing",
+      "name": "M04_T3_01_T3_03_RealInitialStateAndRemoveProduceCrossChunkPlanWithoutPublishing",
+      "state": "Passed",
+      "durationSeconds": 0.051248,
+      "output": "Grid/0:building:RetainFixedGrid:固定[126,10;127,10;128,10;]\n撤销[]\n\nGrid/0:building:RetainFixedGrid:固定[126,10;]\nGrid/0:building:ExtractFreeGrid:自由[128,10;]\n撤销[]\n\n真实M02候选在Apply前：桥已移除，工作三格/ChangedPositions0不变；Apply后候选失效、计划副本保留，提交版仍Tick0。正式Remove与提取未测。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityStateCoreTests.M04_T3_05_RealSameIdReplaceInvalidatesFixedInstance",
+      "name": "M04_T3_05_RealSameIdReplaceInvalidatesFixedInstance",
+      "state": "Passed",
+      "durationSeconds": 0.043228,
+      "output": "Grid/0:building:ExtractFreeGrid:自由[126,10;127,10;128,10;]\n撤销[]\n\nApply前候选同ID Replace已撤销固定，旧工作实例/固定点不变；Apply后三格待提取，原句柄失效。正式Replace接线未测。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityStateCoreTests.M04_T3_06_RealSpawnStateHasNoNewFixedPoint",
+      "name": "M04_T3_06_RealSpawnStateHasNoNewFixedPoint",
+      "state": "Passed",
+      "durationSeconds": 0.005833,
+      "output": "Grid/0:building:ExtractFreeGrid:自由[10,10;]\nGrid/0:building:RetainFixedGrid:固定[126,10;127,10;128,10;]\n撤销[]\n\nM02新格候选在Apply前进入单格提取计划，旧工作三格和0计数不变，没有新固定点；正式Spawn参数/占据/令牌未测。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityStateCoreTests.M04_T7_01_InsufficientBufferLeavesRealWorldAndPublishedVersionUnchanged",
+      "name": "M04_T7_01_InsufficientBufferLeavesRealWorldAndPublishedVersionUnchanged",
+      "state": "Passed",
+      "durationSeconds": 0.005278,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.Structure.Connectivity.ConnectivityStateCoreTests.M04_T9_01_RealBurnRuleBridgeRemovalKeepsSurvivingStateAndInstance",
+      "name": "M04_T9_01_RealBurnRuleBridgeRemovalKeepsSurvivingStateAndInstance",
+      "state": "Passed",
+      "durationSeconds": 0.007344,
+      "output": "Grid/0:building:RetainFixedGrid:固定[126,10;]\nGrid/0:building:ExtractFreeGrid:自由[128,10;]\n撤销[]\n\n真实M03→M02候选→M04应用前链：桥燃尽、端格Burning=1/Fuel=2/Spread=1，旧工作桥/端状态和实例未变；Apply后幸存句柄保留。体提取未测。\n",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I01_EmptyRetirementIsOwnedSortedUniqueAndHasNoComponent",
+      "name": "M00_02_M04_I01_EmptyRetirementIsOwnedSortedUniqueAndHasNoComponent",
+      "state": "Passed",
+      "durationSeconds": 0.000924,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I01_I02_RealAnalyzerProvidesAllFourDispositionsAndEmptyRetirement",
+      "name": "M00_02_M04_I01_I02_RealAnalyzerProvidesAllFourDispositionsAndEmptyRetirement",
+      "state": "Passed",
+      "durationSeconds": 0.010939,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I02_InvalidComponentClassificationOrEmptyMembersIsRejected",
+      "name": "M00_02_M04_I02_InvalidComponentClassificationOrEmptyMembersIsRejected",
+      "state": "Passed",
+      "durationSeconds": 0.000898,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I02_PlanCopiesCollectionsAndKeepsOriginalCoordinates",
+      "name": "M00_02_M04_I02_PlanCopiesCollectionsAndKeepsOriginalCoordinates",
+      "state": "Passed",
+      "durationSeconds": 0.001236,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_02_M04_I03_PreparedCandidateUsesExistingReadOnlyWorldContract",
+      "name": "M00_02_M04_I03_PreparedCandidateUsesExistingReadOnlyWorldContract",
+      "state": "Passed",
+      "durationSeconds": 0.000242,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I01_I02_RetirementAndSplitClassificationMustAgree",
+      "name": "M00_05_M04_I01_I02_RetirementAndSplitClassificationMustAgree",
+      "state": "Passed",
+      "durationSeconds": 0.000743,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(False)",
+      "name": "M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(False)",
+      "state": "Passed",
+      "durationSeconds": 0.014613,
+      "output": "",
+      "message": "",
+      "stackTrace": ""
+    },
+    {
+      "fullName": "OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)",
+      "name": "M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)",
+      "state": "Passed",
+      "durationSeconds": 0.00873,
+      "output": "<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.\nSaving results to: C:/Users/LYH/AppData/LocalLow/DefaultCompany/OpenOita\\TestResults.xml\n",
+      "message": "",
+      "stackTrace": ""
+    }
+  ]
+}

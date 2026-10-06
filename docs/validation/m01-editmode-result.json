@@ -1,0 +1,1172 @@
+{
+  "version": "M01-1",
+  "unity": "6000.3.11f1",
+  "build": "WindowsEditor EditMode",
+  "newtonsoftPackage": "3.2.1",
+  "job": "0e028162a1394611a8b8f8c1a2374ae7",
+  "startedBeijing": "2026-10-05T14:09:46.793+08:00",
+  "finishedBeijing": "2026-10-05T14:09:54.321+08:00",
+  "summary": {
+    "total": 128,
+    "passed": 128,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 3.0214137,
+    "resultState": "Passed"
+  },
+  "moduleTests": 90,
+  "results": [
+    {
+      "name": "M00_02_OnlyOneAuthoritativeCellStateExistsAndOldHostGuidIsPreserved",
+      "fullName": "OpenOita.Tests.EditMode.AssemblyBoundaryTests.M00_02_OnlyOneAuthoritativeCellStateExistsAndOldHostGuidIsPreserved",
+      "state": "Passed",
+      "durationSeconds": 0.0169771,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_02_PlayerAssemblyGraphDoesNotReferenceEditorOrTestAssemblies",
+      "fullName": "OpenOita.Tests.EditMode.AssemblyBoundaryTests.M00_02_PlayerAssemblyGraphDoesNotReferenceEditorOrTestAssemblies",
+      "state": "Passed",
+      "durationSeconds": 0.0676198,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_BaselineHasFourMaterialsAnd175CellsWithValidReferences",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_BaselineHasFourMaterialsAnd175CellsWithValidReferences",
+      "state": "Passed",
+      "durationSeconds": 0.0206424,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"MissingField\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"MissingField\")",
+      "state": "Passed",
+      "durationSeconds": 0.0123927,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateId\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateId\")",
+      "state": "Passed",
+      "durationSeconds": 0.0054832,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateName\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateName\")",
+      "state": "Passed",
+      "durationSeconds": 0.0041867,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"DuplicateJsonKey\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"DuplicateJsonKey\")",
+      "state": "Passed",
+      "durationSeconds": 0.0078144,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownRule\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownRule\")",
+      "state": "Passed",
+      "durationSeconds": 0.0037109,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"WrongKind\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"WrongKind\")",
+      "state": "Passed",
+      "durationSeconds": 0.0035351,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"InvalidParameter\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"InvalidParameter\")",
+      "state": "Passed",
+      "durationSeconds": 0.003757,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"WrongSet\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"WrongSet\")",
+      "state": "Passed",
+      "durationSeconds": 0.0036636,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"OutOfBounds\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"OutOfBounds\")",
+      "state": "Passed",
+      "durationSeconds": 0.0039994,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownField\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownField\")",
+      "state": "Passed",
+      "durationSeconds": 0.0037714,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnsupportedVersion\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnsupportedVersion\")",
+      "state": "Passed",
+      "durationSeconds": 0.0036023,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_01_NegativeCasesAreIndependentCopies(\"UnknownMaterial\")",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_01_NegativeCasesAreIndependentCopies(\"UnknownMaterial\")",
+      "state": "Passed",
+      "durationSeconds": 0.0035932,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_04_ShortBurningConfigurationOnlyChangesTwoWoodParameters",
+      "fullName": "OpenOita.Tests.EditMode.BaselineSourcesTests.M00_04_ShortBurningConfigurationOnlyChangesTwoWoodParameters",
+      "state": "Passed",
+      "durationSeconds": 0.0035792,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_02_ResultDefaultsAreNotSuccessAndErrorSetIsComplete",
+      "state": "Passed",
+      "durationSeconds": 0.0032269,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D01_InstanceHandlesCarryTickAndGenerationAndReplacementIdentity",
+      "state": "Passed",
+      "durationSeconds": 0.0005053,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D02_PositionKeysDeduplicateWritesAndDistinguishOwnership",
+      "state": "Passed",
+      "durationSeconds": 0.0022124,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D03_OriginalOwnershipThenYXDeterminesBodyOrderAndIdsDoNotWrap",
+      "state": "Passed",
+      "durationSeconds": 0.0062392,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D04_ParityDoesNotOverflowAndFiveTiersStaySeparate",
+      "state": "Passed",
+      "durationSeconds": 0.0027405,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D05_QueryBoundariesAndNonFiniteInputs",
+      "state": "Passed",
+      "durationSeconds": 0.0015591,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D06_SegmentSortUsesFirstTThenStableIdentity",
+      "state": "Passed",
+      "durationSeconds": 0.0005974,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D07_StaticShapesAreNotLimitedPerBodyButAllMaterialShapesCount",
+      "state": "Passed",
+      "durationSeconds": 0.0007246,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D08_SubstepsIncludeGravityAndAngularEdgeSpeedAndRejectOverBudget",
+      "state": "Passed",
+      "durationSeconds": 0.001066,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D09_TokensCannotCrossWorldAndOldGenerationsOrFabricatedSequencesFail",
+      "state": "Passed",
+      "durationSeconds": 0.0005164,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_D10_SameIdReplacementHasDistinctInstanceAndChangeKind",
+      "state": "Passed",
+      "durationSeconds": 0.0049924,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+      "fullName": "OpenOita.Tests.EditMode.ContractDefaultsTests.M00_05_FailureInjectionCarriesStageAndFiresOnlyOnce",
+      "state": "Passed",
+      "durationSeconds": 0.0005692,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_03_ConnectionsStraddle127And128AndCrossHasNineExactCells",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_03_ConnectionsStraddle127And128AndCrossHasNineExactCells",
+      "state": "Passed",
+      "durationSeconds": 0.0078899,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_03_InitialDataOwnsCopyAndNormalizesGenerationOrder",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_03_InitialDataOwnsCopyAndNormalizesGenerationOrder",
+      "state": "Passed",
+      "durationSeconds": 0.0017934,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_04_BurningSplitAndCollisionAndClosedDisplacementFixturesAreExplicit",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_BurningSplitAndCollisionAndClosedDisplacementFixturesAreExplicit",
+      "state": "Passed",
+      "durationSeconds": 0.0088594,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_04_ContactPosesAndBurningCommandOrderAreReproducible",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_ContactPosesAndBurningCommandOrderAreReproducible",
+      "state": "Passed",
+      "durationSeconds": 0.0066759,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_04_ExportIncludesAllScenarioFamiliesAndReplaysWithoutGlobalSettings",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_ExportIncludesAllScenarioFamiliesAndReplaysWithoutGlobalSettings",
+      "state": "Passed",
+      "durationSeconds": 0.3024381,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_04_RotationCommandsSelectOnlyIntendedLocalCenter",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_04_RotationCommandsSelectOnlyIntendedLocalCenter",
+      "state": "Passed",
+      "durationSeconds": 0.0016865,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_06_P1Has16384OfEachMaterial",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P1Has16384OfEachMaterial",
+      "state": "Passed",
+      "durationSeconds": 0.0035927,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_06_P2MatchesEveryRangeAndMarker",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P2MatchesEveryRangeAndMarker",
+      "state": "Passed",
+      "durationSeconds": 0.0039756,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_06_P3Has64UnfixedBlocksAndExactVelocitySigns",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P3Has64UnfixedBlocksAndExactVelocitySigns",
+      "state": "Passed",
+      "durationSeconds": 0.001639,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M00_06_P4Queues64IndividualOddCellsInAscendingOrder",
+      "fullName": "OpenOita.Tests.EditMode.FixtureCatalogTests.M00_06_P4Queues64IndividualOddCellsInAscendingOrder",
+      "state": "Passed",
+      "durationSeconds": 0.000794,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_01_StreamingAssetsDeploymentMatchesBaseline",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_01_StreamingAssetsDeploymentMatchesBaseline",
+      "state": "Passed",
+      "durationSeconds": 0.0235093,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_05_ExplicitDirectoryReadAndAtomicCreateReplaceUseSameLoader",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_ExplicitDirectoryReadAndAtomicCreateReplaceUseSameLoader",
+      "state": "Passed",
+      "durationSeconds": 0.0581159,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_05_SerializationRejectsInvalidEditorInitialStateBeforeWriting",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_SerializationRejectsInvalidEditorInitialStateBeforeWriting",
+      "state": "Passed",
+      "durationSeconds": 0.0119851,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(False)",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(False)",
+      "state": "Passed",
+      "durationSeconds": 0.0047218,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(True)",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_TemporaryWriteAndReplacementFailuresKeepOriginalTarget(True)",
+      "state": "Passed",
+      "durationSeconds": 0.0029638,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_05_ThreeFileSerializationIsDeterministicAndPreservesInitialSemantics",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_05_ThreeFileSerializationIsDeterministicAndPreservesInitialSemantics",
+      "state": "Passed",
+      "durationSeconds": 0.026476,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_ReadFailureAndLowInputBudgetDoNotPublishPartialSources",
+      "fullName": "OpenOita.Tests.EditMode.M01.ConfigurationFileStoreTests.M01_06_ReadFailureAndLowInputBudgetDoNotPublishPartialSources",
+      "state": "Passed",
+      "durationSeconds": 0.006183,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_重复JSON键",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_重复JSON键",
+      "state": "Passed",
+      "durationSeconds": 0.0145446,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_嵌套重复键",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_嵌套重复键",
+      "state": "Passed",
+      "durationSeconds": 0.0095052,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_未知根字段",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_未知根字段",
+      "state": "Passed",
+      "durationSeconds": 0.0121408,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_字段大小写",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_字段大小写",
+      "state": "Passed",
+      "durationSeconds": 0.0121542,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_缺字段",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_缺字段",
+      "state": "Passed",
+      "durationSeconds": 0.0120512,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_字符串数字",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_字符串数字",
+      "state": "Passed",
+      "durationSeconds": 0.0123624,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_NaN",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_NaN",
+      "state": "Passed",
+      "durationSeconds": 0.00934,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_Infinity",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_Infinity",
+      "state": "Passed",
+      "durationSeconds": 0.0092007,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_负Infinity",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_负Infinity",
+      "state": "Passed",
+      "durationSeconds": 0.009168,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_浮点溢出",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_浮点溢出",
+      "state": "Passed",
+      "durationSeconds": 0.0094651,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_整数溢出",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_整数溢出",
+      "state": "Passed",
+      "durationSeconds": 0.0174161,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_单引号",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_单引号",
+      "state": "Passed",
+      "durationSeconds": 0.0096124,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_注释",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_注释",
+      "state": "Passed",
+      "durationSeconds": 0.0094196,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_尾逗号",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_尾逗号",
+      "state": "Passed",
+      "durationSeconds": 0.0093937,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_尾随内容",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_尾随内容",
+      "state": "Passed",
+      "durationSeconds": 0.0098403,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_数组根",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_数组根",
+      "state": "Passed",
+      "durationSeconds": 0.0092565,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_前导零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_前导零",
+      "state": "Passed",
+      "durationSeconds": 0.0317248,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_null字段",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_null字段",
+      "state": "Passed",
+      "durationSeconds": 0.0639966,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_拒绝_版本",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_拒绝_版本",
+      "state": "Passed",
+      "durationSeconds": 0.011951,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_重复ID",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复ID",
+      "state": "Passed",
+      "durationSeconds": 0.0123945,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_重复name",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复name",
+      "state": "Passed",
+      "durationSeconds": 0.012316,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_未知标签",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_未知标签",
+      "state": "Passed",
+      "durationSeconds": 0.0122847,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_重复标签",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_重复标签",
+      "state": "Passed",
+      "durationSeconds": 0.0121482,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_标签大小写",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_标签大小写",
+      "state": "Passed",
+      "durationSeconds": 0.0126744,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_kind错配",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_kind错配",
+      "state": "Passed",
+      "durationSeconds": 0.0120093,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_缺必需标签",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_缺必需标签",
+      "state": "Passed",
+      "durationSeconds": 0.0120312,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_非法kind",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_非法kind",
+      "state": "Passed",
+      "durationSeconds": 0.0118579,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_缺参数块",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_缺参数块",
+      "state": "Passed",
+      "durationSeconds": 0.011936,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_多参数块",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_多参数块",
+      "state": "Passed",
+      "durationSeconds": 0.0125412,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_灭火参数块",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_灭火参数块",
+      "state": "Passed",
+      "durationSeconds": 0.0124028,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_未知参数",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_未知参数",
+      "state": "Passed",
+      "durationSeconds": 0.0132929,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_时间零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_时间零",
+      "state": "Passed",
+      "durationSeconds": 0.0138978,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_时间上限",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_时间上限",
+      "state": "Passed",
+      "durationSeconds": 0.0123205,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_空名称",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_空名称",
+      "state": "Passed",
+      "durationSeconds": 0.0123074,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_空连接组",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_空连接组",
+      "state": "Passed",
+      "durationSeconds": 0.0121044,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_非法颜色",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_非法颜色",
+      "state": "Passed",
+      "durationSeconds": 0.0121,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_质量零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_质量零",
+      "state": "Passed",
+      "durationSeconds": 0.0123616,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_质量负数",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_质量负数",
+      "state": "Passed",
+      "durationSeconds": 0.0149344,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_材料零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_材料零",
+      "state": "Passed",
+      "durationSeconds": 0.0471432,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_拒绝_材料上限",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_拒绝_材料上限",
+      "state": "Passed",
+      "durationSeconds": 0.088539,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_材料集",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_材料集",
+      "state": "Passed",
+      "durationSeconds": 0.0120992,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_未知材料",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_未知材料",
+      "state": "Passed",
+      "durationSeconds": 0.0121115,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_重复坐标",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_重复坐标",
+      "state": "Passed",
+      "durationSeconds": 0.0122897,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_乱序格",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序格",
+      "state": "Passed",
+      "durationSeconds": 0.0139852,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_越界x",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_越界x",
+      "state": "Passed",
+      "durationSeconds": 0.0123289,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_越界y",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_越界y",
+      "state": "Passed",
+      "durationSeconds": 0.0121536,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_固定水",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_固定水",
+      "state": "Passed",
+      "durationSeconds": 0.0130624,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_固定空格",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_固定空格",
+      "state": "Passed",
+      "durationSeconds": 0.0124955,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_初燃水",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_初燃水",
+      "state": "Passed",
+      "durationSeconds": 0.0124136,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_初燃空格",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_初燃空格",
+      "state": "Passed",
+      "durationSeconds": 0.0123764,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_重复固定",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_重复固定",
+      "state": "Passed",
+      "durationSeconds": 0.0124915,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_乱序固定",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序固定",
+      "state": "Passed",
+      "durationSeconds": 0.0124848,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_乱序初燃",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_乱序初燃",
+      "state": "Passed",
+      "durationSeconds": 0.014232,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_引用路径",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_引用路径",
+      "state": "Passed",
+      "durationSeconds": 0.012415,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_世界引用",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_世界引用",
+      "state": "Passed",
+      "durationSeconds": 0.012303,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_世界版本",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_世界版本",
+      "state": "Passed",
+      "durationSeconds": 0.0121477,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_拒绝_场景版本",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_拒绝_场景版本",
+      "state": "Passed",
+      "durationSeconds": 0.0121318,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_宽零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_宽零",
+      "state": "Passed",
+      "durationSeconds": 0.0119431,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_宽上限",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_宽上限",
+      "state": "Passed",
+      "durationSeconds": 0.0122665,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_块长",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_块长",
+      "state": "Passed",
+      "durationSeconds": 0.0119185,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_cellSize零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_cellSize零",
+      "state": "Passed",
+      "durationSeconds": 0.0121881,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_cellSize下溢",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_cellSize下溢",
+      "state": "Passed",
+      "durationSeconds": 0.0869782,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_step零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_step零",
+      "state": "Passed",
+      "durationSeconds": 0.012109,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_seed负数",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_seed负数",
+      "state": "Passed",
+      "durationSeconds": 0.0119426,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_seed溢出",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_seed溢出",
+      "state": "Passed",
+      "durationSeconds": 0.012315,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_限制零",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_限制零",
+      "state": "Passed",
+      "durationSeconds": 0.0118801,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_半径上限",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_半径上限",
+      "state": "Passed",
+      "durationSeconds": 0.012066,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_低格数",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_低格数",
+      "state": "Passed",
+      "durationSeconds": 0.0151615,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_极大预算",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_极大预算",
+      "state": "Passed",
+      "durationSeconds": 0.01319,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_极大形状",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_极大形状",
+      "state": "Passed",
+      "durationSeconds": 0.0126988,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_世界长度溢出",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_世界长度溢出",
+      "state": "Passed",
+      "durationSeconds": 0.0122286,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_拒绝_物理组合溢出",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_拒绝_物理组合溢出",
+      "state": "Passed",
+      "durationSeconds": 0.0119023,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_01_BaselineAndTagPermutationHaveStableRuntimeSemantics",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_01_BaselineAndTagPermutationHaveStableRuntimeSemantics",
+      "state": "Passed",
+      "durationSeconds": 0.0100062,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_01_NumericParsingAndSerializationAreIndependentOfOperatingSystemCulture",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_01_NumericParsingAndSerializationAreIndependentOfOperatingSystemCulture",
+      "state": "Passed",
+      "durationSeconds": 0.0169039,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"MissingField\",\"materials.json\",\"materials[0].name\",InvalidConfig)",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"MissingField\",\"materials.json\",\"materials[0].name\",InvalidConfig)",
+      "state": "Passed",
+      "durationSeconds": 0.0061978,
+      "message": null,
+      "stackTrace": null,
+      "output": "materials.json | materials[0].name | InvalidConfig | 缺少必需字段。\r\n"
+    },
+    {
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownRule\",\"materials.json\",\"materials[0].tags[2]\",UnknownRule)",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownRule\",\"materials.json\",\"materials[0].tags[2]\",UnknownRule)",
+      "state": "Passed",
+      "durationSeconds": 0.0053436,
+      "message": null,
+      "stackTrace": null,
+      "output": "materials.json | materials[0].tags[2] | UnknownRule | 未知规则标签。\r\n"
+    },
+    {
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnsupportedVersion\",\"world_config.json\",\"schemaVersion\",UnsupportedVersion)",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnsupportedVersion\",\"world_config.json\",\"schemaVersion\",UnsupportedVersion)",
+      "state": "Passed",
+      "durationSeconds": 0.0053023,
+      "message": null,
+      "stackTrace": null,
+      "output": "world_config.json | schemaVersion | UnsupportedVersion | 仅支持 schemaVersion=1。\r\n"
+    },
+    {
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownMaterial\",\"scene.json\",\"cells[0].materialId\",UnknownMaterial)",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"UnknownMaterial\",\"scene.json\",\"cells[0].materialId\",UnknownMaterial)",
+      "state": "Passed",
+      "durationSeconds": 0.0052822,
+      "message": null,
+      "stackTrace": null,
+      "output": "scene.json | cells[0].materialId | UnknownMaterial | 未定义材料 ID。\r\n"
+    },
+    {
+      "name": "M01_02_DiagnosticsCarryExactFilePathAndCode(\"OutOfBounds\",\"scene.json\",\"cells[0].x\",OutOfBounds)",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_DiagnosticsCarryExactFilePathAndCode(\"OutOfBounds\",\"scene.json\",\"cells[0].x\",OutOfBounds)",
+      "state": "Passed",
+      "durationSeconds": 0.005208,
+      "message": null,
+      "stackTrace": null,
+      "output": "scene.json | cells[0].x | OutOfBounds | 坐标超过实际 width。\r\n"
+    },
+    {
+      "name": "M01_02_NullTextStillCarriesCanonicalDiagnosticFileName",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_02_NullTextStillCarriesCanonicalDiagnosticFileName",
+      "state": "Passed",
+      "durationSeconds": 0.0004173,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_03_NamesUseOrdinalCaseSensitiveUniquenessAndMaximumIdIsValid",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_03_NamesUseOrdinalCaseSensitiveUniquenessAndMaximumIdIsValid",
+      "state": "Passed",
+      "durationSeconds": 0.0051782,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_04_LoadedInitialStateIsImmutableAcrossTwentyIndependentLoads",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_04_LoadedInitialStateIsImmutableAcrossTwentyIndependentLoads",
+      "state": "Passed",
+      "durationSeconds": 0.0710705,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "M01_06_ExtremeDimensionsStaySparseAndLowMemoryFailsBeforePublication",
+      "fullName": "OpenOita.Tests.EditMode.M01.WorldSourceLoaderTests.M01_06_ExtremeDimensionsStaySparseAndLowMemoryFailsBeforePublication",
+      "state": "Passed",
+      "durationSeconds": 0.0085516,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    }
+  ]
+}

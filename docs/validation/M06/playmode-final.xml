@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="31" result="Skipped:Ignored" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.9287239">
+  <test-suite type="TestSuite" id="1051" name="OpenOita" fullname="OpenOita" runstate="Runnable" testcasecount="31" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.928724" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <reason>
+      <message><![CDATA[One or more child tests were ignored]]></message>
+    </reason>
+    <test-suite type="Assembly" id="1042" name="OpenOita.Tests.PlayMode.dll" fullname="D:/work/Project/OpenOita/Logs/M06/TestProject/Library/ScriptAssemblies/OpenOita.Tests.PlayMode.dll" runstate="Runnable" testcasecount="31" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.923638" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0">
+      <properties>
+        <property name="_PID" value="176216" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <reason>
+        <message><![CDATA[One or more child tests were ignored]]></message>
+      </reason>
+      <test-suite type="TestSuite" id="1043" name="OpenOita" fullname="OpenOita" runstate="Runnable" testcasecount="31" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.923040" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0">
+        <properties />
+        <reason>
+          <message><![CDATA[One or more child tests were ignored]]></message>
+        </reason>
+        <test-suite type="TestSuite" id="1044" name="Tests" fullname="OpenOita.Tests" runstate="Runnable" testcasecount="31" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.922633" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0">
+          <properties />
+          <reason>
+            <message><![CDATA[One or more child tests were ignored]]></message>
+          </reason>
+          <test-suite type="TestSuite" id="1045" name="PlayMode" fullname="OpenOita.Tests.PlayMode" runstate="Runnable" testcasecount="31" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.922233" total="31" passed="30" failed="0" inconclusive="0" skipped="1" asserts="0">
+            <properties />
+            <reason>
+              <message><![CDATA[One or more child tests were ignored]]></message>
+            </reason>
+            <test-suite type="TestFixture" id="1002" name="ContractConsumerTests" fullname="OpenOita.Tests.PlayMode.ContractConsumerTests" classname="OpenOita.Tests.PlayMode.ContractConsumerTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:57Z" duration="0.030089" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="M00_02_ConsumerAndReadonlyValuesWorkInPlayMode" fullname="OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode" methodname="M00_02_ConsumerAndReadonlyValuesWorkInPlayMode" classname="OpenOita.Tests.PlayMode.ContractConsumerTests" runstate="Runnable" seed="753684371" result="Passed" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:57Z" duration="0.019824" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestSuite" id="1047" name="M02" fullname="OpenOita.Tests.PlayMode.M02" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.290919" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1040" name="StateLifetimeTests" fullname="OpenOita.Tests.PlayMode.M02.StateLifetimeTests" classname="OpenOita.Tests.PlayMode.M02.StateLifetimeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.290213" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1041" name="M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode" fullname="OpenOita.Tests.PlayMode.M02.StateLifetimeTests.M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode" methodname="M02_02_07_StateSizeAndTwentyNativeOwnersInEditorPlayMode" classname="OpenOita.Tests.PlayMode.M02.StateLifetimeTests" runstate="Runnable" seed="1445317575" result="Passed" start-time="2026-10-05 17:28:57Z" end-time="2026-10-05 17:28:58Z" duration="0.288170" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1046" name="Physics" fullname="OpenOita.Tests.PlayMode.Physics" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.594193" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1006" name="M06PhysicsAcceptanceTests" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.593446" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-suite type="ParameterizedMethod" id="1026" name="M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.123399" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1024" name="M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(True)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(True)" methodname="M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1604550974" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.113241" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1025" name="M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(False)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass(False)" methodname="M06_T5_01_RotatingStripSplitAndRetainPreserveCentersMotionAndMass" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1339003244" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.007333" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1037" name="M06_T5_02_FixedFloorAndCornerUseRealMaterialRectangles" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_FixedFloorAndCornerUseRealMaterialRectangles" methodname="M06_T5_02_FixedFloorAndCornerUseRealMaterialRectangles" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1861451696" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.079637" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1035" name="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.034768" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1031" name="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(0)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(0)" methodname="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1245051502" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.008210" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1032" name="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(1)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(1)" methodname="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="735868466" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.007335" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1033" name="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(2)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(2)" methodname="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1560266285" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.007109" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1034" name="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(3)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_02_WorldFourSidesAreRealBoundaryCollisions(3)" methodname="M06_T5_02_WorldFourSidesAreRealBoundaryCollisions" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="108140293" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.007274" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-suite type="ParameterizedMethod" id="1015" name="M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.033292" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1013" name="M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(6.0f,8)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(6.0f,8)" methodname="M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="443144674" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.021996" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1014" name="M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(4.0f,1)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing(4.0f,1)" methodname="M06_T5_03_SpeedOrSubstepsFaultWithoutPublishing" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="362028390" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.008645" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1028" name="M06_T6_01_RealSubstepDisplacesWaterAndSteamAtomicallyAndConservesState" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T6_01_RealSubstepDisplacesWaterAndSteamAtomicallyAndConservesState" methodname="M06_T6_01_RealSubstepDisplacesWaterAndSteamAtomicallyAndConservesState" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1552739708" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.013331" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1029" name="M06_T7_01_SecondSourceHasNoSolutionAndNoFirstSourceIsPublished" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_01_SecondSourceHasNoSolutionAndNoFirstSourceIsPublished" methodname="M06_T7_01_SecondSourceHasNoSolutionAndNoFirstSourceIsPublished" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1500913478" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.010229" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="M06_T7_02_CumulativeTickBudgetRejectsWholeDisplacementAndFaultsTokens" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_02_CumulativeTickBudgetRejectsWholeDisplacementAndFaultsTokens" methodname="M06_T7_02_CumulativeTickBudgetRejectsWholeDisplacementAndFaultsTokens" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="596341506" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.011577" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1036" name="M06_T7_02_TemporaryCpuCapacityRejectsDisplacementBeforeAdoption" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_02_TemporaryCpuCapacityRejectsDisplacementBeforeAdoption" methodname="M06_T7_02_TemporaryCpuCapacityRejectsDisplacementBeforeAdoption" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="822679365" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.014400" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1023" name="M06_T7_03_FormalSpawnRejectsMicroOverlapButAllowsHole" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_03_FormalSpawnRejectsMicroOverlapButAllowsHole" methodname="M06_T7_03_FormalSpawnRejectsMicroOverlapButAllowsHole" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1326626502" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.016683" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1039" name="M06_T7_03_WorldEdgeSpawnRejectsAnyRepresentablePositiveOverlap" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_03_WorldEdgeSpawnRejectsAnyRepresentablePositiveOverlap" methodname="M06_T7_03_WorldEdgeSpawnRejectsAnyRepresentablePositiveOverlap" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1040421096" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.012474" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1021" name="M06_T7_04_InitializationFailureCleansPreparedResources" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.051885" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1016" name="M06_T7_04_InitializationFailureCleansPreparedResources(AfterRectanglesPrepared)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterRectanglesPrepared)" methodname="M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="2016359244" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.020333" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[AfterRectanglesPrepared, retainedPendingDestroy=4
+]]></output>
+                  </test-case>
+                  <test-case id="1017" name="M06_T7_04_InitializationFailureCleansPreparedResources(AfterMassPrepared)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterMassPrepared)" methodname="M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1781418371" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.006393" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[AfterMassPrepared, retainedPendingDestroy=4
+]]></output>
+                  </test-case>
+                  <test-case id="1018" name="M06_T7_04_InitializationFailureCleansPreparedResources(AfterBodyPrepared)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterBodyPrepared)" methodname="M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="3630429" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.006342" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[AfterBodyPrepared, retainedPendingDestroy=4
+]]></output>
+                  </test-case>
+                  <test-case id="1019" name="M06_T7_04_InitializationFailureCleansPreparedResources(AfterPhysicsPrepared)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterPhysicsPrepared)" methodname="M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="87616610" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.006236" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[AfterPhysicsPrepared, retainedPendingDestroy=6
+]]></output>
+                  </test-case>
+                  <test-case id="1020" name="M06_T7_04_InitializationFailureCleansPreparedResources(AfterSpatialPrepared)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_InitializationFailureCleansPreparedResources(AfterSpatialPrepared)" methodname="M06_T7_04_InitializationFailureCleansPreparedResources" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1438461737" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.005854" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[AfterSpatialPrepared, retainedPendingDestroy=6
+]]></output>
+                  </test-case>
+                </test-suite>
+                <test-case id="1038" name="M06_T7_04_SecondBodyFailureReleasesAlreadyPreparedMaterialBodies" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_SecondBodyFailureReleasesAlreadyPreparedMaterialBodies" methodname="M06_T7_04_SecondBodyFailureReleasesAlreadyPreparedMaterialBodies" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="199471852" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.005863" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1022" name="M06_T7_04_TwentyFormalCreateResetDisposeRoundsReleaseScenesAndObjects" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T7_04_TwentyFormalCreateResetDisposeRoundsReleaseScenesAndObjects" methodname="M06_T7_04_TwentyFormalCreateResetDisposeRoundsReleaseScenesAndObjects" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1760942664" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.089651" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[20轮稳定基线：scenes=1, physicsObjects=0
+]]></output>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1011" name="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.058200" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1007" name="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(1)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(1)" methodname="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="744720111" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.010897" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[N=1, mass=1, vy=-1.962, y=1.78418, error=-0.019619954872131418
+N=1, mass=10, vy=-1.962, y=1.78418, error=-0.019619954872131418
+]]></output>
+                  </test-case>
+                  <test-case id="1008" name="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(2)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(2)" methodname="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="2126380388" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.010183" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[N=2, mass=1, vy=-1.96199954, y=1.79399014, error=-0.0098098648071289762
+N=2, mass=10, vy=-1.96199954, y=1.79399014, error=-0.0098098648071289762
+]]></output>
+                  </test-case>
+                  <test-case id="1009" name="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(4)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(4)" methodname="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1113335614" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.009535" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[N=4, mass=1, vy=-1.9619993, y=1.798895, error=-0.0049049985885620817
+N=4, mass=10, vy=-1.9619993, y=1.798895, error=-0.0049049985885620817
+]]></output>
+                  </test-case>
+                  <test-case id="1010" name="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(8)" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene(8)" methodname="M06_T8_01_AutomaticExtractionFreeFallMassesAndIndependentScene" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="595768785" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.022414" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                    <output><![CDATA[N=8, mass=1, vy=-1.96200144, y=1.80134726, error=-0.0024527442932129606
+N=8, mass=10, vy=-1.96200144, y=1.80134726, error=-0.0024527442932129606
+]]></output>
+                  </test-case>
+                </test-suite>
+                <test-case id="1012" name="M06_T8_01_ZeroGravityAndAutomaticSubstepSelection" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T8_01_ZeroGravityAndAutomaticSubstepSelection" methodname="M06_T8_01_ZeroGravityAndAutomaticSubstepSelection" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="2039854195" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.007350" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1027" name="M06_T9_02_FirstRotatingWaterContactExtinguishesAfterFuelConsumption" fullname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests.M06_T9_02_FirstRotatingWaterContactExtinguishesAfterFuelConsumption" methodname="M06_T9_02_FirstRotatingWaterContactExtinguishesAfterFuelConsumption" classname="OpenOita.Tests.PlayMode.Physics.M06PhysicsAcceptanceTests" runstate="Runnable" seed="1120859174" result="Passed" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.013082" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1004" name="PixelPreviewPlayModeTests" fullname="OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests" classname="OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests" runstate="Runnable" testcasecount="1" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.005770" total="1" passed="0" failed="0" inconclusive="0" skipped="1" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[One or more child tests were ignored]]></message>
+              </reason>
+              <test-case id="1005" name="MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams" fullname="OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests.MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams" methodname="MaterialPixelsHaveExactOneAndThreeTimesCoverageWithoutSeams" classname="OpenOita.Tests.PlayMode.PixelPreviewPlayModeTests" runstate="Runnable" seed="2048760036" result="Skipped" label="Ignored" start-time="2026-10-05 17:28:58Z" end-time="2026-10-05 17:28:58Z" duration="0.003954" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <reason>
+                  <message><![CDATA[实际画面读回需要可渲染的Game View；批处理只运行状态及纹素测试。]]></message>
+                </reason>
+                <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Users/LYH/AppData/LocalLow/DefaultCompany/OpenOita\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

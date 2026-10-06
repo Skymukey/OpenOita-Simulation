@@ -1,0 +1,175 @@
+{
+  "合同": "M00-3 / CONTRACTS 1.2 / 主方案0.9",
+  "记录时间": "2026-10-05T17:29:17.7277045+08:00",
+  "范围": "本聊天M02接线、M04最小适配及同步共享合同快照；M00另行补入的公共校验保留，完整源码归属见交接文档",
+  "文件": [
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs",
+      "字节": 12721,
+      "修改时间": "2026-10-05T17:15:33.7892248+08:00",
+      "SHA256": "C4384D2E4338E327CFC1934A7CB4CD907E2AF7244C753262C7878E9E4D0EB93C"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorld.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "字节": 29534,
+      "修改时间": "2026-10-05T17:17:49.8178514+08:00",
+      "SHA256": "66A05E0D82BA28C488DD95CDB797E30F027B8931CBA503CE679068CD04B79A63"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Simulation/WorldSimulation.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs",
+      "字节": 1184,
+      "修改时间": "2026-10-05T17:15:58.6782110+08:00",
+      "SHA256": "E4331C3A33349919A39E03ED221CA7C971CB7754BDDB77D9A06C05F680EC3736"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs",
+      "字节": 12929,
+      "修改时间": "2026-10-05T17:13:15.2902268+08:00",
+      "SHA256": "B68C5026C099A21041B54ED3915255F2D91DE62E3DD41B69104038B43957CA4E"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/M02/StructurePreparationTests.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs",
+      "字节": 15777,
+      "修改时间": "2026-10-05T17:17:52.7691167+08:00",
+      "SHA256": "3B68165715264791BDCE722501BD58ED5850615CEF9F133225A1965AF8FCEE00"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/M02/TransactionCoordinatorTests.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs",
+      "字节": 8600,
+      "修改时间": "2026-10-05T17:13:12.2262352+08:00",
+      "SHA256": "1D91761D69212E23F39FC86A1F406184231324892C9F455C01C9015A9C43578D"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "字节": 22662,
+      "修改时间": "2026-10-05T17:17:51.2847706+08:00",
+      "SHA256": "B5F14067032F54939CD20D9E9193FCB9CDB9328BB6A2923968F8EED9E06B5718"
+    },
+    {
+      "相对路径": "docs/specs/M02-状态事务与生命周期.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M02-状态事务与生命周期.md",
+      "字节": 7092,
+      "修改时间": "2026-10-05T17:27:15.3094790+08:00",
+      "SHA256": "2EACAD7AE7B130D76E1F12CE5B07666A22C9578AE4505BE6267357246E88E493"
+    },
+    {
+      "相对路径": "docs/specs/M04-结构连通与固定.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M04-结构连通与固定.md",
+      "字节": 12865,
+      "修改时间": "2026-10-05T17:27:13.7502044+08:00",
+      "SHA256": "87B4DAEFDD512AFCA1771C61104D0375C0FB52AD29DA781C90E11C0694F30010"
+    },
+    {
+      "相对路径": "docs/validation/M02-M04-接口接线与验证.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-M04-接口接线与验证.md",
+      "字节": 8069,
+      "修改时间": "2026-10-05T17:27:12.2616785+08:00",
+      "SHA256": "C92C007FCB53A7A45325C986A1C8708A85111E124EA2FC0915415CCD3EAC05A8"
+    },
+    {
+      "相对路径": "docs/validation/M02-执行结果与交接.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-执行结果与交接.md",
+      "字节": 13758,
+      "修改时间": "2026-10-05T17:27:19.9552939+08:00",
+      "SHA256": "EE82DF7845AD7243E061F0FA6F86E7A391735F8FC23A81B4486EFE080E0D37FE"
+    },
+    {
+      "相对路径": "docs/validation/M02-公共接口差异与集成清单.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-公共接口差异与集成清单.md",
+      "字节": 6868,
+      "修改时间": "2026-10-05T17:27:21.5609212+08:00",
+      "SHA256": "9477EC425F5FD688B372D82F96171B2059D1C5C80C588B906F85344D8C6607EC"
+    },
+    {
+      "相对路径": "docs/validation/M04-执行结果与交接.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-执行结果与交接.md",
+      "字节": 12234,
+      "修改时间": "2026-10-05T17:27:18.4013998+08:00",
+      "SHA256": "1E87EF03DB9F7F5226145DAB95548F0E2720D37DB76F9C3AAB545452FBAE4111"
+    },
+    {
+      "相对路径": "docs/validation/M04-公共接口差异与集成清单.md",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-公共接口差异与集成清单.md",
+      "字节": 8531,
+      "修改时间": "2026-10-05T17:27:16.8833965+08:00",
+      "SHA256": "F5FEB60335A952D849FF9B2996C87EBCC6001367ECEB7E0EEAAA7FBCECAC5965"
+    },
+    {
+      "相对路径": "docs/validation/m02-m04-test-job.json",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-m04-test-job.json",
+      "字节": 2186,
+      "修改时间": "2026-10-05T17:24:41.7598850+08:00",
+      "SHA256": "ED4B6EA4442996089C89BADBB6346F63A9735F3FEF68EB178F5E94088B4F786C"
+    },
+    {
+      "相对路径": "docs/validation/m02-m04-editmode-results.xml",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-m04-editmode-results.xml",
+      "字节": 234456,
+      "修改时间": "2026-10-05T17:19:58.2753489+08:00",
+      "SHA256": "365BE2995F47A65B1E4C2909AE08F04E6A85879C406563D0C32BDBA965D2A251"
+    },
+    {
+      "相对路径": "docs/validation/m02-m04-editmode-result.json",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-m04-editmode-result.json",
+      "字节": 81477,
+      "修改时间": "2026-10-05T17:28:01.0863192+08:00",
+      "SHA256": "384E23ECA5932A2CE5E84483133AFF9F3BB87B4097DA33ABE945025068111E1B"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs.meta",
+      "字节": 59,
+      "修改时间": "2026-10-05T12:50:03.4546895+08:00",
+      "SHA256": "E6C6C861A71E4E7C1396455433418E0C71833CE05CB530572E26BC8793158E8C"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorld.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs.meta",
+      "字节": 61,
+      "修改时间": "2026-10-05T14:47:45.0647729+08:00",
+      "SHA256": "D67A4EA429C7AEBD148602B01D23F08EF45DFC53BD29CBC2A0685397C7D12146"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Simulation/WorldSimulation.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs.meta",
+      "字节": 59,
+      "修改时间": "2026-10-03T23:57:31.7629333+08:00",
+      "SHA256": "DFC4BEFDF41208CBDED0248FFE0012F1DD4875F86A02C2179A243E92DE7A6DAC"
+    },
+    {
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs.meta",
+      "字节": 59,
+      "修改时间": "2026-10-05T16:26:42.3902640+08:00",
+      "SHA256": "9351445696DF648CD6648A237B483EAD3EE78628E111BA7BE91270EF2A90E3EE"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/M02/StructurePreparationTests.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs.meta",
+      "字节": 59,
+      "修改时间": "2026-10-05T17:16:22.1509416+08:00",
+      "SHA256": "6219BE3D8B5E8C2F83081A8247B0FB89AC20604CDF5303CA8F0380818DE29DAA"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/M02/TransactionCoordinatorTests.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs.meta",
+      "字节": 61,
+      "修改时间": "2026-10-05T14:51:08.6694131+08:00",
+      "SHA256": "ECBDE0B30C12FA3FC6813AD723A81683EBA245E058397C7D969E455BC0D94A4D"
+    },
+    {
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs.meta",
+      "绝对路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs.meta",
+      "字节": 59,
+      "修改时间": "2026-10-05T16:26:42.3902640+08:00",
+      "SHA256": "791CA2D4C65589E7D2E44B4DFC9384E9322501A89E9FFD908866AC9AC9EC155D"
+    }
+  ]
+}

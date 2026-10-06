@@ -1,0 +1,223 @@
+{
+  "module": "M02",
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "state": "网格状态核心和准备协调已实施，完整集成未完成",
+  "files": [
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\CellState.cs",
+      "bytes": 1623,
+      "sha256": "4de8fccf18d6a341c460f3b2987ebe3eb437b3348062962a12ae90d85083352f"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\CellState.cs.meta",
+      "bytes": 59,
+      "sha256": "06955beb036013b631c4e7fe3ff4c4d0ef081ef321c81694c785b826d4179051"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\WorldConstants.cs",
+      "bytes": 375,
+      "sha256": "492a6a443c9d384d39c3d202335a3339dcb9890ba696cafcf313f252fd2c24a6"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\WorldConstants.cs.meta",
+      "bytes": 59,
+      "sha256": "3de43faa5c87f1251e8897e4b30cce76b1ddbc706442196cb423a2267da9ee00"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\GravitySim.cs",
+      "bytes": 269,
+      "sha256": "c3feb57556cec65f8dfa8829e8cf1cbab8c02aadf58a82e6b82961ab2d59b1a1"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\GravitySim.cs.meta",
+      "bytes": 59,
+      "sha256": "12055eb560bbf9666368a8ad75e0e8562abea01f00db56bf65849f7ec55803cf"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkStore.cs",
+      "bytes": 3391,
+      "sha256": "517b7fabbde19cb4fd5fa186c63e4303b91aadf0dd9e7f09e80a27776887961e"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\ChunkStore.cs.meta",
+      "bytes": 59,
+      "sha256": "6828fe3fd0a8d29210385201cd7cf3efb8c300d2845134f8f274d69c670aa955"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldChunk.cs",
+      "bytes": 2472,
+      "sha256": "8b8bf9aa0a416def4d23e202c257caa5c3789c17b289b6ae4f8e3f3acbe49f57"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldChunk.cs.meta",
+      "bytes": 59,
+      "sha256": "c9bc6e8c0b2e532d52ae0762afc29ab8283e1930337b2e44028ddbe1c18364d2"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldGenerator.cs",
+      "bytes": 972,
+      "sha256": "9f7ea95d5fe8c993d0e5ac9cdfa2ae1378895ff32397c9adb80c81f8fd1917b4"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldGenerator.cs.meta",
+      "bytes": 59,
+      "sha256": "e84dd4cb4a02ef7823bff212386980e421291da58bfd50a52edf936ce0a89547"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs",
+      "bytes": 1166,
+      "sha256": "b416d3ff4f888bc160e56395647e5e2284b5898e220e1e0c1b3f7773810568e5"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs.meta",
+      "bytes": 59,
+      "sha256": "dfc4befdf41208cbded0248ffe0012f1dd4875f86a02c2179a243e92de7a6dac"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "bytes": 24107,
+      "sha256": "3f763a4b409bd1a46a335aa8fe2b442914e6979f8f6c2e4a3ca353a690e4b8c3"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs.meta",
+      "bytes": 61,
+      "sha256": "d67a4ea429c7aebd148602b01d23f08ef45dfc53bd29cbc2a0685397c7d12146"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\CommittedWorldView.cs",
+      "bytes": 3449,
+      "sha256": "f6bf9a84a43ec91c99f8db40bb8c5c589d64cc16505e12ee118978cc133c2502"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\CommittedWorldView.cs.meta",
+      "bytes": 61,
+      "sha256": "88cc1b993b706af8e024cbb9baa50c2a48bb4a4b55ac8c11e6d00e35125932d4"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs",
+      "bytes": 4392,
+      "sha256": "4cc2dc0aa66e87e25e30180f1b3b976091b4818dad163d0af2a4d6276a4b01d7"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickInstanceMap.cs.meta",
+      "bytes": 61,
+      "sha256": "6c2d803891fdad7fac4de0361c66000e878855b1d08f5da4e52620cc4abd11da"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickChangeCounter.cs",
+      "bytes": 1738,
+      "sha256": "f2f4efd843a153f2855d3db29633fd658a8692ae0df30dbe3879daf61bc4c050"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TickChangeCounter.cs.meta",
+      "bytes": 61,
+      "sha256": "f31a80f2f47835b070eee1ebeaeb21a96a9314e694ab1097b1b1c81684cba677"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TransactionCoordinator.cs",
+      "bytes": 6393,
+      "sha256": "a36d14038032cb8a440add6e969818c7ee01cc7a317d16dc306f1749ebeb653a"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\TransactionCoordinator.cs.meta",
+      "bytes": 61,
+      "sha256": "8768554e19583e5076bab2e631a352bcfac40a5bf1d9c1b91d3cb0b2d0bd3e81"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs",
+      "bytes": 5253,
+      "sha256": "62caf7c6aae0b8e40790418baf2165fa9cfaef4d641dc94c2c52cc74728805c1"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs.meta",
+      "bytes": 243,
+      "sha256": "df8ae7a077be1995149a7ad32df092fa1583b0380cd9ffe78222c68d32a0c2ab"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\FixedStepDriver.cs",
+      "bytes": 2312,
+      "sha256": "b89b86899d5c3b888a88875236ad2a8178d57f68ece8d923c2b51b5057b9082c"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\FixedStepDriver.cs.meta",
+      "bytes": 61,
+      "sha256": "a068406bb6d9cd0d19777e93d8f006e600f87a365d0b79ee7e1d9f1cef19a4b8"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs",
+      "bytes": 16461,
+      "sha256": "07ed5157a5a5a7d94592095f2deb85d3d5577ce8cada854b3c06c18debf363a8"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StateCoreTests.cs.meta",
+      "bytes": 61,
+      "sha256": "8ae805e51c01bfc00a32d718d85404a9e7387eba4cfa3d0b98622015cb746567"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs",
+      "bytes": 8539,
+      "sha256": "adc105f84bca9dd2086987c1230c9834979a6c3ff201a88e881286fe12894a36"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\TransactionCoordinatorTests.cs.meta",
+      "bytes": 61,
+      "sha256": "ecbde0b30c12fa3fc6813ad723a81683eba245e058397c7d969e455bc0d94a4d"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\HostDriverTests.cs",
+      "bytes": 6464,
+      "sha256": "914496ff6854c9fa7bafd058bebbdcf413cfd85c8201f955c05106d6dc419787"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\HostDriverTests.cs.meta",
+      "bytes": 61,
+      "sha256": "2021af8b1bc348ebc04367fcb0e83e93ac836b1727388358d6733f2b3f2c43f3"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02\\StateLifetimeTests.cs",
+      "bytes": 2110,
+      "sha256": "44fb2acdf02ed9fddd9cac320857d89454244fb4aab381bb1a5383352fdf73f4"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02\\StateLifetimeTests.cs.meta",
+      "bytes": 61,
+      "sha256": "cafe886e8bca4f87cf1424b3a5fccbd8bced293a8c66c5ca742a2b4ab6db80ed"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02.meta",
+      "bytes": 173,
+      "sha256": "26290f39fbf1afe1578e4d3617532ad95dea23146423838776eef4f806c57874"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\PlayMode\\M02.meta",
+      "bytes": 173,
+      "sha256": "cae9f0866a25523afa332278a80b83d438e9da868f9f77a1424b298b5390c30d"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\specs\\M02-状态事务与生命周期.md",
+      "bytes": 6817,
+      "sha256": "ed3080c04754e7cf25d4f548dc1981ce2057090bd42ea1743c2f70660de5a14c"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-执行结果与交接.md",
+      "bytes": 13187,
+      "sha256": "ae08be9c282174de6ab077f8d2c4500ee9bcac1411d98d38ac64ef49419c0ebd"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\M02-公共接口差异与集成清单.md",
+      "bytes": 6557,
+      "sha256": "537d6e5b62c3fb87ad0b169e8b6e6b218b69de4705d2838b1627f77e7b2e4179"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-editmode-result.json",
+      "bytes": 59629,
+      "sha256": "6b1735a9e402ced77f33391f6779767c21c8fb7416faec2aa838c54621fab60c"
+    },
+    {
+      "path": "D:\\work\\Project\\OpenOita\\docs\\validation\\m02-playmode-result.json",
+      "bytes": 1974,
+      "sha256": "1e792e4f4150074caa0736d19d3f3ef70b65e7151e5a489ef8c253b75ef384ff"
+    }
+  ]
+}

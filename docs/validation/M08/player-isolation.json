@@ -1,0 +1,33 @@
+{
+  "日期": "2026-10-06",
+  "构建目标": "Windows64 / Mono / 非Development",
+  "运行程序集依赖": [
+    "netstandard",
+    "UnityEngine.CoreModule",
+    "UnityEngine.TextRenderingModule",
+    "UnityEngine.IMGUIModule",
+    "UnityEngine.Physics2DModule",
+    "Newtonsoft.Json",
+    "UnityEngine.JSONSerializeModule"
+  ],
+  "Editor程序集入包": false,
+  "三文件": [
+    {
+      "文件": "materials.json",
+      "编辑保存SHA256": "B48B53F295C9F3418F6179D52B29B44374F249C065D5C644015E09D54F12C341",
+      "PlayerSHA256": "B48B53F295C9F3418F6179D52B29B44374F249C065D5C644015E09D54F12C341"
+    },
+    {
+      "文件": "world_config.json",
+      "编辑保存SHA256": "83AF7E6DCAB3991D7A5353710B27C0088E9426DC09462BAEE65550F9D55F69AC",
+      "PlayerSHA256": "83AF7E6DCAB3991D7A5353710B27C0088E9426DC09462BAEE65550F9D55F69AC"
+    },
+    {
+      "文件": "scene.json",
+      "编辑保存SHA256": "4D20C0F1893085607518E15530DC7A93AE469FCFF05D4B0B0D68F2A69C99EE2C",
+      "PlayerSHA256": "4D20C0F1893085607518E15530DC7A93AE469FCFF05D4B0B0D68F2A69C99EE2C"
+    }
+  ],
+  "启动": "Ready，generation=1、Tick=0、175格、256×256、cellSize=0.1",
+  "后续": "自动运行时水汽排开无解故障，未记录发生Tick；不声称Player完整长运行通过"
+}

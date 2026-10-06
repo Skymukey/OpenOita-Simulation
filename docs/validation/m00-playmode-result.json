@@ -1,0 +1,56 @@
+{
+  "result": {
+    "success": true,
+    "message": "Test job status retrieved.",
+    "error": null,
+    "data": {
+      "job_id": "89c3ab2ec2a24f3bbb94242821329f44",
+      "status": "succeeded",
+      "mode": "PlayMode",
+      "started_unix_ms": 1791177392184,
+      "finished_unix_ms": 1791177397480,
+      "last_update_unix_ms": 1791177397480,
+      "progress": {
+        "completed": 1,
+        "total": 1,
+        "current_test_full_name": null,
+        "current_test_started_unix_ms": null,
+        "last_finished_test_full_name": "OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+        "last_finished_unix_ms": 1791177397468,
+        "stuck_suspected": false,
+        "editor_is_focused": false,
+        "run_in_background": false,
+        "focus_nudge_attempts": null,
+        "focus_nudge_limit": null,
+        "focus_nudge_status": null,
+        "blocked_reason": null,
+        "failures_so_far": [],
+        "failures_capped": false
+      },
+      "error": null,
+      "result": {
+        "mode": "PlayMode",
+        "summary": {
+          "total": 1,
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0,
+          "durationSeconds": 0.0115857,
+          "resultState": "Passed"
+        },
+        "results": [
+          {
+            "name": "M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+            "fullName": "OpenOita.Tests.PlayMode.ContractConsumerTests.M00_02_ConsumerAndReadonlyValuesWorkInPlayMode",
+            "state": "Passed",
+            "durationSeconds": 0.0052551,
+            "message": null,
+            "stackTrace": null,
+            "output": ""
+          }
+        ]
+      }
+    },
+    "hint": null
+  }
+}

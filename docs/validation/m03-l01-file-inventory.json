@@ -1,0 +1,104 @@
+{
+  "files": [
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/LiquidFlowRule.cs",
+      "sha256": "2ae2c88aeaf78a063be4e448992e9889d4b51c7fe1d03449d267d9dc605d8e73",
+      "new": false
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/LiquidSpreadPlanner.cs",
+      "sha256": "1b612af6e85e83af6dcce9a76bf3dec4c62bbc7ea50d4526f89451cec4dfa86a",
+      "new": true
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/LiquidSpreadPlanner.cs.meta",
+      "sha256": "4f8646c492a631968b20ba6b5f373238a6c6631f5de1875a0722fb023eeeb548",
+      "new": true
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/MovementCandidateResolver.cs",
+      "sha256": "80d945e1a796c08bd8c727e4f95efc42a5e7fa5658dc190a277f134bb61d0d83",
+      "new": false
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/RuleBatchContext.cs",
+      "sha256": "6327c16deda76cb347f139d95a00acc5da4469f443394eeccceeee2503a67326",
+      "new": false
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Rules/RuleExecutionTable.cs",
+      "sha256": "2b7c0dd44220717e3cfb0fb3a3f1bdaa0dd1233ec4a024aab2a273e83b2bb52b",
+      "new": false
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Simulation/WorkingWorld.cs",
+      "sha256": "e84bccf2e4d3af32ca4c31c9c726baa6409228ac6188486c443a979d42711504",
+      "new": false
+    },
+    {
+      "path": "Assets/Scripts/OpenOitaWorld/Preview/ModulePreviewSession.cs",
+      "sha256": "d7e3c865608fa7202858752913ac75775c17cd13875c66ba5a7d0f4c6482ccbe",
+      "new": false
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingFixture.cs",
+      "sha256": "c64a51423b643f06de763f8b86162be5326b8a3b31e8ec7425b2e8a631c7ca60",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingFixture.cs.meta",
+      "sha256": "d53431846b83ebbb09de01a47104e9368d284820e7c5fcbecd2703804f2f5198",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingTests.cs",
+      "sha256": "bf5465c088e29b7885489cc98140a3b325557c91a397c6e232e10038074f9d2f",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/LiquidLevelingTests.cs.meta",
+      "sha256": "8bc349d213ab5cef833ee4425752cb140443f8850aba664f08ac1fbea2f79575",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/MovementRuleTests.cs",
+      "sha256": "18cd9b23fbc492f147adc6d15677c8e55eb48e3c062c8a1bc9826f32ead21deb",
+      "new": false
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Rules/RuleFixture.cs",
+      "sha256": "031020ba41b9042475c85dda565500e0bc28d4811e8a6a3eca5c0200f14b1489",
+      "new": false
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02/LiquidChainTransactionTests.cs",
+      "sha256": "80c5ac174963403a63aa989968d18c87ded3a22552b27ca0a0242140f27a27e9",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02/LiquidChainTransactionTests.cs.meta",
+      "sha256": "faad93cabb322fc3b6c595ad015366e4a8f76191573fd80c8ad3d2475dc22d9a",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02/LiquidLevelingIntegrationTests.cs",
+      "sha256": "4583da692e0bacf9d85c84981cd8c4c5fa66baf8faddcffc61ff78a2a92a8750",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/M02/LiquidLevelingIntegrationTests.cs.meta",
+      "sha256": "c93199451907a4237804736ccdabcd77e6c1df9cbf2d71d3c123cf429fb09ecc",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Preview/LiquidPreviewRegressionTests.cs",
+      "sha256": "bf357b42efec1357f33aabc39b276875ecb42b7ffe01e8905a0c31043754ca2b",
+      "new": true
+    },
+    {
+      "path": "Assets/Tests/OpenOita/EditMode/Preview/LiquidPreviewRegressionTests.cs.meta",
+      "sha256": "9d1d4324e8813dc50e750b37643667ebbce13991e3fb970df2d7e18bb9264419",
+      "new": true
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "job_id": "7fd87dce9a104c899287054e46348986",
+  "status": "succeeded",
+  "mode": "EditMode",
+  "started_unix_ms": 1791273854146,
+  "finished_unix_ms": 1791273861178,
+  "last_update_unix_ms": 1791273861178,
+  "progress": {
+    "completed": 26,
+    "total": 26,
+    "current_test_full_name": null,
+    "current_test_started_unix_ms": null,
+    "last_finished_test_full_name": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_09_SinglePixelAndExplicit64PixelRectangleAreIndependent",
+    "last_finished_unix_ms": 1791273861078,
+    "stuck_suspected": false,
+    "editor_is_focused": false,
+    "run_in_background": false,
+    "focus_nudge_attempts": null,
+    "focus_nudge_limit": null,
+    "focus_nudge_status": null,
+    "blocked_reason": null,
+    "failures_so_far": [],
+    "failures_capped": false
+  },
+  "error": null,
+  "result": {
+    "mode": "EditMode",
+    "summary": {
+      "total": 26,
+      "passed": 26,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 2.5184422,
+      "resultState": "Passed"
+    },
+    "results": [
+      {
+        "name": "M08_01_FileRoundTripPreserves175CellsAndReferences",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_01_FileRoundTripPreserves175CellsAndReferences",
+        "state": "Passed",
+        "durationSeconds": 0.1037336,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_AllValidatedMaterialsSingleRectangleAndErase(101)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_AllValidatedMaterialsSingleRectangleAndErase(101)",
+        "state": "Passed",
+        "durationSeconds": 0.0119535,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_AllValidatedMaterialsSingleRectangleAndErase(102)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_AllValidatedMaterialsSingleRectangleAndErase(102)",
+        "state": "Passed",
+        "durationSeconds": 0.0059414,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_AllValidatedMaterialsSingleRectangleAndErase(103)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_AllValidatedMaterialsSingleRectangleAndErase(103)",
+        "state": "Passed",
+        "durationSeconds": 0.0058068,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_AllValidatedMaterialsSingleRectangleAndErase(104)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_AllValidatedMaterialsSingleRectangleAndErase(104)",
+        "state": "Passed",
+        "durationSeconds": 0.0058026,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_IllegalMarksAndCapacityAreAtomic",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_IllegalMarksAndCapacityAreAtomic",
+        "state": "Passed",
+        "durationSeconds": 0.0173759,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_02_OverwriteAndEraseClearOldMarkersEvenSameId",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_02_OverwriteAndEraseClearOldMarkersEvenSameId",
+        "state": "Passed",
+        "durationSeconds": 0.0071286,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_03_OriginBoundariesCrossChunkTailAndSharedSelection",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_03_OriginBoundariesCrossChunkTailAndSharedSelection",
+        "state": "Passed",
+        "durationSeconds": 0.0078016,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"MissingField\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"MissingField\")",
+        "state": "Passed",
+        "durationSeconds": 0.0387489,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"DuplicateJsonKey\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"DuplicateJsonKey\")",
+        "state": "Passed",
+        "durationSeconds": 0.0317846,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"UnknownMaterial\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"UnknownMaterial\")",
+        "state": "Passed",
+        "durationSeconds": 0.0300273,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"WrongSet\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"WrongSet\")",
+        "state": "Passed",
+        "durationSeconds": 0.0318342,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"OutOfBounds\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"OutOfBounds\")",
+        "state": "Passed",
+        "durationSeconds": 0.0327476,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"DuplicateCell\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"DuplicateCell\")",
+        "state": "Passed",
+        "durationSeconds": 0.0554982,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"FixedWater\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"FixedWater\")",
+        "state": "Passed",
+        "durationSeconds": 0.0581671,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"BurningConcrete\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"BurningConcrete\")",
+        "state": "Passed",
+        "durationSeconds": 0.0313107,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_04_FailedImportKeepsModelAndDisk(\"ArbitraryReference\")",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_04_FailedImportKeepsModelAndDisk(\"ArbitraryReference\")",
+        "state": "Passed",
+        "durationSeconds": 0.0304024,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"写入\",False)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"写入\",False)",
+        "state": "Passed",
+        "durationSeconds": 0.0442379,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"刷新关闭\",False)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"刷新关闭\",False)",
+        "state": "Passed",
+        "durationSeconds": 0.0475844,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"替换\",False)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"替换\",False)",
+        "state": "Passed",
+        "durationSeconds": 0.0429856,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"写入\",True)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"写入\",True)",
+        "state": "Passed",
+        "durationSeconds": 0.0260047,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"刷新关闭\",True)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"刷新关闭\",True)",
+        "state": "Passed",
+        "durationSeconds": 0.0287737,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"替换\",True)",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_AllSaveFaultsPreserveOldBytesAndFirstSave(\"替换\",True)",
+        "state": "Passed",
+        "durationSeconds": 0.0278659,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_05_FirstSaveAndChangedReferencePrecheck",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_05_FirstSaveAndChangedReferencePrecheck",
+        "state": "Passed",
+        "durationSeconds": 0.0785845,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_08_TwentyWindowAndPreviewResourceLifecycles",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_08_TwentyWindowAndPreviewResourceLifecycles",
+        "state": "Passed",
+        "durationSeconds": 0.9508607,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      },
+      {
+        "name": "M08_09_SinglePixelAndExplicit64PixelRectangleAreIndependent",
+        "fullName": "OpenOita.Tests.EditMode.M08.SceneMaterialDataTests.M08_09_SinglePixelAndExplicit64PixelRectangleAreIndependent",
+        "state": "Passed",
+        "durationSeconds": 0.0215923,
+        "message": null,
+        "stackTrace": null,
+        "output": ""
+      }
+    ]
+  }
+}

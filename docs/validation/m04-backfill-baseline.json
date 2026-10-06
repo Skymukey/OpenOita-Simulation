@@ -1,0 +1,50 @@
+{
+  "module": "M04",
+  "contract": "M00-3/CONTRACTS1.2",
+  "files": [
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Core\\Contracts\\TransactionContracts.cs",
+      "Hash": "C4384D2E4338E327CFC1934A7CB4CD907E2AF7244C753262C7878E9E4D0EB93C"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorkingWorld.cs",
+      "Hash": "66A05E0D82BA28C488DD95CDB797E30F027B8931CBA503CE679068CD04B79A63"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Simulation\\WorldSimulation.cs",
+      "Hash": "E4331C3A33349919A39E03ED221CA7C971CB7754BDDB77D9A06C05F680EC3736"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Host\\WorldHost.cs",
+      "Hash": "62CAF7C6AAE0B8E40790418BAF2165FA9CFAEF4D641DC94C2C52CC74728805C1"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Packages\\manifest.json",
+      "Hash": "EEB7802748663DDFCA9A0AD72CDE4852AB12CE3B175D9EAF4D8C0CA17962454B"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Packages\\packages-lock.json",
+      "Hash": "14FC010B720BA84E58F1DA080F1662652412EC1F3219F23FE26DE82717C6AF68"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\ProjectSettings\\EditorSettings.asset",
+      "Hash": "0B5C614BA2B24AB6BD1853F450EF8CC44B84C2D084493F8B5BBA0C9F3213F680"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\StructurePreparationTests.cs",
+      "Hash": "3B68165715264791BDCE722501BD58ED5850615CEF9F133225A1965AF8FCEE00"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\StructureContractTests.cs",
+      "Hash": "F0D32041BCFD4C191D0B2ACF8E52AB2DAE728468D8D74AC0EB3D659E76A5ED3C"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs",
+      "Hash": "B68C5026C099A21041B54ED3915255F2D91DE62E3DD41B69104038B43957CA4E"
+    },
+    {
+      "Path": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "Hash": "B5F14067032F54939CD20D9E9193FCB9CDB9328BB6A2923968F8EED9E06B5718"
+    }
+  ]
+}

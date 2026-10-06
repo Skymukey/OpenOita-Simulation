@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "message": "Test job status retrieved.",
+  "error": null,
+  "data": {
+    "job_id": "a3286b58c4e448eca5f8ff2fac33bbc8",
+    "status": "succeeded",
+    "mode": "EditMode",
+    "started_unix_ms": 1791193175772,
+    "finished_unix_ms": 1791193190029,
+    "last_update_unix_ms": 1791193190029,
+    "progress": {
+      "completed": 276,
+      "total": 276,
+      "current_test_full_name": null,
+      "current_test_started_unix_ms": null,
+      "last_finished_test_full_name": "OpenOita.Tests.EditMode.StructureContractTests.M00_05_M04_I03_RealCandidateIsReadBeforeApplyAndExpiresWithPreparation(True)",
+      "last_finished_unix_ms": 1791193189730,
+      "stuck_suspected": false,
+      "editor_is_focused": false,
+      "run_in_background": false,
+      "focus_nudge_attempts": null,
+      "focus_nudge_limit": null,
+      "focus_nudge_status": null,
+      "blocked_reason": null,
+      "failures_so_far": [],
+      "failures_capped": false
+    },
+    "error": null,
+    "result": null
+  },
+  "hint": null
+}

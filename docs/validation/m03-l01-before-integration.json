@@ -1,0 +1,104 @@
+{
+  "success": true,
+  "message": "Test job status retrieved.",
+  "error": null,
+  "data": {
+    "job_id": "924ddd95e9ef4bc49ca676b2fc2e744a",
+    "status": "failed",
+    "mode": "EditMode",
+    "started_unix_ms": 1791210369559,
+    "finished_unix_ms": 1791210375219,
+    "last_update_unix_ms": 1791210375219,
+    "progress": {
+      "completed": 6,
+      "total": 6,
+      "current_test_full_name": null,
+      "current_test_started_unix_ms": null,
+      "last_finished_test_full_name": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"BeforeApply\")",
+      "last_finished_unix_ms": 1791210375000,
+      "stuck_suspected": false,
+      "editor_is_focused": false,
+      "run_in_background": false,
+      "focus_nudge_attempts": null,
+      "focus_nudge_limit": null,
+      "focus_nudge_status": null,
+      "blocked_reason": null,
+      "failures_so_far": [
+        {
+          "full_name": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary",
+          "message": "  Expected: OpenOita.Contracts.CellKey\r\n  But was:  OpenOita.Contracts.CellKey\r\n"
+        }
+      ],
+      "failures_capped": false
+    },
+    "error": null,
+    "result": {
+      "mode": "EditMode",
+      "summary": {
+        "total": 6,
+        "passed": 5,
+        "failed": 1,
+        "skipped": 0,
+        "durationSeconds": 0.9255028,
+        "resultState": "Failed(Child)"
+      },
+      "results": [
+        {
+          "name": "L01_07_HorizontalCompetitionPreservesFullLegalStatesAndDoesNotMixWetMarkers",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_HorizontalCompetitionPreservesFullLegalStatesAndDoesNotMixWetMarkers",
+          "state": "Passed",
+          "durationSeconds": 0.116323,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "L01_07_LaterStageFaultAfterWaterApplyKeepsLastPublishedWaterSnapshot",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_LaterStageFaultAfterWaterApplyKeepsLastPublishedWaterSnapshot",
+          "state": "Passed",
+          "durationSeconds": 0.0674575,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary",
+          "state": "Failed",
+          "durationSeconds": 0.0117539,
+          "message": "  Expected: OpenOita.Contracts.CellKey\r\n  But was:  OpenOita.Contracts.CellKey\r\n",
+          "stackTrace": "at OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_RealWaterHorizontalMoveKeepsCountdownWetIdentityAcrossChunkBoundary () [0x001d0] in D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\M02\\LiquidLevelingIntegrationTests.cs:92\r\n",
+          "output": ""
+        },
+        {
+          "name": "L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"IntentBuffer\")",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"IntentBuffer\")",
+          "state": "Passed",
+          "durationSeconds": 0.0089546,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"ChangedPositions\")",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"ChangedPositions\")",
+          "state": "Passed",
+          "durationSeconds": 0.0121895,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"BeforeApply\")",
+          "fullName": "OpenOita.Tests.EditMode.M02.LiquidLevelingIntegrationTests.L01_07_WholeWaterBatchFailureKeepsEveryStateInstanceWetMarkerAndPublishedTick(\"BeforeApply\")",
+          "state": "Passed",
+          "durationSeconds": 0.0098252,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        }
+      ]
+    }
+  },
+  "hint": null
+}

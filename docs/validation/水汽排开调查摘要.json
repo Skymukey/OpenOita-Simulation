@@ -1,0 +1,577 @@
+{
+  "日期": "2026-10-06",
+  "Unity": "6000.3.11f1",
+  "说明": "只读诊断，使用正式WorldSimulation及独立PhysicsScene2D，不改生产规则",
+  "M08保存副本": {
+    "成功Tick": 263,
+    "失败Tick": 264,
+    "失败源": [
+      26,
+      3
+    ],
+    "材料": 101,
+    "初态材料格": 175,
+    "初燃格": 1,
+    "半径": 16,
+    "搜索层数量": [
+      2,
+      4,
+      5,
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "已预留搬运": [
+      {
+        "source": [
+          34,
+          1
+        ],
+        "target": [
+          24,
+          3
+        ],
+        "distance": 12
+      },
+      {
+        "source": [
+          35,
+          1
+        ],
+        "target": [
+          37,
+          4
+        ],
+        "distance": 5
+      },
+      {
+        "source": [
+          30,
+          2
+        ],
+        "target": [
+          23,
+          3
+        ],
+        "distance": 8
+      }
+    ],
+    "候选位姿": [
+      {
+        "id": 1,
+        "x": 1.31779337,
+        "y": 0.7668491,
+        "angle": -0.261309177,
+        "vx": 0.0144458106,
+        "vy": -2.45206451,
+        "omega": -1.25790668
+      }
+    ],
+    "全局匹配": {
+      "冲突源数": 4,
+      "最多匹配数": 3,
+      "源与可达空目标": [
+        {
+          "源": [
+            34,
+            1
+          ],
+          "空目标数": 2,
+          "可达格数": 21,
+          "前5目标": [
+            {
+              "x": 24,
+              "y": 3,
+              "distance": 12
+            },
+            {
+              "x": 23,
+              "y": 3,
+              "distance": 13
+            }
+          ]
+        },
+        {
+          "源": [
+            35,
+            1
+          ],
+          "空目标数": 169,
+          "可达格数": 176,
+          "前5目标": [
+            {
+              "x": 37,
+              "y": 4,
+              "distance": 5
+            },
+            {
+              "x": 36,
+              "y": 5,
+              "distance": 5
+            },
+            {
+              "x": 38,
+              "y": 4,
+              "distance": 6
+            },
+            {
+              "x": 35,
+              "y": 5,
+              "distance": 6
+            },
+            {
+              "x": 37,
+              "y": 5,
+              "distance": 6
+            }
+          ]
+        },
+        {
+          "源": [
+            30,
+            2
+          ],
+          "空目标数": 2,
+          "可达格数": 21,
+          "前5目标": [
+            {
+              "x": 24,
+              "y": 3,
+              "distance": 7
+            },
+            {
+              "x": 23,
+              "y": 3,
+              "distance": 8
+            }
+          ]
+        },
+        {
+          "源": [
+            26,
+            3
+          ],
+          "空目标数": 2,
+          "可达格数": 21,
+          "前5目标": [
+            {
+              "x": 24,
+              "y": 3,
+              "distance": 2
+            },
+            {
+              "x": 23,
+              "y": 3,
+              "distance": 3
+            }
+          ]
+        }
+      ]
+    },
+    "对照": [
+      {
+        "忽略深度": 0.0,
+        "搜索半径": 64,
+        "结果": [
+          {
+            "source": [
+              34,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              24,
+              3
+            ],
+            "distance": 12,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              35,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              37,
+              4
+            ],
+            "distance": 5,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              30,
+              2
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              23,
+              3
+            ],
+            "distance": 8,
+            "firstLayer": 2
+          },
+          {
+            "source": [
+              26,
+              3
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 2
+          }
+        ]
+      },
+      {
+        "忽略深度": 1E-06,
+        "搜索半径": 64,
+        "结果": [
+          {
+            "source": [
+              34,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              24,
+              3
+            ],
+            "distance": 12,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              35,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              37,
+              4
+            ],
+            "distance": 5,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              30,
+              2
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              23,
+              3
+            ],
+            "distance": 8,
+            "firstLayer": 2
+          },
+          {
+            "source": [
+              26,
+              3
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 2
+          }
+        ]
+      }
+    ]
+  },
+  "当前默认": {
+    "成功Tick": 266,
+    "失败Tick": 267,
+    "初态材料格": 175,
+    "初燃格": 5,
+    "失败源": [
+      26,
+      1
+    ],
+    "对照": [
+      {
+        "cutoff": 0.0,
+        "radius": 64,
+        "trials": [
+          {
+            "source": [
+              25,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              24,
+              5
+            ],
+            "distance": 5,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              26,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              27,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              28,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              29,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              30,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              31,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              32,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              33,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              34,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              35,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              36,
+              5
+            ],
+            "distance": 5,
+            "firstLayer": 1
+          }
+        ]
+      },
+      {
+        "cutoff": 1E-06,
+        "radius": 64,
+        "trials": [
+          {
+            "source": [
+              26,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              25,
+              2
+            ],
+            "distance": 2,
+            "firstLayer": 1
+          },
+          {
+            "source": [
+              27,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              28,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              29,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              30,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              31,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              32,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              33,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              34,
+              1
+            ],
+            "id": 101,
+            "found": false,
+            "target": null,
+            "distance": 0,
+            "firstLayer": 0
+          },
+          {
+            "source": [
+              35,
+              1
+            ],
+            "id": 101,
+            "found": true,
+            "target": [
+              36,
+              5
+            ],
+            "distance": 5,
+            "firstLayer": 1
+          }
+        ]
+      }
+    ]
+  },
+  "输入SHA256": [
+    {
+      "文件": "materials.json",
+      "SHA256": "B48B53F295C9F3418F6179D52B29B44374F249C065D5C644015E09D54F12C341"
+    },
+    {
+      "文件": "scene.json",
+      "SHA256": "4D20C0F1893085607518E15530DC7A93AE469FCFF05D4B0B0D68F2A69C99EE2C"
+    },
+    {
+      "文件": "world_config.json",
+      "SHA256": "83AF7E6DCAB3991D7A5353710B27C0088E9426DC09462BAEE65550F9D55F69AC"
+    }
+  ]
+}

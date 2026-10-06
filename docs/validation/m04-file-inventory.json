@@ -1,0 +1,148 @@
+{
+  "模块": "M04",
+  "合同": "M00-2/CONTRACTS1.1/主方案0.9",
+  "记录时间": "2026-10-05T16:38:56.458717+08:00",
+  "元数据结果": "专属新增资产均有Unity生成meta，GUID无冲突",
+  "配置": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\materials.json",
+      "SHA256": "b48b53f295c9f3418f6179d52b29b44374f249c065d5c644015e09d54f12c341"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\world_config.json",
+      "SHA256": "83af7e6dcab3991d7a5353710b27c0088e9426dc09462baee65550f9d55f69ac"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\examples\\scene.json",
+      "SHA256": "aa74fe09b4982e867de80924559fc18d9efac066e9576213dd45c7ddee9ce091"
+    }
+  ],
+  "文件": [
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs",
+      "字节": 11930,
+      "SHA256": "4392d16c1e373fbdf4f6e0133b58cc4d92f4f3cadc0665064bdaedcf8a239dcd"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\ConnectivityAnalyzer.cs.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/ConnectivityAnalyzer.cs.meta",
+      "字节": 59,
+      "SHA256": "9351445696df648cd6648a237b483ead3ee78628e111ba7be91270ef2a90e3ee"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/FixedCellPolicy.cs",
+      "字节": 721,
+      "SHA256": "b7b0899fa389d3fafcbbeb704361c0f73f0da37788852c4078320aea62b88123"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure\\FixedCellPolicy.cs.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure/FixedCellPolicy.cs.meta",
+      "字节": 59,
+      "SHA256": "37a711add80cdcb9127b0046e3614a7c1fc96eecb67473632680cbf15e006c50"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Scripts\\OpenOitaWorld\\Structure.meta",
+      "相对路径": "Assets/Scripts/OpenOitaWorld/Structure.meta",
+      "字节": 172,
+      "SHA256": "83c2f325f144363bf18927e0eee5064653ab513284468408d26ae5557c70b188"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs",
+      "字节": 21798,
+      "SHA256": "aed084c4b623659bd469686bec44dfb552c635c6c29f6a1569a6e5791d0b8e48"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityAnalyzerTests.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityAnalyzerTests.cs.meta",
+      "字节": 59,
+      "SHA256": "791ca2d4c65589e7d2e44b4dfc9384e9322501a89e9ffd908866ac9ac9ec155d"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityFixture.cs",
+      "字节": 3254,
+      "SHA256": "be115b3a328b4241cca79662815fff1e358777bac7c7048ef660299d8d3c3abc"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityFixture.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityFixture.cs.meta",
+      "字节": 59,
+      "SHA256": "ccecd00b20a129ce8c7d87172d9c5dfe8ce1e56c653c846c476bd65da1d63a4c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityStateCoreTests.cs",
+      "字节": 8652,
+      "SHA256": "294ab3946f1ebbdf0527409a29617967337bd71027bd15c8dcbbf9c3caae650c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity\\ConnectivityStateCoreTests.cs.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity/ConnectivityStateCoreTests.cs.meta",
+      "字节": 59,
+      "SHA256": "d1dec2de0b5219dd85b47f97c1bb2af80f2e1108710e042eecb965f86002067c"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure\\Connectivity.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure/Connectivity.meta",
+      "字节": 172,
+      "SHA256": "a166d0e59996e08e108f975687a082d463476eab3957b6f062835e35ac41f4dd"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\Assets\\Tests\\OpenOita\\EditMode\\Structure.meta",
+      "相对路径": "Assets/Tests/OpenOita/EditMode/Structure.meta",
+      "字节": 172,
+      "SHA256": "90a191e78c1bfa41825ac19e7b73b4ceda7d91378f217ab2ddfed0b375db0d21"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\specs\\M04-结构连通与固定.md",
+      "相对路径": "docs/specs/M04-结构连通与固定.md",
+      "字节": 12808,
+      "SHA256": "c4ecc33c65dc697c4ec88ce5fe4604c368369bcfe661b437f14c49292e9e4830"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-editmode-result.json",
+      "相对路径": "docs/validation/m04-editmode-result.json",
+      "字节": 91252,
+      "SHA256": "77cd0b438c36e140690f286145a833a6edbe7b75e2aac1d0fa6e1ac9a71189f3"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-editmode-results.xml",
+      "相对路径": "docs/validation/m04-editmode-results.xml",
+      "字节": 213601,
+      "SHA256": "e7ae9331652514452b050cab1be3c0e137fb95c61b6b7e5c4fb5688477dbdb69"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-environment.json",
+      "相对路径": "docs/validation/m04-environment.json",
+      "字节": 705,
+      "SHA256": "befdb715446098af69621b0f00c63a239c229823cc4374be186a1088dae45755"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\m04-test-job.json",
+      "相对路径": "docs/validation/m04-test-job.json",
+      "字节": 1044,
+      "SHA256": "c53b1949d7c0e1f50eb7e178602d95d0a4c4425d1c048c2a8f57e4166ed0dc06"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-公共接口差异与集成清单.md",
+      "相对路径": "docs/validation/M04-公共接口差异与集成清单.md",
+      "字节": 8201,
+      "SHA256": "478e0878e4aaf850ac6b66491b37d77738c9ad34d9166f19ee1362ce4e2c97af"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\M04-执行结果与交接.md",
+      "相对路径": "docs/validation/M04-执行结果与交接.md",
+      "字节": 11963,
+      "SHA256": "8530c895ddca3ce1cab117060537ddc71316ae020f855a54d811725d10aa952e"
+    },
+    {
+      "路径": "D:\\work\\Project\\OpenOita\\docs\\validation\\record_m04_evidence.py",
+      "相对路径": "docs/validation/record_m04_evidence.py",
+      "字节": 4248,
+      "SHA256": "2005748ff1ed1b986d7e47770ce743b0d369068e7c257eec49bf08a71611d3a3"
+    }
+  ]
+}

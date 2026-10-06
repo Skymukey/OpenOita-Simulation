@@ -1,0 +1,239 @@
+{
+  "合同版本": "M00-1",
+  "记录时间": "2026-10-05T13:18:41.293231+08:00",
+  "元数据结果": "全部新增资产有Unity生成meta且GUID无冲突",
+  "文件": [
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/AssemblyInfo.cs",
+      "SHA256": "c6e4c64c26d96ec8b86dfca107e88705b21077f114a16605feb8f57b352a2792"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/AssemblyInfo.cs.meta",
+      "SHA256": "6b7b21acda97bb5cd23a1fb8d396ac72ca9b4c66936d5ca1806280edaa08d1c7"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/CellSnapshot.cs",
+      "SHA256": "cf132966530e98eadd02c545d69858d9e74498084ca06c5b656e27db7df362d9"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/CellSnapshot.cs.meta",
+      "SHA256": "b5e2510486a83268ae65494d751c156b2abf891da5d40f9e3c1acc2dd1fcd82b"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/ContractDefaults.cs",
+      "SHA256": "a661005dce3a6807d61b775024512e145d4fd332620ea18e4ad7c9c5ac63eea1"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/ContractDefaults.cs.meta",
+      "SHA256": "2f8c9142281e8452c8450552962d4202466be55afa09a5655cab298b1699c1e3"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/IWorld.cs",
+      "SHA256": "b465faed4cfc59477ec5dd8810c8cf631729a712c90e5e1f48a3695132ec7f33"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/IWorld.cs.meta",
+      "SHA256": "f53064ac71dca929e3c7476fd46d235f671f5dbbfb9611f1b1c7cf3f5fe6ef03"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/RuleContracts.cs",
+      "SHA256": "9196930db3b76c25fb3a019359590dc4eed674f90afb06fba37a147f3efef085"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/RuleContracts.cs.meta",
+      "SHA256": "f5989363985fed35b01bb3b694418a1237245f91a01f21b50d3e289f1e878bc2"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/SpatialContracts.cs",
+      "SHA256": "b8844db5a796975ec30e6866633b21a0ef1f6e34884a7b9e755b175fe3140aa8"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/SpatialContracts.cs.meta",
+      "SHA256": "ff329e805cac65f1678f884156e49308fce1a0bec092d6d8afc6bf308dd6336a"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs",
+      "SHA256": "faa9b096af206c5dfb78f4ce8fe757fb02887e852f36e92117ecac331fe7dd79"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/TransactionContracts.cs.meta",
+      "SHA256": "e6c6c861a71e4e7c1396455433418e0c71833ce05cb530572e26bc8793158e8c"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldIdentity.cs",
+      "SHA256": "7c807e7e0f967e43abef1d9833162293f79076d720922ae50d65493adfd93c42"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldIdentity.cs.meta",
+      "SHA256": "8fcf40065ffbd61b52049a5aa31e1819c845b4e52686f24c96dd5b6d2cc5100d"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldResult.cs",
+      "SHA256": "430265d2beaca9e3f23ebd05e1b510a5922773c55c863ae8e566be56c34b450f"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldResult.cs.meta",
+      "SHA256": "c504d9769f77d69e16c1a8fed7d42b993f58aaf81ba94a964ed800569a38784d"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldSources.cs",
+      "SHA256": "49fc1ee4ff3146db0a627a7b4a31e5461f43b13efd81e6d1a87e69bff5ee7ff7"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldSources.cs.meta",
+      "SHA256": "d7c3b2133add06cf5f4da09802cfbbb8e7632a2eddcf195b70fd8a2fdb9f9253"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldViews.cs",
+      "SHA256": "d6784814e053eb6692015f4a41dfe0243d7555ef8ba51660ea147d5fa0400f4b"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts/WorldViews.cs.meta",
+      "SHA256": "f89c679fea374d6d2008b834a565181799b3813c09aa012b484f186c34cac525"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/Core/Contracts.meta",
+      "SHA256": "ae6ff5d4fca5b74e18c9dc915cd3995c70aebb7f03f3e0e428a7060bf6021e7a"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/OpenOita.Runtime.asmdef",
+      "SHA256": "dfd23da598bfded17cf1db815f44aeefc697a52c7ce70fbab2054586fe49bd62"
+    },
+    {
+      "路径": "Assets/Scripts/OpenOitaWorld/OpenOita.Runtime.asmdef.meta",
+      "SHA256": "e4a3ab04d5482458aae62792157af2f4bdb26d514606347c5dd9dbab3bf88405"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/AssemblyBoundaryTests.cs",
+      "SHA256": "eb2d7f70393130a47c2c1d97adf549bfc700cf5ca0c681a6a5813e8e28af8d26"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/AssemblyBoundaryTests.cs.meta",
+      "SHA256": "2971af59cefdff0101abdaec61c829f32bb5b0876afbfba87bab619d6181bd75"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/BaselineSourcesTests.cs",
+      "SHA256": "7b12d342a99d9f9276a5c8eaf6a3ae2270dbbc38f018bea872d7d3c1c0449f17"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/BaselineSourcesTests.cs.meta",
+      "SHA256": "14d0bed7a9eab14f0f565e6908babc4376bd3ca63bc761217b68f91262a8704e"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/ContractDefaultsTests.cs",
+      "SHA256": "21c5eda6ab113d8da8168dd497f9290b02b7c5cbbb221189d55cb501f3cb48c8"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/ContractDefaultsTests.cs.meta",
+      "SHA256": "023da02b3412269d57964d577edf171615c4efeacae30379ab1765bc1d43ce7e"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/FixtureCatalogTests.cs",
+      "SHA256": "e35f3cd5230db5f784b8ef98bcd8377a59f8fe2f13ed62a142d567f56535e36f"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/FixtureCatalogTests.cs.meta",
+      "SHA256": "435134e0d8b00a3b2380af88148fb7fc09e87142eb4df7c1f58baf3c37eb115d"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/OpenOita.Tests.EditMode.asmdef",
+      "SHA256": "db9879ab244f7af11d6f825634039aa65c42030b7a64ec5aca97c14b405b8c31"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode/OpenOita.Tests.EditMode.asmdef.meta",
+      "SHA256": "f9567d95095eed75f87e68c1fd42dcf4584d09aac7bf5c3bc779e25d61614009"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/EditMode.meta",
+      "SHA256": "cbb4e4f4844d16ec8b205ed088a0cd943fa23e026d5216867ffe2b149612b8d9"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/BaselineSources.cs",
+      "SHA256": "4cc8869845f3e79f95d0aa1f2496b4d31cb1908887978b13b212aa979be00f63"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/BaselineSources.cs.meta",
+      "SHA256": "cd71980d2b26ae22cc4ebeffd1d2c8eef53200586f18e8af9540835289d05df2"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/ContractConsumer.cs",
+      "SHA256": "f7077eb9ec4da86352cbc0e76f228d9d3ace6dee73faab69141d5970f049513c"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/ContractConsumer.cs.meta",
+      "SHA256": "e1a0123f5ee1fb49cffc283b9cdd2fd800e4876a048116a8643523c6a1f14c47"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/FixtureCatalog.cs",
+      "SHA256": "bbe7471f2b6bdeb5953acb100b5f35f34987c7a435cb6e070eb9cfe7307e5cd8"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/FixtureCatalog.cs.meta",
+      "SHA256": "eac729268708df669cf0e3a71c21b98537f28106295730a21ecf24276af7e5ec"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/FixtureExporter.cs",
+      "SHA256": "a9d93f18bd80f06567a92541a898f767fc345991c190926d97b4685374aac6c1"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/FixtureExporter.cs.meta",
+      "SHA256": "9cd18f1c462f8ff6d646a6466becca1bf811d2b07dde45096b411d2f5fd2715a"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/IntegrationContractAssertions.cs",
+      "SHA256": "647a1f863ccea59c5b54a076b2e35d67ab9c1fbc573844c74cb835117229e06c"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/IntegrationContractAssertions.cs.meta",
+      "SHA256": "2451bcdf797a4f12d9391e95e2d3df39a6e8821f2aa94275800d012fbd800d91"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/OpenOita.Tests.Fixtures.asmdef",
+      "SHA256": "60ed6e9baffdef260fbc5127167e9d1eab2b702f167e232ca957829879420db9"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/OpenOita.Tests.Fixtures.asmdef.meta",
+      "SHA256": "c658bea6c16d4be83c7fff1499559c14229efc8954b762830332b45628718867"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/ScenarioFixture.cs",
+      "SHA256": "d5d4c43d672f0609e707b9b80500a615d4c38c7f6d459ef9f95a839fe9097661"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures/ScenarioFixture.cs.meta",
+      "SHA256": "34a2ba331ae296e1fb4ed57fd7b51fabaad9554a32514316b26b9d79893143cb"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/Fixtures.meta",
+      "SHA256": "bfb41215ef9947ae3880308dd03b00b9359d05ff6bceb2b87f02af79e51bde51"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/PlayMode/ContractConsumerTests.cs",
+      "SHA256": "1e4616da43dea8298497bfc6d815ca7120065741cb3a8a5fbeb5f00fcec8d280"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/PlayMode/ContractConsumerTests.cs.meta",
+      "SHA256": "9d1f5918152458aa86ebc8208dbd98d04be8954119dfa936332fc577566cffb4"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/PlayMode/OpenOita.Tests.PlayMode.asmdef",
+      "SHA256": "e312a5b1f491b2e691974e618d67770bbadd634c7a18347943659f55c1e5749e"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/PlayMode/OpenOita.Tests.PlayMode.asmdef.meta",
+      "SHA256": "2a7241fcbb909fd7d3cece90b08d27362fada8086d82b34e8e97232f561cc3e7"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita/PlayMode.meta",
+      "SHA256": "6414b22bd47c97464f745c4ed9e8aabd64423cb8790d31e4f226e089fb794c7a"
+    },
+    {
+      "路径": "Assets/Tests/OpenOita.meta",
+      "SHA256": "6d39d7832ef249cbab749ace50884a77cd1446ad79ed3dba6f07c2340f55211b"
+    },
+    {
+      "路径": "Assets/Tests.meta",
+      "SHA256": "20dd9f3a7b54f503b66d10306882ec780ef2d481decad6150aef14e21155872e"
+    }
+  ]
+}

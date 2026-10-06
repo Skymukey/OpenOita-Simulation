@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "message": "Build Succeeded.",
+  "data": {
+    "job_id": "build-dd5d075b3c",
+    "result": "succeeded",
+    "platform": "StandaloneWindows64",
+    "output_path": "D:/work/Project/OpenOita/Builds/M08Validation/OpenOita.exe",
+    "started_at": "2026-10-06T08:15:24.9802343Z",
+    "duration_seconds": 134.00858499999998,
+    "completed_at": "2026-10-06T08:17:38.9888193Z",
+    "total_size_mb": 97.17,
+    "errors": 0,
+    "warnings": 1
+  }
+}
