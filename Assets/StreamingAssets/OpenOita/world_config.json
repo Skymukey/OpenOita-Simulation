@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "width": 256,
+  "height": 256,
+  "chunkSize": 128,
+  "cellSize": 0.1,
+  "stepSeconds": 0.02,
+  "gravityY": -9.81,
+  "seed": 1,
+  "limits": {
+    "maxMaterialCells": 65536,
+    "maxDynamicBodies": 64,
+    "maxShapesPerBody": 256,
+    "maxTotalShapes": 4096,
+    "maxChangesPerTick": 65536,
+    "maxLinearSpeed": 5,
+    "maxAngularSpeedDegrees": 180,
+    "maxPhysicsSubsteps": 8,
+    "fluidDisplacementRadius": 16
+  }
+}

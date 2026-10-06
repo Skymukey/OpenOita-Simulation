@@ -10,24 +10,19 @@ public static class WorldGenerator
             return;
         }
 
-        WorldChunk chunk = store.GetChunk(0, 0);
-
-        if (chunk.IsEmpty)
-            chunk.Allocate();
-
         ushort materialId = (ushort)material.id;
         var cell = new CellState
         {
-            MaterialId = materialId,
-            Velocity = Unity.Mathematics.float2.zero
+            MaterialId = materialId
         };
 
-        for (int i = 0; i < WorldConstants.CellsPerChunk; i++)
+        for (int y = 0; y < System.Math.Min(store.Height, WorldConstants.ChunkSize); y++)
         {
-            chunk.Cells[i] = cell;
-            chunk.MaterialIds[i] = materialId;
+            for (int x = 0; x < System.Math.Min(store.Width, WorldConstants.ChunkSize); x++)
+            {
+                var result = store.Write(x, y, cell);
+                if (!result.IsSuccess) throw new System.InvalidOperationException(result.Diagnostic.Message);
+            }
         }
-
-        chunk.Dirty = true;
     }
 }

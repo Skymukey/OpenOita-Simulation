@@ -398,3 +398,10 @@ MonoBehaviour:
   coreChunkFillMaterial: stone
   chunkColorCompute: {fileID: 0}
   chunkDisplayShader: {fileID: 0}
+  committedMaterialShader: {fileID: 4800000, guid: 87a48bf675eb925498e4c62c54676fda, type: 3}
+  committedFlameShader: {fileID: 4800000, guid: 79ff0d1702b54bf7bcc1c269dd7225ed, type: 3}
+  pixelView: 1
+  freezeBodyRotation: 1
+  pixelScale: 1
+  pixelPan: {x: 0, y: 0}
+  displayCamera: {fileID: 0}

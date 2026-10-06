@@ -1,18 +1,6 @@
-using Unity.Collections;
-using Unity.Jobs;
-using Unity.Mathematics;
-
-// Not wired in MVP v0. Kept for the next simulation iteration.
-public struct GravitySim : IJobFor
+// 旧逐格速度 Job 已退役；重力由 M06 独立物理场景推进。
+// 保留类型及资产 GUID，阻止调用者绕过统一事务写入。
+[System.Obsolete("逐格重力已退役，请接入 M06 的 IPhysicsStepper。", true)]
+public struct GravitySim
 {
-    public NativeArray<CellState> Cells;
-    public float WorldGravity;
-    public float DeltaTime;
-
-    public void Execute(int index)
-    {
-        CellState cell = Cells[index];
-        cell.Velocity += new float2(0f, WorldGravity * DeltaTime);
-        Cells[index] = cell;
-    }
 }

@@ -1,0 +1,7 @@
+{
+    "name": "OpenOita.Editor",
+    "rootNamespace": "OpenOita.Editor",
+    "references": ["OpenOita.Runtime"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": true
+}

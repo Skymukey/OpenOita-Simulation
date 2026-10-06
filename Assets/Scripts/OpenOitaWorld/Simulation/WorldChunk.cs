@@ -1,41 +1,82 @@
 using System;
 using Unity.Collections;
 
-public sealed class WorldChunk
+public sealed class WorldChunk : IDisposable
 {
+    private NativeArray<CellState> _cells;
+    private NativeArray<ushort> _materialIds;
+    private bool _disposed;
     public ChunkCoord Coord { get; }
-    public ChunkAllocationState State { get; private set; }
-    public NativeArray<CellState> Cells;
-    public NativeArray<ushort> MaterialIds;
-    public bool Dirty { get; set; }
+    public ChunkAllocationState State => _cells.IsCreated ? ChunkAllocationState.Allocated : ChunkAllocationState.Empty;
+    public bool IsEmpty => !_cells.IsCreated;
+    public bool HasCells => _cells.IsCreated;
+    public bool Dirty { get; internal set; }
+    public NativeArray<CellState>.ReadOnly Cells => _cells.AsReadOnly();
 
-    public bool IsEmpty => State == ChunkAllocationState.Empty;
-    public bool HasCells => Cells.IsCreated;
-
-    public WorldChunk(ChunkCoord coord, ChunkAllocationState state = ChunkAllocationState.Empty)
+    // 兼容旧显示消费者；每次从唯一权威 Cells 派生，回写缓存不会改变材料状态。
+    public NativeArray<ushort> MaterialIds
     {
-        Coord = coord;
-        State = state;
+        get
+        {
+            if (_disposed) throw new ObjectDisposedException(nameof(WorldChunk));
+            if (_cells.IsCreated)
+            {
+                for (int i = 0; i < _cells.Length; i++) _materialIds[i] = _cells[i].MaterialId;
+            }
+            return _materialIds;
+        }
     }
 
-    public void Allocate()
-    {
-        if (State == ChunkAllocationState.Allocated)
-            return;
+    internal const long StorageBytes = (32L + sizeof(ushort)) * WorldConstants.CellsPerChunk;
+    internal WorldChunk(ChunkCoord coord) { Coord = coord; }
 
-        Cells = new NativeArray<CellState>(WorldConstants.CellsPerChunk, Allocator.Persistent);
-        MaterialIds = new NativeArray<ushort>(WorldConstants.CellsPerChunk, Allocator.Persistent);
-        State = ChunkAllocationState.Allocated;
+    internal void Allocate()
+    {
+        if (_disposed) throw new ObjectDisposedException(nameof(WorldChunk));
+        if (_cells.IsCreated) return;
+        try
+        {
+            _cells = new NativeArray<CellState>(WorldConstants.CellsPerChunk, Allocator.Persistent);
+            _materialIds = new NativeArray<ushort>(WorldConstants.CellsPerChunk, Allocator.Persistent);
+        }
+        catch
+        {
+            Dispose();
+            throw;
+        }
+    }
+
+    internal CellState Read(int index) => _cells.IsCreated ? _cells[index] : default;
+    internal void Write(int index, in CellState state)
+    {
+        _cells[index] = state;
+        Dirty = true;
+    }
+
+    internal WorldChunk Clone()
+    {
+        var copy = new WorldChunk(Coord);
+        try
+        {
+            if (_cells.IsCreated)
+            {
+                copy.Allocate();
+                NativeArray<CellState>.Copy(_cells, copy._cells);
+            }
+            copy.Dirty = Dirty;
+            return copy;
+        }
+        catch
+        {
+            copy.Dispose();
+            throw;
+        }
     }
 
     public void Dispose()
     {
-        if (Cells.IsCreated)
-            Cells.Dispose();
-
-        if (MaterialIds.IsCreated)
-            MaterialIds.Dispose();
-
-        State = ChunkAllocationState.Empty;
+        if (_cells.IsCreated) _cells.Dispose();
+        if (_materialIds.IsCreated) _materialIds.Dispose();
+        _disposed = true;
     }
 }

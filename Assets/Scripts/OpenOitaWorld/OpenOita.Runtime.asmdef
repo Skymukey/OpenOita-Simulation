@@ -1,0 +1,6 @@
+{
+    "name": "OpenOita.Runtime",
+    "rootNamespace": "OpenOita",
+    "references": ["Unity.Collections", "Unity.Mathematics"],
+    "autoReferenced": true
+}
