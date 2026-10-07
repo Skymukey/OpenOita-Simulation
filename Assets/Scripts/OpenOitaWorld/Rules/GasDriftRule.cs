@@ -10,9 +10,13 @@ namespace OpenOita.Rules
         private readonly MovementCandidateResolver.Phase _movement;
         public RuleId RuleId => RuleId.GasDrift;
 
-        public GasDriftRule(int cellCapacity, IOccupancyView occupancy = null, int intentCapacity = -1)
+        public GasDriftRule(int cellCapacity, IOccupancyView occupancy = null, int intentCapacity = -1) : this(cellCapacity, occupancy, intentCapacity, null)
         {
-            _input = new RuleBatchContext(cellCapacity, 0);
+        }
+
+        internal GasDriftRule(int cellCapacity, IOccupancyView occupancy, int intentCapacity, RuleBatchContext input)
+        {
+            _input = input ?? new RuleBatchContext(cellCapacity, 0);
             _output = new RuleIntent(intentCapacity < 0 ? cellCapacity : intentCapacity);
             _occupancy = occupancy;
             _movement = new MovementCandidateResolver.Phase(cellCapacity);

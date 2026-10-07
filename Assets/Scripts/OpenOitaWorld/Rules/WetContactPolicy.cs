@@ -11,9 +11,13 @@ namespace OpenOita.Rules
         private int _wetCount;
         public ReadOnlySpan<CellInstanceHandle> WetInstances => _wet.AsSpan(0, _wetCount);
 
-        public WetContactPolicy(int cellCapacity, int contactCapacity = -1, int intentCapacity = -1)
+        public WetContactPolicy(int cellCapacity, int contactCapacity = -1, int intentCapacity = -1) : this(cellCapacity, contactCapacity, intentCapacity, null)
         {
-            _input = new RuleBatchContext(cellCapacity, contactCapacity < 0 ? cellCapacity : contactCapacity);
+        }
+
+        internal WetContactPolicy(int cellCapacity, int contactCapacity, int intentCapacity, RuleBatchContext input)
+        {
+            _input = input ?? new RuleBatchContext(cellCapacity, contactCapacity < 0 ? cellCapacity : contactCapacity);
             _output = new RuleIntent(intentCapacity < 0 ? cellCapacity : intentCapacity);
             _wet = new CellInstanceHandle[cellCapacity];
         }
@@ -27,7 +31,7 @@ namespace OpenOita.Rules
                 return RuleBatchContext.Error(context.Stage, WorldErrorCode.InvalidArgument, default, "湿接触采集阶段无效。");
             WorldResult result = _input.Begin(snapshot, materials, instances, contacts, context);
             if (!result.IsSuccess) return result;
-            for (int i = 0; i < _input.Count; i++)
+            foreach (int i in _input.Participants(RuleMask.Burnable))
             {
                 if ((_input.Materials[i].Rules & RuleMask.Burnable) == 0) continue;
                 result = _input.Neighbours(i, out ReadOnlySpan<int> neighbours);
@@ -50,7 +54,7 @@ namespace OpenOita.Rules
                 _input.Begin(snapshot, materials, instances, contacts, context) :
                 RuleBatchContext.Error(context.Stage, WorldErrorCode.InvalidArgument, default, "灭火只在 Extinguish/Physics 阶段执行。");
             if (!result.IsSuccess) { _output.Fail(result); return _output; }
-            for (int i = 0; i < _input.Count; i++)
+            foreach (int i in _input.Participants(RuleMask.Burnable, true))
             {
                 if ((_input.Materials[i].Rules & RuleMask.Burnable) == 0 || !_input.States[i].IsBurning ||
                     !instances.IsWet(_input.Instances[i])) continue;

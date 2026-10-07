@@ -26,7 +26,7 @@ namespace OpenOita.Spatial
                     if (Vector2.Distance(point, ExactCellGeometry.Corner(previous.Geometry, v)) > maximumStep + 1e-6f * config.CellSize)
                         return Failure("edgeDisplacement", "实际格顶点子步位移超过半格。");
                 }
-                foreach (CellPositionKey key in after.Candidates(square))
+                foreach (CellPositionKey key in after.Candidates(square, WorldOccupancyIndex.QueryCategory.Solid))
                 {
                     if (key.CompareTo(square.Key.Position) <= 0 || (key.OwnerKind == square.Key.Position.OwnerKind && key.BodyId == square.Key.Position.BodyId)) continue;
                     after.TryGet(key, out WorldOccupancyIndex.Entry other);

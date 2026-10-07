@@ -11,6 +11,7 @@ namespace OpenOita.Data
         private readonly ConfigurationFileStore _store;
         public SceneMaterialData Data { get; private set; }
         public SceneEditingDocument(ConfigurationFileStore store = null) { _store = store ?? new ConfigurationFileStore(); }
+        public void Clear() { Data = null; }
 
         public WorldResult LoadDirectory(string directory)
         {

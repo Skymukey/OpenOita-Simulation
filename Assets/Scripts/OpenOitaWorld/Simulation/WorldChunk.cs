@@ -1,5 +1,6 @@
 using System;
 using Unity.Collections;
+using OpenOita.Simulation;
 
 public sealed class WorldChunk : IDisposable
 {
@@ -55,6 +56,7 @@ public sealed class WorldChunk : IDisposable
 
     internal WorldChunk Clone()
     {
+        using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Copy);
         var copy = new WorldChunk(Coord);
         try
         {
@@ -62,6 +64,9 @@ public sealed class WorldChunk : IDisposable
             {
                 copy.Allocate();
                 NativeArray<CellState>.Copy(_cells, copy._cells);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.ChunkCopies);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedItems, _cells.Length);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedPayloadBytes, (long)_cells.Length * Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellState>());
             }
             copy.Dirty = Dirty;
             return copy;

@@ -18,14 +18,15 @@ namespace OpenOita.Rules
         {
             if (cellCapacity < 1 || contactCapacity < -1) throw new ArgumentOutOfRangeException(nameof(cellCapacity));
             int contacts = contactCapacity < 0 ? cellCapacity : contactCapacity;
-            ReservedCpuBytes = checked(cellCapacity * 3072L + contacts * 256L + 4096 + LiquidSpreadPlanner.ReservedBytes(cellCapacity));
+            ReservedCpuBytes = checked(cellCapacity * 3268L + contacts * 256L + 4096 + LiquidSpreadPlanner.ReservedBytes(cellCapacity));
             if (ReservedCpuBytes > ContractDefaults.CpuBudgetBytes)
                 throw new ArgumentOutOfRangeException(nameof(cellCapacity), "规则缓冲预留超过模拟 CPU 总预算。");
             CellCapacity = cellCapacity;
-            Water = new LiquidFlowRule(cellCapacity, occupancy);
-            Steam = new GasDriftRule(cellCapacity, occupancy);
-            Burning = new BurnRule(cellCapacity, contacts);
-            WetContacts = new WetContactPolicy(cellCapacity, contacts);
+            var input = new RuleBatchContext(cellCapacity, contacts);
+            Water = new LiquidFlowRule(cellCapacity, occupancy, -1, input);
+            Steam = new GasDriftRule(cellCapacity, occupancy, -1, input);
+            Burning = new BurnRule(cellCapacity, contacts, -1, input);
+            WetContacts = new WetContactPolicy(cellCapacity, contacts, -1, input);
             Movement = new MovementCandidateResolver(cellCapacity);
         }
 

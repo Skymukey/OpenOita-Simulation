@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using OpenOita.Contracts;
+using OpenOita.Simulation;
 
 namespace OpenOita.Rules
 {
@@ -25,11 +26,15 @@ namespace OpenOita.Rules
         private readonly int[] _surface;
         private readonly int[] _preferred;
         private readonly int[] _other;
+        private readonly int[] _links;
+        private readonly byte[] _solid;
+        private readonly int[] _landingKeys;
+        private readonly int[] _landingY;
         private readonly SurfaceComparer _surfaceComparer = new SurfaceComparer();
         private int _stamp;
 
-        // 六个 int[N] 与水阶段新增的 N 个预留集合槽位（含哈希表容量余量）。
-        internal static long ReservedBytes(int capacity) => checked(capacity * 88L + 256L);
+        // 原搜索/预留缓冲、三邻接、固体标记与有界列落点缓存的保守上界。
+        internal static long ReservedBytes(int capacity) => checked(capacity * 168L + 256L);
 
         internal LiquidSpreadPlanner(int capacity)
         {
@@ -39,6 +44,12 @@ namespace OpenOita.Rules
             _surface = new int[capacity];
             _preferred = new int[capacity];
             _other = new int[capacity];
+            _links = new int[checked(capacity * 3)];
+            _solid = new byte[capacity];
+            int landingCapacity = 1;
+            while (landingCapacity < checked(capacity * 4)) landingCapacity = checked(landingCapacity * 2);
+            _landingKeys = new int[landingCapacity];
+            _landingY = new int[landingCapacity];
         }
 
         internal WorldResult GenerateChains(RuleBatchContext input, RuleIntent output, CellSnapshot[] states,
@@ -46,6 +57,9 @@ namespace OpenOita.Rules
         {
             Array.Clear(_preferred, 0, input.Count);
             Array.Clear(_other, 0, input.Count);
+            Array.Fill(_links, -3, 0, checked(input.Count * 3));
+            Array.Clear(_solid, 0, input.Count);
+            Array.Fill(_landingKeys, -1);
             _surfaceComparer.Input = input;
             int count = 0;
             for (int i = 0; i < input.Count; i++)
@@ -85,64 +99,93 @@ namespace OpenOita.Rules
         private WorldResult FindChain(RuleBatchContext input, int source, bool[] ready, bool[] moved,
             HashSet<CellKey> reserved, IOccupancyView occupancy, out int last, out CellKey terminal)
         {
-            last = -1;
-            terminal = default;
-            if (_stamp == int.MaxValue)
+            // 热循环先累加局部整数，每次搜索结束才合入世界诊断。
+            int visitedNodes = 0, checkedEdges = 0, linkHits = 0;
+            try
             {
-                Array.Clear(_seen, 0, _seen.Length);
-                _stamp = 0;
-            }
-            _stamp++;
-            _seen[source] = _stamp;
-            _parents[source] = -1;
-            _queue[0] = source;
-            int count = 1;
-            CellPositionKey origin = input.Keys[source].Position;
-            bool left = ContractDefaults.PreferLeft(input.Transaction.WorkingTick,
-                origin.X, origin.Y, input.Snapshot.Config.Seed);
-            int terminalY = origin.Y;
-            for (int head = 0; head < count; head++)
-            {
-                int current = _queue[head];
-                CellPositionKey position = input.Keys[current].Position;
-                for (int direction = 0; direction < 3; direction++)
+                last = -1;
+                WorldStepMetrics.Add(WorldStepMetrics.Work.LiquidSearches);
+                terminal = default;
+                if (_stamp == int.MaxValue)
                 {
-                    int dx = direction == 0 ? 0 : ((direction == 1) == left ? -1 : 1);
-                    int x = position.X + dx;
-                    int y = position.Y + (direction == 0 ? -1 : 0);
-                    if (x < 0 || y < 0 || x >= input.Snapshot.Config.Width || y >= input.Snapshot.Config.Height) continue;
-                    var key = new CellKey(input.Snapshot.Generation, new CellPositionKey(OwnerKind.Grid, 0, x, y));
-                    if (reserved.Contains(key)) continue;
-                    if (input.TryGetGridIndex(x, y, out int next))
+                    Array.Clear(_seen, 0, _seen.Length);
+                    _stamp = 0;
+                }
+                _stamp++;
+                _seen[source] = _stamp;
+                _parents[source] = -1;
+                _queue[0] = source;
+                int count = 1;
+                CellPositionKey origin = input.Keys[source].Position;
+                bool left = ContractDefaults.PreferLeft(input.Transaction.WorkingTick,
+                    origin.X, origin.Y, input.Snapshot.Config.Seed);
+                int terminalY = origin.Y;
+                for (int head = 0; head < count; head++)
+                {
+                    int current = _queue[head];
+                    visitedNodes++;
+                    CellPositionKey position = input.Keys[current].Position;
+                    for (int direction = 0; direction < 3; direction++)
                     {
-                        if (_seen[next] == _stamp || moved[next] || !ready[next] ||
-                            input.States[next].MaterialId != input.States[source].MaterialId ||
-                            (input.Materials[next].Rules & RuleMask.LiquidFlow) == 0) continue;
-                        WorldResult solid = input.ClearOfSolids(x, y, occupancy, out bool clear);
-                        if (!solid.IsSuccess) return solid;
-                        if (!clear) continue;
-                        _seen[next] = _stamp;
-                        _parents[next] = current;
-                        _queue[count++] = next;
-                    }
-                    else if (y < terminalY)
-                    {
-                        WorldResult open = input.Passable(x, y, occupancy, out bool clear);
-                        if (!open.IsSuccess) return open;
-                        if (!clear) continue;
-                        terminalY = y;
-                        terminal = key;
-                        last = current;
+                        checkedEdges++;
+                        int dx = direction == 0 ? 0 : ((direction == 1) == left ? -1 : 1);
+                        int x = position.X + dx;
+                        int y = position.Y + (direction == 0 ? -1 : 0);
+                        if (x < 0 || y < 0 || x >= input.Snapshot.Config.Width || y >= input.Snapshot.Config.Height) continue;
+                        int link = current * 3 + (dx == 0 ? 0 : dx < 0 ? 1 : 2);
+                        int next = _links[link];
+                        if (next == -3)
+                            _links[link] = next = input.TryGetGridIndex(x, y, out int neighbour) ? neighbour : -4;
+                        else linkHits++;
+                        if (next >= 0)
+                        {
+                            // 链选择期间，所有已预留的原占据节点都已标记moved。
+                            // 原空末端另查reserved；不能把此等价关系用于后续普通移动。
+                            if (_seen[next] == _stamp || moved[next] || !ready[next] ||
+                                input.States[next].MaterialId != input.States[source].MaterialId ||
+                                (input.Materials[next].Rules & RuleMask.LiquidFlow) == 0) continue;
+                            if (_solid[next] == 0)
+                            {
+                                WorldResult solid = input.ClearOfSolids(x, y, occupancy, out bool clear);
+                                if (!solid.IsSuccess) return solid;
+                                _solid[next] = clear ? (byte)1 : (byte)2;
+                            }
+                            if (_solid[next] == 2) continue;
+                            _seen[next] = _stamp;
+                            _parents[next] = current;
+                            _queue[count++] = next;
+                        }
+                        else if (y < terminalY)
+                        {
+                            var key = new CellKey(input.Snapshot.Generation, new CellPositionKey(OwnerKind.Grid, 0, x, y));
+                            if (reserved.Contains(key)) continue;
+                            if (next == -4)
+                            {
+                                WorldResult open = input.Passable(x, y, occupancy, out bool clear);
+                                if (!open.IsSuccess) return open;
+                                _links[link] = next = clear ? -1 : -2;
+                            }
+                            if (next == -2) continue;
+                            terminalY = y;
+                            terminal = key;
+                            last = current;
+                        }
                     }
                 }
+                if (last < 0)
+                {
+                    // 搜索只向下/横向；无低于根的出口也意味着所有可达节点无更低出口。
+                    // 本阶段预留只会减少可达集合，因此此失败结论可在阶段内复用。
+                    for (int i = 0; i < count; i++) _preferred[_queue[i]] = 2;
+                }
+                return WorldResult.Success();
             }
-            if (last < 0)
+            finally
             {
-                // 搜索只向下/横向；无低于根的出口也意味着所有可达节点无更低出口。
-                // 本阶段预留只会减少可达集合，因此此失败结论可在阶段内复用。
-                for (int i = 0; i < count; i++) _preferred[_queue[i]] = 2;
+                WorldStepMetrics.Add(WorldStepMetrics.Work.LiquidNodes, visitedNodes);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.LiquidEdges, checkedEdges);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.LiquidLinkHits, linkHits);
             }
-            return WorldResult.Success();
         }
 
         internal WorldResult PrepareHorizontal(RuleBatchContext input, bool[] ready, bool[] moved,
@@ -174,24 +217,19 @@ namespace OpenOita.Rules
 
         internal int HorizontalDirection(int source, int tier) => tier == 3 ? _preferred[source] : _other[source];
 
-        private static WorldResult FindOutlet(RuleBatchContext input, int x, int y, int direction,
+        private WorldResult FindOutlet(RuleBatchContext input, int x, int y, int direction,
             IOccupancyView occupancy, out int landingY, out int distance)
         {
             landingY = y;
             distance = 0;
             for (int nextX = x + direction; nextX >= 0 && nextX < input.Snapshot.Config.Width; nextX += direction)
             {
+                WorldStepMetrics.Add(WorldStepMetrics.Work.OutletProbes);
                 WorldResult result = input.Passable(nextX, y, occupancy, out bool open);
                 if (!result.IsSuccess) return result;
                 if (!open) break;
-                int lowerY = y;
-                while (lowerY > 0)
-                {
-                    result = input.Passable(nextX, lowerY - 1, occupancy, out open);
-                    if (!result.IsSuccess) return result;
-                    if (!open) break;
-                    lowerY--;
-                }
+                result = Landing(input, nextX, y, occupancy, out int lowerY);
+                if (!result.IsSuccess) return result;
                 int path = Math.Abs(nextX - x);
                 if (lowerY < landingY || (lowerY == landingY && lowerY < y && path < distance))
                 {
@@ -199,6 +237,30 @@ namespace OpenOita.Rules
                     distance = path;
                 }
             }
+            return WorldResult.Success();
+        }
+
+        private WorldResult Landing(RuleBatchContext input, int x, int y, IOccupancyView occupancy, out int lowerY)
+        {
+            int key = y * input.Snapshot.Config.Width + x;
+            int slot = (int)((uint)key * 2654435761u) & (_landingKeys.Length - 1);
+            if (_landingKeys[slot] == key)
+            {
+                WorldStepMetrics.Add(WorldStepMetrics.Work.LandingCacheHits);
+                lowerY = _landingY[slot];
+                return WorldResult.Success();
+            }
+            lowerY = y;
+            while (lowerY > 0)
+            {
+                WorldStepMetrics.Add(WorldStepMetrics.Work.OutletProbes);
+                WorldResult result = input.Passable(x, lowerY - 1, occupancy, out bool open);
+                if (!result.IsSuccess) return result;
+                if (!open) break;
+                lowerY--;
+            }
+            _landingKeys[slot] = key;
+            _landingY[slot] = lowerY;
             return WorldResult.Success();
         }
     }

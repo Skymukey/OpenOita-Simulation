@@ -31,6 +31,7 @@ namespace OpenOita.Render
         public bool FlamesVisible { get; set; } = true;
         // M07B：编辑预览/正式试玩摄像机隔离；必须在Prepare前设定。
         public int DisplayLayer { get; set; }
+        public GameObject DisplayRoot => _root;
         // 测试沿公共故障接口注入，生产默认无注入器。
         internal IFailureInjector Failures;
 

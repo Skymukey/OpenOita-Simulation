@@ -11,16 +11,16 @@ public sealed class WorldHost : MonoBehaviour
     [SerializeField] TextAsset sceneSource;
     [SerializeField] string configurationDirectory = "";
     [SerializeField] Vector2 worldOrigin;
-    [SerializeField] bool automatic = true;
+    [SerializeField, InspectorName("自动推进")] bool automatic = true;
     [SerializeField, InspectorName("禁止刚体旋转（重新启动生效）")]
     [Tooltip("临时观察开关：保留下落、平移和碰撞。停止后重新进入Play Mode生效，Reset沿用创建时设置。")]
     bool freezeBodyRotation = true;
     [SerializeField] Shader committedMaterialShader;
     [SerializeField] Shader committedFlameShader;
-    [SerializeField] bool pixelView = true;
-    [SerializeField, Min(1)] int pixelScale = 1;
+    [SerializeField, InspectorName("精确像素视图（调整绑定摄像机）")] bool pixelView = true;
+    [SerializeField, Min(1), InspectorName("整数显示倍率")] int pixelScale = 1;
     [SerializeField] Vector2Int pixelPan;
-    [SerializeField] Camera displayCamera;
+    [SerializeField, InspectorName("显示摄像机（地图模式必须显式绑定）")] Camera displayCamera;
 
     // 保留旧场景序列化字段及脚本 GUID；旧演示不作为正式模拟启动路径。
 #pragma warning disable CS0414
@@ -35,16 +35,72 @@ public sealed class WorldHost : MonoBehaviour
     private FixedStepDriver _driver;
     private bool _validateFluids;
     private ulong _lastFluidValidationTick;
+    private bool _startupAttempted;
+    private bool _originWarning;
     public IWorld World => _world;
+    public Vector2 CreatedOrigin => _displayOrigin;
     public WorldResult LastResult { get; private set; }
 
     private void OnEnable()
     {
-        if (_world != null) return;
+        _startupAttempted = false;
+        _originWarning = false;
+        if (!Application.isPlaying) LastResult = Failure(WorldErrorCode.NotReady, "PlayMode", "正式世界须进入Unity Play模式。");
+        if (Application.isPlaying && GetComponent<OpenOitaMap>() == null) StartConfiguredWorld();
+    }
+
+    private void Start() { StartConfiguredWorld(); }
+
+    // 延迟到Start，允许AddComponent后配置；不依赖地图与Host的OnEnable次序。
+    public WorldResult StartConfiguredWorld()
+    {
+        if (!Application.isPlaying || _startupAttempted || _world != null) return LastResult;
+        _startupAttempted = true;
+        OpenOitaMap map = GetComponent<OpenOitaMap>();
+        if (map != null)
+        {
+            if (!map.isActiveAndEnabled || !map.Participate) return LastResult = WorldResult.Success();
+            LastResult = OpenOitaMap.ValidateSingleRunner();
+            WorldSources mapSources = null;
+            if (LastResult.IsSuccess) LastResult = map.ValidateInput(out mapSources);
+            if (LastResult.IsSuccess)
+                LastResult = CreateWorld(new WorldSimulation(rendererFactory: () => new OpenOita.Render.CommittedWorldRenderer(committedMaterialShader, committedFlameShader) { DisplayLayer = gameObject.layer }, freezeBodyRotation: freezeBodyRotation), mapSources, map.Origin, automatic);
+            if (!LastResult.IsSuccess) Report(LastResult);
+            return LastResult;
+        }
         LastResult = ReadSources(out WorldSources sources);
         if (LastResult.IsSuccess) LastResult = CreateWorld(new WorldSimulation(rendererFactory: () => new OpenOita.Render.CommittedWorldRenderer(committedMaterialShader, committedFlameShader), freezeBodyRotation: freezeBodyRotation), sources, worldOrigin, automatic);
         if (!LastResult.IsSuccess) Report(LastResult);
+        return LastResult;
     }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ClearPreviousPlay()
+    {
+        foreach (WorldHost host in Resources.FindObjectsOfTypeAll<WorldHost>())
+        {
+            if (!host.gameObject.scene.IsValid()) continue;
+            host.CloseWorld(); host._startupAttempted = false; host._originWarning = false;
+        }
+    }
+
+    public void ConfigureMapDisplay(Camera camera, bool exactPixels = false)
+    {
+        displayCamera = camera;
+        pixelView = exactPixels;
+    }
+    public void ConfigureMapShaders(Shader material, Shader flame)
+    {
+        committedMaterialShader = material; committedFlameShader = flame;
+    }
+
+    public void ConfigureDrive(bool autoDrive, bool freezeRotation = true)
+    {
+        if (_world != null) return;
+        automatic = autoDrive; freezeBodyRotation = freezeRotation;
+    }
+
+    public void RequestConfiguredRestart() { if (_world == null) _startupAttempted = false; }
 
     // M08 试玩传入独立三文件副本；M02 完整装配完成后使用正式 IWorldFactory。
     public WorldResult CreateWorld(IWorldFactory factory, WorldSources sources, Vector2 origin, bool autoDrive)
@@ -52,7 +108,11 @@ public sealed class WorldHost : MonoBehaviour
         if (_world != null) return Failure(WorldErrorCode.Busy, "world", "请先关闭当前世界。");
         if (factory == null || !ContractDefaults.IsFinite(origin))
             return Failure(WorldErrorCode.InvalidArgument, "factory/origin", "工厂及原点必须有效。");
-        if (transform.rotation != Quaternion.identity || transform.lossyScale != Vector3.one)
+        OpenOitaMap mapTransform = GetComponent<OpenOitaMap>();
+        if (mapTransform != null && !mapTransform.ValidateTransform().IsSuccess) return LastResult = mapTransform.ValidateTransform();
+        if (mapTransform != null && origin != mapTransform.Origin)
+            return LastResult = Failure(WorldErrorCode.InvalidArgument, "origin", "地图模式原点必须等于对象的世界XY位置。");
+        if (mapTransform == null && (transform.rotation != Quaternion.identity || transform.lossyScale != Vector3.one))
             return Failure(WorldErrorCode.InvalidArgument, "transform", "Host 必须旋转为 0、世界缩放为 1。");
         WorldCreateResult created = factory.Create(sources, origin);
         LastResult = created.Result;
@@ -124,6 +184,14 @@ public sealed class WorldHost : MonoBehaviour
 
     private void Update()
     {
+        if (!_startupAttempted && _world == null) StartConfiguredWorld();
+        OpenOitaMap map = GetComponent<OpenOitaMap>();
+        if (map != null && _world != null && !_originWarning &&
+            (map.Origin != _displayOrigin || !map.ValidateTransform().IsSuccess))
+        {
+            _originWarning = true;
+            Debug.LogWarning("OpenOita：运行原点已固定。Transform修改不会移动世界，请停止Play后重新创建。", this);
+        }
         if (_driver == null || !_driver.Automatic || _world.Lifecycle != WorldLifecycle.Ready) return;
         LastResult = _driver.Advance(Time.deltaTime);
         if (!LastResult.IsSuccess) Report(LastResult);
@@ -139,14 +207,19 @@ public sealed class WorldHost : MonoBehaviour
     {
         if (pixelView && _world != null)
         {
-            Camera camera = displayCamera != null ? displayCamera : Camera.main;
+            Camera camera = displayCamera != null ? displayCamera : (GetComponent<OpenOitaMap>() == null ? Camera.main : null);
             if (camera != null) OpenOita.Render.PixelWorldViewport.Configure(camera, _world.Config, _displayOrigin, Mathf.Max(1, pixelScale), pixelPan);
         }
         (_world as OpenOita.Simulation.SimulationWorld)?.FlushFrame();
     }
     private void OnGUI()
     {
-        if (!pixelView || _world == null) return;
+        if (_world == null) return;
+        if (GetComponent<OpenOitaMap>() != null)
+        {
+            if (GUI.Button(new Rect(12, 100, 90, 24), "Reset地图")) ResetWorld();
+        }
+        if (!pixelView) return;
         GUI.Label(new Rect(12, 10, 440, 24), $"正式世界 {_world.Config.Width}×{_world.Config.Height} | {pixelScale}倍 | Tick {_world.Version.CommittedTick}");
         if (GUI.Button(new Rect(12, 36, 60, 24), "1:1")) pixelScale = 1;
         if (GUI.Button(new Rect(80, 36, 60, 24), "3倍")) pixelScale = 3;

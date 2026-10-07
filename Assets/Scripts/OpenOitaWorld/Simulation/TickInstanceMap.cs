@@ -13,7 +13,14 @@ namespace OpenOita.Simulation
             internal int References = 1;
             internal IdentityStorage() { Keys = new(); Instances = new(); }
             internal IdentityStorage(IdentityStorage source)
-            { Keys = new(source.Keys); Instances = new(source.Instances); }
+            {
+                using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Copy);
+                Keys = new(source.Keys); Instances = new(source.Instances);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.InstanceCopies);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedItems, source.Keys.Count + source.Instances.Count);
+                WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedPayloadBytes, (long)(source.Keys.Count + source.Instances.Count) *
+                    (Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellKey>() + Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellInstanceHandle>()));
+            }
         }
         private sealed class WetStorage
         {

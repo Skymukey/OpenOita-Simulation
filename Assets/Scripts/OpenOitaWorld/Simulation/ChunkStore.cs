@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using OpenOita.Contracts;
+using OpenOita.Simulation;
 
 public sealed class ChunkStore : IDisposable
 {
@@ -88,6 +89,7 @@ public sealed class ChunkStore : IDisposable
     internal bool HasChunk(ChunkCoord coord) => _chunks.ContainsKey(coord);
     internal ChunkStore Clone()
     {
+        using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Copy);
         if (_disposed) throw new ObjectDisposedException(nameof(ChunkStore));
         var copy = new ChunkStore(Width, Height, _memoryLimit);
         try
@@ -98,6 +100,8 @@ public sealed class ChunkStore : IDisposable
                 copy._chunks.Add(pair.Key, pair.Value);
                 pair.Value.References++;
             }
+            WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryCopies);
+            WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryEntries, _chunks.Count);
             return copy;
         }
         catch

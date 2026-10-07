@@ -100,6 +100,9 @@ namespace OpenOita.Simulation
                 foreach (Vector2Int point in candidate.Initial.FixedCells)
                     candidate._fixed.Add(new CellPositionKey(OwnerKind.Grid, 0, point.x, point.y));
                 candidate.RebuildOrder();
+                var sourcePositions = new CellPositionKey[candidate._orderedKeys.Length];
+                for (int i = 0; i < sourcePositions.Length; i++) sourcePositions[i] = candidate._orderedKeys[i].Position;
+                candidate._ruleSources = candidate._ruleSources.Prepare(candidate, candidate._materials, sourcePositions);
                 candidate._instances = new TickInstanceMap(generation, 0);
                 foreach (CellKey key in candidate._orderedKeys) candidate._instances.Create(key);
                 candidate._changes = new TickChangeCounter(candidate.Config.Limits.MaxChangesPerTick);
@@ -377,13 +380,29 @@ namespace OpenOita.Simulation
                 void SetOccupied(CellPositionKey position, bool present)
                 {
                     if (occupied.Contains(position) == present) return;
-                    if (ReferenceEquals(occupied, _occupied)) occupied = new SortedSet<CellPositionKey>(_occupied);
+                    if (ReferenceEquals(occupied, _occupied))
+                    {
+                        using var copyTiming = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Copy);
+                        occupied = new SortedSet<CellPositionKey>(_occupied);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryCopies);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryEntries, _occupied.Count);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedPayloadBytes,
+                            (long)_occupied.Count * Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellPositionKey>());
+                    }
                     if (present) occupied.Add(position); else occupied.Remove(position);
                 }
                 bool RemoveFixed(CellPositionKey position)
                 {
                     if (!fixedCells.Contains(position)) return false;
-                    if (ReferenceEquals(fixedCells, _fixed)) fixedCells = new HashSet<CellPositionKey>(_fixed);
+                    if (ReferenceEquals(fixedCells, _fixed))
+                    {
+                        using var copyTiming = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Copy);
+                        fixedCells = new HashSet<CellPositionKey>(_fixed);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryCopies);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.DirectoryEntries, _fixed.Count);
+                        WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedPayloadBytes,
+                            (long)_fixed.Count * Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellPositionKey>());
+                    }
                     return fixedCells.Remove(position);
                 }
                 var bodyCells = new Dictionary<CellPositionKey, CellSnapshot>();
@@ -500,13 +519,14 @@ namespace OpenOita.Simulation
             _orderedKeys = Array.Empty<CellKey>();
             _suspended.Clear();
             _suspendedSnapshots = Array.Empty<SuspendedFluidSnapshot>();
+            _ruleSources = new RuleSourceDirectory();
         }
 
         private long EstimateBytes(int chunkCount, int cells, bool preparation) => checked(
             131072L + _materials.Count * 256L + chunkCount * WorldChunk.StorageBytes * (preparation ? 2 : 1) +
             Math.Max(cells, MaterialCells) * (preparation ? 1024L : 512L) + Config.Limits.MaxChangesPerTick * 192L +
             Config.Limits.MaxMaterialCells * 640L + Config.Limits.MaxDynamicBodies * 256L + Config.Limits.MaxTotalShapes * 128L +
-            (Published?.StorageBytes ?? 0) + 4096L);
+            (Published?.StorageBytes ?? 0) + Math.Max(cells, MaterialCells) * (preparation ? 1152L : 576L) + 5120L);
 
         private void RebuildOrder()
         {
@@ -688,6 +708,7 @@ namespace OpenOita.Simulation
                         _recordedBaseCount = _owner._changes.Count;
                     }
                     _nextRevision = checked(_owner._revision + 1);
+                    PrepareInputRevisions();
                     if (_ownershipPrepared)
                         foreach (IMaterialBodyStorage body in _ownedBodies.Values)
                             if (body.IsDisposed) return Error(WorldErrorCode.NotReady, "Preflight", "body", "候选体存储已被提前释放。");
@@ -728,6 +749,10 @@ namespace OpenOita.Simulation
                 _owner._staticShapes = Budget.StaticShapes;
                 _owner._dynamicShapes = Budget.DynamicShapes;
                 _owner._revision = _nextRevision;
+                _owner._materialRevision = _nextMaterialRevision;
+                _owner._geometryRevision = _nextGeometryRevision;
+                _owner._ruleSources = _ruleSources;
+                _ruleSources = null;
                 _owner._pending = null;
                 State = PreparationState.Applied;
                 try

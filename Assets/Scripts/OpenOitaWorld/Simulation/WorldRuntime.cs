@@ -37,6 +37,7 @@ namespace OpenOita.Simulation
         // 仅测试使用固定N；正式入口始终执行D08规划。
         internal int FixedSubsteps;
         internal Action BeforePhysicsForTest;
+        internal readonly WorldStepMetrics Metrics = new();
         internal Action<IPhysicsStepView> AfterPhysicsCandidateForTest;
         internal long CpuBudgetBytes = ContractDefaults.CpuBudgetBytes;
         internal int LastSubsteps { get; private set; }
@@ -90,7 +91,7 @@ namespace OpenOita.Simulation
             int capacity = Math.Max(1, State.MaterialCells);
             if (_rules != null && _rules.CellCapacity >= capacity) return;
             // 按当前实际材料容量预留，增长前合并预算；不把MaxMaterialCells当已分配规则缓冲。
-            long ruleBytes = capacity * 3072L + capacity * 256L + 4096 + LiquidSpreadPlanner.ReservedBytes(capacity);
+            long ruleBytes = capacity * 3268L + capacity * 256L + 4096 + LiquidSpreadPlanner.ReservedBytes(capacity);
             long withoutRules = ReservedCpuBytes;
             if (withoutRules + ruleBytes > CpuBudgetBytes)
                 throw new RuntimeFailure(WorldResult.Failure(WorldErrorCode.CapacityExceeded, new WorldDiagnostic("Preflight", "ruleCpuBytes", "规则、状态、空间及物理保留工作集超过统一CPU预算。")));
@@ -101,7 +102,7 @@ namespace OpenOita.Simulation
         {
             long revision = State.Revision; ulong tick = State.WorkingTick;
             var context = Context(stage);
-            bool reuse = poses.IsEmpty && index.CanRebind(State, _loaded.Materials, State.Instances, context, revision);
+            bool reuse = index.CanRebind(State, _loaded.Materials, State.Instances, context, revision, poses);
             if (ReservedCpuBytes + (reuse ? 0 : WorldOccupancyIndex.EstimateCpuBytes(State.MaterialCells)) > CpuBudgetBytes)
                 throw new RuntimeFailure(WorldResult.Failure(WorldErrorCode.CapacityExceeded, new WorldDiagnostic("Preflight", "spatialCpuBytes", "空间索引重建前的保留及候选工作集超过统一CPU预算。")));
             Require(index.Refresh(State, _loaded.Materials, State.Instances, context, revision, () => State.IsLeaseValid(revision, tick), poses));
@@ -149,6 +150,9 @@ namespace OpenOita.Simulation
             if (_disposed) return LastResult = WorldResult.Failure(WorldErrorCode.Disposed, new WorldDiagnostic("Step", "world", "世界已释放。"));
             if (Faulted) return LastResult = WorldResult.Failure(WorldErrorCode.Faulted, new WorldDiagnostic("Step", "world", "世界已冻结。"));
             if (Thread.CurrentThread.ManagedThreadId != _thread) return WorldResult.Failure(WorldErrorCode.InvalidArgument, new WorldDiagnostic("Step", "thread", "操作必须在创建线程执行。"));
+            Metrics.Begin();
+            using var activation = Metrics.Activate();
+            using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.BeginTick);
             LastResult = State.BeginTick();
             _originalInstances.Clear(); _removals.Clear(); _replacements.Clear(); _originOfInstance.Clear();
             if (LastResult.IsSuccess) foreach (CellKey key in State.OccupiedCells)
@@ -162,6 +166,7 @@ namespace OpenOita.Simulation
 
         internal WorldResult CompleteTick()
         {
+            using var activation = Metrics.Activate();
             try
             {
                 EnsureRules();
@@ -170,48 +175,51 @@ namespace OpenOita.Simulation
                 Run(_rules.Steam, TickStage.Steam);
                 Wet(TickStage.Extinguish, true);
                 Run(_rules.Burning, TickStage.Burning);
-                Refresh(Spatial, TickStage.Physics);
-                Wet(TickStage.Physics, true);
-                BeforePhysicsForTest?.Invoke();
-                Require(PhysicsSubstepPlanner.Plan(State.Config, State.Bodies, Physics.Geometry, out int count));
-                if (FixedSubsteps != 0) count = FixedSubsteps;
-                LastSubsteps = count;
-                for (int i = 0; i < count; i++)
+                using (WorldStepMetrics.Measure(WorldStepMetrics.Timing.Physics))
                 {
                     Refresh(Spatial, TickStage.Physics);
-                    long revision = State.Revision; ulong tick = State.WorkingTick;
-                    Physics.Bind(new SpatialLease(State.Generation, tick, TickStage.Physics, revision), () => State.IsLeaseValid(revision, tick));
-                    long nonPhysicsBytes = ExternalCpuBytes + State.EstimatedCpuBytes + (_rules?.ReservedCpuBytes ?? 0) + Spatial.ReservedCpuBytes + _after.ReservedCpuBytes + State.Config.Limits.MaxMaterialCells * 256L + FluidDisplacementPlanner.EstimateCpuBytes(State.Config, State.MaterialCells);
-                    PhysicsStepResult step = Physics.StepSubstep(State, State.Config.StepSeconds / count, i, CpuBudgetBytes - nonPhysicsBytes, Failures);
-                    Require(step.Result);
-                    AfterPhysicsCandidateForTest?.Invoke(step.Candidates);
-                    SimulatedSeconds += (double)State.Config.StepSeconds / count;
-                    Refresh(_after, TickStage.Physics, step.Candidates.CandidateBodies);
-                    Require(PhysicsGeometryValidator.Validate(State.Config, _origin, Spatial, _after));
-                    // 暂存前按候选连续位姿采湿，保留本Tick已消耗燃料。
-                    Collect(_after, TickStage.Physics);
-                    Require(_displacement.CollectCovered(State, _loaded.Materials, _after, out CellKey[] covered));
-                    if (covered.Length != 0) Require(Failures?.Check(Context(TickStage.Physics), FailurePoint.BeforeFluidCapture) ?? WorldResult.Success());
-                    var prepared = State.PreparePhysics(step.Candidates, covered, Context(TickStage.Physics));
-                    Require(prepared.Result);
-                    var transaction = new TransactionCoordinator();
-                    try
+                    Wet(TickStage.Physics, true);
+                    BeforePhysicsForTest?.Invoke();
+                    Require(PhysicsSubstepPlanner.Plan(State.Config, State.Bodies, Physics.Geometry, out int count));
+                    if (FixedSubsteps != 0) count = FixedSubsteps;
+                    LastSubsteps = count;
+                    for (int i = 0; i < count; i++)
                     {
-                        transaction.Own(prepared.Prepared);
-                        long others = ExternalCpuBytes + (_rules?.ReservedCpuBytes ?? 0) + Physics.ReservedCpuBytes + Spatial.ReservedCpuBytes + _after.ReservedCpuBytes + State.Config.Limits.MaxMaterialCells * 256L + FluidDisplacementPlanner.EstimateCpuBytes(State.Config, State.MaterialCells);
-                        Require(transaction.ValidateAndApply(Context(TickStage.Physics), State.Config.Limits, CpuBudgetBytes - others, Failures));
-                        _transactions.Add(transaction);
+                        Refresh(Spatial, TickStage.Physics);
+                        long revision = State.Revision; ulong tick = State.WorkingTick;
+                        Physics.Bind(new SpatialLease(State.Generation, tick, TickStage.Physics, revision), () => State.IsLeaseValid(revision, tick));
+                        long nonPhysicsBytes = ExternalCpuBytes + State.EstimatedCpuBytes + (_rules?.ReservedCpuBytes ?? 0) + Spatial.ReservedCpuBytes + _after.ReservedCpuBytes + State.Config.Limits.MaxMaterialCells * 256L + FluidDisplacementPlanner.EstimateCpuBytes(State.Config, State.MaterialCells);
+                        PhysicsStepResult step = Physics.StepSubstep(State, State.Config.StepSeconds / count, i, CpuBudgetBytes - nonPhysicsBytes, Failures);
+                        Require(step.Result);
+                        AfterPhysicsCandidateForTest?.Invoke(step.Candidates);
+                        SimulatedSeconds += (double)State.Config.StepSeconds / count;
+                        Refresh(_after, TickStage.Physics, step.Candidates.CandidateBodies);
+                        Require(PhysicsGeometryValidator.Validate(State.Config, _origin, Spatial, _after));
+                        // 暂存前按候选连续位姿采湿，保留本Tick已消耗燃料。
+                        Collect(_after, TickStage.Physics);
+                        Require(_displacement.CollectCovered(State, _loaded.Materials, _after, out CellKey[] covered));
+                        if (covered.Length != 0) Require(Failures?.Check(Context(TickStage.Physics), FailurePoint.BeforeFluidCapture) ?? WorldResult.Success());
+                        var prepared = State.PreparePhysics(step.Candidates, covered, Context(TickStage.Physics));
+                        Require(prepared.Result);
+                        var transaction = new TransactionCoordinator();
+                        try
+                        {
+                            transaction.Own(prepared.Prepared);
+                            long others = ExternalCpuBytes + (_rules?.ReservedCpuBytes ?? 0) + Physics.ReservedCpuBytes + Spatial.ReservedCpuBytes + _after.ReservedCpuBytes + State.Config.Limits.MaxMaterialCells * 256L + FluidDisplacementPlanner.EstimateCpuBytes(State.Config, State.MaterialCells);
+                            Require(transaction.ValidateAndApply(Context(TickStage.Physics), State.Config.Limits, CpuBudgetBytes - others, Failures));
+                            _transactions.Add(transaction);
+                        }
+                        catch { transaction.Dispose(); throw; }
+                        Wet(TickStage.Physics, true);
                     }
-                    catch { transaction.Dispose(); throw; }
-                    Wet(TickStage.Physics, true);
-                }
-                Refresh(Spatial, TickStage.Physics);
-                Require(_displacement.PlanRestoration(State, State.Instances, Spatial, out MutationIntent[] restored));
-                if (restored.Length != 0)
-                {
-                    Require(Failures?.Check(Context(TickStage.Physics), FailurePoint.BeforeFluidRestoration) ?? WorldResult.Success());
-                    Apply(State.PrepareFluidMoves(restored, Context(TickStage.Physics)), Context(TickStage.Physics), false);
-                    Wet(TickStage.Physics, true);
+                    Refresh(Spatial, TickStage.Physics);
+                    Require(_displacement.PlanRestoration(State, State.Instances, Spatial, out MutationIntent[] restored));
+                    if (restored.Length != 0)
+                    {
+                        Require(Failures?.Check(Context(TickStage.Physics), FailurePoint.BeforeFluidRestoration) ?? WorldResult.Success());
+                        Apply(State.PrepareFluidMoves(restored, Context(TickStage.Physics)), Context(TickStage.Physics), false);
+                        Wet(TickStage.Physics, true);
+                    }
                 }
                 Require(Failures?.Check(Context(TickStage.Publish), FailurePoint.BeforePublish) ?? WorldResult.Success());
                 Publish();
@@ -219,6 +227,7 @@ namespace OpenOita.Simulation
             }
             catch (RuntimeFailure exception) { return Freeze(exception.Result); }
             catch (Exception exception) { return Freeze(WorldResult.Failure(WorldErrorCode.Faulted, new WorldDiagnostic("Step", "M06", exception.Message))); }
+            finally { Metrics.End(); }
         }
         internal WorldResult Step() { WorldResult begin = BeginTick(); return begin.IsSuccess ? CompleteTick() : begin; }
         internal WorldResult Freeze(WorldResult result)
@@ -230,19 +239,28 @@ namespace OpenOita.Simulation
 
         private void Run(IRuleExecutor rule, TickStage stage)
         {
+            using var timing = WorldStepMetrics.Measure(StageTiming(stage));
+            bool present = stage == TickStage.Water ? State.RuleSources.Count(RuleMask.LiquidFlow) != 0 :
+                stage == TickStage.Steam ? State.RuleSources.Count(RuleMask.GasDrift) != 0 || State.RuleSources.SuspendedGasCount != 0 :
+                State.RuleSources.Count(RuleMask.Burnable, true) != 0;
+            if (!present) { WorldStepMetrics.Add(WorldStepMetrics.Work.SkippedRuleStages); return; }
             Refresh(Spatial, stage);
             IRuleBatch batch = rule.Execute(State, _loaded.Materials, State.Instances, Spatial, Context(stage));
             ApplyBatch(batch);
         }
         private void Collect(IContactQuery contacts, TickStage stage)
         {
+            if (State.RuleSources.Count(RuleMask.Burnable) == 0 || State.RuleSources.Count(RuleMask.ExtinguishesFire) == 0)
+            { WorldStepMetrics.Add(WorldStepMetrics.Work.SkippedRuleStages); return; }
             Require(_rules.WetContacts.Collect(State, _loaded.Materials, State.Instances, contacts, Context(stage)));
             foreach (CellInstanceHandle instance in _rules.WetContacts.WetInstances) State.Instances.MarkWet(instance);
         }
         private void Wet(TickStage stage, bool extinguish)
         {
+            using var timing = WorldStepMetrics.Measure(stage == TickStage.Physics ? WorldStepMetrics.Timing.PhysicsContacts : StageTiming(stage));
             Refresh(Spatial, stage); Collect(Spatial, stage);
-            if (extinguish) ApplyBatch(_rules.WetContacts.Execute(State, _loaded.Materials, State.Instances, Spatial, Context(stage)));
+            if (extinguish && State.RuleSources.Count(RuleMask.Burnable, true) != 0)
+                ApplyBatch(_rules.WetContacts.Execute(State, _loaded.Materials, State.Instances, Spatial, Context(stage)));
         }
         private void ApplyBatch(IRuleBatch batch)
         {
@@ -271,17 +289,23 @@ namespace OpenOita.Simulation
         }
         private void Publish()
         {
+            using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.Publish);
             CommittedWorldView candidate = null;
             IPreparedWorldDisplay display = null;
             TickChangeSet changes = null;
             try
             {
                 candidate = new CommittedWorldView(State, _loaded.Materials, new WorldVersion(State.Generation, State.WorkingTick));
-                changes = TickChangeSet.Build(View, candidate, _originalInstances, State.Instances, State.TickWrites, _removals, _replacements);
+                using (WorldStepMetrics.Measure(WorldStepMetrics.Timing.ChangeSet))
+                    changes = TickChangeSet.Build(View, candidate, _originalInstances, State.Instances, State.TickWrites, _removals, _replacements);
                 if (Renderer != null)
                 {
                     changes.Open();
-                    try { display = Renderer.PrepareCommit(candidate, new ChangeSet(candidate.Version, changes)); }
+                    try
+                    {
+                        using var displayTiming = WorldStepMetrics.Measure(WorldStepMetrics.Timing.DisplayPrepare);
+                        display = Renderer.PrepareCommit(candidate, new ChangeSet(candidate.Version, changes));
+                    }
                     finally { changes.Close(); }
                     if (display == null) throw new RuntimeFailure(WorldResult.Failure(WorldErrorCode.Faulted, new WorldDiagnostic("DisplayPrepare", "candidate", "显示没有返回完整候选。")));
                     Require(display.Result);
@@ -294,8 +318,18 @@ namespace OpenOita.Simulation
             }
             finally { display?.Dispose(); candidate?.Dispose(); }
             foreach (TransactionCoordinator transaction in _transactions) { transaction.MarkCommitted(View.Version); transaction.Dispose(); }
-            _transactions.Clear(); Spatial.Invalidate(); _after.Invalidate();
+            // PublishState已关闭当前实例租约；几何桶保留至下Tick受控重新绑定。
+            _transactions.Clear();
         }
+
+        private static WorldStepMetrics.Timing StageTiming(TickStage stage) => stage switch
+        {
+            TickStage.Water => WorldStepMetrics.Timing.Water,
+            TickStage.Steam => WorldStepMetrics.Timing.Steam,
+            TickStage.Burning => WorldStepMetrics.Timing.Burning,
+            TickStage.PreFlowContacts => WorldStepMetrics.Timing.PreFlowContacts,
+            _ => WorldStepMetrics.Timing.Extinguish
+        };
 
         internal WorldResult Edit(ReadOnlySpan<CellWrite> writes, in TransactionContext context, bool structural)
         {

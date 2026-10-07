@@ -19,9 +19,16 @@ namespace OpenOita.Editor
         private Camera _camera;
         private RenderTexture _output;
         private Vector2 _trialOrigin;
+        private bool _observing;
         public WorldHost Host { get; private set; }
         public bool IsTrial => Host != null;
         public RenderTexture Output => _output;
+
+        public void ObserveHost(WorldHost host, Vector2 origin)
+        {
+            if (Host == host) return;
+            ReleasePreview(); Host = host; _trialOrigin = origin; _observing = true;
+        }
 
         public WorldResult BeginTrial(SceneMaterialData data, Vector2 origin, bool automatic, bool freezeBodyRotation = true)
         {
@@ -43,6 +50,7 @@ namespace OpenOita.Editor
 
         public WorldResult EndTrial()
         {
+            if (_observing) { Host = null; _observing = false; return WorldResult.Success(); }
             WorldResult result = Host != null ? Host.CloseWorld() : WorldResult.Success();
             if (!result.IsSuccess) return result;
             if (_hostObject != null) UnityEngine.Object.DestroyImmediate(_hostObject);
@@ -63,6 +71,8 @@ namespace OpenOita.Editor
                     _preview = new CommittedWorldRenderer { DisplayLayer = PreviewLayer };
                     WorldResult ready = _preview.Prepare(new InitialSceneRenderView(data, origin));
                     if (!ready.IsSuccess) { ReleasePreview(); return ready; }
+                    _preview.DisplayRoot.hideFlags = HideFlags.HideAndDontSave;
+                    UnityEditor.SceneVisibilityManager.instance.Hide(_preview.DisplayRoot, true);
                     _previewData = data; _previewOrigin = origin; _revision = data.Revision;
                 }
                 else if (_revision != data.Revision)
@@ -75,8 +85,8 @@ namespace OpenOita.Editor
             }
             else
             {
-                _trialRenderer.FlushFrame();
-                Host.ConfigurePixelView(_camera, scale, pan);
+                if (_observing) _camera.cullingMask = 1 << Host.gameObject.layer;
+                else { _trialRenderer.FlushFrame(); Host.ConfigurePixelView(_camera, scale, pan); }
                 origin = _trialOrigin;
             }
             PixelWorldViewport.Configure(_camera, IsTrial ? Host.World.Config : data.Config, origin, scale, pan);

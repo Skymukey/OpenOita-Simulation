@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using OpenOita.Contracts;
+using OpenOita.Simulation;
 
 namespace OpenOita.Rules
 {
@@ -150,10 +151,12 @@ namespace OpenOita.Rules
                 Array.Clear(_moved, 0, input.Count);
                 _reserved.Clear();
                 _comparer.Input = input;
-                for (int i = 0; i < input.Count; i++)
+                ReadOnlySpan<int> participants = input.Participants(capability);
+                foreach (int i in participants)
                 {
                     MaterialRuntimeEntry material = input.Materials[i];
                     if ((material.Rules & capability) == 0) continue;
+                    WorldStepMetrics.Add(WorldStepMetrics.Work.RuleParticipants);
                     CellKey source = input.Keys[i];
                     if (source.Position.OwnerKind != OwnerKind.Grid)
                         return RuleBatchContext.Error(output.Stage, WorldErrorCode.UnsupportedOperation, source, "网格流体不能归属动态材料体。");
@@ -190,7 +193,7 @@ namespace OpenOita.Rules
                         if (!horizontal.IsSuccess) return horizontal;
                     }
                     int count = 0;
-                    for (int i = 0; i < input.Count; i++)
+                    foreach (int i in participants)
                     {
                         if (!_ready[i] || _moved[i]) continue;
                         CellKey source = input.Keys[i];
@@ -226,7 +229,7 @@ namespace OpenOita.Rules
                             candidate.Target, _states[source], (MoveCandidateTier)tier))) return output.Result;
                     }
                 }
-                for (int i = 0; i < input.Count; i++)
+                foreach (int i in participants)
                     if (_alive[i] && !_moved[i] && !RuleBatchContext.SameState(input.States[i], _states[i]) &&
                         !output.Add(new MutationIntent(MutationKind.WriteState, input.Instances[i], input.Keys[i], input.Keys[i], _states[i])))
                         return output.Result;

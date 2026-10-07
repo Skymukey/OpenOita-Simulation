@@ -12,9 +12,13 @@ namespace OpenOita.Rules
         private readonly bool[] _ignited;
         public RuleId RuleId => RuleId.Burnable;
 
-        public BurnRule(int cellCapacity, int contactCapacity = -1, int intentCapacity = -1)
+        public BurnRule(int cellCapacity, int contactCapacity = -1, int intentCapacity = -1) : this(cellCapacity, contactCapacity, intentCapacity, null)
         {
-            _input = new RuleBatchContext(cellCapacity, contactCapacity < 0 ? cellCapacity : contactCapacity);
+        }
+
+        internal BurnRule(int cellCapacity, int contactCapacity, int intentCapacity, RuleBatchContext input)
+        {
+            _input = input ?? new RuleBatchContext(cellCapacity, contactCapacity < 0 ? cellCapacity : contactCapacity);
             _output = new RuleIntent(intentCapacity < 0 ? cellCapacity : intentCapacity);
             _spreading = new bool[cellCapacity];
             _removed = new bool[cellCapacity];
@@ -31,7 +35,7 @@ namespace OpenOita.Rules
             Array.Clear(_spreading, 0, _input.Count);
             Array.Clear(_removed, 0, _input.Count);
             Array.Clear(_ignited, 0, _input.Count);
-            for (int i = 0; i < _input.Count; i++)
+            foreach (int i in _input.Participants(RuleMask.Burnable, true))
             {
                 CellSnapshot before = _input.States[i];
                 MaterialRuntimeEntry material = _input.Materials[i];
@@ -62,7 +66,7 @@ namespace OpenOita.Rules
                 if (!_output.Add(new MutationIntent(MutationKind.WriteState, _input.Instances[i], key, key, after))) return _output;
             }
             // 第二遍只读阶段初态，不递归推进新火；先确定燃尽，防止同批复活。
-            for (int i = 0; i < _input.Count; i++)
+            foreach (int i in _input.Participants(RuleMask.Burnable, true))
             {
                 if (!_spreading[i]) continue;
                 result = _input.Neighbours(i, out ReadOnlySpan<int> neighbours);
@@ -75,7 +79,7 @@ namespace OpenOita.Rules
                 }
             }
             // 目标按稳定身份输出；多个点燃源只写一次。
-            for (int i = 0; i < _input.Count; i++)
+            foreach (int i in _input.Participants(RuleMask.Burnable))
                 if (_ignited[i] && !_output.Add(new MutationIntent(MutationKind.Ignite, _input.Instances[i], _input.Keys[i],
                     _input.Keys[i], WetContactPolicy.Ignite(_input.States[i], context.WorkingTick)))) return _output;
             return _output;

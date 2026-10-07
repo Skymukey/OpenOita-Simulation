@@ -27,6 +27,7 @@ namespace OpenOita.Simulation
 
         internal CommittedWorldView(IWorkingWorldView world, IMaterialRuntimeTable materials, WorldVersion version)
         {
+            using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.SnapshotCopy);
             Version = version;
             Config = world.Config;
             Origin = world.Origin;
@@ -62,6 +63,12 @@ namespace OpenOita.Simulation
             int countIndex = 0;
             foreach (var pair in counts) valuesByMaterial[countIndex++] = new MaterialCount(pair.Key, pair.Value[0], pair.Value[1], pair.Value[2]);
             _counts = new MaterialCountsResult(WorldResult.Success(), version, valuesByMaterial, grid, bodies, water, steam);
+            WorldStepMetrics.Add(WorldStepMetrics.Work.PublishedCells, _keys.Length);
+            WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedItems, _keys.Length * 2L + _bodies.Length + _suspended.Length);
+            WorldStepMetrics.Add(WorldStepMetrics.Work.CopiedPayloadBytes,
+                (long)_keys.Length * (Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellKey>() + Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<CellSnapshot>()) +
+                (long)_bodies.Length * Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<BodySnapshot>() +
+                (long)_suspended.Length * Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<SuspendedFluidSnapshot>());
         }
 
         public WorldResult Read(in CellKey key, out CellSnapshot cell)

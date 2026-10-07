@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using OpenOita.Contracts;
 using OpenOita.Data;
+using OpenOita.Host;
 using UnityEditor;
 using UnityEngine;
 
@@ -33,6 +34,9 @@ namespace OpenOita.Editor
         private SceneEditingDocument _document;
         private SceneEditorSession _session;
         private WorldHost _referenceHost;
+        [SerializeField] private OpenOitaMap _map;
+        [SerializeField] private bool _legacy;
+        private MapEditingSession _mapSession;
         private WorldResult _last;
         private string _feedback = "创建空白场景即可绘制，也可加载已有场景目录。保存仅保存编辑初态。";
         private Vector2Int _dragStart, _hover;
@@ -43,19 +47,42 @@ namespace OpenOita.Editor
         private Rect _previewRect;
         private string[] _materialNames;
         private ushort[] _materialIds;
+        private SceneMaterialData _paletteData;
+        private Vector2 _scroll;
 
         [MenuItem("OpenOita/编辑初态与正式试玩")]
-        public static void Open() => GetWindow<SceneMaterialEditorWindow>("OpenOita初态编辑");
+        public static void Open() => GetWindow<SceneMaterialEditorWindow>("OpenOita初态编辑", typeof(SceneView));
 
         [MenuItem("OpenOita/场景绘制工具")]
         public static void OpenPainter() => Open();
+
+        public static void EditMap(OpenOitaMap map)
+        {
+            Selection.activeGameObject = map.gameObject;
+            var window = GetWindow<SceneMaterialEditorWindow>("OpenOita地图编辑", typeof(SceneView));
+            window._legacy = false; window.SelectionChanged(); window._sceneTool = true;
+            window.Focus();
+        }
+
+        public static void EndActiveStroke()
+        {
+            foreach (var window in Resources.FindObjectsOfTypeAll<SceneMaterialEditorWindow>()) window.CancelStroke();
+        }
+        public static void RefreshMapBinding()
+        {
+            foreach (var window in Resources.FindObjectsOfTypeAll<SceneMaterialEditorWindow>())
+            {
+                window._session?.Dispose(); window._session = new SceneEditorSession();
+                window.SelectionChanged(); window.Repaint();
+            }
+        }
 
         private void OnEnable()
         {
             wantsMouseMove = true;
             minSize = new Vector2(560, 650);
             _document = new SceneEditingDocument(); _session = new SceneEditorSession();
-            if (!string.IsNullOrEmpty(_scene))
+            if (_legacy && !string.IsNullOrEmpty(_scene))
             {
                 Show(_document.Load(new WorldSources(_materials, _config, _scene)), "已恢复编辑初态");
                 BuildPalette();
@@ -81,9 +108,20 @@ namespace OpenOita.Editor
             ReleaseResources();
         }
 
-        private void ReleaseResources() { _session?.Dispose(); _session = null; CancelStroke(); }
+        private void ReleaseResources() { CancelStroke(); _session?.Dispose(); _session = null; }
         private void OnLostFocus() { CancelStroke(); _hasHover = false; Repaint(); }
-        private void EditorUpdate() { if (_session?.IsTrial == true) Repaint(); }
+        private void EditorUpdate()
+        {
+            if (_map != null)
+            {
+                if (_mapSession?.Asset != _map.Level) { SelectionChanged(); return; }
+                if (_mapSession != null && !_dragging && _mapSession.Refresh()) BuildPalette();
+                if (_document?.Data != _paletteData) BuildPalette();
+                _origin = Application.isPlaying && _map.Host.World != null ? _map.Host.CreatedOrigin : _map.Origin;
+                if (Application.isPlaying && _map.Host.World != null) _session?.ObserveHost(_map.Host, _map.Host.CreatedOrigin);
+            }
+            if (_session?.IsTrial == true) Repaint();
+        }
         private void PlayModeChanged(PlayModeStateChange state)
         {
             if (state == PlayModeStateChange.ExitingEditMode) { Persist(); ReleaseResources(); }
@@ -96,6 +134,26 @@ namespace OpenOita.Editor
         }
         private void SelectionChanged()
         {
+            OpenOitaMap selectedMap = Selection.gameObjects.Length == 1 ? Selection.activeGameObject.GetComponent<OpenOitaMap>() : null;
+            if (selectedMap != null || !_legacy)
+            {
+                CancelStroke();
+                if (_mapSession?.Pending == true) { Show(_mapSession.LastResult, ""); return; }
+                bool changed = _map != selectedMap || _mapSession?.Asset != selectedMap?.Level;
+                _map = selectedMap;
+                _referenceHost = _map != null ? _map.Host : null;
+                _mapSession = _map != null ? MapEditingSession.For(_map.Level) : null;
+                _document = _mapSession?.Document ?? new SceneEditingDocument();
+                _legacy = false;
+                _materials = _config = _scene = null;
+                if (changed) { _session?.Dispose(); _session = new SceneEditorSession(); _pan = Vector2Int.zero; }
+                if (_map != null)
+                {
+                    _origin = _map.Origin; BuildPalette();
+                    if (changed && _mapSession != null) Show(_mapSession.LastResult, "已绑定地图关卡；完成笔触后请保存关卡及场景。");
+                }
+                _hasHover = false; Repaint(); return;
+            }
             WorldHost selected = Selection.activeGameObject != null ? Selection.activeGameObject.GetComponent<WorldHost>() : null;
             if (_referenceHost != selected)
             {
@@ -107,6 +165,13 @@ namespace OpenOita.Editor
 
         private WorldResult ValidateTransform()
         {
+            if (_map != null)
+            {
+                if (Application.isPlaying || !_map.isActiveAndEnabled) return WorldResult.Failure(WorldErrorCode.NotReady, new WorldDiagnostic("地图编辑", "状态", "Play期间或地图禁用时不能绘制。"));
+                if (_map.Level != _mapSession?.Asset) return WorldResult.Failure(WorldErrorCode.Busy, new WorldDiagnostic("地图编辑", "引用", "目标资产已更换，请重新绑定。"));
+                WorldResult valid = _map.ValidateTransform();
+                return valid.IsSuccess ? MapEditingSession.CheckWritable(_map.Level) : valid;
+            }
             if (_referenceHost != null && (_referenceHost.transform.rotation != Quaternion.identity || _referenceHost.transform.lossyScale != Vector3.one))
                 return WorldResult.Failure(WorldErrorCode.InvalidArgument, new WorldDiagnostic("编辑器", "Host.transform", "选中Host必须零旋转、单位世界缩放。请修正变换后再编辑或试玩。"));
             return WorldResult.Success();
@@ -114,9 +179,34 @@ namespace OpenOita.Editor
 
         private void OnGUI()
         {
+            _scroll = EditorGUILayout.BeginScrollView(_scroll);
+            try { DrawInterface(); }
+            finally { EditorGUILayout.EndScrollView(); }
+        }
+
+        private void DrawInterface()
+        {
             _session ??= new SceneEditorSession();
             bool trial = _session.IsTrial;
+            if (!_legacy)
+            {
+                EditorGUILayout.LabelField(_map != null ? "目标：" + _map.name : "请选择一个地图对象", EditorStyles.boldLabel);
+                if (_map != null && _map.Level != null)
+                {
+                    EditorGUILayout.ObjectField("关卡资产", _map.Level, typeof(OpenOitaMapAsset), false);
+                    EditorGUILayout.HelpBox("修改共享关卡影响所有引用者。笔触写回资产内存；请保存关卡及Unity场景。", MessageType.Info);
+                    EditorGUILayout.LabelField("保存状态", EditorUtility.IsDirty(_map.Level) || _mapSession.Pending ? "未保存到磁盘" : "已保存");
+                }
+                if (GUILayout.Button("旧三文件独立工作流（显式迁移入口）"))
+                {
+                    CancelStroke(); _map = null; _mapSession = null; _legacy = true;
+                    _document = new SceneEditingDocument(); _session.Dispose(); _session = new SceneEditorSession();
+                }
+                if (_document.Data == null) { EditorGUILayout.HelpBox("Hierarchy右键 → OpenOita/地图。选中地图并点击“编辑地图”；缺失或无效资产请在Inspector修复。", MessageType.Info); return; }
+            }
             EditorGUILayout.LabelField(trial ? "正式试玩（编辑工具暂停，保存仍保存初态）" : "编辑初态（不推进模拟）", EditorStyles.boldLabel);
+            if (_legacy)
+            {
             using (new EditorGUI.DisabledScope(trial || _startOnPlay))
             {
                 _creationExpanded = EditorGUILayout.Foldout(_creationExpanded, "新建空白场景", true);
@@ -149,12 +239,14 @@ namespace OpenOita.Editor
                 if (GUILayout.Button("重新加载")) LoadDirectory(_directory);
                 EditorGUILayout.EndHorizontal();
             }
+            }
             if (_document.Data == null) { EditorGUILayout.HelpBox(_feedback, MessageType.Info); return; }
             var data = _document.Data;
             EditorGUILayout.LabelField($"逻辑尺寸 {data.Config.Width}×{data.Config.Height} ｜ cellSize={data.Config.CellSize} ｜ {data.Count}材料格");
-            using (new EditorGUI.DisabledScope(trial || _startOnPlay))
+            using (new EditorGUI.DisabledScope(trial || _startOnPlay || Application.isPlaying))
             {
-                _origin = EditorGUILayout.Vector2Field("世界原点", _origin);
+                if (_map == null) _origin = EditorGUILayout.Vector2Field("世界原点", _origin);
+                else EditorGUILayout.LabelField("世界原点（对象XY）", _map.Origin.ToString());
                 _materialIndex = EditorGUILayout.Popup("材料", Mathf.Clamp(_materialIndex, 0, _materialNames.Length - 1), _materialNames);
                 EditorGUI.BeginChangeCheck();
                 _operation = (SceneEditOperation)GUILayout.Toolbar((int)_operation, new[] { "绘制", "橡皮擦", "固定", "初燃" });
@@ -194,13 +286,15 @@ namespace OpenOita.Editor
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("保存初态"))
             {
-                if (string.IsNullOrEmpty(_directory)) SaveAsNewScene();
+                CancelStroke();
+                if (_mapSession != null) Show(_mapSession.Save(), "关卡已保存；对象引用与位置请保存Unity场景。JSON尚未导出。");
+                else if (string.IsNullOrEmpty(_directory)) SaveAsNewScene();
                 else Show(_document.Save(_directory), "初态已原子保存；材料与世界参数未改写");
             }
-            if (GUILayout.Button("另存新场景")) SaveAsNewScene();
+            if (_legacy && GUILayout.Button("另存新场景")) SaveAsNewScene();
             if (!trial)
             {
-                _automatic = GUILayout.Toggle(_automatic, "自动推进");
+                if (_legacy) _automatic = GUILayout.Toggle(_automatic, "自动推进");
                 if (GUILayout.Button("正式试玩")) RequestTrial();
             }
             else
@@ -212,6 +306,7 @@ namespace OpenOita.Editor
             EditorGUILayout.EndHorizontal();
             if (exitTrialRequested)
             {
+                if (_map != null) { EditorApplication.isPlaying = false; GUIUtility.ExitGUI(); }
                 Show(_session.EndTrial(), "已退出试玩，恢复编辑初态");
                 // 关闭布局组后结束本次绘制，避免读取已释放的Host或沿用试玩布局。
                 GUIUtility.ExitGUI();
@@ -270,15 +365,18 @@ namespace OpenOita.Editor
         {
             if (_document.Data == null) return;
             var table = _document.Data.Materials;
+            _paletteData = _document.Data;
             _materialNames = new string[table.Count]; _materialIds = new ushort[table.Count];
             for (int i = 0; i < table.Count; i++)
             {
                 MaterialRuntimeEntry entry = table.GetByCompactIndex((ushort)(i + 1));
                 _materialNames[i] = $"{entry.Id} · {entry.Name}"; _materialIds[i] = entry.Id;
             }
+            _materialIndex = Mathf.Clamp(_materialIndex, 0, _materialIds.Length - 1);
         }
         private void Persist()
         {
+            if (_mapSession != null) { CancelStroke(); return; }
             if (_document?.Data == null) return;
             if (_document.Data.Export(out WorldSources sources).IsSuccess)
             { _materials = sources.MaterialsText; _config = sources.WorldConfigText; _scene = sources.SceneText; }
@@ -291,6 +389,7 @@ namespace OpenOita.Editor
         }
         private void RequestTrial()
         {
+            if (_map != null) { OpenOitaMapEditor.StartTrial(_map); return; }
             WorldResult valid = ValidateTransform();
             if (!valid.IsSuccess) { Show(valid, ""); return; }
             Persist(); _startOnPlay = true;
@@ -307,6 +406,11 @@ namespace OpenOita.Editor
 
         private void DrawPixelPreview()
         {
+            if (Application.isPlaying && _map != null && _map.Host.World == null)
+            {
+                EditorGUILayout.HelpBox(_map.Host.LastResult.Diagnostic.Message ?? "当前地图不参与运行。Play期间不显示编辑初态。", MessageType.Info);
+                return;
+            }
             float dpi = EditorGUIUtility.pixelsPerPoint;
             Rect rect = GUILayoutUtility.GetRect(32, 4096, 180, 4096, GUILayout.ExpandHeight(true));
             int control = GUIUtility.GetControlID(FocusType.Passive);
@@ -353,14 +457,16 @@ namespace OpenOita.Editor
         }
         private void CancelStroke()
         {
+            if (_mapSession?.Pending == true) Show(_mapSession.Commit(), "笔触已写回关卡内存；请保存磁盘。");
             if (_strokeControl != 0 && GUIUtility.hotControl == _strokeControl) GUIUtility.hotControl = 0;
             _strokeControl = 0; _dragging = false; _strokeHasPrevious = false;
         }
         private void HandleStroke(Event evt, int control, bool inScene)
         {
-            if (_startOnPlay || _session?.IsTrial == true || (_dragging && inScene != _strokeInScene)) return;
+            if (Application.isPlaying || _startOnPlay || _session?.IsTrial == true || (_dragging && inScene != _strokeInScene)) return;
             if (evt.type == EventType.KeyDown && !EditorGUIUtility.editingTextField)
             {
+                if ((evt.control || evt.command) && (evt.keyCode == KeyCode.Z || evt.keyCode == KeyCode.Y)) { CancelStroke(); return; }
                 if (evt.keyCode == KeyCode.Escape) { CancelStroke(); evt.Use(); Repaint(); return; }
                 if (_hasHover && !_dragging && !evt.control && !evt.command && !evt.alt)
                 {
@@ -443,7 +549,8 @@ namespace OpenOita.Editor
 
         private void DuringSceneGui(SceneView view)
         {
-            if (!_sceneTool || _document?.Data == null || _session?.IsTrial == true || _startOnPlay) return;
+            if (!_sceneTool || _document?.Data == null || Application.isPlaying || _session?.IsTrial == true || _startOnPlay || (!_legacy && _map == null)) return;
+            if (_map != null) _origin = _map.Origin;
             Event evt = Event.current;
             int control = GUIUtility.GetControlID(FocusType.Passive);
             if (evt.type == EventType.Layout) HandleUtility.AddDefaultControl(control);
@@ -459,7 +566,7 @@ namespace OpenOita.Editor
                 Handles.DrawSolidRectangleWithOutline(new[] { min, min + Vector3.right * width,
                     min + new Vector3(width, height), min + Vector3.up * height }, Color.clear, Color.gray);
                 var snapshot = _document.Data.Snapshot();
-                foreach (InitialCell cell in snapshot.Cells)
+                if (_legacy) foreach (InitialCell cell in snapshot.Cells)
                 {
                     _document.Data.Materials.TryGet(cell.MaterialId, out var material);
                     DrawCell(cell.Position, material.Color);

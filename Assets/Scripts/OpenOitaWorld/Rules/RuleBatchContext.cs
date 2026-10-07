@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using OpenOita.Contracts;
 using UnityEngine;
+using OpenOita.Simulation;
+using OpenOita.Spatial;
 
 namespace OpenOita.Rules
 {
-    // 一个执行器拥有一个缓冲，阶段内借用视图；不创建或修改材料实例。
+    // 正式执行表共享输入，独立执行器拥有自己的输入；阶段内借用，不修改材料实例。
     internal sealed class RuleBatchContext
     {
         private sealed class KeyComparer : IComparer<CellKey>
@@ -19,6 +21,17 @@ namespace OpenOita.Rules
         private readonly int[] _neighbourSeen;
         private int _neighbourStamp;
         private readonly int[] _neighbours;
+        // 有界直接映射缓存；冲突只损失命中率，不改变结果或扩大世界容量。
+        private readonly int[] _gridCacheKeys;
+        private readonly byte[] _gridCacheValues;
+        private IOccupancyView _cacheOccupancy;
+        private SpatialLease _cacheLease;
+        private bool _cacheEnabled;
+        private readonly int[] _participants;
+        private IMaterialRuntimeTable _inputMaterials;
+        private long _inputRevision;
+        private ulong _inputTick;
+        private bool _inputReady;
         internal readonly CellKey[] Keys;
         internal readonly CellSnapshot[] States;
         internal readonly MaterialRuntimeEntry[] Materials;
@@ -40,13 +53,24 @@ namespace OpenOita.Rules
             _contacts = new CellContact[contactCapacity];
             _neighbourSeen = new int[cellCapacity];
             _neighbours = new int[cellCapacity];
+            _participants = new int[cellCapacity];
+            int cacheCapacity = 1;
+            while (cacheCapacity < checked(cellCapacity * 4)) cacheCapacity = checked(cacheCapacity * 2);
+            _gridCacheKeys = new int[cacheCapacity];
+            _gridCacheValues = new byte[cacheCapacity];
         }
 
         internal WorldResult Begin(IWorkingWorldView snapshot, IMaterialRuntimeTable materials,
             ITickInstanceMap instances, IContactQuery contacts, in TransactionContext transaction)
         {
-            Count = 0;
-            _indices.Clear();
+            using var timing = WorldStepMetrics.Measure(WorldStepMetrics.Timing.RuleInput);
+            bool reuse = _inputReady && snapshot is WorkingWorld working && ReferenceEquals(Snapshot, snapshot) &&
+                ReferenceEquals(_inputMaterials, materials) && ReferenceEquals(InstanceMap, instances) &&
+                _inputTick == transaction.WorkingTick && _inputRevision == working.MaterialRevision;
+            _inputReady = false;
+            Array.Fill(_gridCacheKeys, -1);
+            _cacheOccupancy = null;
+            _cacheLease = default;
             Snapshot = snapshot;
             InstanceMap = instances;
             Contacts = contacts;
@@ -60,6 +84,21 @@ namespace OpenOita.Rules
             if (contacts != null && contacts.Lease.Generation != 0 && (contacts.Lease.Generation != snapshot.Generation ||
                 contacts.Lease.WorkingTick != snapshot.WorkingTick || contacts.Lease.Stage != transaction.Stage))
                 return Error(transaction.Stage, WorldErrorCode.NotReady, default, "接触提供者没有绑定当前阶段。");
+            if (snapshot is WorkingWorld leaseWorld && !leaseWorld.IsLeaseValid(leaseWorld.Revision, transaction.WorkingTick))
+                return Error(transaction.Stage, WorldErrorCode.NotReady, default, "规则工作输入租约失效。");
+            if (contacts is WorldOccupancyIndex spatial)
+            {
+                WorldResult lease = spatial.Check(snapshot.Generation);
+                if (!lease.IsSuccess) return AtStage(lease, transaction.Stage, default);
+            }
+            if (reuse)
+            {
+                _inputReady = true;
+                WorldStepMetrics.Add(WorldStepMetrics.Work.RuleInputReuses);
+                return WorldResult.Success();
+            }
+            Count = 0;
+            _indices.Clear();
             ReadOnlySpan<CellKey> occupied = snapshot.OccupiedCells;
             if (occupied.Length > Keys.Length || occupied.Length > snapshot.Config.Limits.MaxMaterialCells)
                 return Error(transaction.Stage, WorldErrorCode.CapacityExceeded, default, "规则扫描缓冲或材料容量不足。");
@@ -90,19 +129,60 @@ namespace OpenOita.Rules
                 Instances[i] = instance;
             }
             Count = occupied.Length;
+            _inputMaterials = materials;
+            _inputRevision = snapshot is WorkingWorld current ? current.MaterialRevision : 0;
+            _inputTick = transaction.WorkingTick;
+            _inputReady = true;
+            WorldStepMetrics.Add(WorldStepMetrics.Work.RuleInputBuilds);
+            WorldStepMetrics.Add(WorldStepMetrics.Work.RuleInputCells, Count);
             return WorldResult.Success();
+        }
+
+        internal ReadOnlySpan<int> Participants(RuleMask capability, bool burning = false)
+        {
+            int count = 0;
+            if (Snapshot is WorkingWorld world)
+            {
+                foreach (CellPositionKey position in world.RuleSources.Sources(capability, burning))
+                {
+                    if (!_indices.TryGetValue(new CellKey(world.Generation, position), out int index))
+                        throw new InvalidOperationException("规则能力目录与阶段输入不一致。");
+                    _participants[count++] = index;
+                }
+            }
+            else
+                for (int i = 0; i < Count; i++)
+                    if ((Materials[i].Rules & capability) != 0 && (!burning || States[i].IsBurning)) _participants[count++] = i;
+            return _participants.AsSpan(0, count);
         }
 
         internal WorldResult Passable(int x, int y, IOccupancyView occupancy, out bool passable)
         {
+            WorldStepMetrics.Add(WorldStepMetrics.Work.PassableQueries);
             passable = false;
             WorldConfig config = Snapshot.Config;
             if (x < 0 || y < 0 || x >= config.Width || y >= config.Height) return WorldResult.Success();
+            WorldResult lease = ValidateOccupancy(occupancy);
+            if (!lease.IsSuccess) return lease;
+            int coordinate = y * config.Width + x;
+            int slot = CacheSlot(coordinate);
+            if (_cacheEnabled && _gridCacheKeys[slot] == coordinate && (_gridCacheValues[slot] & 1) != 0)
+            {
+                WorldStepMetrics.Add(WorldStepMetrics.Work.PassableCacheHits);
+                passable = (_gridCacheValues[slot] & 2) != 0;
+                return WorldResult.Success();
+            }
             var key = new CellKey(Snapshot.Generation, new CellPositionKey(OwnerKind.Grid, 0, x, y));
+            WorldStepMetrics.Add(WorldStepMetrics.Work.GridReads);
             WorldResult read = Snapshot.Read(key, out CellSnapshot state);
             if (!read.IsSuccess) return AtStage(read, Transaction.Stage, key);
-            if (state.MaterialId != 0) return WorldResult.Success();
-            return ClearOfSolids(x, y, occupancy, out passable);
+            if (state.MaterialId == 0)
+            {
+                WorldResult solid = ClearOfSolids(x, y, occupancy, out passable);
+                if (!solid.IsSuccess) return solid;
+            }
+            Cache(coordinate, (byte)(1 | (passable ? 2 : 0)));
+            return WorldResult.Success();
         }
 
         internal bool TryGetGridIndex(int x, int y, out int index)
@@ -114,15 +194,20 @@ namespace OpenOita.Rules
         // 原子水链可进入同批会腾空的水格，但仍须独立核对真实固体占据。
         internal WorldResult ClearOfSolids(int x, int y, IOccupancyView occupancy, out bool passable)
         {
-            if (occupancy != null && occupancy.Lease.Generation != 0 && (occupancy.Lease.Generation != Snapshot.Generation ||
-                occupancy.Lease.WorkingTick != Snapshot.WorkingTick || occupancy.Lease.Stage != Transaction.Stage))
-            {
-                passable = false;
-                return Error(Transaction.Stage, WorldErrorCode.NotReady, default, "占据提供者没有绑定当前阶段。");
-            }
+            WorldStepMetrics.Add(WorldStepMetrics.Work.SolidQueries);
             passable = false;
+            WorldResult lease = ValidateOccupancy(occupancy);
+            if (!lease.IsSuccess) return lease;
             WorldConfig config = Snapshot.Config;
             if (x < 0 || y < 0 || x >= config.Width || y >= config.Height) return WorldResult.Success();
+            int coordinate = y * config.Width + x;
+            int slot = CacheSlot(coordinate);
+            if (_cacheEnabled && _gridCacheKeys[slot] == coordinate && (_gridCacheValues[slot] & 4) != 0)
+            {
+                WorldStepMetrics.Add(WorldStepMetrics.Work.SolidCacheHits);
+                passable = (_gridCacheValues[slot] & 8) != 0;
+                return WorldResult.Success();
+            }
             var key = new CellKey(Snapshot.Generation, new CellPositionKey(OwnerKind.Grid, 0, x, y));
             if (occupancy == null)
             {
@@ -133,13 +218,52 @@ namespace OpenOita.Rules
             {
                 if (!occupancy.Version.Equals(Transaction.PublishedVersion))
                     return Error(Transaction.Stage, WorldErrorCode.StaleGeneration, key, "固体占据视图的版本租约不一致。");
-                var geometry = new CellGeometry(key, new BodyPose(Snapshot.Origin, 0), new Vector2Int(x, y), config.CellSize);
-                WorldResult result = occupancy.HasSolidOverlap(geometry, out bool overlaps);
+                bool overlaps;
+                WorldResult result;
+                if (occupancy is WorldOccupancyIndex index) result = index.HasGridSolidOverlap(key, out overlaps);
+                else
+                {
+                    var geometry = new CellGeometry(key, new BodyPose(Snapshot.Origin, 0), new Vector2Int(x, y), config.CellSize);
+                    result = occupancy.HasSolidOverlap(geometry, out overlaps);
+                }
                 if (!result.IsSuccess) return AtStage(result, Transaction.Stage, key);
-                if (overlaps) return WorldResult.Success();
+                if (overlaps) { Cache(coordinate, 4); return WorldResult.Success(); }
             }
             passable = true;
+            Cache(coordinate, 12);
             return WorldResult.Success();
+        }
+
+        private WorldResult ValidateOccupancy(IOccupancyView occupancy)
+        {
+            if (occupancy != null && occupancy.Lease.Generation != 0 && (occupancy.Lease.Generation != Snapshot.Generation ||
+                occupancy.Lease.WorkingTick != Snapshot.WorkingTick || occupancy.Lease.Stage != Transaction.Stage))
+                return Error(Transaction.Stage, WorldErrorCode.NotReady, default, "占据提供者没有绑定当前阶段。");
+            if (occupancy != null && !occupancy.Version.Equals(Transaction.PublishedVersion))
+                return Error(Transaction.Stage, WorldErrorCode.StaleGeneration, default, "固体占据视图的版本租约不一致。");
+            // 缓存命中也检查真实租约，不能绕过采用、失效或错线程。
+            if (occupancy is WorldOccupancyIndex index)
+            {
+                WorldResult check = index.Check(Snapshot.Generation);
+                if (!check.IsSuccess) return AtStage(check, Transaction.Stage, default);
+            }
+            SpatialLease current = occupancy?.Lease ?? default;
+            _cacheEnabled = occupancy is WorldOccupancyIndex;
+            if (!ReferenceEquals(_cacheOccupancy, occupancy) || !_cacheLease.Equals(current))
+            {
+                Array.Fill(_gridCacheKeys, -1);
+                _cacheOccupancy = occupancy;
+                _cacheLease = current;
+            }
+            return WorldResult.Success();
+        }
+        private int CacheSlot(int coordinate) => (int)((uint)coordinate * 2654435761u) & (_gridCacheKeys.Length - 1);
+        private void Cache(int coordinate, byte flags)
+        {
+            if (!_cacheEnabled) return;
+            int slot = CacheSlot(coordinate);
+            if (_gridCacheKeys[slot] != coordinate) { _gridCacheKeys[slot] = coordinate; _gridCacheValues[slot] = 0; }
+            _gridCacheValues[slot] |= flags;
         }
 
         // 同归属严格四邻接；只把跨归属真实格接触交给 M06。
