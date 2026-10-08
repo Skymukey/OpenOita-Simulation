@@ -33,9 +33,10 @@ namespace OpenOita.Data
 
         public WorldResult ReplaceSources(WorldSources sources)
         {
-            WorldLoadResult loaded = new WorldSourceLoader().Load(sources);
-            if (!loaded.Result.IsSuccess) return loaded.Result;
-            WorldResult result = ConfigurationSerializer.Serialize(loaded.Config, loaded.Scene, loaded.Materials, out WorldSources canonical);
+            // 编辑资产按输入世界配置的 schemaVersion 选择严格 Loader；V2 不回落到 v1。
+            WorldResult loaded = SceneMaterialData.Load(sources, out SceneMaterialData data);
+            if (!loaded.IsSuccess) return loaded;
+            WorldResult result = data.Export(out WorldSources canonical);
             if (!result.IsSuccess) return result;
             _materials = canonical.MaterialsText;
             _config = canonical.WorldConfigText;

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using OpenOita.Contracts;
 using UnityEngine;
 
@@ -30,7 +31,7 @@ namespace OpenOita.Data
         public static WorldResult Load(WorldSources sources, out SceneMaterialData data)
         {
             data = null;
-            WorldLoadResult loaded = new WorldSourceLoader().Load(sources);
+            WorldLoadResult loaded = LoadBySchemaVersion(sources);
             if (!loaded.Result.IsSuccess) return loaded.Result;
             data = new SceneMaterialData(loaded);
             return loaded.Result;
@@ -44,7 +45,7 @@ namespace OpenOita.Data
         {
             var cells = new List<InitialCell>(_cells.Count);
             foreach (var item in _cells) cells.Add(new InitialCell(item.Key.x, item.Key.y, item.Value));
-            return new SceneInitialData(1, Materials.MaterialSetId, "materials.json", "world_config.json", cells, _fixed, _burning);
+            return new SceneInitialData(Config.SchemaVersion, Materials.MaterialSetId, "materials.json", "world_config.json", cells, _fixed, _burning);
         }
 
         public WorldResult Export(out WorldSources sources) => ConfigurationSerializer.Serialize(Config, Snapshot(), Materials, out sources);
@@ -95,5 +96,24 @@ namespace OpenOita.Data
 
         private static WorldResult Error(WorldErrorCode code, string target, string message) =>
             WorldResult.Failure(code, new WorldDiagnostic("初态编辑", target, message, "scene.json"));
+
+        internal static WorldLoadResult LoadBySchemaVersion(WorldSources sources, long memoryBudgetBytes = long.MaxValue)
+        {
+            if (sources == null) return new WorldLoadResult(WorldResult.Failure(WorldErrorCode.InvalidArgument,
+                new WorldDiagnostic("配置读取", "$", "WorldSources 不能为空。")));
+            string file = string.IsNullOrWhiteSpace(sources.WorldConfigFileName) ? "world_config.json" : sources.WorldConfigFileName;
+            try
+            {
+                JObject world = StrictJson.Parse(sources.WorldConfigText, file);
+                if (world["schemaVersion"] == null) StrictJson.Fail(world, file, "缺少必需字段 schemaVersion。");
+                long version = StrictJson.Integer(world["schemaVersion"], file, 0, int.MaxValue);
+                if (version == 1) return new WorldSourceLoader(memoryBudgetBytes).Load(sources);
+                if (version == 2) return new WorldSourceLoaderV2().Load(sources);
+                StrictJson.Fail(world["schemaVersion"], file, "仅支持 schemaVersion=1 或 2。", WorldErrorCode.UnsupportedVersion);
+            }
+            catch (ConfigurationException ex) { return new WorldLoadResult(ex.Result); }
+            return new WorldLoadResult(WorldResult.Failure(WorldErrorCode.UnsupportedVersion,
+                new WorldDiagnostic("配置读取", "schemaVersion", "仅支持 schemaVersion=1 或 2。", file)));
+        }
     }
 }

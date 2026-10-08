@@ -20,7 +20,8 @@ namespace OpenOita.Host
             Automatic = automatic;
         }
 
-        internal WorldResult Advance(double frameSeconds, int maxStepsPerFrame = 8)
+        // 默认每帧最多一Tick，避免重负载时连续补跑将Editor消息处理饿死；积压时间保留。
+        internal WorldResult Advance(double frameSeconds, int maxStepsPerFrame = 1)
         {
             if (!Automatic || _executing) return Busy();
             if (double.IsNaN(frameSeconds) || double.IsInfinity(frameSeconds) || frameSeconds < 0 || maxStepsPerFrame < 1 ||

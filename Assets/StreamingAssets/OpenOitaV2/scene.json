@@ -1,0 +1,899 @@
+{
+  "schemaVersion": 2,
+  "materialSetId": "openoita-core-v1",
+  "worldConfig": "world_config.json",
+  "materialsFile": "materials.json",
+  "cells": [
+    {
+      "x": 0,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 17,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 18,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 19,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 20,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 21,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 22,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 23,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 25,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 26,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 27,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 28,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 29,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 30,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 31,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 32,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 33,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 34,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 35,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 36,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 37,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 38,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 39,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 40,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 41,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 42,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 43,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 44,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 45,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 46,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 47,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 48,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 49,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 50,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 51,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 52,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 53,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 54,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 55,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 56,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 57,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 58,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 59,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 60,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 61,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 62,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 63,
+      "y": 0,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "materialId": 102
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "materialId": 102
+    },
+    {
+      "x": 23,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 24,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 25,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 26,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 27,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 28,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 29,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 30,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 32,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 33,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 34,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 35,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 36,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 37,
+      "y": 1,
+      "materialId": 101
+    },
+    {
+      "x": 38,
+      "y": 1,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "materialId": 102
+    },
+    {
+      "x": 22,
+      "y": 2,
+      "materialId": 102
+    },
+    {
+      "x": 23,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 24,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 25,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 26,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 27,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 28,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 29,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 30,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 31,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 32,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 33,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 34,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 35,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 36,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 37,
+      "y": 2,
+      "materialId": 101
+    },
+    {
+      "x": 38,
+      "y": 2,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "materialId": 102
+    },
+    {
+      "x": 22,
+      "y": 3,
+      "materialId": 102
+    },
+    {
+      "x": 38,
+      "y": 3,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "materialId": 102
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "materialId": 102
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "materialId": 102
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "materialId": 102
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 15,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 17,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 19,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 22,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 23,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 24,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 25,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 26,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 27,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 29,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 30,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 31,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 32,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 33,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 34,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 35,
+      "y": 8,
+      "materialId": 104
+    },
+    {
+      "x": 13,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 21,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 22,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 24,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 25,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 26,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 27,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 28,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 29,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 30,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 31,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 32,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 33,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 34,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 35,
+      "y": 9,
+      "materialId": 104
+    },
+    {
+      "x": 25,
+      "y": 13,
+      "materialId": 103
+    },
+    {
+      "x": 26,
+      "y": 13,
+      "materialId": 103
+    },
+    {
+      "x": 27,
+      "y": 13,
+      "materialId": 103
+    },
+    {
+      "x": 28,
+      "y": 13,
+      "materialId": 103
+    },
+    {
+      "x": 29,
+      "y": 13,
+      "materialId": 103
+    }
+  ],
+  "fixedCells": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 63,
+      "y": 0
+    }
+  ],
+  "initialBurning": [
+    {
+      "x": 13,
+      "y": 8
+    }
+  ]
+}

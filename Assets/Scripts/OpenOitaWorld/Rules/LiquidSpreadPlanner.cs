@@ -235,6 +235,8 @@ namespace OpenOita.Rules
                 {
                     landingY = lowerY;
                     distance = path;
+                    // 已到世界最低行；后续更远的列不可能更低，也不可能赢得距离平局。
+                    if (landingY == 0) break;
                 }
             }
             return WorldResult.Success();

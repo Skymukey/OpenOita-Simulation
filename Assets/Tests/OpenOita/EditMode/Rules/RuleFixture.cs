@@ -33,7 +33,7 @@ namespace OpenOita.Tests.EditMode.Rules
         internal int Expired;
 
         internal RuleFixture(uint seed = 1, int height = 256, Action<JObject> editMaterials = null,
-            IOccupancyView occupancy = null, int capacity = 1024)
+            IOccupancyView occupancy = null, int capacity = 1024, int width = 256)
         {
             WorldSources sources = BaselineSources.Read();
             JObject material = BaselineSources.Parse(BaselineSources.ShortBurningMaterials(sources.MaterialsText));
@@ -41,6 +41,7 @@ namespace OpenOita.Tests.EditMode.Rules
             JObject world = BaselineSources.Parse(sources.WorldConfigText);
             world["seed"] = seed;
             world["height"] = height;
+            world["width"] = width;
             JObject scene = BaselineSources.Parse(sources.SceneText);
             scene["cells"] = new JArray();
             scene["fixedCells"] = new JArray();

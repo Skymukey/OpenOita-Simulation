@@ -68,6 +68,67 @@ namespace OpenOita.Tests.EditMode.M02
         }
 
         [Test]
+        public void M02_01_LargeCanvasFarCornerReadsStaySparseAndWritesAllocateOneChunk()
+        {
+            const int width = 9600;
+            const int height = 6400;
+            const int right = width - 1;
+            const int top = height - 1;
+            using var store = new ChunkStore(width, height);
+
+            for (int i = 0; i < 100; i++)
+            {
+                Assert.That(store.Read(right, top, out CellState empty).IsSuccess, Is.True);
+                Assert.That(empty.MaterialId, Is.Zero);
+            }
+            Assert.That(store.ChunkCount, Is.Zero);
+            Assert.That(store.StorageBytes, Is.Zero);
+
+            Assert.That(store.Write(right, top, new CellState { MaterialId = 101 }).IsSuccess, Is.True);
+            Assert.That(store.ChunkCount, Is.EqualTo(1));
+            Assert.That(store.StorageBytes, Is.EqualTo(WorldChunk.StorageBytes));
+            Assert.That(store.Read(right, top, out CellState written).IsSuccess, Is.True);
+            Assert.That(written.MaterialId, Is.EqualTo(101));
+
+            foreach (var point in new[]
+            {
+                new Vector2Int(-1, 0), new Vector2Int(width, top), new Vector2Int(right, height),
+                new Vector2Int(int.MaxValue, int.MaxValue)
+            })
+            {
+                Assert.That(store.Read(point.x, point.y, out _).ErrorCode, Is.EqualTo(WorldErrorCode.OutOfBounds));
+                Assert.That(store.Write(point.x, point.y, new CellState { MaterialId = 102 }).ErrorCode,
+                    Is.EqualTo(WorldErrorCode.OutOfBounds));
+            }
+            Assert.That(store.ChunkCount, Is.EqualTo(1));
+        }
+
+        [Test]
+        public void M02_01_LargeCanvasFarCornerCloneKeepsBranchesIsolated()
+        {
+            const int right = 9599;
+            const int top = 6399;
+            using var original = new ChunkStore(9600, 6400);
+            Assert.That(original.Write(right, top, new CellState { MaterialId = 101 }).IsSuccess, Is.True);
+
+            using var candidate = original.Clone();
+            Assert.That(candidate.ChunkCount, Is.EqualTo(1));
+            Assert.That(candidate.CopiedChunks, Is.Zero);
+            Assert.That(candidate.Write(right, top, new CellState { MaterialId = 103 }).IsSuccess, Is.True);
+            Assert.That(candidate.CopiedChunks, Is.EqualTo(1));
+            Assert.That(original.Read(right, top, out CellState originalValue).IsSuccess, Is.True);
+            Assert.That(originalValue.MaterialId, Is.EqualTo(101));
+            Assert.That(candidate.Read(right, top, out CellState candidateValue).IsSuccess, Is.True);
+            Assert.That(candidateValue.MaterialId, Is.EqualTo(103));
+
+            Assert.That(original.Write(right, top, new CellState { MaterialId = 104 }).IsSuccess, Is.True);
+            Assert.That(original.Read(right, top, out originalValue).IsSuccess, Is.True);
+            Assert.That(originalValue.MaterialId, Is.EqualTo(104));
+            Assert.That(candidate.Read(right, top, out candidateValue).IsSuccess, Is.True);
+            Assert.That(candidateValue.MaterialId, Is.EqualTo(103));
+        }
+
+        [Test]
         public void M02_01_ChunkMemoryFailureAndEmptyWritesDoNotAllocate()
         {
             using var store = new ChunkStore(256, 256, 0);

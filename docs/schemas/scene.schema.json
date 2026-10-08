@@ -76,13 +76,13 @@
           "description": "逻辑像素横坐标，向右递增；不是屏幕坐标，还必须小于关联世界的 width。",
           "type": "integer",
           "minimum": 0,
-          "maximum": 4095
+          "maximum": 16383
         },
         "y": {
           "description": "逻辑像素纵坐标，向上递增；不是屏幕坐标，还必须小于关联世界的 height。",
           "type": "integer",
           "minimum": 0,
-          "maximum": 4095
+          "maximum": 16383
         }
       }
     },
@@ -99,13 +99,13 @@
           "description": "逻辑像素横坐标，向右递增；不是屏幕坐标，还必须小于关联世界的 width。",
           "type": "integer",
           "minimum": 0,
-          "maximum": 4095
+          "maximum": 16383
         },
         "y": {
           "description": "逻辑像素纵坐标，向上递增；不是屏幕坐标，还必须小于关联世界的 height。",
           "type": "integer",
           "minimum": 0,
-          "maximum": 4095
+          "maximum": 16383
         },
         "materialId": {
           "description": "引用关联材料文件中存在的非零材料 ID。",

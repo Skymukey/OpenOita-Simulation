@@ -111,7 +111,7 @@ namespace OpenOita.Editor
             if (current.SceneText != _knownScene || current.MaterialsText != _knownMaterials || current.WorldConfigText != _knownConfig)
                 return LastResult = Error("资产发生外部修订，拒绝用旧笔触覆盖；待处理编辑已保留。");
             WorldResult result;
-            if (!new WorldSourceLoader().Load(sources).Result.IsSuccess) return LastResult = Error("笔触校验失败，已保留待处理编辑。");
+            if (!SceneMaterialData.Load(sources, out _).IsSuccess) return LastResult = Error("笔触校验失败，已保留待处理编辑。");
             Undo.IncrementCurrentGroup(); Undo.SetCurrentGroupName(undoName);
             Undo.RegisterCompleteObjectUndo(Asset, undoName);
             result = Asset.ReplaceSources(sources);
@@ -123,8 +123,8 @@ namespace OpenOita.Editor
         {
             WorldResult writable = CheckWritable(Asset);
             if (!writable.IsSuccess) return LastResult = writable;
-            WorldLoadResult loaded = new WorldSourceLoader().Load(sources);
-            if (!loaded.Result.IsSuccess) return LastResult = loaded.Result;
+            WorldResult loaded = SceneMaterialData.Load(sources, out _);
+            if (!loaded.IsSuccess) return LastResult = loaded;
             WorldResult committed = Pending ? Commit() : WorldResult.Success();
             if (!committed.IsSuccess) return committed;
             Undo.IncrementCurrentGroup(); Undo.SetCurrentGroupName("导入地图JSON");
@@ -182,7 +182,7 @@ namespace OpenOita.Editor
                 {
                     foreach (var value in disk) if (value is OpenOitaMapAsset level) sources = level.Sources;
                     if (sources == null) return Error("磁盘关卡无法读取：" + path);
-                    return new WorldSourceLoader().Load(sources).Result;
+                    return SceneMaterialData.Load(sources, out _);
                 }
                 finally { foreach (var value in disk) UnityEngine.Object.DestroyImmediate(value); }
             }

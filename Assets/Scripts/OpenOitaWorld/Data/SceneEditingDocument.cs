@@ -28,12 +28,12 @@ namespace OpenOita.Data
 
         public WorldResult CreateEmpty(WorldSources template, int width, int height, float cellSize)
         {
-            WorldLoadResult loaded = new WorldSourceLoader().Load(template);
+            WorldLoadResult loaded = SceneMaterialData.LoadBySchemaVersion(template);
             if (!loaded.Result.IsSuccess) return loaded.Result;
             WorldConfig old = loaded.Config;
             var config = new WorldConfig(old.SchemaVersion, width, height, old.ChunkSize, cellSize,
                 old.StepSeconds, old.GravityY, old.Seed, old.Limits);
-            var scene = new SceneInitialData(1, loaded.Materials.MaterialSetId, "materials.json", "world_config.json",
+            var scene = new SceneInitialData(old.SchemaVersion, loaded.Materials.MaterialSetId, "materials.json", "world_config.json",
                 Array.Empty<InitialCell>(), Array.Empty<Vector2Int>(), Array.Empty<Vector2Int>());
             WorldResult result = ConfigurationSerializer.Serialize(config, scene, loaded.Materials, out WorldSources sources);
             return result.IsSuccess ? Load(sources) : result;
@@ -71,7 +71,7 @@ namespace OpenOita.Data
             // 首次保存也校验目标目录的两个引用文件；不读旧scene、不改材料或世界参数。
             WorldResult read = _store.ReadSourcesWithScene(directory, sources.SceneText, out WorldSources target);
             if (!read.IsSuccess) return read;
-            WorldLoadResult loaded = new WorldSourceLoader().Load(target);
+            WorldLoadResult loaded = SceneMaterialData.LoadBySchemaVersion(target);
             if (!loaded.Result.IsSuccess) return loaded.Result;
             WorldResult normalized = ConfigurationSerializer.Serialize(loaded.Config, loaded.Scene, loaded.Materials, out WorldSources canonical);
             if (!normalized.IsSuccess) return normalized;

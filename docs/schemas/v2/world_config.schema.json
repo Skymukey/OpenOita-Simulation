@@ -1,0 +1,130 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "width",
+    "height",
+    "cellSize",
+    "stepSeconds",
+    "gravityY",
+    "seed",
+    "limits"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "description": "世界配置格式版本，V2 固定为 2。",
+      "const": 2,
+      "type": "integer"
+    },
+    "width": {
+      "description": "世界横向逻辑像素数；一个逻辑像素是一格独立材料状态，合法坐标为 0 到 width - 1，不表示窗口宽度。",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16384
+    },
+    "height": {
+      "description": "世界纵向逻辑像素数；一个逻辑像素是一格独立材料状态，合法坐标为 0 到 height - 1，不表示窗口高度。",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16384
+    },
+    "cellSize": {
+      "description": "一个逻辑像素对应的世界长度，单位为米（实现按 Unity 世界单位，默认 1 单位对应 1 游戏米），必须为有限正数；不是屏幕像素大小或显示倍率。",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stepSeconds": {
+      "description": "固定逻辑 Tick 时长，单位为秒，必须为有限正数。",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "gravityY": {
+      "description": "竖直重力加速度，单位为米每二次方秒；必须为有限数，负值向下。",
+      "type": "number"
+    },
+    "seed": {
+      "description": "确定性规则使用的随机种子，不能依赖每次运行的系统时间。",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxMaterialCells",
+        "maxDynamicBodies",
+        "maxShapesPerBody",
+        "maxTotalShapes",
+        "maxChangesPerTick",
+        "maxLinearSpeed",
+        "maxAngularSpeedDegrees",
+        "maxPhysicsSubsteps",
+        "fluidDisplacementRadius"
+      ],
+      "properties": {
+        "maxMaterialCells": {
+          "description": "同时存在的非空逻辑像素数量上限，包含主网格、所有动态体局部网格和水汽暂存记录（公共合同1.10）；显示放大不增加此计数，模板展开须按实际生成的独立像素计数。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxDynamicBodies": {
+          "description": "动态结构体数量上限。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxShapesPerBody": {
+          "description": "每个物理体允许提交的碰撞形状数上限。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxTotalShapes": {
+          "description": "全世界允许提交的碰撞形状数上限。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxChangesPerTick": {
+          "description": "每个逻辑 Tick 允许提交的材料变更数上限，按公共合同D02去重；1.10设计包含暂存源/记录、恢复记录/目标以及暂存蒸汽寿命和消散写入。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxLinearSpeed": {
+          "description": "动态体线速度上限，单位为米每秒，必须为有限正数。",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxAngularSpeedDegrees": {
+          "description": "动态体角速度上限，单位为度每秒，必须为有限正数。",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxPhysicsSubsteps": {
+          "description": "每个逻辑 Tick 允许的物理子步数上限。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "fluidDisplacementRadius": {
+          "description": "沿用字段名；公共合同1.10中用于暂存水汽恢复的四邻接最短路径上限，单位为格。正式实现使用暂存与恢复；字段范围与默认值不变。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4096
+        }
+      },
+      "description": "示例中的预算是配置草案目标，不代表实测性能承诺。"
+    }
+  },
+  "description": "V2 世界配置。每格即一个独立逻辑像素；显示倍率是独立视图设置，不写入本格式。所有数值必须有限；预算组合与宽高乘积等依赖关系由加载器额外校验。",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenOita 世界配置格式"
+}
+
+
+
+

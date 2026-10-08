@@ -7,12 +7,17 @@ namespace OpenOita.Contracts
     public static class ContractDefaults
     {
         public const int ChunkSize = 128;
+        // 逻辑画布边长上限；材料及实际区块仍受独立容量和内存预算约束。
+        public const int MaxWorldDimension = 16384;
         public const int MaxPendingCommands = 4096;
         public const int CompletedResultCapacity = 4096;
         public const int BoundaryShapes = 4;
         public const float ContactEpsilonFactor = 1e-4f;
         public const float PhysicsPenetrationFactor = 0.1f;
-        public const long CpuBudgetBytes = 256L * 1024 * 1024;
+        // 当前关闭默认CPU内存预算拒绝；启用后恢复512 MiB。显式传入的小预算仍用于测试/宿主约束。
+        public const bool CpuMemoryBudgetEnabled = false;
+        public const long ConfiguredCpuBudgetBytes = 512L * 1024 * 1024;
+        public const long CpuBudgetBytes = CpuMemoryBudgetEnabled ? ConfiguredCpuBudgetBytes : long.MaxValue;
         public static bool IsFinite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
         public static bool IsFinite(Vector2 value) => IsFinite(value.x) && IsFinite(value.y);
         public static bool PreferLeft(ulong tick, int x, int y, uint seed) => ((tick & 1UL) ^ (uint)(x & 1) ^ (uint)(y & 1) ^ (seed & 1U)) == 0;

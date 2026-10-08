@@ -14,7 +14,7 @@ namespace OpenOita.Editor
     {
         public static OpenOitaMap Create(Scene scene, GameObject parent = null, int width = 256, int height = 256, float cellSize = 0.1f, string assetFolder = "Assets/OpenOita/Maps")
         {
-            WorldResult result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOita"), out WorldSources template);
+            WorldResult result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOitaV2"), out WorldSources template);
             var document = new SceneEditingDocument();
             if (result.IsSuccess) result = document.CreateEmpty(template, width, height, cellSize);
             if (!result.IsSuccess) throw new InvalidOperationException(result.Diagnostic.Message);
@@ -125,7 +125,7 @@ namespace OpenOita.Editor
                     if (GUILayout.Button("创建并绑定空白关卡"))
                     {
                         var document = new SceneEditingDocument();
-                        WorldResult result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOita"), out WorldSources source);
+                        WorldResult result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOitaV2"), out WorldSources source);
                         if (result.IsSuccess) result = document.CreateEmpty(source, 256, 256, 0.1f);
                         if (result.IsSuccess)
                         {

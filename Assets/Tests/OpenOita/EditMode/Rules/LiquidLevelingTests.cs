@@ -10,6 +10,32 @@ namespace OpenOita.Tests.EditMode.Rules
     [Category("LiquidLeveling")]
     public sealed class LiquidLevelingTests
     {
+        [TestCase(256)]
+        [TestCase(9600)]
+        public void HorizontalOutletStopsAfterClosestWorldBottomAndMovesOnlyOneCell(int width)
+        {
+            int x = width / 2;
+            const int y = 273;
+            var fixture = new RuleFixture(height: 6400, capacity: 16, width: width);
+            fixture.Put(x, y, 101);
+            for (int column = x - 1; column <= x + 1; column++) fixture.Put(column, y - 1, 102);
+            fixture.Begin();
+            var metrics = new OpenOita.Simulation.WorldStepMetrics();
+            IRuleBatch batch;
+            using (metrics.Activate())
+                batch = fixture.Rules.Movement.Resolve(fixture.Run(fixture.Rules.Water, TickStage.Water));
+
+            Assert.That(batch.Result.IsSuccess, Is.True);
+            MutationIntent move = batch.Intents.ToArray().Single(intent => intent.Kind == MutationKind.Move);
+            Assert.That(move.Target, Is.EqualTo(RuleFixture.Grid(x - 1, y)));
+            fixture.Apply(batch);
+            Assert.That(fixture.Cells.Count(cell => cell.Value.MaterialId == 101), Is.EqualTo(1));
+
+            object snapshot = metrics.Snapshot();
+            var work = (System.Collections.Generic.Dictionary<string, long>)snapshot.GetType().GetProperty("work").GetValue(snapshot);
+            Assert.That(work["OutletProbes"], Is.LessThan(600), "找到最近y=0出口后不再扫描远端空白画布。");
+        }
+
         [TestCase(1, 1U)]
         [TestCase(1, 2U)]
         [TestCase(8, 1U)]

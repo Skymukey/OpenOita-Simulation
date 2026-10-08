@@ -134,7 +134,7 @@ namespace OpenOita.Tests.EditMode.M01
                 case "世界版本": world["schemaVersion"] = 2; break;
                 case "场景版本": scene["schemaVersion"] = 2; break;
                 case "宽零": world["width"] = 0; break;
-                case "宽上限": world["width"] = 4097; break;
+                case "宽上限": world["width"] = ContractDefaults.MaxWorldDimension + 1; break;
                 case "块长": world["chunkSize"] = 64; break;
                 case "cellSize零": world["cellSize"] = 0; break;
                 case "cellSize下溢": worldText = original.WorldConfigText.Replace("\"cellSize\": 0.1", "\"cellSize\": 1e-100"); break;
@@ -144,8 +144,14 @@ namespace OpenOita.Tests.EditMode.M01
                 case "限制零": world["limits"]["maxDynamicBodies"] = 0; break;
                 case "半径上限": world["limits"]["fluidDisplacementRadius"] = 4097; break;
                 case "低格数": world["limits"]["maxMaterialCells"] = 174; break;
-                case "极大预算": world["limits"]["maxMaterialCells"] = int.MaxValue; break;
-                case "极大形状": world["limits"]["maxTotalShapes"] = int.MaxValue; break;
+                case "极大预算":
+                    loader = new WorldSourceLoader(ContractDefaults.ConfiguredCpuBudgetBytes);
+                    world["limits"]["maxMaterialCells"] = int.MaxValue;
+                    break;
+                case "极大形状":
+                    loader = new WorldSourceLoader(ContractDefaults.ConfiguredCpuBudgetBytes);
+                    world["limits"]["maxTotalShapes"] = int.MaxValue;
+                    break;
                 case "世界长度溢出": world["cellSize"] = 1e38; break;
                 case "物理组合溢出": world["stepSeconds"] = 1e30; break;
                 default: throw new ArgumentException(name);
@@ -160,6 +166,24 @@ namespace OpenOita.Tests.EditMode.M01
             Assert.That(good.Materials.Count, Is.EqualTo(4)); Assert.That(good.Scene.Cells.Count, Is.EqualTo(175));
             Assert.That(loader.Load(original).Result.IsSuccess, Is.True);
         }
+        [Test]
+        public void DisabledDefaultMemoryBudgetAllowsReservationButExplicitBudgetStillRejectsIt()
+        {
+            WorldSources original = BaselineSources.Read();
+            JObject config = JObject.Parse(original.WorldConfigText);
+            config["limits"]["maxMaterialCells"] = 8000000;
+            var sources = new WorldSources(original.MaterialsText, config.ToString(), original.SceneText);
+
+            WorldLoadResult unrestricted = new WorldSourceLoader().Load(sources);
+            Assert.That(unrestricted.Result.IsSuccess, Is.True);
+            Assert.That(unrestricted.Scene.Cells.Count, Is.EqualTo(175));
+
+            WorldLoadResult limited = new WorldSourceLoader(ContractDefaults.ConfiguredCpuBudgetBytes).Load(sources);
+            Assert.That(limited.Result.ErrorCode, Is.EqualTo(WorldErrorCode.CapacityExceeded));
+            Assert.That(limited.Config, Is.Null);
+            Assert.That(limited.Scene, Is.Null);
+        }
+
         private static void Reverse(JObject scene, string field) => scene[field] = new JArray(((JArray)scene[field]).Reverse().Select(t => t.DeepClone()));
         private static JObject Coordinate(JArray cells, int id)
         {
@@ -235,6 +259,70 @@ namespace OpenOita.Tests.EditMode.M01
             Assert.That(low.Result.Diagnostic.Target, Is.EqualTo("limits"));
             Assert.That(low.Materials, Is.Null);
             Assert.That(new WorldSourceLoader(1024).Load(changed).Result.ErrorCode, Is.EqualTo(WorldErrorCode.CapacityExceeded));
+        }
+
+        [Test]
+        public void M01_06_LargeCanvasRightTopCellLoadsAndRoundTripsThroughSerialization()
+        {
+            WorldSources baseline = BaselineSources.Read();
+            JObject world = JObject.Parse(baseline.WorldConfigText);
+            JObject scene = JObject.Parse(baseline.SceneText);
+            world["width"] = 9600;
+            world["height"] = 6400;
+            ((JArray)scene["cells"]).Add(new JObject { ["x"] = 9599, ["y"] = 6399, ["materialId"] = 104 });
+            ((JArray)scene["fixedCells"]).Add(new JObject { ["x"] = 9599, ["y"] = 6399 });
+            ((JArray)scene["initialBurning"]).Add(new JObject { ["x"] = 9599, ["y"] = 6399 });
+
+            WorldSources large = new WorldSources(baseline.MaterialsText, world.ToString(), scene.ToString());
+            WorldLoadResult loaded = new WorldSourceLoader().Load(large);
+            Assert.That(loaded.Result.IsSuccess, Is.True, loaded.Result.Diagnostic.Message);
+            Assert.That(loaded.Config.Width, Is.EqualTo(9600));
+            Assert.That(loaded.Config.Height, Is.EqualTo(6400));
+            Assert.That(loaded.Scene.Cells.Count, Is.EqualTo(176));
+            Assert.That(loaded.Scene.Cells[loaded.Scene.Cells.Count - 1].Position, Is.EqualTo(new UnityEngine.Vector2Int(9599, 6399)));
+
+            Assert.That(ConfigurationSerializer.Serialize(loaded.Config, loaded.Scene, loaded.Materials, out WorldSources serialized).IsSuccess, Is.True);
+            JObject savedScene = JObject.Parse(serialized.SceneText);
+            JArray savedCells = (JArray)savedScene["cells"];
+            JToken savedTail = savedCells[savedCells.Count - 1];
+            Assert.That((int)savedTail["x"], Is.EqualTo(9599));
+            Assert.That((int)savedTail["y"], Is.EqualTo(6399));
+
+            WorldLoadResult roundTrip = new WorldSourceLoader().Load(serialized);
+            Assert.That(roundTrip.Result.IsSuccess, Is.True, roundTrip.Result.Diagnostic.Message);
+            Assert.That(roundTrip.Config.Width, Is.EqualTo(9600));
+            Assert.That(roundTrip.Config.Height, Is.EqualTo(6400));
+            Assert.That(roundTrip.Scene.Cells[roundTrip.Scene.Cells.Count - 1].Position, Is.EqualTo(new UnityEngine.Vector2Int(9599, 6399)));
+            Assert.That(roundTrip.Scene.FixedCells[roundTrip.Scene.FixedCells.Count - 1], Is.EqualTo(new UnityEngine.Vector2Int(9599, 6399)));
+            Assert.That(roundTrip.Scene.InitialBurning[roundTrip.Scene.InitialBurning.Count - 1], Is.EqualTo(new UnityEngine.Vector2Int(9599, 6399)));
+        }
+
+        [TestCase(16384, 16384, true)]
+        [TestCase(16385, 16384, false)]
+        [TestCase(16384, 16385, false)]
+        [TestCase(0, 16384, false)]
+        [TestCase(16384, 0, false)]
+        public void M01_06_WorldDimensionContractAcceptsMaximumAndRejectsOutside(int width, int height, bool expectedSuccess)
+        {
+            WorldSources baseline = BaselineSources.Read();
+            JObject world = JObject.Parse(baseline.WorldConfigText);
+            world["width"] = width;
+            world["height"] = height;
+
+            WorldLoadResult result = new WorldSourceLoader().Load(new WorldSources(
+                baseline.MaterialsText, world.ToString(), baseline.SceneText));
+            Assert.That(result.Result.IsSuccess, Is.EqualTo(expectedSuccess), result.Result.Diagnostic.Message);
+            if (expectedSuccess)
+            {
+                Assert.That(result.Config.Width, Is.EqualTo(ContractDefaults.MaxWorldDimension));
+                Assert.That(result.Config.Height, Is.EqualTo(ContractDefaults.MaxWorldDimension));
+            }
+            else
+            {
+                Assert.That(result.Result.ErrorCode, Is.Not.EqualTo(WorldErrorCode.None));
+                Assert.That(result.Config, Is.Null);
+                Assert.That(result.Scene, Is.Null);
+            }
         }
 
         [Test]

@@ -1,0 +1,120 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "materialSetId",
+    "worldConfig",
+    "materialsFile",
+    "cells",
+    "fixedCells",
+    "initialBurning"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "description": "场景格式版本，V2 固定为 2。",
+      "const": 2,
+      "type": "integer"
+    },
+    "materialSetId": {
+      "description": "必须与关联材料文件的 materialSetId 相同。",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "worldConfig": {
+      "description": "V2 引用同目录下固定名称的世界配置文件。",
+      "type": "string",
+      "const": "world_config.json"
+    },
+    "materialsFile": {
+      "description": "V2 引用同目录下固定名称的材料配置文件。",
+      "type": "string",
+      "const": "materials.json"
+    },
+    "cells": {
+      "description": "编辑初态的非空逻辑像素，每项只初始化一个坐标的一份独立材料状态；不隐式展开成多像素块。按 y 再 x 升序，坐标不得重复。",
+      "type": "array",
+      "maxItems": 16777216,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/cell"
+      }
+    },
+    "fixedCells": {
+      "description": "固定格坐标，必须对应有 structure 标签的已占用格；按 y 再 x 升序且不重复。",
+      "type": "array",
+      "maxItems": 16777216,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/coordinate"
+      }
+    },
+    "initialBurning": {
+      "description": "加载完成后点燃的格坐标，必须对应有 burnable 标签的已占用格；按 y 再 x 升序且不重复。",
+      "type": "array",
+      "maxItems": 16777216,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/coordinate"
+      }
+    }
+  },
+  "description": "V2 只保存编辑初态；不保存运行时燃料、速度、气体寿命或动态 Body ID。跨文件引用与坐标语义需要额外校验。",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenOita 编辑初态场景格式",
+  "$defs": {
+    "coordinate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "description": "逻辑像素横坐标，向右递增；不是屏幕坐标，还必须小于关联世界的 width。",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16383
+        },
+        "y": {
+          "description": "逻辑像素纵坐标，向上递增；不是屏幕坐标，还必须小于关联世界的 height。",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16383
+        }
+      }
+    },
+    "cell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "materialId"
+      ],
+      "properties": {
+        "x": {
+          "description": "逻辑像素横坐标，向右递增；不是屏幕坐标，还必须小于关联世界的 width。",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16383
+        },
+        "y": {
+          "description": "逻辑像素纵坐标，向上递增；不是屏幕坐标，还必须小于关联世界的 height。",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16383
+        },
+        "materialId": {
+          "description": "引用关联材料文件中存在的非零材料 ID。",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535
+        }
+      }
+    }
+  }
+}
+
