@@ -18,12 +18,15 @@ namespace OpenOita.Data
             new RuleDescriptor(RuleId.Corrodible, "corrodible", MaterialKind.Solid, TickStage.PreFlowContacts, RuleTrigger.ContactCapability)
         };
         private readonly bool _v2;
+        private static readonly RuleDescriptor V2Burnable = new RuleDescriptor(RuleId.Burnable, "burnable",
+            MaterialKind.Solid, TickStage.Burning, RuleTrigger.BurningCells, MaterialKind.Liquid);
         public RuleRegistry(bool v2 = false) { _v2 = v2; }
         public int Count => _v2 ? Descriptors.Length - 1 : 5;
         public bool TryGet(RuleId id, out RuleDescriptor descriptor)
         {
             int index = (int)id;
             descriptor = index > 0 && index <= Count ? Descriptors[index] : default;
+            if (_v2 && id == RuleId.Burnable) descriptor = V2Burnable;
             return index > 0 && index <= Count;
         }
 
@@ -37,7 +40,8 @@ namespace OpenOita.Data
                 if (index <= 0 || index > Count) StrictJson.Fail(tag, file, "未知规则标签。", WorldErrorCode.UnknownRule);
                 RuleMask bit = (RuleMask)(1UL << (index - 1));
                 if ((mask & bit) != 0) StrictJson.Fail(tag, file, "重复规则标签。");
-                if (Descriptors[index].Kind != kind) StrictJson.Fail(tag, file, "规则与 kind 不兼容。", WorldErrorCode.IncompatibleRule);
+                TryGet((RuleId)index, out RuleDescriptor descriptor);
+                if (!descriptor.SupportsKind(kind)) StrictJson.Fail(tag, file, "规则与 kind 不兼容。", WorldErrorCode.IncompatibleRule);
                 mask |= bit;
             }
             RuleMask required = kind == MaterialKind.Solid ? RuleMask.Structure : kind == MaterialKind.Liquid ? RuleMask.LiquidFlow : RuleMask.GasDrift;

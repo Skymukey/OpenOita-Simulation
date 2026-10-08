@@ -94,6 +94,23 @@
         "liquid_flow": { "moveIntervalTicks": 2 },
         "corrosive": { "intervalTicks": 10 }
       }
+    },
+    {
+      "id": 107,
+      "name": "油",
+      "kind": "liquid",
+      "color": "#B88A32",
+      "massPerCell": 0.8,
+      "tags": ["liquid_flow", "burnable"],
+      "ruleParameters": {
+        "liquid_flow": { "moveIntervalTicks": 3 },
+        "burnable": {
+          "fuelTicks": 180,
+          "spreadIntervalTicks": 5,
+          "smokeMaterialId": 105,
+          "smokeIntervalTicks": 10
+        }
+      }
     }
   ]
 }

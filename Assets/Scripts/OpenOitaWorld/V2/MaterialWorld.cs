@@ -433,7 +433,9 @@ namespace OpenOita.V2
             GridCell cell = grid.Read(x, y); if (!cell.IsBurning) return;
             bool wet = cell.Cold.WetTick == Grid.Tick || HasWaterNeighbour(grid, x, y);
             if (!wet) return;
-            ulong consumedThrough = beforeBurn ? Grid.Tick - 1 : Grid.Tick;
+            ulong consumedThrough = beforeBurn && Grid.Tick != 0 ? Grid.Tick - 1 : Grid.Tick;
+            // 同Tick新点燃又熄灭不能回退到点燃之前，否则会多返还一Tick燃料。
+            consumedThrough = Math.Max(consumedThrough, cell.Cold.IgnitedTick);
             cell.Cold.FuelRemaining = (uint)Math.Min(uint.MaxValue, cell.Cold.BurnEndTick > consumedThrough ? cell.Cold.BurnEndTick - consumedThrough : 0);
             cell.Cold.WetTick = Grid.Tick; cell.Flags &= unchecked((byte)~GridCell.BurningFlag);
             _components.Unschedule(cell.ComponentHandle); grid.Write(x, y, cell);
@@ -496,6 +498,14 @@ namespace OpenOita.V2
                         while (dirty != 0)
                         {
                             int column = math.tzcnt(dirty); dirty &= dirty - 1;
+                            // 可燃液体自身也会移动，进入既有水的邻格后须立即检查灭火。
+                            int changedOffset = column + row * 32;
+                            if ((tile.Flags[changedOffset] & GridCell.BurningFlag) != 0 &&
+                                Definitions[tile.Material[changedOffset]].IsWater)
+                            {
+                                if (Candidates.Length == Candidates.Capacity) { Overflow[0] = 1; continue; }
+                                Candidates.AddNoResize(tile.Component[changedOffset]);
+                            }
                             if ((Definitions[tile.Material[column + row * 32]].Rules & RuleMask.ExtinguishesFire) == 0) continue;
                             int x = baseX + column, y = baseY + row;
                             for (int d = 0; d < 4; d++)
@@ -544,7 +554,17 @@ namespace OpenOita.V2
         {
             if (!_components.IsLive(handle)) return;
             CellCold cold = _components.Read(handle); if (!_definitions[cold.MaterialId].IsBurnable) return;
-            MaterialGrid grid = FindGrid(cold.GridHandle); if (grid == null) return;
+            MaterialGrid grid = FindGrid(cold.GridHandle);
+            if (grid == null)
+            {
+                // 覆盖暂存的油继续消耗燃料，隐藏时不传播或产烟；到期移除暂存记录。
+                if (cold.GridHandle == -1 && Physics != null)
+                {
+                    if (cold.BurnEndTick <= Grid.Tick) Physics.ExpireSuspended(handle);
+                    else _components.Schedule(handle, cold.BurnEndTick);
+                }
+                return;
+            }
             GridCell cell = grid.Read(cold.X, cold.Y); if (!cell.IsBurning || cell.ComponentHandle != handle) return;
             Extinguish(grid, cold.X, cold.Y, true); cell = grid.Read(cold.X, cold.Y); if (!cell.IsBurning) return;
             if (cold.IgnitedTick >= Grid.Tick) { Schedule(handle); return; }
@@ -629,7 +649,7 @@ namespace OpenOita.V2
             if (_mainBurnFallback.Capacity < _components.Records.Capacity) _mainBurnFallback.Capacity = _components.Records.Capacity;
             if (_mainSpreadSources.Capacity < _components.Records.Capacity) _mainSpreadSources.Capacity = _components.Records.Capacity;
             if (_smokeSources.Capacity < _components.Records.Capacity) _smokeSources.Capacity = _components.Records.Capacity;
-            int wetCapacity = checked(_components.Records.Capacity * 4);
+            int wetCapacity = checked(_components.Records.Capacity * 5);
             if (_mainWetCandidates.Capacity < wetCapacity) _mainWetCandidates.Capacity = wetCapacity;
         }
 
@@ -936,7 +956,11 @@ namespace OpenOita.V2
                 {
                     ExtinguishPhysicalContacts(false);
                     for (int t = 0; t < Grid.ChangedTiles.Length; t++) Physics.WakeSuspendedTile(Grid.ChangedTiles[t]);
-                    Physics.RestoreFluids(nextTick, 4096);
+                    if (Physics.RestoreFluids(nextTick, 4096) != 0)
+                    {
+                        // 恢复可形成新的接水邻接；发布前灭火，不返还已经消耗的本Tick燃料。
+                        CheckChangedWet(Grid, false);
+                    }
                 }
                 metrics.PhysicsMs = Milliseconds(phase);
                 PublishBodyEvents();

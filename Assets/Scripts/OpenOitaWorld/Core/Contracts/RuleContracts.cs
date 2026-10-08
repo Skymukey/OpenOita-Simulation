@@ -60,9 +60,13 @@ namespace OpenOita.Contracts
         public readonly MaterialKind Kind;
         public readonly TickStage Stage;
         public readonly RuleTrigger Trigger;
-        public RuleDescriptor(RuleId id, string tag, MaterialKind kind, TickStage stage, RuleTrigger trigger)
+        public readonly MaterialKind? AdditionalKind;
+        public bool SupportsKind(MaterialKind kind) => Kind == kind || AdditionalKind == kind;
+        public RuleDescriptor(RuleId id, string tag, MaterialKind kind, TickStage stage, RuleTrigger trigger,
+            MaterialKind? additionalKind = null)
         {
             Id = id; Tag = tag; Kind = kind; Stage = stage; Trigger = trigger;
+            AdditionalKind = additionalKind;
         }
     }
 

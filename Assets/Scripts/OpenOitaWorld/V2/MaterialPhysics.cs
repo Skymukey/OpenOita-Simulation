@@ -1967,9 +1967,13 @@ namespace OpenOita.V2
                             _wetContacts.Add(new WetContactV2(body.Body.Id, x, y, tick, beforeBurn));
                             if (waterComponent != 0 && _grid.ColdStore.IsLive(waterComponent))
                             {
-                                CellCold state = _grid.ColdStore.Read(waterComponent);
-                                state.WetTick = tick;
-                                _grid.ColdStore.Write(waterComponent, state);
+                                if ((_grid.Definitions[waterMaterial].Rules & RuleMask.ExtinguishesFire) != 0)
+                                {
+                                    CellCold state = _grid.ColdStore.Read(waterComponent);
+                                    state.WetTick = tick;
+                                    _grid.ColdStore.Write(waterComponent, state);
+                                }
+                                // 候选目录仍收集全部接触流体；只有灭火材料设置接水标记。
                                 if (_wetComponentKeys.Add(waterComponent)) _wetComponents.Add(waterComponent);
                             }
                         }
@@ -2031,7 +2035,9 @@ namespace OpenOita.V2
                     state.GridHandle = -1;
                     state.X = contact.X;
                     state.Y = contact.Y;
-                    state.WetTick = tick;
+                    // 固体覆盖并不等于接水，油须保留燃烧状态。
+                    if ((_grid.Definitions[moved.MaterialId].Rules & RuleMask.ExtinguishesFire) != 0)
+                        state.WetTick = tick;
                     _grid.ColdStore.Write(moved.ComponentHandle, state);
                 }
                 moved.Cold = state;
@@ -2076,6 +2082,14 @@ namespace OpenOita.V2
                         _grid.ColdStore.Write(cell.ComponentHandle, state);
                     }
                     _grid.Write(x, y, cell);
+                    if (cell.IsBurning)
+                    {
+                        // 隐藏期间仅安排燃尽；恢复时重新挂接传播、排烟和显示事件。
+                        CellCold state = cell.Cold;
+                        ulong due = Math.Min(state.BurnEndTick, Math.Min(state.NextSpreadTick, state.NextVisualTick));
+                        if (state.NextSmokeTick != 0) due = Math.Min(due, state.NextSmokeTick);
+                        _grid.ColdStore.Schedule(cell.ComponentHandle, Math.Max(tick + 1, due));
+                    }
                     _grid.WakeNeighborhood(x, y);
                     RemoveRestoreSchedule(recordId);
                     RemoveSuspendedAt(i);
