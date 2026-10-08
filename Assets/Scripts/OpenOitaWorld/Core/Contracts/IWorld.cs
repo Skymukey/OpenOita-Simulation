@@ -30,6 +30,12 @@ namespace OpenOita.Contracts
         WorldCreateResult Create(WorldSources sources, Vector2 origin);
     }
 
+    // 可选能力：与此世界加载的同一份不可变材料表。分类不决定调用方的碰撞规则。
+    public interface IWorldMaterialCatalog
+    {
+        IMaterialRuntimeTable Materials { get; }
+    }
+
     public interface IWorld
     {
         WorldLifecycle Lifecycle { get; }

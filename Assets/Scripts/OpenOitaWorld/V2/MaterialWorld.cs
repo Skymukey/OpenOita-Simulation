@@ -99,7 +99,7 @@ namespace OpenOita.V2
     }
 
     // 公共值类型沿用；运行态、规则和提交均为V2，不调用旧SimulationWorld/WorldRuntime。
-    public sealed unsafe class MaterialWorld : IWorld, ICommandResultView
+    public sealed unsafe class MaterialWorld : IWorld, ICommandResultView, IWorldMaterialCatalog
     {
         private readonly int _thread = Thread.CurrentThread.ManagedThreadId;
         private readonly WorldLoadResult _loaded;
@@ -138,6 +138,7 @@ namespace OpenOita.V2
         internal MaterialGrid Grid { get; private set; }
         internal MaterialPhysics Physics { get; private set; }
         public WorldConfig Config => _loaded.Config;
+        public IMaterialRuntimeTable Materials => _loaded.Materials;
         public Vector2 Origin => _origin;
         public WorldVersion Version => new WorldVersion(_generation, _tick);
         public WorldLifecycle Lifecycle { get; private set; } = WorldLifecycle.Creating;

@@ -45,6 +45,10 @@ namespace OpenOita.V2
         {
             if (_disposed) return PointFailure(version, WorldErrorCode.Disposed, "查询对象已释放。");
             if (!ContractDefaults.IsFinite(point)) return PointFailure(version, WorldErrorCode.InvalidArgument, "点坐标必须有限。");
+            // 世界半开范围适用于全部材料归属，不能让动态体绕过右/上端点排除。
+            Vector2 maximum = _origin + new Vector2(_grid.Width, _grid.Height) * _cellSize;
+            if (point.x < _origin.x || point.y < _origin.y || point.x >= maximum.x || point.y >= maximum.y)
+                return new PointQueryResult(WorldResult.Success(), version);
             if (TryGridPoint(version, point, out CellHit gridHit))
                 return new PointQueryResult(WorldResult.Success(), version, true, gridHit);
             BodyV2 selected = null;
@@ -137,8 +141,8 @@ namespace OpenOita.V2
 
         private bool TryGridPoint(WorldVersion version, Vector2 point, out CellHit hit)
         {
-            Vector2 local = point - _origin;
-            int x = Mathf.FloorToInt(local.x / _cellSize), y = Mathf.FloorToInt(local.y / _cellSize);
+            hit = default;
+            if (!TryPointCoordinates(_grid, new BodyPose(_origin, 0), point, out int x, out int y)) return false;
             if (TryCell(_grid, OwnerKind.Grid, 0, x, y, version, out hit))
             {
                 CellGeometry geometry = new CellGeometry(hit.Key, new BodyPose(_origin, 0), new Vector2Int(x, y), _cellSize);
@@ -151,12 +155,23 @@ namespace OpenOita.V2
         private bool TryBodyPoint(WorldVersion version, BodyV2 body, Vector2 point, out CellHit hit)
         {
             hit = default;
-            if (!BodyAabb(body, point)) return false;
-            Vector2 local = Inverse(body.Pose, point);
-            int x = Mathf.FloorToInt(local.x / _cellSize), y = Mathf.FloorToInt(local.y / _cellSize);
+            if (!TryPointCoordinates(body.Grid, body.Pose, point, out int x, out int y)) return false;
             if (!TryCell(body.Grid, OwnerKind.Body, body.Id, x, y, version, out hit)) return false;
             CellGeometry geometry = new CellGeometry(hit.Key, body.Pose, new Vector2Int(x, y), _cellSize);
             return _geometry.ContainsPoint(geometry, point);
+        }
+
+        private bool TryPointCoordinates(MaterialGrid grid, BodyPose pose, Vector2 point, out int x, out int y)
+        {
+            double c = Math.Cos(pose.AngleRadians), s = Math.Sin(pose.AngleRadians);
+            double dx = (double)point.x - pose.Position.x, dy = (double)point.y - pose.Position.y;
+            double localX = (c * dx + s * dy) / _cellSize;
+            double localY = (-s * dx + c * dy) / _cellSize;
+            x = y = 0;
+            if (localX < 0 || localY < 0 || localX >= grid.Width || localY >= grid.Height) return false;
+            x = (int)Math.Floor(localX);
+            y = (int)Math.Floor(localY);
+            return true;
         }
 
         private void CollectGridRegion(WorldVersion version, WorldRect region)
