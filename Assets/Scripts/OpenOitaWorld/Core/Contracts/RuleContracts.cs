@@ -4,9 +4,9 @@ using UnityEngine;
 namespace OpenOita.Contracts
 {
     public enum MaterialKind : byte { Solid, Liquid, Gas }
-    public enum RuleId : byte { Structure = 1, LiquidFlow = 2, GasDrift = 3, Burnable = 4, ExtinguishesFire = 5 }
+    public enum RuleId : byte { Structure = 1, LiquidFlow = 2, GasDrift = 3, Burnable = 4, ExtinguishesFire = 5, Corrosive = 6, Corrodible = 7 }
     [Flags]
-    public enum RuleMask : ulong { None = 0, Structure = 1, LiquidFlow = 2, GasDrift = 4, Burnable = 8, ExtinguishesFire = 16 }
+    public enum RuleMask : ulong { None = 0, Structure = 1, LiquidFlow = 2, GasDrift = 4, Burnable = 8, ExtinguishesFire = 16, Corrosive = 32, Corrodible = 64 }
     public enum TickStage : byte
     {
         Commands = 1, PreFlowContacts, Water, Steam, Extinguish, Burning, Structure, Physics, Publish, Notify
@@ -23,10 +23,15 @@ namespace OpenOita.Contracts
         public readonly uint LifetimeTicks;
         public readonly uint FuelTicks;
         public readonly uint SpreadIntervalTicks;
-        public RuleParameters(string connectionGroup, uint moveIntervalTicks, uint lifetimeTicks, uint fuelTicks, uint spreadIntervalTicks)
+        public readonly ushort SmokeMaterialId;
+        public readonly uint SmokeIntervalTicks;
+        public readonly uint CorrosionIntervalTicks;
+        public RuleParameters(string connectionGroup, uint moveIntervalTicks, uint lifetimeTicks, uint fuelTicks, uint spreadIntervalTicks,
+            ushort smokeMaterialId = 0, uint smokeIntervalTicks = 0, uint corrosionIntervalTicks = 0)
         {
             ConnectionGroup = connectionGroup; MoveIntervalTicks = moveIntervalTicks; LifetimeTicks = lifetimeTicks;
             FuelTicks = fuelTicks; SpreadIntervalTicks = spreadIntervalTicks;
+            SmokeMaterialId = smokeMaterialId; SmokeIntervalTicks = smokeIntervalTicks; CorrosionIntervalTicks = corrosionIntervalTicks;
         }
     }
 

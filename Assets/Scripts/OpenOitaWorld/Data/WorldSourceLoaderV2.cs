@@ -28,10 +28,16 @@ namespace OpenOita.Data
                 Version2(world["schemaVersion"], sources.WorldConfigFileName);
                 Version2(scene["schemaVersion"], sources.SceneFileName);
                 WorldConfig config = ParseWorld(world, sources.WorldConfigFileName);
-                var rules = new RuleRegistry();
+                var rules = new RuleRegistry(true);
                 List<MaterialRuntimeEntry> entries = ParseMaterials(materials, sources.MaterialsFileName, rules, out string materialSet);
                 var byId = new Dictionary<ushort, MaterialRuntimeEntry>();
                 foreach (MaterialRuntimeEntry entry in entries) byId.Add(entry.Id, entry);
+                foreach (MaterialRuntimeEntry entry in entries)
+                {
+                    ushort smoke = entry.Parameters.SmokeMaterialId;
+                    if (smoke != 0 && (!byId.TryGetValue(smoke, out MaterialRuntimeEntry target) || (target.Rules & RuleMask.GasDrift) == 0))
+                        StrictJson.Fail(materials["materials"], sources.MaterialsFileName, "smokeMaterialId 必须引用本材料集内启用 gas_drift 的气体。", WorldErrorCode.IncompatibleRule);
+                }
                 SceneInitialData initial = ParseScene(scene, sources.SceneFileName, config, materialSet, byId);
                 // V2 不按文本、容量上限或估算工作集做 CPU 预算拒绝；运行时仍由各自有界容器执行实际容量检查。
                 return new WorldLoadResult(WorldResult.Success(), config, initial,
@@ -108,7 +114,7 @@ namespace OpenOita.Data
                     byte.Parse(color.Substring(3, 2), NumberStyles.HexNumber), byte.Parse(color.Substring(5, 2), NumberStyles.HexNumber), 255);
                 float mass = StrictJson.Number(token["massPerCell"], file, true);
                 if (!(token["ruleParameters"] is JObject parameters)) StrictJson.Fail(token["ruleParameters"], file, "参数必须是对象。");
-                RuleMask mask = rules.Validate(StrictJson.Array(token["tags"], file, 1, 5), (JObject)token["ruleParameters"], kind, file, out RuleParameters parsed);
+                RuleMask mask = rules.Validate(StrictJson.Array(token["tags"], file, 1, rules.Count), (JObject)token["ruleParameters"], kind, file, out RuleParameters parsed);
                 entries.Add(new MaterialRuntimeEntry(id, 0, name, kind, parsedColor, mass, mask, parsed));
             }
             return entries;

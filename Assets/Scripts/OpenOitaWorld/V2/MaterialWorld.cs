@@ -99,7 +99,7 @@ namespace OpenOita.V2
     }
 
     // 公共值类型沿用；运行态、规则和提交均为V2，不调用旧SimulationWorld/WorldRuntime。
-    public sealed unsafe class MaterialWorld : IWorld, ICommandResultView, IWorldMaterialCatalog
+    public sealed unsafe partial class MaterialWorld : IWorld, ICommandResultView, IWorldMaterialCatalog
     {
         private readonly int _thread = Thread.CurrentThread.ManagedThreadId;
         private readonly WorldLoadResult _loaded;
@@ -113,6 +113,7 @@ namespace OpenOita.V2
         private NativeList<int> _gasDue, _burnDue, _hostBurnDue, _mainBurnFallback;
         private NativeList<int> _mainIgnitionTiles, _mainVisualTiles, _mainSpreadSources, _changedTiles;
         private NativeList<int> _mainWetCandidates;
+        private NativeList<int> _smokeSources;
         private NativeArray<byte> _mainVisualRegistered;
         private NativeArray<int> _timeWheelOverflow;
         private NativeArray<BodyFireEnvelope> _bodyFireEnvelopes;
@@ -194,7 +195,8 @@ namespace OpenOita.V2
             {
                 _definitions = MaterialDefinition.Build(_loaded.Materials);
                 int coldCount = 0;
-                foreach (InitialCell cell in _loaded.Scene.Cells) if (_definitions[cell.MaterialId].IsGas) coldCount++;
+                foreach (InitialCell cell in _loaded.Scene.Cells)
+                    if (_definitions[cell.MaterialId].IsGas || _definitions[cell.MaterialId].IsCorrosive) coldCount++;
                 coldCount += _loaded.Scene.InitialBurning.Count;
                 _components = new TimedComponentStore(Math.Max(1024, coldCount * 2));
                 Grid = new MaterialGrid(Config, _definitions, _components) { GridHandle = 1 };
@@ -205,6 +207,7 @@ namespace OpenOita.V2
                 _mainIgnitionTiles = new NativeList<int>(Math.Max(256, Grid.Tiles.Length), Allocator.Persistent);
                 _mainVisualTiles = new NativeList<int>(Math.Max(256, Grid.Tiles.Length), Allocator.Persistent);
                 _mainSpreadSources = new NativeList<int>(Math.Max(1024, coldCount), Allocator.Persistent);
+                _smokeSources = new NativeList<int>(Math.Max(1024, coldCount * 2), Allocator.Persistent);
                 _mainVisualRegistered = new NativeArray<byte>(Grid.Tiles.Length, Allocator.Persistent);
                 _timeWheelOverflow = new NativeArray<int>(1, Allocator.Persistent);
                 _bodyFireEnvelopes = new NativeArray<BodyFireEnvelope>(
@@ -404,6 +407,7 @@ namespace OpenOita.V2
             if (remaining == 0) return false;
             cell.Flags |= GridCell.BurningFlag; cell.Cold.FuelRemaining = remaining;
             cell.Cold.IgnitedTick = Grid.Tick; cell.Cold.BurnEndTick = Grid.Tick + remaining;
+            cell.Cold.NextSmokeTick = definition.SmokeMaterialId != 0 ? Grid.Tick + definition.SmokeInterval : 0;
             cell.Cold.NextSpreadTick = Grid.Tick + definition.SpreadInterval;
             cell.Cold.NextVisualTick = Grid.Tick + Math.Max(1, definition.Fuel / 255);
             grid.Write(x, y, cell); Schedule(grid.Read(x, y).ComponentHandle); return true;
@@ -415,7 +419,13 @@ namespace OpenOita.V2
             CellCold cold = _components.Read(handle); MaterialDefinition definition = _definitions[cold.MaterialId];
             NativeTimeWheel wheel = _components.GetNativeTimeWheel();
             if (definition.IsGas) wheel.Schedule(handle, cold.ExpiryTick);
-            else wheel.Schedule(handle, Math.Min(cold.BurnEndTick, Math.Min(cold.NextSpreadTick, cold.NextVisualTick == 0 ? ulong.MaxValue : cold.NextVisualTick)));
+            else if (definition.IsCorrosive) wheel.Schedule(handle, cold.NextCorrosionTick);
+            else
+            {
+                ulong due = Math.Min(cold.BurnEndTick, Math.Min(cold.NextSpreadTick, cold.NextVisualTick == 0 ? ulong.MaxValue : cold.NextVisualTick));
+                if (cold.NextSmokeTick != 0) due = Math.Min(due, cold.NextSmokeTick);
+                wheel.Schedule(handle, due);
+            }
         }
 
         private void Extinguish(MaterialGrid grid, int x, int y, bool beforeBurn)
@@ -540,6 +550,11 @@ namespace OpenOita.V2
             if (cold.IgnitedTick >= Grid.Tick) { Schedule(handle); return; }
             if (cold.BurnEndTick <= Grid.Tick) { grid.Write(cold.X, cold.Y, default); return; }
             MaterialDefinition definition = _definitions[cold.MaterialId];
+            if (definition.SmokeMaterialId != 0 && cold.NextSmokeTick <= Grid.Tick)
+            {
+                _smokeSources.AddNoResize(handle);
+                cold.NextSmokeTick = Grid.Tick + definition.SmokeInterval;
+            }
             if (cold.NextSpreadTick <= Grid.Tick)
             {
                 for (int direction = 0; direction < 4; direction++)
@@ -581,9 +596,11 @@ namespace OpenOita.V2
 
         private void Burn()
         {
+            _smokeSources.Clear();
             ProcessMainBurnJob(Grid.Tick);
             for (int i = 0; i < _mainBurnFallback.Length; i++) ProcessBurnHandle(_mainBurnFallback[i]);
             for (int i = 0; i < _hostBurnDue.Length; i++) ProcessBurnHandle(_hostBurnDue[i]);
+            EmitSmoke();
             ApplyIgnitions(Grid);
             if (Physics != null) for (int i = 0; i < Physics.BodyCount; i++) ApplyIgnitions(Physics.GetBody(i).Grid);
         }
@@ -611,6 +628,7 @@ namespace OpenOita.V2
             if (_hostBurnDue.Capacity < _components.Records.Capacity) _hostBurnDue.Capacity = _components.Records.Capacity;
             if (_mainBurnFallback.Capacity < _components.Records.Capacity) _mainBurnFallback.Capacity = _components.Records.Capacity;
             if (_mainSpreadSources.Capacity < _components.Records.Capacity) _mainSpreadSources.Capacity = _components.Records.Capacity;
+            if (_smokeSources.Capacity < _components.Records.Capacity) _smokeSources.Capacity = _components.Records.Capacity;
             int wetCapacity = checked(_components.Records.Capacity * 4);
             if (_mainWetCandidates.Capacity < wetCapacity) _mainWetCandidates.Capacity = wetCapacity;
         }
@@ -628,6 +646,7 @@ namespace OpenOita.V2
                 VisualRegistered = _mainVisualRegistered,
                 Wheel = _components.GetNativeTimeWheel(), Fallback = _mainBurnFallback,
                 HostBurnDue = _hostBurnDue,
+                SmokeSources = _smokeSources,
                 IgnitionTileIds = _mainIgnitionTiles, VisualTileIds = _mainVisualTiles,
                 SpreadSources = _mainSpreadSources, Width = Grid.Width, Height = Grid.Height,
                 Columns = Grid.TileColumns, MainGridHandle = Grid.GridHandle,
@@ -690,6 +709,7 @@ namespace OpenOita.V2
             public NativeArray<byte> VisualRegistered;
             public NativeList<int> Fallback;
             public NativeList<int> HostBurnDue;
+            public NativeList<int> SmokeSources;
             public NativeList<int> IgnitionTileIds;
             public NativeList<int> VisualTileIds;
             public NativeList<int> SpreadSources;
@@ -765,6 +785,7 @@ namespace OpenOita.V2
                 ulong due = state.BurnEndTick;
                 if (state.NextSpreadTick < due) due = state.NextSpreadTick;
                 if (state.NextVisualTick != 0 && state.NextVisualTick < due) due = state.NextVisualTick;
+                if (state.NextSmokeTick != 0 && state.NextSmokeTick < due) due = state.NextSmokeTick;
                 Wheel.Schedule(handle, due);
             }
 
@@ -796,6 +817,11 @@ namespace OpenOita.V2
                     {
                         ScheduleNext(handle, state);
                         continue;
+                    }
+                    if (definition.SmokeMaterialId != 0 && state.NextSmokeTick <= Tick)
+                    {
+                        SmokeSources.AddNoResize(handle);
+                        state.NextSmokeTick = Tick + definition.SmokeInterval;
                     }
                     if (state.NextSpreadTick <= Tick)
                     {
@@ -889,6 +915,7 @@ namespace OpenOita.V2
                 if (_timeWheelOverflow[0] != 0) throw new InvalidOperationException("原生时间轮事件缓冲超过容量。");
                 _components.CommitNativeTick(nextTick);
                 metrics.TimerMs = Milliseconds(phase);
+                ProcessCorrosion();
                 CheckChangedWet(Grid, true); Physics?.CollectWet(nextTick, true);
                 ExtinguishPhysicalContacts(true);
                 phase = Stopwatch.GetTimestamp();
@@ -992,6 +1019,7 @@ namespace OpenOita.V2
             if (_bodyFireEnvelopes.IsCreated) _bodyFireEnvelopes.Dispose();
             if (_changedTiles.IsCreated) _changedTiles.Dispose();
             if (_mainWetCandidates.IsCreated) _mainWetCandidates.Dispose();
+            if (_smokeSources.IsCreated) _smokeSources.Dispose();
             if (_fireContacts.IsCreated) _fireContacts.Dispose();
             if (_bodyEvents.IsCreated) _bodyEvents.Dispose();
             if (_bodyBefore.IsCreated) _bodyBefore.Dispose();

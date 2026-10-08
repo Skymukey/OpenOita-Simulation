@@ -57,7 +57,8 @@
       "massPerCell": 0.6,
       "tags": [
         "structure",
-        "burnable"
+        "burnable",
+        "corrodible"
       ],
       "ruleParameters": {
         "structure": {
@@ -65,8 +66,33 @@
         },
         "burnable": {
           "fuelTicks": 250,
-          "spreadIntervalTicks": 10
+          "spreadIntervalTicks": 10,
+          "smokeMaterialId": 105,
+          "smokeIntervalTicks": 15
         }
+      }
+    },
+    {
+      "id": 105,
+      "name": "烟雾",
+      "kind": "gas",
+      "color": "#747780",
+      "massPerCell": 0.01,
+      "tags": ["gas_drift"],
+      "ruleParameters": {
+        "gas_drift": { "moveIntervalTicks": 3, "lifetimeTicks": 150 }
+      }
+    },
+    {
+      "id": 106,
+      "name": "酸",
+      "kind": "liquid",
+      "color": "#A7E637",
+      "massPerCell": 1.1,
+      "tags": ["liquid_flow", "corrosive"],
+      "ruleParameters": {
+        "liquid_flow": { "moveIntervalTicks": 2 },
+        "corrosive": { "intervalTicks": 10 }
       }
     }
   ]

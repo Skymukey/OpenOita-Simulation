@@ -11,11 +11,15 @@ namespace OpenOita.V2
         public MaterialKind Kind;
         public RuleMask Rules;
         public uint MoveInterval, Lifetime, Fuel, SpreadInterval, ConnectionGroup, Color;
+        public uint SmokeInterval, CorrosionInterval;
+        public ushort SmokeMaterialId;
         public float Mass;
         public bool IsStructure => (Rules & RuleMask.Structure) != 0;
         public bool IsGas => (Rules & RuleMask.GasDrift) != 0;
         public bool IsWater => (Rules & RuleMask.LiquidFlow) != 0;
         public bool IsBurnable => (Rules & RuleMask.Burnable) != 0;
+        public bool IsCorrosive => (Rules & RuleMask.Corrosive) != 0;
+        public bool IsCorrodible => (Rules & RuleMask.Corrodible) != 0;
 
         public static NativeArray<MaterialDefinition> Build(IMaterialRuntimeTable source)
         {
@@ -34,6 +38,8 @@ namespace OpenOita.V2
                     Id = value.Id, Kind = value.Kind, Rules = value.Rules, Mass = value.MassPerCell,
                     MoveInterval = value.Parameters.MoveIntervalTicks, Lifetime = value.Parameters.LifetimeTicks,
                     Fuel = value.Parameters.FuelTicks, SpreadInterval = value.Parameters.SpreadIntervalTicks,
+                    SmokeMaterialId = value.Parameters.SmokeMaterialId, SmokeInterval = value.Parameters.SmokeIntervalTicks,
+                    CorrosionInterval = value.Parameters.CorrosionIntervalTicks,
                     ConnectionGroup = group,
                     Color = (uint)(color.r | color.g << 8 | color.b << 16 | color.a << 24)
                 };
@@ -46,6 +52,7 @@ namespace OpenOita.V2
     public struct CellCold
     {
         public ulong ExpiryTick, BurnEndTick, NextSpreadTick, NextVisualTick, IgnitedTick, WetTick;
+        public ulong NextSmokeTick, NextCorrosionTick;
         public uint FuelRemaining, Generation;
         public int GridHandle, X, Y, Next, Previous, Bucket;
         public ulong Due;

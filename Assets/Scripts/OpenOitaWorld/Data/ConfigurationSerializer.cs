@@ -39,7 +39,7 @@ namespace OpenOita.Data
         private static JObject Materials(IMaterialRuntimeTable table, int schemaVersion)
         {
             var array = new JArray();
-            var registry = new RuleRegistry();
+            var registry = new RuleRegistry(schemaVersion == 2);
             // ID 顺序规范化，不依赖传入表的紧凑索引排列；65535 合法，避免 ushort 循环溢出。
             for (int id = 1; id <= ushort.MaxValue; id++)
             {
@@ -55,10 +55,15 @@ namespace OpenOita.Data
                         case RuleId.Structure: parameters[rule.Tag] = new JObject { ["connectionGroup"] = p.ConnectionGroup }; break;
                         case RuleId.LiquidFlow: parameters[rule.Tag] = new JObject { ["moveIntervalTicks"] = p.MoveIntervalTicks }; break;
                         case RuleId.GasDrift: parameters[rule.Tag] = new JObject { ["moveIntervalTicks"] = p.MoveIntervalTicks, ["lifetimeTicks"] = p.LifetimeTicks }; break;
-                        case RuleId.Burnable: parameters[rule.Tag] = new JObject { ["fuelTicks"] = p.FuelTicks, ["spreadIntervalTicks"] = p.SpreadIntervalTicks }; break;
+                        case RuleId.Burnable:
+                            var burn = new JObject { ["fuelTicks"] = p.FuelTicks, ["spreadIntervalTicks"] = p.SpreadIntervalTicks };
+                            if (p.SmokeMaterialId != 0 || p.SmokeIntervalTicks != 0)
+                            { burn["smokeMaterialId"] = p.SmokeMaterialId; burn["smokeIntervalTicks"] = p.SmokeIntervalTicks; }
+                            parameters[rule.Tag] = burn; break;
+                        case RuleId.Corrosive: parameters[rule.Tag] = new JObject { ["intervalTicks"] = p.CorrosionIntervalTicks }; break;
                     }
                 }
-                if ((entry.Rules & ~(RuleMask)31) != 0) throw new ArgumentException("材料表含未注册规则位。");
+                if ((entry.Rules & ~(RuleMask)((1UL << registry.Count) - 1)) != 0) throw new ArgumentException("材料表含未注册规则位。");
                 string kind = entry.Kind == MaterialKind.Solid ? "solid" : entry.Kind == MaterialKind.Liquid ? "liquid" : entry.Kind == MaterialKind.Gas ? "gas" : "invalid";
                 array.Add(new JObject
                 {

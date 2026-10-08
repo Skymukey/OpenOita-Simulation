@@ -133,6 +133,8 @@ namespace OpenOita.V2
                 Cold = new CellCold { FuelRemaining = definition.Fuel, ExpiryTick = definition.IsGas ? Tick + definition.Lifetime : 0,
                     BurnEndTick = burning ? Tick + definition.Fuel : 0, IgnitedTick = Tick,
                     NextSpreadTick = burning ? Tick + definition.SpreadInterval : 0,
+                    NextSmokeTick = burning && definition.SmokeMaterialId != 0 ? Tick + definition.SmokeInterval : 0,
+                    NextCorrosionTick = definition.IsCorrosive ? Tick + 1 : 0,
                     NextVisualTick = burning ? Tick + Math.Max(1, definition.Fuel / 255) : 0 } };
         }
 
@@ -148,12 +150,14 @@ namespace OpenOita.V2
             if (cell.MaterialId != 0)
             {
                 MaterialDefinition d = Definitions[cell.MaterialId];
-                if (cell.ComponentHandle == 0 && (d.IsGas || cell.IsBurning || (d.IsBurnable && cell.Cold.FuelRemaining != 0 && cell.Cold.FuelRemaining != d.Fuel)))
+                if (cell.ComponentHandle == 0 && (d.IsGas || d.IsCorrosive || cell.IsBurning || (d.IsBurnable && cell.Cold.FuelRemaining != 0 && cell.Cold.FuelRemaining != d.Fuel)))
                 {
                     CellCold state = cell.Cold; state.MaterialId = cell.MaterialId; state.GridHandle = GridHandle; state.X = x; state.Y = y;
                     cell.ComponentHandle = ColdStore.Create(state);
-                    ulong due = d.IsGas ? state.ExpiryTick : Math.Min(state.BurnEndTick, Math.Min(state.NextSpreadTick, state.NextVisualTick));
-                    if (d.IsGas || cell.IsBurning) ColdStore.Schedule(cell.ComponentHandle, due);
+                    ulong due = d.IsGas ? state.ExpiryTick : d.IsCorrosive ? state.NextCorrosionTick :
+                        Math.Min(state.BurnEndTick, Math.Min(state.NextSpreadTick, state.NextVisualTick));
+                    if (cell.IsBurning && state.NextSmokeTick != 0) due = Math.Min(due, state.NextSmokeTick);
+                    if (d.IsGas || d.IsCorrosive || cell.IsBurning) ColdStore.Schedule(cell.ComponentHandle, due);
                 }
                 else if (cell.ComponentHandle != 0)
                 {

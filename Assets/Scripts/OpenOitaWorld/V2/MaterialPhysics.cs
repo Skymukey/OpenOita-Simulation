@@ -336,6 +336,31 @@ namespace OpenOita.V2
             return count;
         }
 
+        // 与燃烧共用精确格面接触及局部候选索引，旋转体也只腐蚀真实接触的材料格。
+        internal bool TryFindCorrosionTarget(int x, int y, out MaterialGrid targetGrid, out int targetX, out int targetY)
+        {
+            targetGrid = null; targetX = targetY = 0;
+            var key = new CellKey(1, new CellPositionKey(OwnerKind.Grid, 0, x, y));
+            CellGeometry source = MainGeometry(key);
+            GetWorldAabb(source, out float minX, out float minY, out float maxX, out float maxY);
+            QueryBodyCandidates(new Vector2(minX, minY), new Vector2(maxX, maxY), _bodyCandidateIds);
+            for (int i = 0; i < _bodyCandidateIds.Length; i++)
+            {
+                if (!TryGetBody(_bodyCandidateIds[i], out BodyV2 body)) continue;
+                GetBodyLocalRange(body, source, out int x0, out int y0, out int x1, out int y1);
+                for (int ty = y0; ty <= y1; ty++) for (int tx = x0; tx <= x1; tx++)
+                {
+                    if (!_grid.Definitions[body.Grid.Read(tx, ty).MaterialId].IsCorrodible) continue;
+                    var target = new CellKey(1, new CellPositionKey(OwnerKind.Body, body.Id, tx, ty));
+                    CellContact contact = ExactCellGeometry.Contact(source, BodyGeometry(target, body), 0);
+                    if (!AcceptIgnitionContact(contact)) continue;
+                    targetGrid = body.Grid; targetX = tx; targetY = ty;
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// Marks a valid burnable target for the next MaterialWorld ignition pass.  This only sets
         /// the per-tile deferred bit; it does not alter fuel, burning flags or timed state.
@@ -2345,7 +2370,10 @@ namespace OpenOita.V2
         private static bool IsWetMaterial(MaterialGrid grid, ushort id)
         {
             MaterialDefinition definition = grid.Definitions[id];
-            return definition.Kind == MaterialKind.Liquid && definition.IsWater;
+            // 覆盖暂存处理全部流体；气体有寿命组件，也须随归属转移保留计时。
+            // 是否灭火仍由规则层的 ExtinguishesFire 标签判定。
+            return definition.Kind == MaterialKind.Liquid && definition.IsWater ||
+                definition.Kind == MaterialKind.Gas && definition.IsGas;
         }
 
         private void RefreshMainWetCount()
