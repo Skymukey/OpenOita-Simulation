@@ -24,7 +24,8 @@ public sealed class ChunkStore : IDisposable
 
     public ChunkStore(int width = 256, int height = 256, long memoryLimit = ContractDefaults.CpuBudgetBytes)
     {
-        if (width < 1 || width > 4096 || height < 1 || height > 4096 || memoryLimit < 0)
+        if (width < 1 || width > ContractDefaults.MaxWorldDimension ||
+            height < 1 || height > ContractDefaults.MaxWorldDimension || memoryLimit < 0)
             throw new ArgumentOutOfRangeException(nameof(width));
         Width = width;
         Height = height;

@@ -64,12 +64,12 @@ public sealed class WorldHost : MonoBehaviour
             WorldSources mapSources = null;
             if (LastResult.IsSuccess) LastResult = map.ValidateInput(out mapSources);
             if (LastResult.IsSuccess)
-                LastResult = CreateWorld(new WorldSimulation(rendererFactory: () => new OpenOita.Render.CommittedWorldRenderer(committedMaterialShader, committedFlameShader) { DisplayLayer = gameObject.layer }, freezeBodyRotation: freezeBodyRotation), mapSources, map.Origin, automatic);
+                LastResult = CreateWorld(new OpenOita.V2.MaterialWorldFactory(layer: gameObject.layer, freezeRotation: freezeBodyRotation), mapSources, map.Origin, automatic);
             if (!LastResult.IsSuccess) Report(LastResult);
             return LastResult;
         }
         LastResult = ReadSources(out WorldSources sources);
-        if (LastResult.IsSuccess) LastResult = CreateWorld(new WorldSimulation(rendererFactory: () => new OpenOita.Render.CommittedWorldRenderer(committedMaterialShader, committedFlameShader), freezeBodyRotation: freezeBodyRotation), sources, worldOrigin, automatic);
+        if (LastResult.IsSuccess) LastResult = CreateWorld(new OpenOita.V2.MaterialWorldFactory(layer: gameObject.layer, freezeRotation: freezeBodyRotation), sources, worldOrigin, automatic);
         if (!LastResult.IsSuccess) Report(LastResult);
         return LastResult;
     }
@@ -210,7 +210,6 @@ public sealed class WorldHost : MonoBehaviour
             Camera camera = displayCamera != null ? displayCamera : (GetComponent<OpenOitaMap>() == null ? Camera.main : null);
             if (camera != null) OpenOita.Render.PixelWorldViewport.Configure(camera, _world.Config, _displayOrigin, Mathf.Max(1, pixelScale), pixelPan);
         }
-        (_world as OpenOita.Simulation.SimulationWorld)?.FlushFrame();
     }
     private void OnGUI()
     {
@@ -232,6 +231,10 @@ public sealed class WorldHost : MonoBehaviour
     private void LogFluidCounts()
     {
         MaterialCountsResult counts = _world.QueryMaterialCounts();
+        if (_world is OpenOita.V2.MaterialWorld v2 && v2.Display?.Renderer != null)
+        {
+            Debug.Log($"OpenOita V2 显示：Tick={_world.Version.CommittedTick}，管线={UnityEngine.Rendering.GraphicsSettings.currentRenderPipeline?.name ?? "none"}，显示版本={v2.Display.Renderer.VisibleVersion}，显示块={v2.Display.Renderer.ActiveTileCount}");
+        }
         if (!counts.Result.IsSuccess) return;
         Debug.Log($"OpenOita F01 Player：{_world.Lifecycle}，generation={counts.Version.Generation}，Tick={counts.Version.CommittedTick}，活动={counts.ActiveCells}，暂存水={counts.SuspendedWaterCells}，暂存蒸汽={counts.SuspendedSteamCells}，总量={counts.TotalCells}");
         foreach (MaterialCount material in counts.Counts)
@@ -253,7 +256,7 @@ public sealed class WorldHost : MonoBehaviour
             return WorldResult.Success();
         }
         string directory = string.IsNullOrWhiteSpace(configurationDirectory)
-            ? Path.Combine(Application.streamingAssetsPath, "OpenOita") : configurationDirectory;
+            ? Path.Combine(Application.streamingAssetsPath, "OpenOitaV2") : configurationDirectory;
         return new ConfigurationFileStore().ReadSources(directory, out sources);
     }
 

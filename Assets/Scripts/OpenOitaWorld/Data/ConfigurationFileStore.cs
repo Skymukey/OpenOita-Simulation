@@ -87,7 +87,7 @@ namespace OpenOita.Data
         public WorldLoadResult LoadDirectory(string directory)
         {
             WorldResult result = ReadSources(directory, out WorldSources sources);
-            return result.IsSuccess ? new WorldSourceLoader(_memoryBudgetBytes).Load(sources) : new WorldLoadResult(result);
+            return result.IsSuccess ? SceneMaterialData.LoadBySchemaVersion(sources, _memoryBudgetBytes) : new WorldLoadResult(result);
         }
 
         public WorldResult SaveScene(string directory, WorldConfig config, SceneInitialData scene, IMaterialRuntimeTable materials)

@@ -22,13 +22,13 @@
       "description": "世界横向逻辑像素数；一个逻辑像素是一格独立材料状态，合法坐标为 0 到 width - 1，不表示窗口宽度。",
       "type": "integer",
       "minimum": 1,
-      "maximum": 4096
+      "maximum": 16384
     },
     "height": {
       "description": "世界纵向逻辑像素数；一个逻辑像素是一格独立材料状态，合法坐标为 0 到 height - 1，不表示窗口高度。",
       "type": "integer",
       "minimum": 1,
-      "maximum": 4096
+      "maximum": 16384
     },
     "chunkSize": {
       "description": "首版存储区块边长，单位为逻辑像素；块内仍逐像素模拟，不共享一份材料状态。边缘区块可以不满。",

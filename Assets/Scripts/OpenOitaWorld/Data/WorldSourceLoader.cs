@@ -9,7 +9,7 @@ namespace OpenOita.Data
 {
     public sealed class WorldSourceLoader : IWorldSourceLoader
     {
-        public const long DefaultMemoryBudgetBytes = 256L * 1024 * 1024;
+        public const long DefaultMemoryBudgetBytes = ContractDefaults.CpuBudgetBytes;
         private readonly long _memoryBudgetBytes;
         public WorldSourceLoader(long memoryBudgetBytes = DefaultMemoryBudgetBytes)
         {
@@ -66,8 +66,8 @@ namespace OpenOita.Data
         {
             StrictJson.Object(root, file, "schemaVersion", "width", "height", "chunkSize", "cellSize", "stepSeconds", "gravityY", "seed", "limits");
             StrictJson.Version(root["schemaVersion"], file);
-            int width = (int)StrictJson.Integer(root["width"], file, 1, 4096);
-            int height = (int)StrictJson.Integer(root["height"], file, 1, 4096);
+            int width = (int)StrictJson.Integer(root["width"], file, 1, ContractDefaults.MaxWorldDimension);
+            int height = (int)StrictJson.Integer(root["height"], file, 1, ContractDefaults.MaxWorldDimension);
             StrictJson.Integer(root["chunkSize"], file, 128, 128);
             JObject limits = StrictJson.Object(root["limits"], file, "maxMaterialCells", "maxDynamicBodies", "maxShapesPerBody", "maxTotalShapes",
                 "maxChangesPerTick", "maxLinearSpeed", "maxAngularSpeedDegrees", "maxPhysicsSubsteps", "fluidDisplacementRadius");
@@ -170,8 +170,8 @@ namespace OpenOita.Data
         }
         private static Vector2Int Position(JToken token, string file, WorldConfig config)
         {
-            int x = (int)StrictJson.Integer(token["x"], file, 0, 4095);
-            int y = (int)StrictJson.Integer(token["y"], file, 0, 4095);
+            int x = (int)StrictJson.Integer(token["x"], file, 0, ContractDefaults.MaxWorldDimension - 1);
+            int y = (int)StrictJson.Integer(token["y"], file, 0, ContractDefaults.MaxWorldDimension - 1);
             if (x >= config.Width) StrictJson.Fail(token["x"], file, "坐标超过实际 width。", WorldErrorCode.OutOfBounds);
             if (y >= config.Height) StrictJson.Fail(token["y"], file, "坐标超过实际 height。", WorldErrorCode.OutOfBounds);
             return new Vector2Int(x, y);

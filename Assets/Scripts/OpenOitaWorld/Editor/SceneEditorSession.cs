@@ -11,7 +11,6 @@ namespace OpenOita.Editor
     {
         public const int PreviewLayer = 31;
         private CommittedWorldRenderer _preview;
-        private CommittedWorldRenderer _trialRenderer;
         private int _revision = -1;
         private SceneMaterialData _previewData;
         private Vector2 _previewOrigin;
@@ -40,8 +39,7 @@ namespace OpenOita.Editor
             _hostObject = new GameObject("OpenOita编辑器正式试玩") { hideFlags = HideFlags.HideAndDontSave };
             _hostObject.SetActive(false);
             Host = _hostObject.AddComponent<WorldHost>();
-            WorldResult result = Host.CreateWorld(new WorldSimulation(rendererFactory: () =>
-                _trialRenderer = new CommittedWorldRenderer { DisplayLayer = PreviewLayer }, freezeBodyRotation: freezeBodyRotation), copy, origin, automatic);
+            WorldResult result = Host.CreateWorld(new OpenOita.V2.MaterialWorldFactory(layer: PreviewLayer, freezeRotation: freezeBodyRotation), copy, origin, automatic);
             if (!result.IsSuccess) { EndTrial(); return result; }
             _hostObject.SetActive(true); // OnEnable看到已创建的世界，不加载另一套初态。
             _trialOrigin = origin;
@@ -54,7 +52,7 @@ namespace OpenOita.Editor
             WorldResult result = Host != null ? Host.CloseWorld() : WorldResult.Success();
             if (!result.IsSuccess) return result;
             if (_hostObject != null) UnityEngine.Object.DestroyImmediate(_hostObject);
-            Host = null; _hostObject = null; _trialRenderer = null;
+            Host = null; _hostObject = null;
             return result;
         }
 
@@ -86,7 +84,7 @@ namespace OpenOita.Editor
             else
             {
                 if (_observing) _camera.cullingMask = 1 << Host.gameObject.layer;
-                else { _trialRenderer.FlushFrame(); Host.ConfigurePixelView(_camera, scale, pan); }
+                else { Host.ConfigurePixelView(_camera, scale, pan); }
                 origin = _trialOrigin;
             }
             PixelWorldViewport.Configure(_camera, IsTrial ? Host.World.Config : data.Config, origin, scale, pan);

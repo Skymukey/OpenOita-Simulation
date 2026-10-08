@@ -340,7 +340,9 @@ namespace OpenOita.Editor
             WorldSources template;
             WorldResult result;
             if (_document.Data != null) result = _document.Data.Export(out template);
-            else result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOita"), out template);
+            else result = new ConfigurationFileStore().ReadSources(Path.Combine(Application.streamingAssetsPath, "OpenOitaV2"), out template);
+            if (result.IsSuccess && _document.Data != null && _document.Data.Config.SchemaVersion == 1)
+                result = WorldV2SourceConverter.Convert(template, out template);
             if (result.IsSuccess) result = _document.CreateEmpty(template, _newWidth, _newHeight, _newCellSize);
             Show(result, "空白场景已创建：选择材料和画笔直接绘制；首次保存会创建独立场景目录。");
             if (!result.IsSuccess) return;

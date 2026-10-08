@@ -13,11 +13,19 @@ namespace OpenOita.Data
             sources = null;
             if (config == null || scene == null || materials == null)
                 return WorldResult.Failure(WorldErrorCode.InvalidArgument, new WorldDiagnostic("配置序列化", "$", "配置、初态和材料表不能为空。"));
+            if (config.SchemaVersion != 1 && config.SchemaVersion != 2)
+                return WorldResult.Failure(WorldErrorCode.UnsupportedVersion,
+                    new WorldDiagnostic("配置序列化", "schemaVersion", "仅支持 schemaVersion=1 或 2。"));
+            if (scene.SchemaVersion != config.SchemaVersion)
+                return WorldResult.Failure(WorldErrorCode.InvalidConfig,
+                    new WorldDiagnostic("配置序列化", "scene.schemaVersion", "场景与世界配置版本必须一致。"));
             try
             {
-                var candidate = new WorldSources(Materials(materials).ToString(Formatting.Indented),
+                var candidate = new WorldSources(Materials(materials, config.SchemaVersion).ToString(Formatting.Indented),
                     World(config).ToString(Formatting.Indented), Scene(scene).ToString(Formatting.Indented));
-                WorldLoadResult verified = new WorldSourceLoader().Load(candidate);
+                WorldLoadResult verified = config.SchemaVersion == 2
+                    ? new WorldSourceLoaderV2().Load(candidate)
+                    : new WorldSourceLoader().Load(candidate);
                 if (!verified.Result.IsSuccess) return verified.Result;
                 sources = candidate;
                 return WorldResult.Success();
@@ -28,7 +36,7 @@ namespace OpenOita.Data
             }
         }
 
-        private static JObject Materials(IMaterialRuntimeTable table)
+        private static JObject Materials(IMaterialRuntimeTable table, int schemaVersion)
         {
             var array = new JArray();
             var registry = new RuleRegistry();
@@ -59,25 +67,29 @@ namespace OpenOita.Data
                     ["massPerCell"] = entry.MassPerCell, ["tags"] = tags, ["ruleParameters"] = parameters
                 });
             }
-            return new JObject { ["schemaVersion"] = 1, ["materialSetId"] = table.MaterialSetId, ["materials"] = array };
+            return new JObject { ["schemaVersion"] = schemaVersion, ["materialSetId"] = table.MaterialSetId, ["materials"] = array };
         }
         private static JObject World(WorldConfig config)
         {
             WorldLimits l = config.Limits;
-            return new JObject
+            var world = new JObject
             {
-                ["schemaVersion"] = config.SchemaVersion, ["width"] = config.Width, ["height"] = config.Height,
-                ["chunkSize"] = config.ChunkSize, ["cellSize"] = config.CellSize, ["stepSeconds"] = config.StepSeconds,
-                ["gravityY"] = config.GravityY, ["seed"] = config.Seed,
-                ["limits"] = new JObject
-                {
-                    ["maxMaterialCells"] = l.MaxMaterialCells, ["maxDynamicBodies"] = l.MaxDynamicBodies,
-                    ["maxShapesPerBody"] = l.MaxShapesPerBody, ["maxTotalShapes"] = l.MaxTotalShapes,
-                    ["maxChangesPerTick"] = l.MaxChangesPerTick, ["maxLinearSpeed"] = l.MaxLinearSpeed,
-                    ["maxAngularSpeedDegrees"] = l.MaxAngularSpeedDegrees, ["maxPhysicsSubsteps"] = l.MaxPhysicsSubsteps,
-                    ["fluidDisplacementRadius"] = l.FluidDisplacementRadius
-                }
+                ["schemaVersion"] = config.SchemaVersion, ["width"] = config.Width, ["height"] = config.Height
             };
+            if (config.SchemaVersion == 1) world["chunkSize"] = config.ChunkSize;
+            world["cellSize"] = config.CellSize;
+            world["stepSeconds"] = config.StepSeconds;
+            world["gravityY"] = config.GravityY;
+            world["seed"] = config.Seed;
+            world["limits"] = new JObject
+            {
+                ["maxMaterialCells"] = l.MaxMaterialCells, ["maxDynamicBodies"] = l.MaxDynamicBodies,
+                ["maxShapesPerBody"] = l.MaxShapesPerBody, ["maxTotalShapes"] = l.MaxTotalShapes,
+                ["maxChangesPerTick"] = l.MaxChangesPerTick, ["maxLinearSpeed"] = l.MaxLinearSpeed,
+                ["maxAngularSpeedDegrees"] = l.MaxAngularSpeedDegrees, ["maxPhysicsSubsteps"] = l.MaxPhysicsSubsteps,
+                ["fluidDisplacementRadius"] = l.FluidDisplacementRadius
+            };
+            return world;
         }
         private static JObject Scene(SceneInitialData scene)
         {

@@ -49,6 +49,21 @@ namespace OpenOita.Tests.EditMode.M02
         }
 
         [Test]
+        public void AutomaticDefaultRunsOneTickPerFrameAndKeepsCatchUpTime()
+        {
+            var world = new WorldProbe();
+            var driver = new FixedStepDriver(world, true);
+            double step = world.Config.StepSeconds;
+
+            Assert.That(driver.Advance(step * 5).IsSuccess, Is.True);
+            Assert.That(world.Steps, Is.EqualTo(1));
+            Assert.That(driver.AccumulatedSeconds, Is.EqualTo(step * 4).Within(1e-8));
+            Assert.That(driver.Advance(0).IsSuccess, Is.True);
+            Assert.That(world.Steps, Is.EqualTo(2));
+            Assert.That(driver.AccumulatedSeconds, Is.EqualTo(step * 3).Within(1e-8));
+        }
+
+        [Test]
         public void M02_08_AutomaticAccumulationKeepsRemainderAndManualIsExclusive()
         {
             float fixedDelta = Time.fixedDeltaTime;

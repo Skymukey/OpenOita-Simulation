@@ -1,0 +1,26 @@
+#pragma kernel ApplyUpdates
+#pragma kernel ClearSlice
+#pragma target 4.5
+
+StructuredBuffer<uint4> _PixelUpdates;
+RWTexture2DArray<uint> _PagePixels;
+uint _UpdateCount;
+uint _ClearLayer;
+
+[numthreads(64, 1, 1)]
+void ApplyUpdates(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _UpdateCount) return;
+
+    uint4 update = _PixelUpdates[id.x];
+    uint x = update.y & 0xffff;
+    uint y = update.y >> 16;
+    _PagePixels[uint3(x, y, update.x)] = update.z;
+}
+
+[numthreads(8, 8, 1)]
+void ClearSlice(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= 128 || id.y >= 128) return;
+    _PagePixels[uint3(id.xy, _ClearLayer)] = 0;
+}
